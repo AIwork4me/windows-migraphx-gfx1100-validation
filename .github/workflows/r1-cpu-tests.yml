@@ -25,14 +25,4 @@ jobs:
       - name: Unit tests (fail-closed helpers, redaction)
         run: python -m unittest discover -s tests -v
       - name: Validate R1 ledger/manifests parse
-        run: |
-          python - <<'EOF'
-          import json, os
-          json.load(open('reports/ledger.json', encoding='utf-8'))
-          json.load(open('reports/r1/ledger.json', encoding='utf-8'))
-          p = 'reports/r1/manifest.sha256'
-          if os.path.isfile(p):
-              n = sum(1 for l in open(p, encoding='utf-8') if l.strip() and len(l.split(None, 1)) == 2)
-              print(f'r1 manifest lines: {n}')
-          print('parse OK')
-          EOF
+        run: python runner/r1/ci_parse_check.py
