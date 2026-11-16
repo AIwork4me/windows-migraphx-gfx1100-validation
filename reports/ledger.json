@@ -63,6 +63,10 @@
     {
      "at": "2026-11-16T16:32:43Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:37:38Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/abs/b1",
@@ -82,6 +86,10 @@
     },
     {
      "at": "2026-11-16T16:32:43Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:37:41Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -103,6 +111,10 @@
     {
      "at": "2026-11-16T16:32:43Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:37:42Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/argmax/b1",
@@ -122,6 +134,10 @@
     },
     {
      "at": "2026-11-16T16:32:43Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:37:43Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -143,6 +159,10 @@
     {
      "at": "2026-11-16T16:32:43Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:37:44Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/batchnorm/b1",
@@ -162,6 +182,10 @@
     },
     {
      "at": "2026-11-16T16:32:43Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:37:45Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -183,6 +207,10 @@
     {
      "at": "2026-11-16T16:32:43Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:37:46Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/cast_f32_i32/b1",
@@ -202,6 +230,10 @@
     },
     {
      "at": "2026-11-16T16:32:43Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:37:47Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -223,6 +255,10 @@
     {
      "at": "2026-11-16T16:32:43Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:37:50Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/conv_relu/b1",
@@ -242,6 +278,10 @@
     },
     {
      "at": "2026-11-16T16:32:43Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:37:52Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -263,6 +303,10 @@
     {
      "at": "2026-11-16T16:32:43Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:37:53Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/cos/b1",
@@ -282,6 +326,10 @@
     },
     {
      "at": "2026-11-16T16:32:43Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:00Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -303,6 +351,10 @@
     {
      "at": "2026-11-16T16:32:43Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:01Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/depthwise_conv/b1",
@@ -322,6 +374,10 @@
     },
     {
      "at": "2026-11-16T16:32:43Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:02Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -343,6 +399,10 @@
     {
      "at": "2026-11-16T16:32:43Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:04Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/erf/b1",
@@ -362,6 +422,10 @@
     },
     {
      "at": "2026-11-16T16:32:43Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:06Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -383,6 +447,10 @@
     {
      "at": "2026-11-16T16:32:43Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:07Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/exp/b1",
@@ -402,6 +470,10 @@
     },
     {
      "at": "2026-11-16T16:32:43Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:08Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -423,6 +495,10 @@
     {
      "at": "2026-11-16T16:32:43Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:09Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/floor/b1",
@@ -442,6 +518,10 @@
     },
     {
      "at": "2026-11-16T16:32:43Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:10Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -463,6 +543,10 @@
     {
      "at": "2026-11-16T16:32:43Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:11Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/gemm/b1",
@@ -482,6 +566,10 @@
     },
     {
      "at": "2026-11-16T16:32:43Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:11Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -503,6 +591,10 @@
     {
      "at": "2026-11-16T16:32:43Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:13Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/identity_add/b1",
@@ -522,6 +614,10 @@
     },
     {
      "at": "2026-11-16T16:32:43Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:13Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -543,6 +639,10 @@
     {
      "at": "2026-11-16T16:32:43Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:14Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/layernorm/b1",
@@ -562,6 +662,10 @@
     },
     {
      "at": "2026-11-16T16:32:43Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:15Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -583,6 +687,10 @@
     {
      "at": "2026-11-16T16:32:43Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:17Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/log/b1",
@@ -602,6 +710,10 @@
     },
     {
      "at": "2026-11-16T16:32:43Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:18Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -623,6 +735,10 @@
     {
      "at": "2026-11-16T16:32:43Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:20Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/matmul/b1",
@@ -642,6 +758,10 @@
     },
     {
      "at": "2026-11-16T16:32:43Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:21Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -663,6 +783,10 @@
     {
      "at": "2026-11-16T16:32:43Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:22Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/neg/b1",
@@ -682,6 +806,10 @@
     },
     {
      "at": "2026-11-16T16:32:43Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:23Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -703,6 +831,10 @@
     {
      "at": "2026-11-16T16:32:43Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:23Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/nine_out/b1",
@@ -722,6 +854,10 @@
     },
     {
      "at": "2026-11-16T16:32:43Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:25Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -743,6 +879,10 @@
     {
      "at": "2026-11-16T16:32:43Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:26Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/pad/b1",
@@ -762,6 +902,10 @@
     },
     {
      "at": "2026-11-16T16:32:43Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:29Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -783,6 +927,10 @@
     {
      "at": "2026-11-16T16:32:43Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:30Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/reduce_max/b1",
@@ -802,6 +950,10 @@
     },
     {
      "at": "2026-11-16T16:32:43Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:32Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -823,6 +975,10 @@
     {
      "at": "2026-11-16T16:32:43Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:35Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/reduce_mean/b1",
@@ -842,6 +998,10 @@
     },
     {
      "at": "2026-11-16T16:32:43Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:37Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -863,6 +1023,10 @@
     {
      "at": "2026-11-16T16:32:43Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:38Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/reduce_sum/b1",
@@ -882,6 +1046,10 @@
     },
     {
      "at": "2026-11-16T16:32:43Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:39Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -903,6 +1071,10 @@
     {
      "at": "2026-11-16T16:32:43Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:41Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/relu/b1",
@@ -922,6 +1094,10 @@
     },
     {
      "at": "2026-11-16T16:32:43Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:42Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -943,6 +1119,10 @@
     {
      "at": "2026-11-16T16:32:43Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:43Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/reshape_transpose/b1",
@@ -962,6 +1142,10 @@
     },
     {
      "at": "2026-11-16T16:32:43Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:44Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -983,6 +1167,10 @@
     {
      "at": "2026-11-16T16:32:44Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:46Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/resize_nearest/b1",
@@ -1002,6 +1190,10 @@
     },
     {
      "at": "2026-11-16T16:32:44Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:48Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -1023,6 +1215,10 @@
     {
      "at": "2026-11-16T16:32:44Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:49Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/sigmoid/b1",
@@ -1042,6 +1238,10 @@
     },
     {
      "at": "2026-11-16T16:32:44Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:53Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -1063,6 +1263,10 @@
     {
      "at": "2026-11-16T16:32:44Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:54Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/sin/b1",
@@ -1082,6 +1286,10 @@
     },
     {
      "at": "2026-11-16T16:32:44Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:55Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -1103,6 +1311,10 @@
     {
      "at": "2026-11-16T16:32:44Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:57Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/softmax/b1",
@@ -1122,6 +1334,10 @@
     },
     {
      "at": "2026-11-16T16:32:44Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:58Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -1143,6 +1359,10 @@
     {
      "at": "2026-11-16T16:32:44Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:38:59Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/split2/b1",
@@ -1162,6 +1382,10 @@
     },
     {
      "at": "2026-11-16T16:32:44Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:00Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -1183,6 +1407,10 @@
     {
      "at": "2026-11-16T16:32:44Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:03Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/sqrt/b1",
@@ -1202,6 +1430,10 @@
     },
     {
      "at": "2026-11-16T16:32:44Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:04Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -1223,6 +1455,10 @@
     {
      "at": "2026-11-16T16:32:44Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:05Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/squeeze/b1",
@@ -1242,6 +1478,10 @@
     },
     {
      "at": "2026-11-16T16:32:44Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:06Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -1263,6 +1503,10 @@
     {
      "at": "2026-11-16T16:32:44Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:06Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/tanh/b1",
@@ -1282,6 +1526,10 @@
     },
     {
      "at": "2026-11-16T16:32:44Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:08Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -1303,6 +1551,10 @@
     {
      "at": "2026-11-16T16:32:44Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:10Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/topk_gather_concat/b1",
@@ -1323,6 +1575,10 @@
     {
      "at": "2026-11-16T16:32:44Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:12Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/topk_gather_concat/b2",
@@ -1342,6 +1598,10 @@
     },
     {
      "at": "2026-11-16T16:32:44Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:12Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -4158,6 +4418,10 @@
     {
      "at": "2026-11-16T16:36:58Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:37:35Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/MIGraphXExecutionProvider/identity_add/b1",
@@ -4232,6 +4496,10 @@
     },
     {
      "at": "2026-11-16T16:36:58Z",
+     "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:37:35Z",
      "status": "FAIL"
     }
    ],
@@ -4308,6 +4576,10 @@
     {
      "at": "2026-11-16T16:36:58Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:37:35Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/MIGraphXExecutionProvider/identity_add/b4",
@@ -4382,6 +4654,10 @@
     },
     {
      "at": "2026-11-16T16:36:58Z",
+     "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:37:35Z",
      "status": "FAIL"
     }
    ],
@@ -4458,6 +4734,10 @@
     {
      "at": "2026-11-16T16:36:58Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:37:35Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/MIGraphXExecutionProvider/matmul/b2",
@@ -4533,6 +4813,10 @@
     {
      "at": "2026-11-16T16:36:58Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:37:35Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/MIGraphXExecutionProvider/matmul/b4",
@@ -4607,6 +4891,10 @@
     },
     {
      "at": "2026-11-16T16:36:58Z",
+     "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:37:35Z",
      "status": "FAIL"
     }
    ],
@@ -4687,6 +4975,10 @@
     {
      "at": "2026-11-16T16:36:58Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:37:35Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/MIGraphXExecutionProvider/conv_relu/b2",
@@ -4765,6 +5057,10 @@
     },
     {
      "at": "2026-11-16T16:36:58Z",
+     "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:37:35Z",
      "status": "FAIL"
     }
    ],
@@ -4845,6 +5141,10 @@
     {
      "at": "2026-11-16T16:36:58Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:37:35Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/MIGraphXExecutionProvider/softmax/b1",
@@ -4919,6 +5219,10 @@
     },
     {
      "at": "2026-11-16T16:36:58Z",
+     "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:37:35Z",
      "status": "FAIL"
     }
    ],
@@ -4995,6 +5299,10 @@
     {
      "at": "2026-11-16T16:36:58Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:37:35Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/MIGraphXExecutionProvider/softmax/b4",
@@ -5069,6 +5377,10 @@
     },
     {
      "at": "2026-11-16T16:36:58Z",
+     "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:37:35Z",
      "status": "FAIL"
     }
    ],
@@ -5145,6 +5457,10 @@
     {
      "at": "2026-11-16T16:36:58Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:37:35Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/MIGraphXExecutionProvider/reshape_transpose/b2",
@@ -5220,6 +5536,10 @@
     {
      "at": "2026-11-16T16:36:58Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:37:35Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/MIGraphXExecutionProvider/reshape_transpose/b4",
@@ -5294,6 +5614,10 @@
     },
     {
      "at": "2026-11-16T16:36:58Z",
+     "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:37:35Z",
      "status": "FAIL"
     }
    ],
@@ -5389,6 +5713,10 @@
     {
      "at": "2026-11-16T16:36:58Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:37:35Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/MIGraphXExecutionProvider/two_out_same_shape/b2",
@@ -5483,6 +5811,10 @@
     {
      "at": "2026-11-16T16:36:58Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:37:35Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/MIGraphXExecutionProvider/two_out_same_shape/b4",
@@ -5576,6 +5908,10 @@
     },
     {
      "at": "2026-11-16T16:36:58Z",
+     "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:37:35Z",
      "status": "FAIL"
     }
    ],
@@ -5804,6 +6140,10 @@
     {
      "at": "2026-11-16T16:36:58Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:37:35Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/MIGraphXExecutionProvider/nine_out/b2",
@@ -6031,6 +6371,10 @@
     {
      "at": "2026-11-16T16:36:58Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:37:35Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/MIGraphXExecutionProvider/nine_out/b4",
@@ -6249,6 +6593,10 @@
     {
      "at": "2026-11-16T16:37:26Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:12Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/AMDGPUExecutionProvider/identity_add/b1",
@@ -6272,6 +6620,10 @@
     },
     {
      "at": "2026-11-16T16:37:26Z",
+     "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:12Z",
      "status": "FAIL"
     }
    ],
@@ -6297,6 +6649,10 @@
     {
      "at": "2026-11-16T16:37:26Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:12Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/AMDGPUExecutionProvider/identity_add/b4",
@@ -6320,6 +6676,10 @@
     },
     {
      "at": "2026-11-16T16:37:26Z",
+     "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:12Z",
      "status": "FAIL"
     }
    ],
@@ -6345,6 +6705,10 @@
     {
      "at": "2026-11-16T16:37:27Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:12Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/AMDGPUExecutionProvider/matmul/b2",
@@ -6368,6 +6732,10 @@
     },
     {
      "at": "2026-11-16T16:37:27Z",
+     "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:12Z",
      "status": "FAIL"
     }
    ],
@@ -6393,6 +6761,10 @@
     {
      "at": "2026-11-16T16:37:27Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:12Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/AMDGPUExecutionProvider/conv_relu/b1",
@@ -6416,6 +6788,10 @@
     },
     {
      "at": "2026-11-16T16:37:27Z",
+     "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:12Z",
      "status": "FAIL"
     }
    ],
@@ -6441,6 +6817,10 @@
     {
      "at": "2026-11-16T16:37:27Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:12Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/AMDGPUExecutionProvider/conv_relu/b4",
@@ -6464,6 +6844,10 @@
     },
     {
      "at": "2026-11-16T16:37:27Z",
+     "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:12Z",
      "status": "FAIL"
     }
    ],
@@ -6489,6 +6873,10 @@
     {
      "at": "2026-11-16T16:37:27Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:13Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/AMDGPUExecutionProvider/softmax/b2",
@@ -6512,6 +6900,10 @@
     },
     {
      "at": "2026-11-16T16:37:27Z",
+     "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:13Z",
      "status": "FAIL"
     }
    ],
@@ -6537,6 +6929,10 @@
     {
      "at": "2026-11-16T16:37:27Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:13Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/AMDGPUExecutionProvider/reshape_transpose/b1",
@@ -6560,6 +6956,10 @@
     },
     {
      "at": "2026-11-16T16:37:27Z",
+     "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:13Z",
      "status": "FAIL"
     }
    ],
@@ -6585,6 +6985,10 @@
     {
      "at": "2026-11-16T16:37:27Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:13Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/AMDGPUExecutionProvider/reshape_transpose/b4",
@@ -6608,6 +7012,10 @@
     },
     {
      "at": "2026-11-16T16:37:27Z",
+     "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:13Z",
      "status": "FAIL"
     }
    ],
@@ -6633,6 +7041,10 @@
     {
      "at": "2026-11-16T16:37:27Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:13Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/AMDGPUExecutionProvider/two_out_same_shape/b2",
@@ -6656,6 +7068,10 @@
     },
     {
      "at": "2026-11-16T16:37:27Z",
+     "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:13Z",
      "status": "FAIL"
     }
    ],
@@ -6681,6 +7097,10 @@
     {
      "at": "2026-11-16T16:37:27Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:13Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/AMDGPUExecutionProvider/nine_out/b1",
@@ -6704,6 +7124,10 @@
     },
     {
      "at": "2026-11-16T16:37:27Z",
+     "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:13Z",
      "status": "FAIL"
     }
    ],
@@ -6729,6 +7153,10 @@
     {
      "at": "2026-11-16T16:37:27Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:13Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/AMDGPUExecutionProvider/nine_out/b4",
@@ -6742,11 +7170,28 @@
     {
      "at": "2026-11-16T16:37:27Z",
      "status": "DONE"
+    },
+    {
+     "at": "2026-11-16T16:39:13Z",
+     "status": "DONE"
     }
    ],
    "id": "supervisor/m0-amdgpu",
    "phase": "supervisor",
-   "seconds": 5.1,
+   "seconds": 6.1,
+   "status": "DONE"
+  },
+  {
+   "exit_code": 0,
+   "history": [
+    {
+     "at": "2026-11-16T16:37:35Z",
+     "status": "DONE"
+    }
+   ],
+   "id": "supervisor/m0-migraphx",
+   "phase": "supervisor",
+   "seconds": 3.5,
    "status": "DONE"
   }
  ],
@@ -6762,6 +7207,15 @@
   "m5": "RUNNING"
  },
  "recovered_utc": "2026-11-17T00:20:00Z",
- "supervisor_tasks": {},
- "updated_utc": "2026-11-16T16:37:27Z"
+ "supervisor_tasks": {
+  "m0-amdgpu": {
+   "attempts": 1,
+   "est_gb_used": 0.6,
+   "exit_code": 0,
+   "log": "reports\\supervisor_logs\\m0-amdgpu.log",
+   "seconds": 6.1,
+   "status": "DONE"
+  }
+ },
+ "updated_utc": "2026-11-16T16:39:13Z"
 }

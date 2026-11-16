@@ -97,6 +97,18 @@ def free_gb(path: str = "C:\\") -> float:
         return -1.0
 
 
+def save_task_state(led_path: str, key: str, rec: dict) -> None:
+    led = L.load_ledger(led_path)
+    led.setdefault("supervisor_tasks", {})[key] = rec
+    led["updated_utc"] = C.now_pair()["utc"]
+    import json as _json, tempfile, os as _os
+    fd, tmp = tempfile.mkstemp(dir=_os.path.dirname(led_path), suffix=".tmp")
+    with _os.fdopen(fd, "w", encoding="utf-8") as f:
+        _json.dump(led, f, ensure_ascii=False, indent=1)
+        f.flush(); _os.fsync(f.fileno())
+    _os.replace(tmp, led_path)
+
+
 def build_task_table(repo: str, skip_build: bool) -> list[dict]:
     pyw = os.path.join(repo, "venv-winml", "Scripts", "python.exe")
     pyc = os.path.join(repo, "venv-cpu", "Scripts", "python.exe")
@@ -174,12 +186,14 @@ def main():
             if crash_counts.get(key, 0) >= 3:
                 tasks_state[key] = {"status": "DANGEROUS_STOP",
                                     "note": "3 consecutive native crashes"}
+                save_task_state(led_path, key, tasks_state[key])
                 L.upsert_case(led_path, {"id": f"supervisor/{key}", "phase": "supervisor",
                                          "status": "DANGEROUS_STOP",
                                          "reason": "3 consecutive native crashes"})
                 continue
             if task.get("heavy") and remaining_min < 25:
                 tasks_state[key] = {"status": "SKIP", "note": "deadline guard (25min)"}
+                save_task_state(led_path, key, tasks_state[key])
                 continue
             free = free_gb()
             if free < args.max_disk_gb and task.get("heavy"):
@@ -187,6 +201,7 @@ def main():
                 continue
             if dl_used + task.get("est_gb", 0) > args.max_download_gb:
                 tasks_state[key] = {"status": "SKIP", "note": "download budget"}
+                save_task_state(led_path, key, tasks_state[key])
                 continue
 
             state.update({"phase": "running", "task": key})
@@ -203,6 +218,7 @@ def main():
                                 "est_gb_used": task.get("est_gb", 0) if rc == 0 else 0}
             if tasks_state[key]["status"] == "DONE":
                 dl_used += task.get("est_gb", 0)
+            save_task_state(led_path, key, tasks_state[key])
             L.upsert_case(led_path, {"id": f"supervisor/{key}", "phase": "supervisor",
                                      "status": "DONE" if rc == 0 else ("CRASH_NATIVE" if rc in CRASH_CODES else ("TIMEOUT" if rc == -999 else "FAIL")),
                                      "exit_code": rc, "seconds": res["seconds"]})
@@ -228,6 +244,7 @@ def main():
                      os.path.join(logs_dir, w["key"] + ".log"))
             tasks_state[w["key"]] = {"status": "DONE" if res["exit_code"] == 0 else "FAIL",
                                      "exit_code": res["exit_code"], "seconds": res["seconds"]}
+            save_task_state(led_path, w["key"], tasks_state[w["key"]])
             L.upsert_case(led_path, {"id": f"supervisor/{w['key']}", "phase": "supervisor",
                                      "status": "DONE" if res["exit_code"] == 0 else "FAIL",
                                      "exit_code": res["exit_code"]})
