@@ -1,0 +1,11 @@
+{
+ "ep": "AMDGPUExecutionProvider",
+ "mode": "classic-providers-list",
+ "session_create_s": 0.01,
+ "get_providers": [
+  "CPUExecutionProvider"
+ ],
+ "run": "ok",
+ "stage": "exception",
+ "exception": "AttributeError(\"'InferenceSession' object has no attribute 'enable_profiling'\")"
+}

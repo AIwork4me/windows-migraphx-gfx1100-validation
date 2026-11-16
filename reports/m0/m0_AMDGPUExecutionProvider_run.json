@@ -12,21 +12,21 @@
   "--ep",
   "AMDGPUExecutionProvider",
   "--models",
-  "identity_add",
+  "identity_add,matmul,conv_relu,softmax,reshape_transpose,two_out_same_shape,nine_out",
   "--batches",
-  "1",
+  "1,2,4",
   "--download",
-  "no"
+  "yes"
  ],
  "cwd": "C:\\AIwork4me\\windows-migraphx-gfx1100-validation",
- "run_id": "183e68b788a9",
+ "run_id": "43b69b30a6ae",
  "started": {
-  "utc": "2026-11-16T15:10:42Z",
-  "local": "2026-11-16T23:10:42+08:00"
+  "utc": "2026-11-16T15:12:52Z",
+  "local": "2026-11-16T23:12:52+08:00"
  },
  "seed_policy": "numpy default_rng(seed=1100) unless stated",
  "ep": "AMDGPUExecutionProvider",
- "download": "no",
+ "download": "yes",
  "ort_pkg": "onnxruntime-windowsml",
  "catalog_nuget": "2.5.96",
  "catalog": {
@@ -75,6 +75,18 @@
    "packageRootPath": "<err 0x80070015 rootsize>",
    "readyState": "NotPresent"
   },
+  "ensure_ready": [
+   {
+    "attempt": 1,
+    "hr": "0x800705B4",
+    "seconds": 247.6
+   },
+   {
+    "attempt": 2,
+    "hr": "0x80004004",
+    "seconds": 0.1
+   }
+  ],
   "final": {
    "name": "AMDGPUExecutionProvider",
    "version": "",
@@ -85,9 +97,12 @@
   }
  },
  "outcome": "EP_LIBRARY_NOT_AVAILABLE",
- "log": [],
+ "log": [
+  "[2026-11-16T15:12:52Z] WinMLEpEnsureReady attempt 1 for AMDGPUExecutionProvider",
+  "[2026-11-16T15:17:00Z] WinMLEpEnsureReady attempt 2 for AMDGPUExecutionProvider"
+ ],
  "finished": {
-  "utc": "2026-11-16T15:10:42Z",
-  "local": "2026-11-16T23:10:42+08:00"
+  "utc": "2026-11-16T15:17:00Z",
+  "local": "2026-11-16T23:17:00+08:00"
  }
 }

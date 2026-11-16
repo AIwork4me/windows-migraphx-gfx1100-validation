@@ -8,7 +8,7 @@ resume logic re-runs PENDING/RUNNING(stale) cases only, never terminal ones.
 from __future__ import annotations
 import json, os, tempfile, datetime, threading
 
-_LOCK = threading.Lock()
+_LOCK = threading.RLock()  # reentrant: upsert_case holds it while calling load_ledger
 
 def _now() -> str:
     return datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")

@@ -240,7 +240,6 @@ def main():
                 # GPU session via plugin device API
                 so = ort.SessionOptions()
                 so.log_severity_level = 3
-                so.enable_profiling_events = True
                 try:
                     so.add_provider_for_devices(["GPU"], ep_name)
                     add_prov_err = None
@@ -250,6 +249,7 @@ def main():
                         so.add_provider_for_devices(["GPU"], ep_name, {})
                     except Exception:
                         pass
+                so.enable_profiling = True
                 sess = ort.InferenceSession(path, sess_options=so,
                                             providers=["CPUExecutionProvider"])
                 provs = list(sess.get_providers())
@@ -290,4 +290,6 @@ def main():
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    rc = main()
+    sys.stdout.flush(); sys.stderr.flush()
+    os._exit(rc if isinstance(rc, int) else 0)  # hard exit: skip interpreter shutdown (WinML/ORT leave non-daemon threads)

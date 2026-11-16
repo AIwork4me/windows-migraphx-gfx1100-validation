@@ -1,0 +1,492 @@
+{
+ "identity_add": {
+  "sha256": "106337f2f7a47d743c29328b263eb931a2d5f9cc2c600343cfec12399698639b",
+  "desc": "Y=X+C",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     8
+    ]
+   ]
+  ]
+ },
+ "matmul": {
+  "sha256": "6a3e489fd8b123e431e50237a6fc6854ba9f7364a894c8225b5e2f57ab21bcdb",
+  "desc": "Y=X@W",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     64
+    ]
+   ]
+  ]
+ },
+ "conv_relu": {
+  "sha256": "980a80da23d18eb3a263ee3b75420e0ae29f790ff1a5d897d8862732b23ef151",
+  "desc": "Conv+Relu 3ch",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     3,
+     32,
+     32
+    ]
+   ]
+  ]
+ },
+ "softmax": {
+  "sha256": "51219f9f2a58371f962ca985c6edb4de95f0beb233d819c29f4f07441af0d9e2",
+  "desc": "Softmax axis=-1",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     16
+    ]
+   ]
+  ]
+ },
+ "reshape_transpose": {
+  "sha256": "688d540e6f8cc49889d75a32bf42ab110bbea3b43b08595e4e353dccd52b9c15",
+  "desc": "Transpose+Reshape",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     8,
+     4
+    ]
+   ]
+  ]
+ },
+ "two_out_same_shape": {
+  "sha256": "d089bf73ffdd7ff3cd91ec77c23acb10390f2dc6379da8bc549b42584166b2ce",
+  "desc": "2 outputs same shape, offsets +1/+10 (swap detector)",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     8
+    ]
+   ]
+  ]
+ },
+ "nine_out": {
+  "sha256": "dc0cb1748a12bfecd30b0385d8e5ddd62c3a0622687d9e1d66c7c62ddd21eaa4",
+  "desc": "9 outputs, offsets +1..+9 (#150 probe)",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     8
+    ]
+   ]
+  ]
+ },
+ "two_out_diff_shape": {
+  "sha256": "b4cd7e90aa77209a0935f0ee16f208134034c90580a45df9473519e2cfef58ea",
+  "desc": "2 outputs different shapes",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     64
+    ]
+   ]
+  ]
+ },
+ "relu": {
+  "sha256": "65dc8746340dd11f748cc67ce6897a2582130cfa0e98a5ff6d4b0dc99bcbdf6c",
+  "desc": "Relu",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     16
+    ]
+   ]
+  ]
+ },
+ "sigmoid": {
+  "sha256": "ee76b349c16f938d0b5477ae9334c1615ce38f8dcae76a527ba206ffbd13e7aa",
+  "desc": "Sigmoid",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     16
+    ]
+   ]
+  ]
+ },
+ "tanh": {
+  "sha256": "901e64b8493b5764936ad281d979836e33afc9d371f52128e6e6c5fef8ab2222",
+  "desc": "Tanh",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     16
+    ]
+   ]
+  ]
+ },
+ "sqrt": {
+  "sha256": "03af80c5c1e372dbca36aa04efd2f8f54fb678a3b669e7569f373922c902132d",
+  "desc": "Sqrt",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     16
+    ]
+   ]
+  ]
+ },
+ "exp": {
+  "sha256": "d0cbf40f4becf79fe856ce498b5fcc9083400098d75fc9039533a9a69b9acf7f",
+  "desc": "Exp",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     16
+    ]
+   ]
+  ]
+ },
+ "erf": {
+  "sha256": "25cc35f5c6d1f748a4882d5fc31ec473cfa94a25c4290090c5380756538c558f",
+  "desc": "Erf",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     16
+    ]
+   ]
+  ]
+ },
+ "neg": {
+  "sha256": "0429a600089e2b1b46f09138e0e744492baa37cf43f94ff3eb34c4b1d3717e59",
+  "desc": "Neg",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     16
+    ]
+   ]
+  ]
+ },
+ "abs": {
+  "sha256": "5b3a98a8ed3d58057caaa18121bacde3f927c079238af1c1c2723ac52768e02a",
+  "desc": "Abs",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     16
+    ]
+   ]
+  ]
+ },
+ "floor": {
+  "sha256": "af325264353b2e3d386030a240556bd48fd83ca00acdbc8c7c3b4e56d4d11f85",
+  "desc": "Floor",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     16
+    ]
+   ]
+  ]
+ },
+ "log": {
+  "sha256": "895c143754bd97284311aacc189a23e01fda5abe10a5a94d85a378f54e4727fb",
+  "desc": "Log",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     16
+    ]
+   ]
+  ]
+ },
+ "sin": {
+  "sha256": "9c3041cf9a365d89c4f745450adf749ced49398eb36f6ce4a7fa567a6b53d8e1",
+  "desc": "Sin",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     16
+    ]
+   ]
+  ]
+ },
+ "cos": {
+  "sha256": "1bb1376f735d2568e1b6210637796c586b00e4cb514acdd51f502fb1d09c5d4b",
+  "desc": "Cos",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     16
+    ]
+   ]
+  ]
+ },
+ "reduce_mean": {
+  "sha256": "61a97684ca6ca2d122375009ee3a9fe6aeafa1562be5cebb480138d0f203160f",
+  "desc": "ReduceMean",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     16,
+     4
+    ]
+   ]
+  ]
+ },
+ "reduce_max": {
+  "sha256": "f88d55016afa853792902fe14a2b8bf978219116f1cfba4f5ec052934ffd88a7",
+  "desc": "ReduceMax",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     16,
+     4
+    ]
+   ]
+  ]
+ },
+ "reduce_sum": {
+  "sha256": "057f0b4e54107eeb4bae4fb6a84852109f452b06ad4162b4eaf6f7efe4597a06",
+  "desc": "ReduceSum",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     16,
+     4
+    ]
+   ]
+  ]
+ },
+ "argmax": {
+  "sha256": "29f67df3c515e3d6c8d81d272e76a27ee0fbc2d4ca75ed041f0dacc2f5c6134b",
+  "desc": "ArgMax",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     16,
+     4
+    ]
+   ]
+  ]
+ },
+ "squeeze": {
+  "sha256": "70da8b6254483ee8be50c05d9e98257acc17f181407796b71cf981e461eda82e",
+  "desc": "Squeeze",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     16,
+     1
+    ]
+   ]
+  ]
+ },
+ "gemm": {
+  "sha256": "4dff1fb6d86ef99753d65a32893f43bd000a8f18dccdf54ad00d85fd9a68a7a5",
+  "desc": "Gemm",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     32
+    ]
+   ]
+  ]
+ },
+ "layernorm": {
+  "sha256": "0e0c74edf248324a154a90b06765e29ee7197f0fa041e4846d8eddd8d5568857",
+  "desc": "LayerNorm composite",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     64
+    ]
+   ]
+  ]
+ },
+ "depthwise_conv": {
+  "sha256": "a5e82560a8fb448e08c30496b03b6e99f4153bce50c8a8038f97b204ee318546",
+  "desc": "DepthwiseConv+Relu pad=1",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     4,
+     16,
+     16
+    ]
+   ]
+  ]
+ },
+ "batchnorm": {
+  "sha256": "a0c84415ef35733f40babff1a30c8f19877c5f94f8561766304a6a1304c8de1f",
+  "desc": "BatchNorm inference",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     8,
+     8,
+     8
+    ]
+   ]
+  ]
+ },
+ "topk_gather_concat": {
+  "sha256": "3144b62d733c1f59f3c794133a019098fd37eed6c40d526da61df0777a5795ac",
+  "desc": "TopK+Gather+Concat",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     32
+    ]
+   ]
+  ]
+ },
+ "resize_nearest": {
+  "sha256": "a00e47b8212453a795ae710b6ca3ca6caae9769f3e0351cc75944b7ce00507e7",
+  "desc": "Resize nearest 2x down",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     4,
+     16,
+     16
+    ]
+   ]
+  ]
+ },
+ "split2": {
+  "sha256": "cf9c053bdce5e07bde62291e2b346e2ea10a8b6142ff9c22fcfa466757894981",
+  "desc": "Split into 2 outputs",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     16
+    ]
+   ]
+  ]
+ },
+ "pad": {
+  "sha256": "0b2e14bdcb5534252cb4c003df33652c1ba88b37d855e6c438766385fff01bfd",
+  "desc": "Pad constant",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     8
+    ]
+   ]
+  ]
+ },
+ "cast_f32_i32": {
+  "sha256": "884439701315c1c81769592a6d5a37ee314785030687f04bab15b3bc4bc08a88",
+  "desc": "Cast float32->int32",
+  "inputs": [
+   [
+    "X",
+    "float32",
+    [
+     "b",
+     8
+    ]
+   ]
+  ]
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "mission": "WIN-MIGRAPHX-GFX1100",
+ "case_id": "m4_feasibility_run",
+ "phase": "m4",
+ "host": "DESKTOP-S6VG7J7",
+ "os": "Windows-11-10.0.26300-SP0",
+ "python": "3.12.16 (main, Oct 26 2026, 14:10:56) [MSC v.1944 64 bit (AMD64)]",
+ "argv": [
+  "runner/phases/m4_build_feasibility.py",
+  "--repo",
+  "."
+ ],
+ "cwd": "C:\\AIwork4me\\windows-migraphx-gfx1100-validation",
+ "run_id": "d1e77cc60191",
+ "started": {
+  "utc": "2026-11-16T15:21:20Z",
+  "local": "2026-11-16T23:21:20+08:00"
+ },
+ "seed_policy": "numpy default_rng(seed=1100) unless stated",
+ "toolchain": {
+  "cl": "NOT_FOUND",
+  "cmake": "NOT_FOUND",
+  "ninja": "NOT_FOUND",
+  "hipcc": "NOT_FOUND",
+  "hipconfig": "NOT_FOUND",
+  "msbuild": "NOT_FOUND",
+  "git": "C:\\Program Files\\Git\\ucrt64\\bin\\git.EXE",
+  "python": "C:\\Users\\Rocm\\AppData\\Local\\Microsoft\\WindowsApps\\python.EXE"
+ },
+ "component_checks": {
+  "VS2022_dir": false,
+  "vswhere": false,
+  "windows_sdk": false,
+  "hip_sdk_dir": false,
+  "amdhip64_lib": "NOT_FOUND",
+  "migraphx_cmake_config": "NOT_FOUND"
+ },
+ "disk_free_gb": 568.2,
+ "upstreams": {
+  "onnxruntime-ep-amdgpu": {
+   "clone": "OK",
+   "head": "77bba054fbaa31091f4d01d5dda490b5caae1150",
+   "url": "https://github.com/onnxruntime/onnxruntime-ep-amdgpu"
+  },
+  "AMDMIGraphX": {
+   "clone": "OK",
+   "head": "d34c354238bd3f4cdd094d994564d58d9f823581",
+   "url": "https://github.com/ROCm/AMDMIGraphX"
+  },
+  "onnxruntime": {
+   "clone": "OK",
+   "head": "368a6729835340f7ee7defbd52ee7ec95883d3dd",
+   "url": "https://github.com/microsoft/onnxruntime"
+  }
+ },
+ "build_bat_exists": true,
+ "build_requirements_seen": {
+  "find_package_hip": false,
+  "find_package_migraphx": false
+ },
+ "verdict": "BLOCKED_DEPENDENCY",
+ "first_blockers": [
+  "MSVC/VS2022 absent: cl.exe not found, no VS2022 install, Build Tools install requires admin elevation (unauthorized)",
+  "CMake not in PATH (winget per-user install possible but MSVC remains the primary blocker)",
+  "ROCm/HIP SDK for Windows not installed (no C:\\Program Files\\AMD\\ROCm; HIP SDK installer requires admin elevation; System32 amdhip64_6.dll is driver-shipped runtime only, no headers/import lib)"
+ ],
+ "finished": {
+  "utc": "2026-11-16T15:22:58Z",
+  "local": "2026-11-16T23:22:58+08:00"
+ }
+}

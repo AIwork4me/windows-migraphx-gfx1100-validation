@@ -1,24 +1,3328 @@
 {
-  "mission": "WIN-MIGRAPHX-GFX1100",
-  "created_utc": null,
-  "updated_utc": null,
-  "deadline_local": "2026-11-17T08:30:00+08:00",
-  "machine": {
-    "os": "Windows 11 Pro 10.0.26300",
-    "cpu": "i7-13700K 24T",
-    "ram_gb": 31.8,
-    "gpu": "AMD Radeon RX 7900 XTX (PCI VEN_1002 DEV_744C = gfx1100)",
-    "gpu_driver": "32.0.21030.2001 (2025-09-25)",
-    "gpu_count": 3 adapters (7900XTX + Intel UHD770 + virtual)"
+ "cases": [
+  {
+   "evidence": "reports/m0/m0_AMDGPUExecutionProvider_run.json",
+   "id": "m0/AMDGPUExecutionProvider/catalog",
+   "phase": "m0",
+   "reason": "WinMLEpEnsureReady failed: ['0x800705B4', '0x80004004']; AppX staging 0x80073CF8 (WU content download)",
+   "status": "BLOCKED_DEPENDENCY"
   },
-  "phases": {
-    "preflight": {"status": "PASS", "cases": ["collect_env.ps1 run 2026-11-16"]},
-    "m0": {"status": "PENDING"},
-    "m1": {"status": "PENDING"},
-    "m2": {"status": "PENDING"},
-    "m3": {"status": "PENDING"},
-    "m4": {"status": "PENDING"},
-    "m5": {"status": "PENDING"}
+  {
+   "blockers": [
+    "MSVC/VS2022 absent: cl.exe not found, no VS2022 install, Build Tools install requires admin elevation (unauthorized)",
+    "CMake not in PATH (winget per-user install possible but MSVC remains the primary blocker)",
+    "ROCm/HIP SDK for Windows not installed (no C:\\Program Files\\AMD\\ROCm; HIP SDK installer requires admin elevation; System32 amdhip64_6.dll is driver-shipped runtime only, no headers/import lib)"
+   ],
+   "evidence": "reports/m4/m4_feasibility_run.json",
+   "id": "m4/feasibility",
+   "phase": "m4",
+   "status": "BLOCKED_DEPENDENCY"
   },
-  "cases": []
+  {
+   "detail": {
+    "exception": "AttributeError(\"'InferenceSession' object has no attribute 'enable_profiling'\")",
+    "get_providers": [
+     "CPUExecutionProvider"
+    ],
+    "verdict": "EXCEPTION_ON_SESSION_CREATE"
+   },
+   "evidence": "reports/m5\\probe151_AMDGPUExecutionProvider.json",
+   "id": "m5/probe151/AMDGPUExecutionProvider",
+   "phase": "m5",
+   "status": "INCONCLUSIVE"
+  },
+  {
+   "id": "probe-test",
+   "phase": "m1"
+  },
+  {
+   "history": [
+    {
+     "at": "2026-11-16T16:31:06Z",
+     "status": "PASS"
+    }
+   ],
+   "id": "m1/dbg/lockfix",
+   "phase": "m1",
+   "status": "PASS"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/abs/b1",
+   "model": "abs.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/abs/b2",
+   "model": "abs.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/argmax/b1",
+   "model": "argmax.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/argmax/b2",
+   "model": "argmax.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/batchnorm/b1",
+   "model": "batchnorm.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/batchnorm/b2",
+   "model": "batchnorm.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/cast_f32_i32/b1",
+   "model": "cast_f32_i32.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/cast_f32_i32/b2",
+   "model": "cast_f32_i32.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/conv_relu/b1",
+   "model": "conv_relu.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/conv_relu/b2",
+   "model": "conv_relu.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/cos/b1",
+   "model": "cos.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/cos/b2",
+   "model": "cos.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/depthwise_conv/b1",
+   "model": "depthwise_conv.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/depthwise_conv/b2",
+   "model": "depthwise_conv.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/erf/b1",
+   "model": "erf.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/erf/b2",
+   "model": "erf.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/exp/b1",
+   "model": "exp.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/exp/b2",
+   "model": "exp.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/floor/b1",
+   "model": "floor.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/floor/b2",
+   "model": "floor.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/gemm/b1",
+   "model": "gemm.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/gemm/b2",
+   "model": "gemm.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/identity_add/b1",
+   "model": "identity_add.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/identity_add/b2",
+   "model": "identity_add.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/layernorm/b1",
+   "model": "layernorm.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/layernorm/b2",
+   "model": "layernorm.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/log/b1",
+   "model": "log.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/log/b2",
+   "model": "log.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/matmul/b1",
+   "model": "matmul.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/matmul/b2",
+   "model": "matmul.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/neg/b1",
+   "model": "neg.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/neg/b2",
+   "model": "neg.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/nine_out/b1",
+   "model": "nine_out.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/nine_out/b2",
+   "model": "nine_out.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/pad/b1",
+   "model": "pad.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/pad/b2",
+   "model": "pad.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/reduce_max/b1",
+   "model": "reduce_max.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/reduce_max/b2",
+   "model": "reduce_max.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/reduce_mean/b1",
+   "model": "reduce_mean.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/reduce_mean/b2",
+   "model": "reduce_mean.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/reduce_sum/b1",
+   "model": "reduce_sum.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:15Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/reduce_sum/b2",
+   "model": "reduce_sum.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/relu/b1",
+   "model": "relu.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/relu/b2",
+   "model": "relu.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/reshape_transpose/b1",
+   "model": "reshape_transpose.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/reshape_transpose/b2",
+   "model": "reshape_transpose.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/resize_nearest/b1",
+   "model": "resize_nearest.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/resize_nearest/b2",
+   "model": "resize_nearest.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/sigmoid/b1",
+   "model": "sigmoid.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/sigmoid/b2",
+   "model": "sigmoid.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/sin/b1",
+   "model": "sin.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/sin/b2",
+   "model": "sin.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/softmax/b1",
+   "model": "softmax.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/softmax/b2",
+   "model": "softmax.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/split2/b1",
+   "model": "split2.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/split2/b2",
+   "model": "split2.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/sqrt/b1",
+   "model": "sqrt.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/sqrt/b2",
+   "model": "sqrt.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/squeeze/b1",
+   "model": "squeeze.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/squeeze/b2",
+   "model": "squeeze.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/tanh/b1",
+   "model": "tanh.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/tanh/b2",
+   "model": "tanh.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/topk_gather_concat/b1",
+   "model": "topk_gather_concat.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/topk_gather_concat/b2",
+   "model": "topk_gather_concat.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/two_out_diff_shape/b1",
+   "model": "two_out_diff_shape.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/two_out_diff_shape/b2",
+   "model": "two_out_diff_shape.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/two_out_same_shape/b1",
+   "model": "two_out_same_shape.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "AMDGPUExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/AMDGPUExecutionProvider/two_out_same_shape/b2",
+   "model": "two_out_same_shape.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/abs/b1",
+   "model": "abs.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/abs/b2",
+   "model": "abs.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/argmax/b1",
+   "model": "argmax.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/argmax/b2",
+   "model": "argmax.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/batchnorm/b1",
+   "model": "batchnorm.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/batchnorm/b2",
+   "model": "batchnorm.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/cast_f32_i32/b1",
+   "model": "cast_f32_i32.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/cast_f32_i32/b2",
+   "model": "cast_f32_i32.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/conv_relu/b1",
+   "model": "conv_relu.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/conv_relu/b2",
+   "model": "conv_relu.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/cos/b1",
+   "model": "cos.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/cos/b2",
+   "model": "cos.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/depthwise_conv/b1",
+   "model": "depthwise_conv.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/depthwise_conv/b2",
+   "model": "depthwise_conv.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/erf/b1",
+   "model": "erf.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/erf/b2",
+   "model": "erf.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/exp/b1",
+   "model": "exp.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/exp/b2",
+   "model": "exp.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/floor/b1",
+   "model": "floor.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/floor/b2",
+   "model": "floor.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/gemm/b1",
+   "model": "gemm.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/gemm/b2",
+   "model": "gemm.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/identity_add/b1",
+   "model": "identity_add.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/identity_add/b2",
+   "model": "identity_add.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/layernorm/b1",
+   "model": "layernorm.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/layernorm/b2",
+   "model": "layernorm.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/log/b1",
+   "model": "log.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/log/b2",
+   "model": "log.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/matmul/b1",
+   "model": "matmul.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/matmul/b2",
+   "model": "matmul.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/neg/b1",
+   "model": "neg.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:16Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/neg/b2",
+   "model": "neg.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/nine_out/b1",
+   "model": "nine_out.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/nine_out/b2",
+   "model": "nine_out.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/pad/b1",
+   "model": "pad.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/pad/b2",
+   "model": "pad.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/reduce_max/b1",
+   "model": "reduce_max.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/reduce_max/b2",
+   "model": "reduce_max.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/reduce_mean/b1",
+   "model": "reduce_mean.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/reduce_mean/b2",
+   "model": "reduce_mean.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/reduce_sum/b1",
+   "model": "reduce_sum.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/reduce_sum/b2",
+   "model": "reduce_sum.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/relu/b1",
+   "model": "relu.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/relu/b2",
+   "model": "relu.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/reshape_transpose/b1",
+   "model": "reshape_transpose.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/reshape_transpose/b2",
+   "model": "reshape_transpose.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/resize_nearest/b1",
+   "model": "resize_nearest.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/resize_nearest/b2",
+   "model": "resize_nearest.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/sigmoid/b1",
+   "model": "sigmoid.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/sigmoid/b2",
+   "model": "sigmoid.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/sin/b1",
+   "model": "sin.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/sin/b2",
+   "model": "sin.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/softmax/b1",
+   "model": "softmax.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/softmax/b2",
+   "model": "softmax.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/split2/b1",
+   "model": "split2.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/split2/b2",
+   "model": "split2.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/sqrt/b1",
+   "model": "sqrt.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/sqrt/b2",
+   "model": "sqrt.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/squeeze/b1",
+   "model": "squeeze.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/squeeze/b2",
+   "model": "squeeze.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/tanh/b1",
+   "model": "tanh.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/tanh/b2",
+   "model": "tanh.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/topk_gather_concat/b1",
+   "model": "topk_gather_concat.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/topk_gather_concat/b2",
+   "model": "topk_gather_concat.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/two_out_diff_shape/b1",
+   "model": "two_out_diff_shape.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/two_out_diff_shape/b2",
+   "model": "two_out_diff_shape.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/two_out_same_shape/b1",
+   "model": "two_out_same_shape.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 2,
+   "ep": "MIGraphXExecutionProvider",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
+   "id": "m1/MIGraphXExecutionProvider/two_out_same_shape/b2",
+   "model": "two_out_same_shape.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+   "status": "BLOCKED_DEPENDENCY"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC77730>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/abs/b1",
+   "model": "abs.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC745F0>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/abs/b2",
+   "model": "abs.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 88, in run_case\n    sess_cpu = ort.InferenceSession(model_path, sess_options=so_cpu,\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py\", line 683, in __init__\n    self._create_inference_session(providers, provider_options, disabled_optimizers)\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py\", line 778, in _create_inference_session\n    sess = C.InferenceSession(session_options, self._model_path, True, self._read_config_from_model)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nonnxruntime.capi.onnxruntime_pybind11_state.Fail: [ONNXRuntimeError] : 1 : FAIL : Load model from C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\fixtures\\argmax.onnx failed:Type Error: Type (tensor(float)) of output arg (Y) of node () does not match expected type (tensor(int64)).\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/argmax/b1",
+   "model": "argmax.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 88, in run_case\n    sess_cpu = ort.InferenceSession(model_path, sess_options=so_cpu,\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py\", line 683, in __init__\n    self._create_inference_session(providers, provider_options, disabled_optimizers)\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py\", line 778, in _create_inference_session\n    sess = C.InferenceSession(session_options, self._model_path, True, self._read_config_from_model)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nonnxruntime.capi.onnxruntime_pybind11_state.Fail: [ONNXRuntimeError] : 1 : FAIL : Load model from C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\fixtures\\argmax.onnx failed:Type Error: Type (tensor(float)) of output arg (Y) of node () does not match expected type (tensor(int64)).\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/argmax/b2",
+   "model": "argmax.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC107F0>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/batchnorm/b1",
+   "model": "batchnorm.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC11A70>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/batchnorm/b2",
+   "model": "batchnorm.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FBBE630>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/cast_f32_i32/b1",
+   "model": "cast_f32_i32.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FBEFE30>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/cast_f32_i32/b2",
+   "model": "cast_f32_i32.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FAB92B0>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/conv_relu/b1",
+   "model": "conv_relu.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC2C8F0>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/conv_relu/b2",
+   "model": "conv_relu.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC2F0F0>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/cos/b1",
+   "model": "cos.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC2DC30>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/cos/b2",
+   "model": "cos.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC2DF70>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/depthwise_conv/b1",
+   "model": "depthwise_conv.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC2C230>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/depthwise_conv/b2",
+   "model": "depthwise_conv.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC5A630>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/erf/b1",
+   "model": "erf.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC5ADF0>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/erf/b2",
+   "model": "erf.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FD58CF0>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/exp/b1",
+   "model": "exp.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA528077F0>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/exp/b2",
+   "model": "exp.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC05970>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:17Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/floor/b1",
+   "model": "floor.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC2C230>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/floor/b2",
+   "model": "floor.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC2E4F0>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/gemm/b1",
+   "model": "gemm.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC2F770>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/gemm/b2",
+   "model": "gemm.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC2D270>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/identity_add/b1",
+   "model": "identity_add.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC06630>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/identity_add/b2",
+   "model": "identity_add.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC06C70>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/layernorm/b1",
+   "model": "layernorm.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC77AF0>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/layernorm/b2",
+   "model": "layernorm.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FA2E7F0>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/log/b1",
+   "model": "log.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA54C64170>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/log/b2",
+   "model": "log.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC12A30>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/matmul/b1",
+   "model": "matmul.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA54C64170>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/matmul/b2",
+   "model": "matmul.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FBEED70>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/neg/b1",
+   "model": "neg.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7F9F7830>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/neg/b2",
+   "model": "neg.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FAC77F0>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/nine_out/b1",
+   "model": "nine_out.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FD59BB0>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/nine_out/b2",
+   "model": "nine_out.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 88, in run_case\n    sess_cpu = ort.InferenceSession(model_path, sess_options=so_cpu,\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py\", line 683, in __init__\n    self._create_inference_session(providers, provider_options, disabled_optimizers)\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py\", line 778, in _create_inference_session\n    sess = C.InferenceSession(session_options, self._model_path, True, self._read_config_from_model)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nonnxruntime.capi.onnxruntime_pybind11_state.Fail: [ONNXRuntimeError] : 1 : FAIL : Load model from C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\fixtures\\pad.onnx failed:Node () Op (Pad) [ShapeInferenceError] Pads has incorrect number of values\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/pad/b1",
+   "model": "pad.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 88, in run_case\n    sess_cpu = ort.InferenceSession(model_path, sess_options=so_cpu,\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py\", line 683, in __init__\n    self._create_inference_session(providers, provider_options, disabled_optimizers)\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py\", line 778, in _create_inference_session\n    sess = C.InferenceSession(session_options, self._model_path, True, self._read_config_from_model)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nonnxruntime.capi.onnxruntime_pybind11_state.Fail: [ONNXRuntimeError] : 1 : FAIL : Load model from C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\fixtures\\pad.onnx failed:Node () Op (Pad) [ShapeInferenceError] Pads has incorrect number of values\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/pad/b2",
+   "model": "pad.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FBD8A30>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/reduce_max/b1",
+   "model": "reduce_max.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC2E570>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/reduce_max/b2",
+   "model": "reduce_max.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC2E5F0>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/reduce_mean/b1",
+   "model": "reduce_mean.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC2E5B0>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/reduce_mean/b2",
+   "model": "reduce_mean.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 88, in run_case\n    sess_cpu = ort.InferenceSession(model_path, sess_options=so_cpu,\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py\", line 683, in __init__\n    self._create_inference_session(providers, provider_options, disabled_optimizers)\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py\", line 778, in _create_inference_session\n    sess = C.InferenceSession(session_options, self._model_path, True, self._read_config_from_model)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nonnxruntime.capi.onnxruntime_pybind11_state.InvalidGraph: [ONNXRuntimeError] : 10 : INVALID_GRAPH : Load model from C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\fixtures\\reduce_sum.onnx failed:This is an invalid model. In Node, (\"\", ReduceSum, \"\", -1) : (\"X\": tensor(float),) -> (\"Y\": tensor(float),) , Error Unrecognized attribute: axes for operator ReduceSum\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/reduce_sum/b1",
+   "model": "reduce_sum.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 88, in run_case\n    sess_cpu = ort.InferenceSession(model_path, sess_options=so_cpu,\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py\", line 683, in __init__\n    self._create_inference_session(providers, provider_options, disabled_optimizers)\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py\", line 778, in _create_inference_session\n    sess = C.InferenceSession(session_options, self._model_path, True, self._read_config_from_model)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nonnxruntime.capi.onnxruntime_pybind11_state.InvalidGraph: [ONNXRuntimeError] : 10 : INVALID_GRAPH : Load model from C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\fixtures\\reduce_sum.onnx failed:This is an invalid model. In Node, (\"\", ReduceSum, \"\", -1) : (\"X\": tensor(float),) -> (\"Y\": tensor(float),) , Error Unrecognized attribute: axes for operator ReduceSum\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/reduce_sum/b2",
+   "model": "reduce_sum.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC5BDB0>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/relu/b1",
+   "model": "relu.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC58030>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/relu/b2",
+   "model": "relu.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC75170>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/reshape_transpose/b1",
+   "model": "reshape_transpose.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC75DF0>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/reshape_transpose/b2",
+   "model": "reshape_transpose.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC769F0>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/resize_nearest/b1",
+   "model": "resize_nearest.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC77430>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/resize_nearest/b2",
+   "model": "resize_nearest.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC1B6B0>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/sigmoid/b1",
+   "model": "sigmoid.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC2C8B0>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/sigmoid/b2",
+   "model": "sigmoid.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC18430>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/sin/b1",
+   "model": "sin.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC1B670>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/sin/b2",
+   "model": "sin.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC1A9F0>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/softmax/b1",
+   "model": "softmax.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FA49DB0>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/softmax/b2",
+   "model": "softmax.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 88, in run_case\n    sess_cpu = ort.InferenceSession(model_path, sess_options=so_cpu,\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py\", line 683, in __init__\n    self._create_inference_session(providers, provider_options, disabled_optimizers)\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py\", line 778, in _create_inference_session\n    sess = C.InferenceSession(session_options, self._model_path, True, self._read_config_from_model)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nonnxruntime.capi.onnxruntime_pybind11_state.InvalidGraph: [ONNXRuntimeError] : 10 : INVALID_GRAPH : Load model from C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\fixtures\\split2.onnx failed:This is an invalid model. In Node, (\"\", Split, \"\", -1) : (\"X\": tensor(float),) -> (\"A\": tensor(float),\"B\": tensor(float),) , Error Unrecognized attribute: num_outputs for operator Split\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/split2/b1",
+   "model": "split2.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 88, in run_case\n    sess_cpu = ort.InferenceSession(model_path, sess_options=so_cpu,\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py\", line 683, in __init__\n    self._create_inference_session(providers, provider_options, disabled_optimizers)\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py\", line 778, in _create_inference_session\n    sess = C.InferenceSession(session_options, self._model_path, True, self._read_config_from_model)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nonnxruntime.capi.onnxruntime_pybind11_state.InvalidGraph: [ONNXRuntimeError] : 10 : INVALID_GRAPH : Load model from C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\fixtures\\split2.onnx failed:This is an invalid model. In Node, (\"\", Split, \"\", -1) : (\"X\": tensor(float),) -> (\"A\": tensor(float),\"B\": tensor(float),) , Error Unrecognized attribute: num_outputs for operator Split\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/split2/b2",
+   "model": "split2.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7F9AEEB0>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/sqrt/b1",
+   "model": "sqrt.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FD5A4F0>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/sqrt/b2",
+   "model": "sqrt.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 88, in run_case\n    sess_cpu = ort.InferenceSession(model_path, sess_options=so_cpu,\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py\", line 683, in __init__\n    self._create_inference_session(providers, provider_options, disabled_optimizers)\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py\", line 778, in _create_inference_session\n    sess = C.InferenceSession(session_options, self._model_path, True, self._read_config_from_model)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nonnxruntime.capi.onnxruntime_pybind11_state.InvalidGraph: [ONNXRuntimeError] : 10 : INVALID_GRAPH : Load model from C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\fixtures\\squeeze.onnx failed:This is an invalid model. In Node, (\"\", Squeeze, \"\", -1) : (\"X\": tensor(float),) -> (\"Y\": tensor(float),) , Error Unrecognized attribute: axes for operator Squeeze\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/squeeze/b1",
+   "model": "squeeze.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 88, in run_case\n    sess_cpu = ort.InferenceSession(model_path, sess_options=so_cpu,\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py\", line 683, in __init__\n    self._create_inference_session(providers, provider_options, disabled_optimizers)\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py\", line 778, in _create_inference_session\n    sess = C.InferenceSession(session_options, self._model_path, True, self._read_config_from_model)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nonnxruntime.capi.onnxruntime_pybind11_state.InvalidGraph: [ONNXRuntimeError] : 10 : INVALID_GRAPH : Load model from C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\fixtures\\squeeze.onnx failed:This is an invalid model. In Node, (\"\", Squeeze, \"\", -1) : (\"X\": tensor(float),) -> (\"Y\": tensor(float),) , Error Unrecognized attribute: axes for operator Squeeze\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/squeeze/b2",
+   "model": "squeeze.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC04570>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/tanh/b1",
+   "model": "tanh.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC05370>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/tanh/b2",
+   "model": "tanh.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 88, in run_case\n    sess_cpu = ort.InferenceSession(model_path, sess_options=so_cpu,\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py\", line 683, in __init__\n    self._create_inference_session(providers, provider_options, disabled_optimizers)\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py\", line 778, in _create_inference_session\n    sess = C.InferenceSession(session_options, self._model_path, True, self._read_config_from_model)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nonnxruntime.capi.onnxruntime_pybind11_state.Fail: [ONNXRuntimeError] : 1 : FAIL : Load model from C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\fixtures\\topk_gather_concat.onnx failed:Node () Op (TopK) [ShapeInferenceError] K input must be a one-dimensional tensor of size 1.\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/topk_gather_concat/b1",
+   "model": "topk_gather_concat.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 88, in run_case\n    sess_cpu = ort.InferenceSession(model_path, sess_options=so_cpu,\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py\", line 683, in __init__\n    self._create_inference_session(providers, provider_options, disabled_optimizers)\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py\", line 778, in _create_inference_session\n    sess = C.InferenceSession(session_options, self._model_path, True, self._read_config_from_model)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nonnxruntime.capi.onnxruntime_pybind11_state.Fail: [ONNXRuntimeError] : 1 : FAIL : Load model from C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\fixtures\\topk_gather_concat.onnx failed:Node () Op (TopK) [ShapeInferenceError] K input must be a one-dimensional tensor of size 1.\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/topk_gather_concat/b2",
+   "model": "topk_gather_concat.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC04EB0>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/two_out_diff_shape/b1",
+   "model": "two_out_diff_shape.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC052F0>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/two_out_diff_shape/b2",
+   "model": "two_out_diff_shape.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 1,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC12C70>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/two_out_same_shape/b1",
+   "model": "two_out_same_shape.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  },
+  {
+   "batch": 2,
+   "ep": "DmlExecutionProvider",
+   "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 102, in run_case\n    so.add_provider_for_devices([\"GPU\"], ep_name)\nTypeError: add_provider_for_devices(): incompatible function arguments. The following argument types are supported:\n    1. (self: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg0: collections.abc.Sequence[onnxruntime.capi.onnxruntime_pybind11_state.OrtEpDevice], arg1: collections.abc.Mapping[str, str]) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002BA7FC12230>, ['GPU'], 'DmlExecutionProvider'\n",
+   "history": [
+    {
+     "at": "2026-11-16T16:31:18Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "m1/DmlExecutionProvider/two_out_same_shape/b2",
+   "model": "two_out_same_shape.onnx",
+   "opt_level": "default",
+   "phase": "m1",
+   "status": "FAIL"
+  }
+ ],
+ "deadline_local": "2026-11-17T08:30:00+08:00",
+ "mission": "WIN-MIGRAPHX-GFX1100",
+ "note": "ledger rebuilt from immutable receipts after a hard-kill truncated the file; receipts are ground truth",
+ "phases": {
+  "m0": "RUNNING",
+  "m1": "PENDING",
+  "m2": "PENDING",
+  "m3": "PENDING",
+  "m4": "RUNNING",
+  "m5": "RUNNING"
+ },
+ "recovered_utc": "2026-11-17T00:20:00Z",
+ "supervisor_tasks": {},
+ "updated_utc": "2026-11-16T16:31:18Z"
 }

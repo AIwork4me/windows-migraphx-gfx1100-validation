@@ -1,0 +1,24 @@
+{
+  "mission": "WIN-MIGRAPHX-GFX1100",
+  "created_utc": null,
+  "updated_utc": null,
+  "deadline_local": "2026-11-17T08:30:00+08:00",
+  "machine": {
+    "os": "Windows 11 Pro 10.0.26300",
+    "cpu": "i7-13700K 24T",
+    "ram_gb": 31.8,
+    "gpu": "AMD Radeon RX 7900 XTX (PCI VEN_1002 DEV_744C = gfx1100)",
+    "gpu_driver": "32.0.21030.2001 (2025-09-25)",
+    "gpu_count": 3 adapters (7900XTX + Intel UHD770 + virtual)"
+  },
+  "phases": {
+    "preflight": {"status": "PASS", "cases": ["collect_env.ps1 run 2026-11-16"]},
+    "m0": {"status": "PENDING"},
+    "m1": {"status": "PENDING"},
+    "m2": {"status": "PENDING"},
+    "m3": {"status": "PENDING"},
+    "m4": {"status": "PENDING"},
+    "m5": {"status": "PENDING"}
+  },
+  "cases": []
+}

@@ -102,7 +102,7 @@ def build_models():
     C = numpy_helper.from_array(np.full((8,), 0.25, np.float32), "C")
     n = helper.make_node("Add", ["X", "C"], ["Y"])
     reg("identity_add",
-        helper.make_model(helper.make_graph([n], "g", [X], [Y], [C]), "identity_add"),
+        helper.make_model(helper.make_graph([n], "g", [X], [Y], [C])),
         [("X", np.float32, ("b", 8))], "Y=X+C")
 
     # matmul: Y = X(b,64) @ W(64,32)
@@ -112,7 +112,7 @@ def build_models():
     W = numpy_helper.from_array(rng.standard_normal((64, 32)).astype(np.float32) * 0.05, "W")
     n = helper.make_node("MatMul", ["X", "W"], ["Y"])
     reg("matmul",
-        helper.make_model(helper.make_graph([n], "g", [X], [Y], [W]), "matmul"),
+        helper.make_model(helper.make_graph([n], "g", [X], [Y], [W])),
         [("X", np.float32, ("b", 64))], "Y=X@W")
 
     # conv_relu: Conv(1,3,32,32)->Relu
@@ -123,7 +123,7 @@ def build_models():
     n1 = helper.make_node("Conv", ["X", "Wc"], ["T"])
     n2 = helper.make_node("Relu", ["T"], ["Y"])
     reg("conv_relu",
-        helper.make_model(helper.make_graph([n1, n2], "g", [X], [Y], [Wc]), "conv_relu"),
+        helper.make_model(helper.make_graph([n1, n2], "g", [X], [Y], [Wc])),
         [("X", np.float32, ("b", 3, 32, 32))], "Conv+Relu 3ch")
 
     # softmax over last dim
@@ -131,7 +131,7 @@ def build_models():
     Y = helper.make_tensor_value_info("Y", TensorProto.FLOAT, ["b", 16])
     n = helper.make_node("Softmax", ["X"], ["Y"], axis=-1)
     reg("softmax",
-        helper.make_model(helper.make_graph([n], "g", [X], [Y]), "softmax"),
+        helper.make_model(helper.make_graph([n], "g", [X], [Y])),
         [("X", np.float32, ("b", 16))], "Softmax axis=-1")
 
     # reshape_transpose: (b,8,4) -> transpose(0,2,1) -> reshape (b, 32)
@@ -142,7 +142,7 @@ def build_models():
     shp = numpy_helper.from_array(np.array([0, -1], np.int64), "shape")
     n2 = helper.make_node("Reshape", ["T", "shape"], ["Y"])
     reg("reshape_transpose",
-        helper.make_model(helper.make_graph([n1, n2], "g", [X], [Y], [shp]), "reshape_transpose"),
+        helper.make_model(helper.make_graph([n1, n2], "g", [X], [Y], [shp])),
         [("X", np.float32, ("b", 8, 4))], "Transpose+Reshape")
 
     # two outputs with SAME shape (swap detector): A = X+C1, B = X+C2  (C1=+1, C2=+10)
@@ -154,7 +154,7 @@ def build_models():
     n1 = helper.make_node("Add", ["X", "C1"], ["A"])
     n2 = helper.make_node("Add", ["X", "C2"], ["B"])
     reg("two_out_same_shape",
-        helper.make_model(helper.make_graph([n1, n2], "g", [X], [A, B], [C1, C2]), "two_out"),
+        helper.make_model(helper.make_graph([n1, n2], "g", [X], [A, B], [C1, C2])),
         [("X", np.float32, ("b", 8))], "2 outputs same shape, offsets +1/+10 (swap detector)")
 
     # nine outputs (SCRFD-like shape variety), distinct offsets 1..9
@@ -167,7 +167,7 @@ def build_models():
         inits.append(ci)
         nodes.append(helper.make_node("Add", ["X", f"C{i}"], [on]))
     reg("nine_out",
-        helper.make_model(helper.make_graph(nodes, "g", ins, outs, inits), "nine_out"),
+        helper.make_model(helper.make_graph(nodes, "g", ins, outs, inits)),
         [("X", np.float32, ("b", 8))], "9 outputs, offsets +1..+9 (#150 probe)")
 
     # mixed shapes multi-output: small + big
@@ -180,7 +180,7 @@ def build_models():
     n1 = helper.make_node("MatMul", ["X", "W1"], ["small"])
     n2 = helper.make_node("MatMul", ["X", "W2"], ["big"])
     reg("two_out_diff_shape",
-        helper.make_model(helper.make_graph([n1, n2], "g", [X], [Ys, Yb], [W1, W2]), "two_out_diff"),
+        helper.make_model(helper.make_graph([n1, n2], "g", [X], [Ys, Yb], [W1, W2])),
         [("X", np.float32, ("b", 64))], "2 outputs different shapes")
 
     # operator coverage set (M1)
@@ -189,7 +189,7 @@ def build_models():
         Yo = helper.make_tensor_value_info("Y", TensorProto.FLOAT, oshape)
         nd = helper.make_node(op, ["X"], ["Y"], **(attrs or {}))
         inits2 = extra_inits or []
-        reg(name, helper.make_model(helper.make_graph([nd], "g", [Xi], [Yo], inits2), name),
+        reg(name, helper.make_model(helper.make_graph([nd], "g", [Xi], [Yo], inits2)),
             [("X", np.float32, tuple(ishape))], desc or op)
 
     simple("relu", "Relu", ["b", 16], ["b", 16])
@@ -217,7 +217,7 @@ def build_models():
     Wg = numpy_helper.from_array(rng.standard_normal((32, 16)).astype(np.float32) * 0.05, "Wg")
     Cg = numpy_helper.from_array(np.zeros((16,), np.float32), "Cg")
     n = helper.make_node("Gemm", ["X", "Wg", "Cg"], ["Y"], alpha=1.0, beta=1.0)
-    reg("gemm", helper.make_model(helper.make_graph([n], "g", [X], [Y], [Wg, Cg]), "gemm"),
+    reg("gemm", helper.make_model(helper.make_graph([n], "g", [X], [Y], [Wg, Cg])),
         [("X", np.float32, ("b", 32))], "Gemm")
 
     # layer_norm combo: Mean+Sub+Pow+Mean+Add+Sqrt+Div+Mul+Add
@@ -240,7 +240,7 @@ def build_models():
         numpy_helper.from_array(np.ones((64,), np.float32), "gamma"),
         numpy_helper.from_array(np.zeros((64,), np.float32), "beta"),
     ]
-    reg("layernorm", helper.make_model(helper.make_graph(nodes, "g", [X], [Y], inits), "ln"),
+    reg("layernorm", helper.make_model(helper.make_graph(nodes, "g", [X], [Y], inits)),
         [("X", np.float32, ("b", 64))], "LayerNorm composite")
 
     # depthwise conv: groups=8
@@ -251,7 +251,7 @@ def build_models():
     n1 = helper.make_node("Conv", ["X", "Wd"], ["T2"], group=4, pads=[1, 1, 1, 1])
     n2 = helper.make_node("Relu", ["T2"], ["Y"])
     reg("depthwise_conv",
-        helper.make_model(helper.make_graph([n1, n2], "g", [X], [Y], [Wd]), "dwconv"),
+        helper.make_model(helper.make_graph([n1, n2], "g", [X], [Y], [Wd])),
         [("X", np.float32, ("b", 4, 16, 16))], "DepthwiseConv+Relu pad=1")
 
     # batchnorm inference pattern: BN = (X-mu)/sqrt(var+eps)*gamma+beta folded as ops
@@ -272,7 +272,7 @@ def build_models():
         numpy_helper.from_array(np.ones((1, 8, 1, 1), np.float32), "gam"),
         numpy_helper.from_array(np.zeros((1, 8, 1, 1), np.float32), "bet"),
     ]
-    reg("batchnorm", helper.make_model(helper.make_graph(nodes, "g", [X], [Y], inits), "bn"),
+    reg("batchnorm", helper.make_model(helper.make_graph(nodes, "g", [X], [Y], inits)),
         [("X", np.float32, ("b", 8, 8, 8))], "BatchNorm inference")
 
     # gather + topk + concat
@@ -286,7 +286,7 @@ def build_models():
     inits = [numpy_helper.from_array(np.array(2, np.int64), "k"),
              numpy_helper.from_array(np.array([0, 2], np.int64), "gi")]
     reg("topk_gather_concat",
-        helper.make_model(helper.make_graph(nodes, "g", [X], [Y], inits), "tgc"),
+        helper.make_model(helper.make_graph(nodes, "g", [X], [Y], inits)),
         [("X", np.float32, ("b", 32))], "TopK+Gather+Concat")
 
     # resize (nearest, downsample 2x)
@@ -298,7 +298,7 @@ def build_models():
     ]
     inits = [numpy_helper.from_array(np.array([1.0, 1.0, 0.5, 0.5], np.float32), "scales")]
     reg("resize_nearest",
-        helper.make_model(helper.make_graph(nodes, "g", [X], [Y], inits), "rz"),
+        helper.make_model(helper.make_graph(nodes, "g", [X], [Y], inits)),
         [("X", np.float32, ("b", 4, 16, 16))], "Resize nearest 2x down")
 
     # split then concat (multi-output 2)
@@ -307,7 +307,7 @@ def build_models():
     B = helper.make_tensor_value_info("B", TensorProto.FLOAT, ["b", 8])
     n = helper.make_node("Split", ["X"], ["A", "B"], axis=1, num_outputs=2)
     reg("split2",
-        helper.make_model(helper.make_graph([n], "g", [X], [A, B]), "sp"),
+        helper.make_model(helper.make_graph([n], "g", [X], [A, B])),
         [("X", np.float32, ("b", 16))], "Split into 2 outputs")
 
     # pad
@@ -315,7 +315,7 @@ def build_models():
     Y = helper.make_tensor_value_info("Y", TensorProto.FLOAT, ["b", 12])
     n = helper.make_node("Pad", ["X", "pads"], ["Y"], mode="constant")
     inits = [numpy_helper.from_array(np.array([0, 2, 2], np.int64), "pads")]
-    reg("pad", helper.make_model(helper.make_graph([n], "g", [X], [Y], inits), "pad"),
+    reg("pad", helper.make_model(helper.make_graph([n], "g", [X], [Y], inits)),
         [("X", np.float32, ("b", 8))], "Pad constant")
 
     # cast to int32 (dtype correctness probe)
@@ -323,7 +323,7 @@ def build_models():
     Y = helper.make_tensor_value_info("Y", TensorProto.INT32, ["b", 8])
     n = helper.make_node("Cast", ["X"], ["Y"], to=TensorProto.INT32)
     reg("cast_f32_i32",
-        helper.make_model(helper.make_graph([n], "g", [X], [Y]), "cast"),
+        helper.make_model(helper.make_graph([n], "g", [X], [Y])),
         [("X", np.float32, ("b", 8))], "Cast float32->int32")
 
     # dynamic batch conv small (dynamic shape via symbolic dims already in others)
@@ -341,9 +341,38 @@ def write_fixtures(force: bool = False) -> dict[str, str]:
         if force or not os.path.exists(p):
             onnx.save(ent["model"], p)
         man[name] = {"sha256": sha256_file(p), "desc": ent["desc"],
-                     "inputs": [list(i) for i in ent["inputs"]]}
+                     "inputs": [[n, getattr(dt, "__name__", str(dt)), list(sh)]
+                                for n, dt, sh in ent["inputs"]]}
     atomic_write_json(os.path.join(FIXTURES, "manifest.json"), man)
     return man
+
+
+def meta_from_model(path: str) -> dict:
+    """Build a model_meta (inputs list) for an arbitrary ONNX file."""
+    import onnx
+    from onnx import TensorProto, helper
+    m = onnx.load(path)
+    _DT = {TensorProto.FLOAT: __import__("numpy").float32,
+           TensorProto.INT64: __import__("numpy").int64,
+           TensorProto.INT32: __import__("numpy").int32,
+           TensorProto.DOUBLE: __import__("numpy").float64,
+           TensorProto.UINT8: __import__("numpy").uint8}
+    inits = {i.name: i for i in m.graph.initializer}
+    inputs = []
+    for i in m.graph.input:
+        if i.name in inits:
+            continue
+        dt = _DT.get(i.type.tensor_type.elem_type, __import__("numpy").float32)
+        shape = []
+        for d in i.type.tensor_type.shape.dim:
+            shape.append(d.dim_param if d.dim_param else d.dim_value or "b")
+        if not shape:
+            shape = ["b"]
+        if isinstance(shape[0], int) and shape[0] == 0:
+            shape[0] = "b"
+        inputs.append((i.name, dt, tuple(shape)))
+    man = {"inputs": [list(x) for x in inputs], "desc": "from " + os.path.basename(path)}
+    return {"inputs": [tuple(x) for x in man["inputs"]], "desc": man["desc"]}
 
 
 def make_feed(name: str, model_meta: dict, batch: int, seed: int = 1100):
@@ -351,7 +380,10 @@ def make_feed(name: str, model_meta: dict, batch: int, seed: int = 1100):
     import numpy as np
     rng = np.random.default_rng(seed + (hash(name) % 10000) + batch)
     feeds = {}
-    for iname, dtype, shape in model_meta["inputs"]:
+    for entry in model_meta["inputs"]:
+        iname, dtype, shape = entry[0], entry[1], tuple(entry[2])
+        if isinstance(dtype, str):
+            dtype = np.dtype(dtype).type
         shape = [batch if (isinstance(s, str) or s is None) else s for s in shape]
         if np.issubdtype(dtype, np.floating):
             feeds[iname] = rng.standard_normal(shape).astype(np.float32)
