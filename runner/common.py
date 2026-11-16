@@ -436,8 +436,9 @@ def analyze_profile(profile_path: str, target_ep: str) -> dict:
     import json as _json
     with open(profile_path, "r", encoding="utf-8") as f:
         trace = _json.load(f)
+    events = trace.get("traceEvents", []) if isinstance(trace, dict) else trace
     seen: dict[str, str] = {}
-    for ev in trace.get("traceEvents", []):
+    for ev in events:
         if ev.get("cat") != "Node":
             continue
         name = ev.get("name", "")

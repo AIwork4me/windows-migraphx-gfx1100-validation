@@ -1,0 +1,133 @@
+[2026-11-16T16:34:44Z] WinMLEpEnsureReady attempt 1 for MIGraphXExecutionProvider
+[0;93m2026-11-17 00:34:46.6508873 [W:onnxruntime:Default, onnxruntime_pybind_module.cc:45 onnxruntime::python::CreateOrtEnv] Init provider bridge failed.[m
+[2026-11-16T16:34:46Z] register_execution_provider_library('MIGraphXExecutionProvider', 'C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdgpu-ep.dll')
+[2026-11-16T16:34:46Z] ep devices: ['CPUExecutionProvider', 'DmlExecutionProvider', 'DmlExecutionProvider', 'DmlExecutionProvider', 'MIGraphXExecutionProvider', 'MIGraphXExecutionProvider']
+*************** EP Error ***************
+EP Error C:\__w\1\s\win-onnxruntime\onnxruntime\core\session\plugin_ep\ep_plugin_provider_interfaces.cc:70 onnxruntime::PluginExecutionProviderFactory::CreateProvider Error creating execution provider: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : only supports selection for a single device
+ when using None
+Falling back to ['CPUExecutionProvider'] and retrying.
+****************************************
+C:\AIwork4me\windows-migraphx-gfx1100-validation\venv-winml\Lib\site-packages\onnxruntime\capi\onnxruntime_inference_collection.py:767: UserWarning: Specified 'providers'/'provider_options' when creating InferenceSession but SessionOptions has already been configured with providers. InferenceSession will only use the providers passed to InferenceSession().
+  warnings.warn(
+[2026-11-16T16:34:46Z] m0/MIGraphXExecutionProvider/identity_add/b1: FAIL gpu_nodes=0/1 parity_ok=True
+*************** EP Error ***************
+EP Error C:\__w\1\s\win-onnxruntime\onnxruntime\core\session\plugin_ep\ep_plugin_provider_interfaces.cc:70 onnxruntime::PluginExecutionProviderFactory::CreateProvider Error creating execution provider: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : only supports selection for a single device
+ when using None
+Falling back to ['CPUExecutionProvider'] and retrying.
+****************************************
+[2026-11-16T16:34:46Z] m0/MIGraphXExecutionProvider/identity_add/b2: FAIL gpu_nodes=0/1 parity_ok=True
+*************** EP Error ***************
+EP Error C:\__w\1\s\win-onnxruntime\onnxruntime\core\session\plugin_ep\ep_plugin_provider_interfaces.cc:70 onnxruntime::PluginExecutionProviderFactory::CreateProvider Error creating execution provider: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : only supports selection for a single device
+ when using None
+Falling back to ['CPUExecutionProvider'] and retrying.
+****************************************
+[2026-11-16T16:34:46Z] m0/MIGraphXExecutionProvider/identity_add/b4: FAIL gpu_nodes=0/1 parity_ok=True
+*************** EP Error ***************
+EP Error C:\__w\1\s\win-onnxruntime\onnxruntime\core\session\plugin_ep\ep_plugin_provider_interfaces.cc:70 onnxruntime::PluginExecutionProviderFactory::CreateProvider Error creating execution provider: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : only supports selection for a single device
+ when using None
+Falling back to ['CPUExecutionProvider'] and retrying.
+****************************************
+[2026-11-16T16:34:46Z] m0/MIGraphXExecutionProvider/matmul/b1: FAIL gpu_nodes=0/1 parity_ok=True
+*************** EP Error ***************
+EP Error C:\__w\1\s\win-onnxruntime\onnxruntime\core\session\plugin_ep\ep_plugin_provider_interfaces.cc:70 onnxruntime::PluginExecutionProviderFactory::CreateProvider Error creating execution provider: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : only supports selection for a single device
+ when using None
+Falling back to ['CPUExecutionProvider'] and retrying.
+****************************************
+[2026-11-16T16:34:46Z] m0/MIGraphXExecutionProvider/matmul/b2: FAIL gpu_nodes=0/1 parity_ok=True
+*************** EP Error ***************
+EP Error C:\__w\1\s\win-onnxruntime\onnxruntime\core\session\plugin_ep\ep_plugin_provider_interfaces.cc:70 onnxruntime::PluginExecutionProviderFactory::CreateProvider Error creating execution provider: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : only supports selection for a single device
+ when using None
+Falling back to ['CPUExecutionProvider'] and retrying.
+****************************************
+[2026-11-16T16:34:46Z] m0/MIGraphXExecutionProvider/matmul/b4: FAIL gpu_nodes=0/1 parity_ok=True
+*************** EP Error ***************
+EP Error C:\__w\1\s\win-onnxruntime\onnxruntime\core\session\plugin_ep\ep_plugin_provider_interfaces.cc:70 onnxruntime::PluginExecutionProviderFactory::CreateProvider Error creating execution provider: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : only supports selection for a single device
+ when using None
+Falling back to ['CPUExecutionProvider'] and retrying.
+****************************************
+[2026-11-16T16:34:46Z] m0/MIGraphXExecutionProvider/conv_relu/b1: FAIL gpu_nodes=0/2 parity_ok=True
+*************** EP Error ***************
+EP Error C:\__w\1\s\win-onnxruntime\onnxruntime\core\session\plugin_ep\ep_plugin_provider_interfaces.cc:70 onnxruntime::PluginExecutionProviderFactory::CreateProvider Error creating execution provider: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : only supports selection for a single device
+ when using None
+Falling back to ['CPUExecutionProvider'] and retrying.
+****************************************
+[2026-11-16T16:34:46Z] m0/MIGraphXExecutionProvider/conv_relu/b2: FAIL gpu_nodes=0/2 parity_ok=True
+*************** EP Error ***************
+EP Error C:\__w\1\s\win-onnxruntime\onnxruntime\core\session\plugin_ep\ep_plugin_provider_interfaces.cc:70 onnxruntime::PluginExecutionProviderFactory::CreateProvider Error creating execution provider: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : only supports selection for a single device
+ when using None
+Falling back to ['CPUExecutionProvider'] and retrying.
+****************************************
+[2026-11-16T16:34:46Z] m0/MIGraphXExecutionProvider/conv_relu/b4: FAIL gpu_nodes=0/2 parity_ok=True
+*************** EP Error ***************
+EP Error C:\__w\1\s\win-onnxruntime\onnxruntime\core\session\plugin_ep\ep_plugin_provider_interfaces.cc:70 onnxruntime::PluginExecutionProviderFactory::CreateProvider Error creating execution provider: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : only supports selection for a single device
+ when using None
+Falling back to ['CPUExecutionProvider'] and retrying.
+****************************************
+[2026-11-16T16:34:46Z] m0/MIGraphXExecutionProvider/softmax/b1: FAIL gpu_nodes=0/1 parity_ok=True
+*************** EP Error ***************
+EP Error C:\__w\1\s\win-onnxruntime\onnxruntime\core\session\plugin_ep\ep_plugin_provider_interfaces.cc:70 onnxruntime::PluginExecutionProviderFactory::CreateProvider Error creating execution provider: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : only supports selection for a single device
+ when using None
+Falling back to ['CPUExecutionProvider'] and retrying.
+****************************************
+[2026-11-16T16:34:46Z] m0/MIGraphXExecutionProvider/softmax/b2: FAIL gpu_nodes=0/1 parity_ok=True
+*************** EP Error ***************
+EP Error C:\__w\1\s\win-onnxruntime\onnxruntime\core\session\plugin_ep\ep_plugin_provider_interfaces.cc:70 onnxruntime::PluginExecutionProviderFactory::CreateProvider Error creating execution provider: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : only supports selection for a single device
+ when using None
+Falling back to ['CPUExecutionProvider'] and retrying.
+****************************************
+[2026-11-16T16:34:47Z] m0/MIGraphXExecutionProvider/softmax/b4: FAIL gpu_nodes=0/1 parity_ok=True
+*************** EP Error ***************
+EP Error C:\__w\1\s\win-onnxruntime\onnxruntime\core\session\plugin_ep\ep_plugin_provider_interfaces.cc:70 onnxruntime::PluginExecutionProviderFactory::CreateProvider Error creating execution provider: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : only supports selection for a single device
+ when using None
+Falling back to ['CPUExecutionProvider'] and retrying.
+****************************************
+[2026-11-16T16:34:47Z] m0/MIGraphXExecutionProvider/reshape_transpose/b1: FAIL gpu_nodes=0/2 parity_ok=True
+*************** EP Error ***************
+EP Error C:\__w\1\s\win-onnxruntime\onnxruntime\core\session\plugin_ep\ep_plugin_provider_interfaces.cc:70 onnxruntime::PluginExecutionProviderFactory::CreateProvider Error creating execution provider: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : only supports selection for a single device
+ when using None
+Falling back to ['CPUExecutionProvider'] and retrying.
+****************************************
+[2026-11-16T16:34:47Z] m0/MIGraphXExecutionProvider/reshape_transpose/b2: FAIL gpu_nodes=0/2 parity_ok=True
+*************** EP Error ***************
+EP Error C:\__w\1\s\win-onnxruntime\onnxruntime\core\session\plugin_ep\ep_plugin_provider_interfaces.cc:70 onnxruntime::PluginExecutionProviderFactory::CreateProvider Error creating execution provider: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : only supports selection for a single device
+ when using None
+Falling back to ['CPUExecutionProvider'] and retrying.
+****************************************
+[2026-11-16T16:34:47Z] m0/MIGraphXExecutionProvider/reshape_transpose/b4: FAIL gpu_nodes=0/2 parity_ok=True
+*************** EP Error ***************
+EP Error C:\__w\1\s\win-onnxruntime\onnxruntime\core\session\plugin_ep\ep_plugin_provider_interfaces.cc:70 onnxruntime::PluginExecutionProviderFactory::CreateProvider Error creating execution provider: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : only supports selection for a single device
+ when using None
+Falling back to ['CPUExecutionProvider'] and retrying.
+****************************************
+[2026-11-16T16:34:47Z] m0/MIGraphXExecutionProvider/two_out_same_shape/b1: FAIL gpu_nodes=0/2 parity_ok=True
+*************** EP Error ***************
+EP Error C:\__w\1\s\win-onnxruntime\onnxruntime\core\session\plugin_ep\ep_plugin_provider_interfaces.cc:70 onnxruntime::PluginExecutionProviderFactory::CreateProvider Error creating execution provider: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : only supports selection for a single device
+ when using None
+Falling back to ['CPUExecutionProvider'] and retrying.
+****************************************
+[2026-11-16T16:34:47Z] m0/MIGraphXExecutionProvider/two_out_same_shape/b2: FAIL gpu_nodes=0/2 parity_ok=True
+*************** EP Error ***************
+EP Error C:\__w\1\s\win-onnxruntime\onnxruntime\core\session\plugin_ep\ep_plugin_provider_interfaces.cc:70 onnxruntime::PluginExecutionProviderFactory::CreateProvider Error creating execution provider: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : only supports selection for a single device
+ when using None
+Falling back to ['CPUExecutionProvider'] and retrying.
+****************************************
+[2026-11-16T16:34:47Z] m0/MIGraphXExecutionProvider/two_out_same_shape/b4: FAIL gpu_nodes=0/2 parity_ok=True
+*************** EP Error ***************
+EP Error C:\__w\1\s\win-onnxruntime\onnxruntime\core\session\plugin_ep\ep_plugin_provider_interfaces.cc:70 onnxruntime::PluginExecutionProviderFactory::CreateProvider Error creating execution provider: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : only supports selection for a single device
+ when using None
+Falling back to ['CPUExecutionProvider'] and retrying.
+****************************************
+[2026-11-16T16:34:47Z] m0/MIGraphXExecutionProvider/nine_out/b1: FAIL gpu_nodes=0/9 parity_ok=True
+*************** EP Error ***************
+EP Error C:\__w\1\s\win-onnxruntime\onnxruntime\core\session\plugin_ep\ep_plugin_provider_interfaces.cc:70 onnxruntime::PluginExecutionProviderFactory::CreateProvider Error creating execution provider: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : only supports selection for a single device
+ when using None
+Falling back to ['CPUExecutionProvider'] and retrying.
+****************************************
+[2026-11-16T16:34:47Z] m0/MIGraphXExecutionProvider/nine_out/b2: FAIL gpu_nodes=0/9 parity_ok=True
+*************** EP Error ***************
+EP Error C:\__w\1\s\win-onnxruntime\onnxruntime\core\session\plugin_ep\ep_plugin_provider_interfaces.cc:70 onnxruntime::PluginExecutionProviderFactory::CreateProvider Error creating execution provider: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : only supports selection for a single device
+ when using None
+Falling back to ['CPUExecutionProvider'] and retrying.
+****************************************
+[2026-11-16T16:34:47Z] m0/MIGraphXExecutionProvider/nine_out/b4: FAIL gpu_nodes=0/9 parity_ok=True
+M0_PHASE_DONE

@@ -119,7 +119,7 @@ def main():
                     help="WinMLEpEnsureReady = official EP download (authorized)")
     ap.add_argument("--ensure-attempts", type=int, default=2)
     args = ap.parse_args()
-    C.REPO = args.repo
+    C.REPO = os.path.abspath(args.repo)
     globals()["LEDGER"] = os.path.join(C.REPO, "reports", "ledger.json")
 
     phase = "m0"
@@ -196,9 +196,24 @@ def main():
     # ---------------- Step C: register with ORT, run graphs ----------------
     import numpy as np
     import onnxruntime as ort
-    log(f"register_execution_provider_library({lib_path!r})")
-    receipt["register_call"] = lib_path
-    ort.register_execution_provider_library(lib_path)
+    log(f"register_execution_provider_library({ep_name!r}, {lib_path!r})")
+    receipt["register_call"] = [ep_name, lib_path]
+    reg_err = None
+    try:
+        ort.register_execution_provider_library(ep_name, lib_path)
+    except Exception as e1:
+        try:
+            ort.register_execution_provider_library(lib_path, ep_name)
+        except Exception as e2:
+            reg_err = f"both arg orders failed: {e1!r} / {e2!r}"
+    if reg_err:
+        receipt["register_error"] = reg_err
+        receipt["outcome"] = "REGISTER_FAILED"
+        receipt["log"] = log_lines
+        C.save_receipt(phase, receipt)
+        print("M0_PHASE_DONE: REGISTER_FAILED", flush=True)
+        import sys as _s, os as _o
+        _s.stdout.flush(); _o._exit(1)
     devices = []
     for d in ort.get_ep_devices():
         try:
@@ -240,18 +255,17 @@ def main():
                 # GPU session via plugin device API
                 so = ort.SessionOptions()
                 so.log_severity_level = 3
+                from ep_runner import add_ep_for_devices
                 try:
-                    so.add_provider_for_devices(["GPU"], ep_name)
+                    n_dev = add_ep_for_devices(so, ort, ep_name)
                     add_prov_err = None
                 except Exception as e:
+                    n_dev = 0
                     add_prov_err = repr(e)
-                    try:
-                        so.add_provider_for_devices(["GPU"], ep_name, {})
-                    except Exception:
-                        pass
                 so.enable_profiling = True
-                sess = ort.InferenceSession(path, sess_options=so,
-                                            providers=["CPUExecutionProvider"])
+                if n_dev == 0:
+                    raise RuntimeError(f"EP {ep_name} not in get_ep_devices(): {add_prov_err}")
+                sess = ort.InferenceSession(path, sess_options=so)
                 provs = list(sess.get_providers())
                 out_objs = sess.run(None, feeds)
                 actual = {name: arr for name, arr in

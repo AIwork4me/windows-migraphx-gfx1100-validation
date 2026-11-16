@@ -1,0 +1,321 @@
+[0;93m2026-11-17 00:32:43.1333198 [W:onnxruntime:Default, onnxruntime_pybind_module.cc:45 onnxruntime::python::CreateOrtEnv] Init provider bridge failed.[m
+m1/AMDGPUExecutionProvider/abs/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/abs/b2 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/argmax/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/argmax/b2 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/batchnorm/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/batchnorm/b2 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/cast_f32_i32/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/cast_f32_i32/b2 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/conv_relu/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/conv_relu/b2 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/cos/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/cos/b2 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/depthwise_conv/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/depthwise_conv/b2 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/erf/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/erf/b2 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/exp/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/exp/b2 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/floor/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/floor/b2 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/gemm/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/gemm/b2 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/identity_add/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/identity_add/b2 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/layernorm/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/layernorm/b2 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/log/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/log/b2 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/matmul/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/matmul/b2 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/neg/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/neg/b2 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/nine_out/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/nine_out/b2 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/pad/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/pad/b2 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/reduce_max/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/reduce_max/b2 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/reduce_mean/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/reduce_mean/b2 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/reduce_sum/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/reduce_sum/b2 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/relu/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/relu/b2 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/reshape_transpose/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/reshape_transpose/b2 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/resize_nearest/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/resize_nearest/b2 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/sigmoid/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/sigmoid/b2 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/sin/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/sin/b2 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/softmax/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/softmax/b2 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/split2/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/split2/b2 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/sqrt/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/sqrt/b2 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/squeeze/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/squeeze/b2 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/tanh/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/tanh/b2 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/topk_gather_concat/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/topk_gather_concat/b2 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/two_out_diff_shape/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/two_out_diff_shape/b2 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/two_out_same_shape/b1 BLOCKED_DEPENDENCY
+m1/AMDGPUExecutionProvider/two_out_same_shape/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/abs/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/abs/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/argmax/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/argmax/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/batchnorm/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/batchnorm/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/cast_f32_i32/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/cast_f32_i32/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/conv_relu/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/conv_relu/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/cos/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/cos/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/depthwise_conv/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/depthwise_conv/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/erf/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/erf/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/exp/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/exp/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/floor/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/floor/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/gemm/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/gemm/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/identity_add/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/identity_add/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/layernorm/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/layernorm/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/log/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/log/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/matmul/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/matmul/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/neg/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/neg/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/nine_out/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/nine_out/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/pad/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/pad/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/reduce_max/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/reduce_max/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/reduce_mean/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/reduce_mean/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/reduce_sum/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/reduce_sum/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/relu/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/relu/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/reshape_transpose/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/reshape_transpose/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/resize_nearest/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/resize_nearest/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/sigmoid/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/sigmoid/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/sin/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/sin/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/softmax/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/softmax/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/split2/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/split2/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/sqrt/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/sqrt/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/squeeze/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/squeeze/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/tanh/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/tanh/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/topk_gather_concat/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/topk_gather_concat/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/two_out_diff_shape/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/two_out_diff_shape/b2 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/two_out_same_shape/b1 BLOCKED_DEPENDENCY
+m1/MIGraphXExecutionProvider/two_out_same_shape/b2 BLOCKED_DEPENDENCY
+[0;93m2026-11-17 00:32:45.7260014 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:45.7263273 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+C:\AIwork4me\windows-migraphx-gfx1100-validation\venv-winml\Lib\site-packages\onnxruntime\capi\onnxruntime_inference_collection.py:767: UserWarning: Specified 'providers'/'provider_options' when creating InferenceSession but SessionOptions has already been configured with providers. InferenceSession will only use the providers passed to InferenceSession().
+  warnings.warn(
+m1/DmlExecutionProvider/abs/b1 FAIL
+[0;93m2026-11-17 00:32:45.7569228 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:45.7572472 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/abs/b2 FAIL
+m1/DmlExecutionProvider/argmax/b1 FAIL
+m1/DmlExecutionProvider/argmax/b2 FAIL
+[0;93m2026-11-17 00:32:45.8326048 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:45.8329307 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/batchnorm/b1 FAIL
+[0;93m2026-11-17 00:32:45.8600710 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:45.8603880 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/batchnorm/b2 FAIL
+[0;93m2026-11-17 00:32:45.8901618 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:45.8904799 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/cast_f32_i32/b1 FAIL
+[0;93m2026-11-17 00:32:45.9179791 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:45.9183011 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/cast_f32_i32/b2 FAIL
+[0;93m2026-11-17 00:32:45.9499400 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:45.9503010 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/conv_relu/b1 FAIL
+[0;93m2026-11-17 00:32:45.9761441 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:45.9765111 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/conv_relu/b2 FAIL
+[0;93m2026-11-17 00:32:46.0037495 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:46.0040681 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/cos/b1 FAIL
+[0;93m2026-11-17 00:32:46.0372100 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:46.0375356 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/cos/b2 FAIL
+[0;93m2026-11-17 00:32:46.0690142 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:46.0693714 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/depthwise_conv/b1 FAIL
+[0;93m2026-11-17 00:32:46.1011394 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:46.1014981 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/depthwise_conv/b2 FAIL
+[0;93m2026-11-17 00:32:46.1306029 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:46.1309490 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/erf/b1 FAIL
+[0;93m2026-11-17 00:32:46.1587703 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:46.1591088 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/erf/b2 FAIL
+[0;93m2026-11-17 00:32:46.1860730 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:46.1864023 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/exp/b1 FAIL
+[0;93m2026-11-17 00:32:46.2141698 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:46.2145266 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/exp/b2 FAIL
+[0;93m2026-11-17 00:32:46.2408239 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:46.2411469 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/floor/b1 FAIL
+[0;93m2026-11-17 00:32:46.2706612 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:46.2709814 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/floor/b2 FAIL
+[0;93m2026-11-17 00:32:46.2965426 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:46.2969277 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/gemm/b1 FAIL
+[0;93m2026-11-17 00:32:46.3258603 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:46.3262360 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/gemm/b2 FAIL
+[0;93m2026-11-17 00:32:46.3541792 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:46.3544970 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/identity_add/b1 FAIL
+[0;93m2026-11-17 00:32:46.3825322 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:46.3828525 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/identity_add/b2 FAIL
+[0;93m2026-11-17 00:32:46.4111171 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:46.4114860 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/layernorm/b1 FAIL
+[0;93m2026-11-17 00:32:46.4414658 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:46.4418328 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/layernorm/b2 FAIL
+[0;93m2026-11-17 00:32:46.4734941 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:46.4738131 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/log/b1 FAIL
+[0;93m2026-11-17 00:32:46.5016394 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:46.5019624 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/log/b2 FAIL
+[0;93m2026-11-17 00:32:46.5287441 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:46.5290750 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/matmul/b1 FAIL
+[0;93m2026-11-17 00:32:46.5598435 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:46.5601706 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/matmul/b2 FAIL
+[0;93m2026-11-17 00:32:46.5855561 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:46.5858770 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/neg/b1 FAIL
+[0;93m2026-11-17 00:32:46.6143610 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:46.6146852 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/neg/b2 FAIL
+[0;93m2026-11-17 00:32:46.6431827 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:46.6435042 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/nine_out/b1 FAIL
+[0;93m2026-11-17 00:32:46.6747617 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:46.6750887 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/nine_out/b2 FAIL
+m1/DmlExecutionProvider/pad/b1 FAIL
+m1/DmlExecutionProvider/pad/b2 FAIL
+[0;93m2026-11-17 00:32:46.7485905 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:46.7489123 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/reduce_max/b1 FAIL
+[0;93m2026-11-17 00:32:46.7758162 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:46.7761383 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/reduce_max/b2 FAIL
+[0;93m2026-11-17 00:32:46.8016281 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:46.8019940 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/reduce_mean/b1 FAIL
+[0;93m2026-11-17 00:32:46.8336634 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:46.8339865 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/reduce_mean/b2 FAIL
+m1/DmlExecutionProvider/reduce_sum/b1 FAIL
+m1/DmlExecutionProvider/reduce_sum/b2 FAIL
+[0;93m2026-11-17 00:32:46.9079301 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:46.9082513 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/relu/b1 FAIL
+[0;93m2026-11-17 00:32:46.9358070 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:46.9361367 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/relu/b2 FAIL
+[0;93m2026-11-17 00:32:46.9634485 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:46.9637688 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/reshape_transpose/b1 FAIL
+[0;93m2026-11-17 00:32:46.9934266 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:46.9937475 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/reshape_transpose/b2 FAIL
+[0;93m2026-11-17 00:32:47.0180193 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:47.0183434 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/resize_nearest/b1 FAIL
+[0;93m2026-11-17 00:32:47.0442972 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:47.0446184 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/resize_nearest/b2 FAIL
+[0;93m2026-11-17 00:32:47.0735643 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:47.0739073 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/sigmoid/b1 FAIL
+[0;93m2026-11-17 00:32:47.1041536 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:47.1044939 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/sigmoid/b2 FAIL
+[0;93m2026-11-17 00:32:47.1342248 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:47.1345497 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/sin/b1 FAIL
+[0;93m2026-11-17 00:32:47.1663575 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:47.1666836 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/sin/b2 FAIL
+[0;93m2026-11-17 00:32:47.1996693 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:47.2001883 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/softmax/b1 FAIL
+[0;93m2026-11-17 00:32:47.2303561 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:47.2307017 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/softmax/b2 FAIL
+m1/DmlExecutionProvider/split2/b1 FAIL
+m1/DmlExecutionProvider/split2/b2 FAIL
+[0;93m2026-11-17 00:32:47.3026785 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:47.3030003 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/sqrt/b1 FAIL
+[0;93m2026-11-17 00:32:47.3313452 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:47.3317183 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/sqrt/b2 FAIL
+m1/DmlExecutionProvider/squeeze/b1 FAIL
+m1/DmlExecutionProvider/squeeze/b2 FAIL
+[0;93m2026-11-17 00:32:47.4059789 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:47.4063183 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/tanh/b1 FAIL
+[0;93m2026-11-17 00:32:47.4359681 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:47.4362954 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/tanh/b2 FAIL
+m1/DmlExecutionProvider/topk_gather_concat/b1 FAIL
+m1/DmlExecutionProvider/topk_gather_concat/b2 FAIL
+[0;93m2026-11-17 00:32:47.5051989 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:47.5055435 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/two_out_diff_shape/b1 FAIL
+[0;93m2026-11-17 00:32:47.5320111 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:47.5323645 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/two_out_diff_shape/b2 FAIL
+[0;93m2026-11-17 00:32:47.5623410 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:47.5626968 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/two_out_same_shape/b1 FAIL
+[0;93m2026-11-17 00:32:47.5927991 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [2]. It will be overwritten[m
+[0;93m2026-11-17 00:32:47.5931461 [W:onnxruntime:Default, config_options.cc:45 onnxruntime::ConfigOptions::AddConfigEntry] Config with key [ep.dmlexecutionprovider.device_id] already exists with value [1]. It will be overwritten[m
+m1/DmlExecutionProvider/two_out_same_shape/b2 FAIL
+M1_OPERATORS_DONE
+EXIT=0

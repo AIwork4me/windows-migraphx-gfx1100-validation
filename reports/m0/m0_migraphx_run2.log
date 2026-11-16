@@ -1,0 +1,25 @@
+[2026-11-16T16:34:04Z] WinMLEpEnsureReady attempt 1 for MIGraphXExecutionProvider
+[0;93m2026-11-17 00:34:06.0731490 [W:onnxruntime:Default, onnxruntime_pybind_module.cc:45 onnxruntime::python::CreateOrtEnv] Init provider bridge failed.[m
+[2026-11-16T16:34:06Z] register_execution_provider_library('MIGraphXExecutionProvider', 'C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdgpu-ep.dll')
+[2026-11-16T16:34:06Z] ep devices: ['CPUExecutionProvider', 'DmlExecutionProvider', 'DmlExecutionProvider', 'DmlExecutionProvider', 'MIGraphXExecutionProvider', 'MIGraphXExecutionProvider']
+C:\AIwork4me\windows-migraphx-gfx1100-validation\venv-winml\Lib\site-packages\onnxruntime\capi\onnxruntime_inference_collection.py:767: UserWarning: Specified 'providers'/'provider_options' when creating InferenceSession but SessionOptions has already been configured with providers. InferenceSession will only use the providers passed to InferenceSession().
+  warnings.warn(
+[2026-11-16T16:34:06Z] m0/MIGraphXExecutionProvider/identity_add/b1: FAIL gpu_nodes=0/1 parity_ok=True
+Traceback (most recent call last):
+  File "C:\AIwork4me\windows-migraphx-gfx1100-validation\runner\phases\m0_ep_discovery.py", line 308, in <module>
+    rc = main()
+         ^^^^^^
+  File "C:\AIwork4me\windows-migraphx-gfx1100-validation\runner\phases\m0_ep_discovery.py", line 297, in main
+    L.upsert_case(os.path.join(C.REPO, "reports", "ledger.json"), case)
+  File "C:\AIwork4me\windows-migraphx-gfx1100-validation\runner\phases\..\ledger.py", line 65, in upsert_case
+    _atomic_dump(path, led)
+  File "C:\AIwork4me\windows-migraphx-gfx1100-validation\runner\phases\..\ledger.py", line 29, in _atomic_dump
+    fd, tmp = tempfile.mkstemp(dir=d, suffix=".tmp")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rocm\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 411, in mkstemp
+    return _mkstemp_inner(dir, prefix, suffix, flags, output_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rocm\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 257, in _mkstemp_inner
+    fd = _os.open(file, flags, 0o600)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\reports\\m0\\profiles\\reports\\tmpvvz22zbk.tmp'

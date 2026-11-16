@@ -55,6 +55,9 @@ def sh(cmd: list[str], timeout_s: int, cwd: str, log_path: str) -> dict:
     env = dict(os.environ)
     env["PYTHONUNBUFFERED"] = "1"
     env["PYTHONIOENCODING"] = "utf-8"
+    # local proxy for github/PyPI egress (Clash mixed port on this host)
+    env.setdefault("HTTPS_PROXY", "http://127.0.0.1:7897")
+    env.setdefault("HTTP_PROXY", "http://127.0.0.1:7897")
     with open(log_path, "ab") as lf:
         lf.write(f"\n===== {C.now_pair()['utc']} RUN {cmd} =====\n".encode())
         try:

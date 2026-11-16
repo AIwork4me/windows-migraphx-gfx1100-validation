@@ -14,6 +14,40 @@ import ledger as L
 _registered: dict[str, str] = {}  # ep_name -> libraryPath
 
 
+def ep_device_info(d) -> dict:
+    info = {"ep_name": getattr(d, "ep_name", "?")}
+    dev = getattr(d, "device", None)
+    for attr in ("device_id", "vendor_id", "vendor", "type", "architecture", "metadata"):
+        try:
+            info[attr] = str(getattr(dev, attr))
+        except Exception:
+            pass
+    return info
+
+
+def matching_devices(ort, ep_name: str) -> list:
+    devs = [d for d in ort.get_ep_devices() if d.ep_name == ep_name]
+    def is_amd(d):
+        try:
+            return "Advanced Micro Devices" in str(getattr(d.device, "vendor", ""))
+        except Exception:
+            return False
+    amd = [d for d in devs if is_amd(d)]
+    return amd + [d for d in devs if d not in amd]
+
+
+def add_ep_for_devices(so, ort, ep, opts: dict | None = None) -> int:
+    """add_provider_for_devices(Sequence[OrtEpDevice], Mapping[str,str]).
+
+    AMD plugin EPs reject multi-device selection ("only supports selection
+    for a single device"), so we add exactly ONE device per SessionOptions.
+    """
+    devs = matching_devices(ort, ep)
+    if devs:
+        so.add_provider_for_devices([devs[0]], dict(opts or {}))
+    return len(devs)
+
+
 def register_ep(ep_name: str, lib_path_variants: list[str] | None = None) -> dict:
     """Ensure an EP library is registered in this process. Idempotent."""
     import onnxruntime as ort
@@ -31,7 +65,10 @@ def register_ep(ep_name: str, lib_path_variants: list[str] | None = None) -> dic
     for lib in (lib_path_variants or []):
         if lib and os.path.exists(lib):
             try:
-                ort.register_execution_provider_library(lib)
+                try:
+                    ort.register_execution_provider_library(ep_name, lib)
+                except TypeError:
+                    ort.register_execution_provider_library(lib)
                 _registered[ep_name] = lib
                 out.update({"ok": True, "lib": lib})
                 return out
@@ -97,13 +134,17 @@ def run_case(repo: str, phase: str, ep_name: str, model_path: str, model_meta: d
         if opt_level in C.ORT_OPT_LEVELS and opt_level != "default":
             so.graph_optimization_level = C.ORT_OPT_LEVELS[opt_level]
         if provider_options:
-            so.add_provider_for_devices(["GPU"], ep_name, provider_options)
+            n_dev = add_ep_for_devices(so, ort, ep_name, provider_options)
         else:
-            so.add_provider_for_devices(["GPU"], ep_name)
+            n_dev = add_ep_for_devices(so, ort, ep_name)
+        if n_dev == 0:
+            case.update({"status": "BLOCKED_DEPENDENCY",
+                         "reason": f"EP {ep_name} not in get_ep_devices()"})
+            L.upsert_case(led, case)
+            return case
         t0 = time.perf_counter()
         so.enable_profiling = True
-        sess = ort.InferenceSession(model_path, sess_options=so,
-                                    providers=["CPUExecutionProvider"])
+        sess = ort.InferenceSession(model_path, sess_options=so)
         session_create_ms = (time.perf_counter() - t0) * 1e3
         provs = list(sess.get_providers())
         out_names = [o.name for o in sess.get_outputs()]

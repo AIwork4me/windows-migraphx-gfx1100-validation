@@ -41,7 +41,7 @@ def main():
                 feeds = C.make_feed("identity_add", man["identity_add"], 1)
                 so = ort.SessionOptions()
                 so.log_severity_level = 3
-                so.add_provider_for_devices(["GPU"], ep, cs["opts"])
+                from ep_runner import add_ep_for_devices as _add; _n = _add(so, ort, ep, cs["opts"])
                 sess = ort.InferenceSession(os.path.join(C.FIXTURES, "identity_add.onnx"),
                                             sess_options=so, providers=["CPUExecutionProvider"])
                 outs = sess.run(None, feeds)
@@ -50,7 +50,7 @@ def main():
                 # second run, same options (cache reuse path)
                 so2 = ort.SessionOptions()
                 so2.log_severity_level = 3
-                so2.add_provider_for_devices(["GPU"], ep, cs["opts"])
+                _add(so2, ort, ep, cs["opts"])
                 sess2 = ort.InferenceSession(os.path.join(C.FIXTURES, "identity_add.onnx"),
                                              sess_options=so2, providers=["CPUExecutionProvider"])
                 outs2 = sess2.run(None, feeds)

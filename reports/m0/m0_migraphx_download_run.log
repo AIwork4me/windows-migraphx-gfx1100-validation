@@ -1,0 +1,14 @@
+[2026-11-16T16:31:15Z] WinMLEpEnsureReady attempt 1 for MIGraphXExecutionProvider
+[0;93m2026-11-17 00:32:53.4290899 [W:onnxruntime:Default, onnxruntime_pybind_module.cc:45 onnxruntime::python::CreateOrtEnv] Init provider bridge failed.[m
+[2026-11-16T16:32:53Z] register_execution_provider_library('C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdgpu-ep.dll')
+Traceback (most recent call last):
+  File "C:\AIwork4me\windows-migraphx-gfx1100-validation\runner\phases\m0_ep_discovery.py", line 293, in <module>
+    rc = main()
+         ^^^^^^
+  File "C:\AIwork4me\windows-migraphx-gfx1100-validation\runner\phases\m0_ep_discovery.py", line 201, in main
+    ort.register_execution_provider_library(lib_path)
+TypeError: register_execution_provider_library(): incompatible function arguments. The following argument types are supported:
+    1. (arg0: str, arg1: str) -> None
+
+Invoked with: 'C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdgpu-ep.dll'
+M0MGX_EXIT=1
