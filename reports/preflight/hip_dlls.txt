@@ -1,0 +1,30 @@
+﻿
+
+Name          : amdhip64_6.dll
+Length        : 17906624
+LastWriteTime : 2025/10/27 17:23:32
+FileVersion   : 10.0.3652.0
+
+Name          : hiprt0200064.dll
+Length        : 787904
+LastWriteTime : 2025/10/27 17:23:44
+FileVersion   : 
+
+
+
+
+
+Name   : migisol.dll
+Length : 148952
+
+Name   : miguiresource.dll
+Length : 204800
+
+Name   : migisol.dll
+Length : 148952
+
+Name   : miguiresource.dll
+Length : 204800
+
+
+

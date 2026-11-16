@@ -1,0 +1,27 @@
+﻿=== where.exe sweep ===
+C:\Users\Rocm\AppData\Local\Microsoft\WindowsApps\python.exe
+C:\Users\Rocm\AppData\Local\Microsoft\WindowsApps\python3.exe
+C:\Program Files\Git\ucrt64\bin\git.exe
+C:\Program Files\Git\cmd\git.exe
+C:\Program Files\GitHub CLI\gh.exe
+where.exe : 信息: 找不到 "py"。
+所在位置 C:\AIwork4me\windows-migraphx-gfx1100-validation\scripts\collect_env.ps1:59 字符: 5
++     where.exe python python3 py git gh cmake ninja cl msbuild hipcc 2 ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (信息: 找不到 "py"。:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+信息: 找不到 "cmake"。
+信息: 找不到 "ninja"。
+信息: 找不到 "cl"。
+信息: 找不到 "msbuild"。
+信息: 找不到 "hipcc"。
+=== versions ===
+git version 2.56.0.windows.4
+gh version 2.103.3 (2026-10-26)
+=== VS/SDK presence ===
+False
+False
+False
+=== winget ===
+v1.29.380

@@ -1,0 +1,11 @@
+﻿
+
+Name                      : 13th Gen Intel(R) Core(TM) i7-13700K
+NumberOfCores             : 16
+NumberOfLogicalProcessors : 24
+MaxClockSpeed             : 3400
+
+
+
+TotalPhysicalRAM_GB: 31.8
+FreePhysicalRAM_GB: 23.2

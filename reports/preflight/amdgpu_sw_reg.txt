@@ -1,0 +1,6 @@
+﻿
+Name                               
+----                               
+HKEY_LOCAL_MACHINE\SOFTWARE\AMD\EEU
+
+

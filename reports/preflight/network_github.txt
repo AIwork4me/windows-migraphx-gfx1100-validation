@@ -1,0 +1,9 @@
+﻿=== DNS/HTTP reachability (raw, may contain no secrets) ===
+200
+github.com
+  鉁?Logged in to github.com account AIwork4me (keyring)
+  - Active account: true
+  - Git operations protocol: https
+  - Token: gho_************************************
+  - Token scopes: 'gist', 'read:org', 'repo', 'workflow'
+AIwork4me

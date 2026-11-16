@@ -1,0 +1,6 @@
+﻿
+DeviceID VolumeName FreeGB SizeGB
+-------- ---------- ------ ------
+C:                     569  930.3
+
+

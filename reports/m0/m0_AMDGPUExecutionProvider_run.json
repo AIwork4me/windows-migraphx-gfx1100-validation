@@ -1,0 +1,93 @@
+{
+ "mission": "WIN-MIGRAPHX-GFX1100",
+ "case_id": "m0_AMDGPUExecutionProvider_run",
+ "phase": "m0",
+ "host": "DESKTOP-S6VG7J7",
+ "os": "Windows-11-10.0.26300-SP0",
+ "python": "3.12.16 (main, Oct 26 2026, 14:10:56) [MSC v.1944 64 bit (AMD64)]",
+ "argv": [
+  "runner/phases/m0_ep_discovery.py",
+  "--repo",
+  ".",
+  "--ep",
+  "AMDGPUExecutionProvider",
+  "--models",
+  "identity_add",
+  "--batches",
+  "1",
+  "--download",
+  "no"
+ ],
+ "cwd": "C:\\AIwork4me\\windows-migraphx-gfx1100-validation",
+ "run_id": "183e68b788a9",
+ "started": {
+  "utc": "2026-11-16T15:10:42Z",
+  "local": "2026-11-16T23:10:42+08:00"
+ },
+ "seed_policy": "numpy default_rng(seed=1100) unless stated",
+ "ep": "AMDGPUExecutionProvider",
+ "download": "no",
+ "ort_pkg": "onnxruntime-windowsml",
+ "catalog_nuget": "2.5.96",
+ "catalog": {
+  "attempted": true,
+  "catalog_created": true,
+  "enum_hr": "0x00000000",
+  "providers": [
+   {
+    "name": "AMDGPUExecutionProvider",
+    "version": "",
+    "packageFamilyName": "",
+    "libraryPath": "<err 0x80070015 libsize>",
+    "packageRootPath": "<err 0x80070015 rootsize>",
+    "readyState": "NotPresent"
+   },
+   {
+    "name": "MIGraphXExecutionProvider",
+    "version": "",
+    "packageFamilyName": "",
+    "libraryPath": "<err 0x80070015 libsize>",
+    "packageRootPath": "<err 0x80070015 rootsize>",
+    "readyState": "NotPresent"
+   },
+   {
+    "name": "OpenVINOExecutionProvider",
+    "version": "",
+    "packageFamilyName": "",
+    "libraryPath": "<err 0x80070015 libsize>",
+    "packageRootPath": "<err 0x80070015 rootsize>",
+    "readyState": "NotPresent"
+   },
+   {
+    "name": "WebGpuExecutionProvider",
+    "version": "",
+    "packageFamilyName": "",
+    "libraryPath": "<err 0x80070015 libsize>",
+    "packageRootPath": "<err 0x80070015 rootsize>",
+    "readyState": "NotPresent"
+   }
+  ],
+  "target": {
+   "name": "AMDGPUExecutionProvider",
+   "version": "",
+   "packageFamilyName": "",
+   "libraryPath": "<err 0x80070015 libsize>",
+   "packageRootPath": "<err 0x80070015 rootsize>",
+   "readyState": "NotPresent"
+  },
+  "final": {
+   "name": "AMDGPUExecutionProvider",
+   "version": "",
+   "packageFamilyName": "",
+   "libraryPath": "<err 0x80070015 libsize>",
+   "packageRootPath": "<err 0x80070015 rootsize>",
+   "readyState": "NotPresent"
+  }
+ },
+ "outcome": "EP_LIBRARY_NOT_AVAILABLE",
+ "log": [],
+ "finished": {
+  "utc": "2026-11-16T15:10:42Z",
+  "local": "2026-11-16T23:10:42+08:00"
+ }
+}
