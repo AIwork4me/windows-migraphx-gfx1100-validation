@@ -19,7 +19,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install CPU-only test deps
-        run: pip install numpy onnx
+        run: pip install numpy onnx onnxruntime
       - name: Compile all tracked python
         run: python -m compileall -q runner tests
       - name: Unit tests (fail-closed helpers, redaction)

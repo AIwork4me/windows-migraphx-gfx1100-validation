@@ -61,7 +61,8 @@ def assert_ep_executed(sess, ep_name: str, run_fn) -> dict:
     run_fn(sess)
     prof = sess.end_profiling()
     import json
-    ev = json.load(open(prof, encoding="utf-8"))
+    with open(prof, encoding="utf-8") as f:
+        ev = json.load(f)
     events = ev if isinstance(ev, list) else ev.get("traceEvents", [])
     nodes = [e for e in events if e.get("cat") == "Node"]
     ep_nodes = [n for n in nodes
