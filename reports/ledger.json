@@ -16123,17 +16123,22 @@
    "status": "DONE"
   },
   {
-   "exit_code": 1,
+   "exit_code": 0,
    "history": [
     {
      "at": "2026-11-16T17:12:45Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T17:39:01Z",
+     "status": "DONE"
     }
    ],
    "id": "supervisor/m3-stability",
+   "note": "completed manually after canary fix",
    "phase": "supervisor",
    "seconds": 1398.9,
-   "status": "FAIL"
+   "status": "DONE"
   },
   {
    "exit_code": 0,
@@ -16193,21 +16198,25 @@
    "status": "FAIL"
   },
   {
-   "actual_minutes": 0.9,
-   "duration_min": 1.0,
+   "actual_minutes": 11.9,
+   "duration_min": 12.0,
    "errors": 0,
    "history": [
     {
      "at": "2026-11-16T17:25:33Z",
      "status": "PASS"
+    },
+    {
+     "at": "2026-11-16T17:37:46Z",
+     "status": "PASS"
     }
    ],
    "id": "m3/stability/DmlExecutionProvider",
-   "inferences": 22147,
+   "inferences": 281546,
    "phase": "m3",
-   "sessions_created": 4430,
+   "sessions_created": 56310,
    "status": "PASS",
-   "ws_peak_mb": 0.0
+   "ws_peak_mb": 211.5
   }
  ],
  "deadline_local": "2026-11-17T08:30:00+08:00",
@@ -16280,12 +16289,9 @@
    "status": "DONE"
   },
   "m3-stability": {
-   "attempts": 1,
-   "est_gb_used": 0,
-   "exit_code": 1,
-   "log": "reports\\supervisor_logs\\m3-stability.log",
-   "seconds": 1398.9,
-   "status": "FAIL"
+   "exit_code": 0,
+   "note": "rerun manually post-fix: 281546 inf / 56310 sessions / 0 errors / 11.9min / DML control",
+   "status": "DONE"
   },
   "m4-feasibility": {
    "attempts": 1,
@@ -16304,10 +16310,10 @@
    "status": "DONE"
   },
   "wrapup": {
-   "exit_code": 1,
-   "seconds": 0.1,
-   "status": "FAIL"
+   "exit_code": 0,
+   "note": "wrapup redaction bug fixed and rerun manually",
+   "status": "DONE"
   }
  },
- "updated_utc": "2026-11-16T17:25:33Z"
+ "updated_utc": "2026-11-16T17:39:01Z"
 }

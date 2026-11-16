@@ -54,7 +54,7 @@ every ~30 min; per-task states in `reports/ledger.json` (`supervisor_tasks`).
 | M1 multi-output (#150) | FAIL(HIP101)/BLOCKED | same | all by-name correct (same-shape swap detector, 9 outputs, 3 optimization levels) | correct |
 | M2 real models (5 official zoo) | 10 FAIL (HIP101) | 10 FAIL | **8 PASS_CONTROL** + 2 FAIL (ssd: UnicodeDecodeError raised inside ORT/DML `sess.run()` — upstream defect evidence) | OK |
 | M3 perf | not measurable | not measurable | conv_relu b1 DML p50 0.086 ms vs CPU 0.027 ms (micro-graph overhead; no inflated speedups) | p50 0.005–0.027 ms |
-| M3 soak | — | — | 30-min session churn + repeated inference (receipt on disk) | — |
+| M3 soak (12 min) | n/a | n/a | **PASS**: 281,546 inferences, 56,310 session create/destroy, **0 errors**, peak working set 211.5 MB (no leak signature) | — |
 
 *BLOCKED = runs whose process had not called EnsureReady (EP not registered
 in-process); later runs auto-EnsureReady and reach the deeper FAIL (HIP 101).

@@ -56,7 +56,7 @@
 | M1 多输出(#150) | FAIL(HIP101)/BLOCKED | 同左 | 默认优化级 6/6 by-name 正确（含同形交换检测、9 输出）；DISABLE_ALL/BASIC 级 DML 拒载 18 FAIL（Split 算子全级拒载）——真实对照边界，非 AMD 结论 | 正确 |
 | M2 真实模型(5 个官方 zoo) | 10 FAIL(HIP101) | 10 FAIL(HIP101) | **8 PASS_CONTROL**（mnist/squeezenet/mobilenetv2/emotion-ferplus）+ 2 FAIL(ssd: ORT/DML `sess.run()` 内 UnicodeDecodeError——上游缺陷证据） | 正确 |
 | M3 性能 | 无法测 | 无法测 | conv_relu b1: DML p50 0.086ms vs CPU 0.027ms（微图 DML 开销占优；无夸大） | p50 0.005–0.027ms |
-| M3 稳定性 soak | — | — | 30 分钟会话churn+反复推理（receipt 落盘） | — |
+| M3 稳定性 soak(12min) | 无法测 | 无法测 | **PASS**：281,546 次推理、56,310 次会话创建/销毁、**0 错误**、工作集峰值 211.5MB（无泄漏迹象） | — |
 
 *BLOCKED = 该进程未先行 EnsureReady 的运行轮（EP 未注册进程内）；后续轮已统一自动
 EnsureReady → 深度为 FAIL(HIP101)。两种都如实保留。
