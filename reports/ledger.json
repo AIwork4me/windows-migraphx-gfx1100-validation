@@ -16221,14 +16221,45 @@
  ],
  "deadline_local": "2026-11-17T08:30:00+08:00",
  "mission": "WIN-MIGRAPHX-GFX1100",
+ "mission_result": {
+  "dml_control_methodology": "PASS (60 GPU-verified cases incl. real models)",
+  "issue_151_silent_cpu_fallback": "CONFIRMED both EPs",
+  "native_rocm10_1_build": "BLOCKED_DEPENDENCY (no MSVC/SDK/HIP SDK, admin needed)",
+  "windows_ml_amdgpu_ep": "CONDITIONAL_NO-GO driver-gated (HIP 101)",
+  "windows_ml_migraphx_ep": "CONDITIONAL_NO-GO driver-gated + deprecated by MS"
+ },
  "note": "ledger rebuilt from immutable receipts after a hard-kill truncated the file; receipts are ground truth",
  "phases": {
-  "m0": "RUNNING",
-  "m1": "PENDING",
-  "m2": "PENDING",
-  "m3": "PENDING",
-  "m4": "RUNNING",
-  "m5": "RUNNING"
+  "m0": {
+   "BLOCKED_DEPENDENCY": 1,
+   "FAIL": 42
+  },
+  "m1": {
+   "BLOCKED_DEPENDENCY": 184,
+   "FAIL": 34,
+   "FAIL_CORRECTNESS": 4,
+   "PASS": 1,
+   "PASS_CONTROL_DML": 58
+  },
+  "m2": {
+   "FAIL": 22,
+   "PASS": 5,
+   "PASS_CONTROL_DML": 8
+  },
+  "m3": {
+   "FAIL": 10,
+   "PASS": 11
+  },
+  "m4": {
+   "BLOCKED_DEPENDENCY": 1
+  },
+  "m5": {
+   "INCONCLUSIVE": 2
+  },
+  "supervisor": {
+   "DONE": 10,
+   "FAIL": 1
+  }
  },
  "recovered_utc": "2026-11-17T00:20:00Z",
  "supervisor_tasks": {
