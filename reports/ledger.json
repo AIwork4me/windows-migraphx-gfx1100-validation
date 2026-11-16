@@ -67,6 +67,10 @@
     {
      "at": "2026-11-16T16:37:38Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:23Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/abs/b1",
@@ -90,6 +94,10 @@
     },
     {
      "at": "2026-11-16T16:37:41Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:24Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -115,6 +123,10 @@
     {
      "at": "2026-11-16T16:37:42Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:26Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/argmax/b1",
@@ -138,6 +150,10 @@
     },
     {
      "at": "2026-11-16T16:37:43Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:26Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -163,6 +179,10 @@
     {
      "at": "2026-11-16T16:37:44Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:28Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/batchnorm/b1",
@@ -186,6 +206,10 @@
     },
     {
      "at": "2026-11-16T16:37:45Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:29Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -211,6 +235,10 @@
     {
      "at": "2026-11-16T16:37:46Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:31Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/cast_f32_i32/b1",
@@ -234,6 +262,10 @@
     },
     {
      "at": "2026-11-16T16:37:47Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:32Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -259,6 +291,10 @@
     {
      "at": "2026-11-16T16:37:50Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:34Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/conv_relu/b1",
@@ -282,6 +318,10 @@
     },
     {
      "at": "2026-11-16T16:37:52Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:36Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -307,6 +347,10 @@
     {
      "at": "2026-11-16T16:37:53Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:37Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/cos/b1",
@@ -330,6 +374,10 @@
     },
     {
      "at": "2026-11-16T16:38:00Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:37Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -355,6 +403,10 @@
     {
      "at": "2026-11-16T16:38:01Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:40Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/depthwise_conv/b1",
@@ -378,6 +430,10 @@
     },
     {
      "at": "2026-11-16T16:38:02Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:42Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -1623,6 +1679,10 @@
     {
      "at": "2026-11-16T16:32:44Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:15Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/two_out_diff_shape/b2",
@@ -1642,6 +1702,10 @@
     },
     {
      "at": "2026-11-16T16:32:44Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:16Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -1663,6 +1727,10 @@
     {
      "at": "2026-11-16T16:32:44Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:18Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/AMDGPUExecutionProvider/two_out_same_shape/b2",
@@ -1682,6 +1750,10 @@
     },
     {
      "at": "2026-11-16T16:32:44Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:19Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -1703,6 +1775,10 @@
     {
      "at": "2026-11-16T16:32:44Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:21Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/MIGraphXExecutionProvider/abs/b2",
@@ -1722,6 +1798,10 @@
     },
     {
      "at": "2026-11-16T16:32:44Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:23Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -1743,6 +1823,10 @@
     {
      "at": "2026-11-16T16:32:44Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:24Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/MIGraphXExecutionProvider/argmax/b2",
@@ -1762,6 +1846,10 @@
     },
     {
      "at": "2026-11-16T16:32:44Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:25Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -1783,6 +1871,10 @@
     {
      "at": "2026-11-16T16:32:44Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:26Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/MIGraphXExecutionProvider/batchnorm/b2",
@@ -1802,6 +1894,10 @@
     },
     {
      "at": "2026-11-16T16:32:44Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:27Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -1823,6 +1919,10 @@
     {
      "at": "2026-11-16T16:32:44Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:28Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/MIGraphXExecutionProvider/cast_f32_i32/b2",
@@ -1842,6 +1942,10 @@
     },
     {
      "at": "2026-11-16T16:32:44Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:29Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -1863,6 +1967,10 @@
     {
      "at": "2026-11-16T16:32:44Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:31Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/MIGraphXExecutionProvider/conv_relu/b2",
@@ -1882,6 +1990,10 @@
     },
     {
      "at": "2026-11-16T16:32:44Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:33Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -1903,6 +2015,10 @@
     {
      "at": "2026-11-16T16:32:44Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:35Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/MIGraphXExecutionProvider/cos/b2",
@@ -1922,6 +2038,10 @@
     },
     {
      "at": "2026-11-16T16:32:44Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:36Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -1943,6 +2063,10 @@
     {
      "at": "2026-11-16T16:32:44Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:37Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/MIGraphXExecutionProvider/depthwise_conv/b2",
@@ -1962,6 +2086,10 @@
     },
     {
      "at": "2026-11-16T16:32:44Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:38Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -1983,6 +2111,10 @@
     {
      "at": "2026-11-16T16:32:44Z",
      "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:40Z",
+     "status": "BLOCKED_DEPENDENCY"
     }
    ],
    "id": "m1/MIGraphXExecutionProvider/erf/b2",
@@ -2002,6 +2134,10 @@
     },
     {
      "at": "2026-11-16T16:32:44Z",
+     "status": "BLOCKED_DEPENDENCY"
+    },
+    {
+     "at": "2026-11-16T16:39:42Z",
      "status": "BLOCKED_DEPENDENCY"
     }
    ],
@@ -4422,6 +4558,10 @@
     {
      "at": "2026-11-16T16:37:35Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:20Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/MIGraphXExecutionProvider/identity_add/b1",
@@ -4500,6 +4640,10 @@
     },
     {
      "at": "2026-11-16T16:37:35Z",
+     "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:20Z",
      "status": "FAIL"
     }
    ],
@@ -4580,6 +4724,10 @@
     {
      "at": "2026-11-16T16:37:35Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:20Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/MIGraphXExecutionProvider/identity_add/b4",
@@ -4658,6 +4806,10 @@
     },
     {
      "at": "2026-11-16T16:37:35Z",
+     "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:20Z",
      "status": "FAIL"
     }
    ],
@@ -4738,6 +4890,10 @@
     {
      "at": "2026-11-16T16:37:35Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:20Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/MIGraphXExecutionProvider/matmul/b2",
@@ -4817,6 +4973,10 @@
     {
      "at": "2026-11-16T16:37:35Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:20Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/MIGraphXExecutionProvider/matmul/b4",
@@ -4895,6 +5055,10 @@
     },
     {
      "at": "2026-11-16T16:37:35Z",
+     "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:20Z",
      "status": "FAIL"
     }
    ],
@@ -4979,6 +5143,10 @@
     {
      "at": "2026-11-16T16:37:35Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:20Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/MIGraphXExecutionProvider/conv_relu/b2",
@@ -5061,6 +5229,10 @@
     },
     {
      "at": "2026-11-16T16:37:35Z",
+     "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:20Z",
      "status": "FAIL"
     }
    ],
@@ -5145,6 +5317,10 @@
     {
      "at": "2026-11-16T16:37:35Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:20Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/MIGraphXExecutionProvider/softmax/b1",
@@ -5223,6 +5399,10 @@
     },
     {
      "at": "2026-11-16T16:37:35Z",
+     "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:20Z",
      "status": "FAIL"
     }
    ],
@@ -5303,6 +5483,10 @@
     {
      "at": "2026-11-16T16:37:35Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:20Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/MIGraphXExecutionProvider/softmax/b4",
@@ -5381,6 +5565,10 @@
     },
     {
      "at": "2026-11-16T16:37:35Z",
+     "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:20Z",
      "status": "FAIL"
     }
    ],
@@ -5461,6 +5649,10 @@
     {
      "at": "2026-11-16T16:37:35Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:20Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/MIGraphXExecutionProvider/reshape_transpose/b2",
@@ -5540,6 +5732,10 @@
     {
      "at": "2026-11-16T16:37:35Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:20Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/MIGraphXExecutionProvider/reshape_transpose/b4",
@@ -5618,6 +5814,10 @@
     },
     {
      "at": "2026-11-16T16:37:35Z",
+     "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:20Z",
      "status": "FAIL"
     }
    ],
@@ -5717,6 +5917,10 @@
     {
      "at": "2026-11-16T16:37:35Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:20Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/MIGraphXExecutionProvider/two_out_same_shape/b2",
@@ -5815,6 +6019,10 @@
     {
      "at": "2026-11-16T16:37:35Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:20Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/MIGraphXExecutionProvider/two_out_same_shape/b4",
@@ -5912,6 +6120,10 @@
     },
     {
      "at": "2026-11-16T16:37:35Z",
+     "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:20Z",
      "status": "FAIL"
     }
    ],
@@ -6144,6 +6356,10 @@
     {
      "at": "2026-11-16T16:37:35Z",
      "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:21Z",
+     "status": "FAIL"
     }
    ],
    "id": "m0/MIGraphXExecutionProvider/nine_out/b2",
@@ -6374,6 +6590,10 @@
     },
     {
      "at": "2026-11-16T16:37:35Z",
+     "status": "FAIL"
+    },
+    {
+     "at": "2026-11-16T16:39:21Z",
      "status": "FAIL"
     }
    ],
@@ -7187,11 +7407,15 @@
     {
      "at": "2026-11-16T16:37:35Z",
      "status": "DONE"
+    },
+    {
+     "at": "2026-11-16T16:39:21Z",
+     "status": "DONE"
     }
    ],
    "id": "supervisor/m0-migraphx",
    "phase": "supervisor",
-   "seconds": 3.5,
+   "seconds": 4.0,
    "status": "DONE"
   }
  ],
@@ -7215,7 +7439,15 @@
    "log": "reports\\supervisor_logs\\m0-amdgpu.log",
    "seconds": 6.1,
    "status": "DONE"
+  },
+  "m0-migraphx": {
+   "attempts": 1,
+   "est_gb_used": 0.6,
+   "exit_code": 0,
+   "log": "reports\\supervisor_logs\\m0-migraphx.log",
+   "seconds": 4.0,
+   "status": "DONE"
   }
  },
- "updated_utc": "2026-11-16T16:39:13Z"
+ "updated_utc": "2026-11-16T16:39:42Z"
 }

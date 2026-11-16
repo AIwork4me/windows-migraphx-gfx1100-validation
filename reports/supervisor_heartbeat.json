@@ -1,8 +1,8 @@
 {
- "phase": "idle",
- "task": "m0-amdgpu:0",
+ "phase": "running",
+ "task": "m1-operators",
  "alive": true,
- "ts_utc": "2026-11-16T16:39:13Z",
- "ts_local": "2026-11-17T00:39:13+08:00",
+ "ts_utc": "2026-11-16T16:39:21Z",
+ "ts_local": "2026-11-17T00:39:21+08:00",
  "pid": 5356
 }
