@@ -1,0 +1,38 @@
+name: r1-cpu-tests
+
+# Pure-CPU CI: static + unit tests only. This runner has NO AMD GPU and NO
+# WinML EP packages; nothing here can or does validate GPU execution. All
+# hardware claims live in reports/r1 receipts produced on the real host.
+
+on:
+  push:
+    branches: [main, "investigation/**"]
+  pull_request:
+    branches: [main]
+
+jobs:
+  cpu-tests:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install CPU-only test deps
+        run: pip install numpy onnx
+      - name: Compile all tracked python
+        run: python -m compileall -q runner tests
+      - name: Unit tests (fail-closed helpers, redaction)
+        run: python -m unittest discover -s tests -v
+      - name: Validate R1 ledger/manifests parse
+        run: |
+          python - <<'EOF'
+          import json, os
+          json.load(open('reports/ledger.json', encoding='utf-8'))
+          json.load(open('reports/r1/ledger.json', encoding='utf-8'))
+          p = 'reports/r1/manifest.sha256'
+          if os.path.isfile(p):
+              n = sum(1 for l in open(p, encoding='utf-8') if l.strip() and len(l.split(None, 1)) == 2)
+              print(f'r1 manifest lines: {n}')
+          print('parse OK')
+          EOF
