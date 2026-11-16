@@ -161,6 +161,15 @@ def main():
 
     state = {"phase": "startup", "task": None, "alive": True}
     hb(repo, state)
+    import threading
+    def _hb_loop():
+        while state.get("alive"):
+            try:
+                hb(repo, state)
+            except Exception:
+                pass
+            time.sleep(30)
+    threading.Thread(target=_hb_loop, daemon=True).start()
 
     led = L.load_ledger(led_path)
     tasks_state = led.setdefault("supervisor_tasks", {})

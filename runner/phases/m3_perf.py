@@ -41,8 +41,14 @@ def bench_one(repo, ep, model, b, led):
             return res
         t0 = time.perf_counter()
         so = ort.SessionOptions(); so.log_severity_level = 3
-        so.add_provider_for_devices(["GPU"], ep)
-        sess = ort.InferenceSession(path, sess_options=so, providers=["CPUExecutionProvider"])
+        sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+        from ep_runner import add_ep_for_devices
+        _n = add_ep_for_devices(so, ort, ep)
+        if _n == 0:
+            res["status"] = "FAIL_EP_NOT_IN_DEVICES"
+            L.upsert_case(led, {"id": f"m3/{ep}/{model}/b{b}", "phase": "m3", **res})
+            return res
+        sess = ort.InferenceSession(path, sess_options=so)
         res["session_create_ms"] = round((time.perf_counter() - t0) * 1e3, 1)
         first0 = time.perf_counter()
         sess.run(None, feeds)

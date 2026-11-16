@@ -1,0 +1,19 @@
+{
+ "case": {
+  "id": "m1-mo/DmlExecutionProvider/two_out_diff_shape/ORT_ENABLE_BASIC/b1",
+  "phase": "m1",
+  "ep": "DmlExecutionProvider",
+  "model": "two_out_diff_shape.onnx",
+  "batch": 1,
+  "opt_level": "ORT_ENABLE_BASIC",
+  "status": "FAIL",
+  "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 124, in run_case\n    L.upsert_case(led, case)\nTypeError: (): incompatible function arguments. The following argument types are supported:\n    1. (arg0: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg1: onnxruntime.capi.onnxruntime_pybind11_state.GraphOptimizationLevel) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002090C2B3170>, 1\n",
+  "history": [
+   {
+    "at": "2026-11-16T16:45:22Z",
+    "status": "FAIL"
+   }
+  ]
+ },
+ "parity": {}
+}

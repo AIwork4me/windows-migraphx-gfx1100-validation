@@ -386,7 +386,10 @@ def make_feed(name: str, model_meta: dict, batch: int, seed: int = 1100):
             dtype = np.dtype(dtype).type
         shape = [batch if (isinstance(s, str) or s is None) else s for s in shape]
         if np.issubdtype(dtype, np.floating):
-            feeds[iname] = rng.standard_normal(shape).astype(np.float32)
+            arr = rng.standard_normal(shape).astype(np.float32)
+            if any(k in name.lower() for k in ("log", "sqrt")):
+                arr = np.abs(arr) + 0.5  # domain-safe feeds (negative inputs made NaN!=NaN)
+            feeds[iname] = arr
         else:
             feeds[iname] = rng.integers(0, 4, size=shape).astype(dtype)
     return feeds
@@ -434,7 +437,7 @@ def analyze_profile(profile_path: str, target_ep: str) -> dict:
     Returns gpu_nodes (target_ep), cpu_nodes, other_ep nodes, total compute nodes.
     """
     import json as _json
-    with open(profile_path, "r", encoding="utf-8") as f:
+    with open(profile_path, "r", encoding="utf-8", errors="replace") as f:
         trace = _json.load(f)
     events = trace.get("traceEvents", []) if isinstance(trace, dict) else trace
     seen: dict[str, str] = {}

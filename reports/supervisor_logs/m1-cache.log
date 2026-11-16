@@ -1,0 +1,10 @@
+[0;93m2026-11-17 00:45:32.4959188 [W:onnxruntime:Default, onnxruntime_pybind_module.cc:45 onnxruntime::python::CreateOrtEnv] Init provider bridge failed.[m
+C:\AIwork4me\windows-migraphx-gfx1100-validation\venv-winml\Lib\site-packages\onnxruntime\capi\onnxruntime_inference_collection.py:767: UserWarning: Specified 'providers'/'provider_options' when creating InferenceSession but SessionOptions has already been configured with providers. InferenceSession will only use the providers passed to InferenceSession().
+  warnings.warn(
+m1-cache/AMDGPUExecutionProvider/migraphx_cache FAIL
+m1-cache/AMDGPUExecutionProvider/cache_enabled_generic FAIL
+m1-cache/MIGraphXExecutionProvider/migraphx_cache FAIL
+m1-cache/MIGraphXExecutionProvider/cache_enabled_generic FAIL
+M1_CACHE_CANARY_DONE
+
+===== 2026-11-16T16:45:32Z RUN ['C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Scripts\\python.exe', 'C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\m1_cache_canary.py', '--repo', 'C:\\AIwork4me\\windows-migraphx-gfx1100-validation'] =====

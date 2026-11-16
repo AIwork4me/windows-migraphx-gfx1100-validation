@@ -1,0 +1,19 @@
+{
+ "case": {
+  "id": "m1-mo/AMDGPUExecutionProvider/split2/default/b1",
+  "phase": "m1",
+  "ep": "AMDGPUExecutionProvider",
+  "model": "split2.onnx",
+  "batch": 1,
+  "opt_level": "default",
+  "status": "BLOCKED_DEPENDENCY",
+  "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+  "history": [
+   {
+    "at": "2026-11-16T16:44:19Z",
+    "status": "BLOCKED_DEPENDENCY"
+   }
+  ]
+ },
+ "parity": {}
+}

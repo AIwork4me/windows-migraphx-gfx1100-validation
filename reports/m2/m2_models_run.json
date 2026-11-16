@@ -1,0 +1,56 @@
+{
+ "mission": "WIN-MIGRAPHX-GFX1100",
+ "case_id": "m2_models_run",
+ "phase": "m2",
+ "host": "DESKTOP-S6VG7J7",
+ "os": "Windows-11-10.0.26300-SP0",
+ "python": "3.12.16 (main, Oct 26 2026, 14:10:56) [MSC v.1944 64 bit (AMD64)]",
+ "argv": [
+  "runner/phases/m2_models.py",
+  "--repo",
+  "."
+ ],
+ "cwd": "C:\\AIwork4me\\windows-migraphx-gfx1100-validation",
+ "run_id": "7a4cfbc3027f",
+ "started": {
+  "utc": "2026-11-16T16:53:25Z",
+  "local": "2026-11-17T00:53:25+08:00"
+ },
+ "seed_policy": "numpy default_rng(seed=1100) unless stated",
+ "models": {
+  "mnist-8": {
+   "url": "https://github.com/onnx/models/raw/main/validated/vision/classification/mnist/model/mnist-8.onnx",
+   "license": "Apache-2.0",
+   "sha256": "2f06e72de813a8635c9bc0397ac447a601bdbfa7df4bebc278723b958831c9bf",
+   "size_mb": 0.0
+  },
+  "squeezenet1.0-12": {
+   "url": "https://github.com/onnx/models/raw/main/validated/vision/classification/squeezenet/model/squeezenet1.0-12.onnx",
+   "license": "Apache-2.0",
+   "sha256": "dec81a8684617770b3cf13fadc1d92565d1d453d23935fc6388b792d99c992bd",
+   "size_mb": 4.7
+  },
+  "mobilenetv2-12": {
+   "url": "https://github.com/onnx/models/raw/main/validated/vision/classification/mobilenet/model/mobilenetv2-12.onnx",
+   "license": "Apache-2.0",
+   "sha256": "c0c3f76d93fa3fd6580652a45618618a220fced18babf65774ed169de0432ad5",
+   "size_mb": 13.3
+  },
+  "emotion-ferplus-8": {
+   "url": "https://github.com/onnx/models/raw/main/validated/vision/body_analysis/emotion_ferplus/model/emotion-ferplus-8.onnx",
+   "license": "MIT",
+   "sha256": "a2a2ba6a335a3b29c21acb6272f962bd3d47f84952aaffa03b60986e04efa61c",
+   "size_mb": 33.4
+  },
+  "ssd_mobilenet_v1_10": {
+   "url": "https://github.com/onnx/models/raw/main/validated/vision/object_detection_segmentation/ssd-mobilenetv1/model/ssd_mobilenet_v1_10.onnx",
+   "license": "Apache-2.0",
+   "sha256": "1fbcf47654165f2e0b5f1bdf3f123b9e9e1128cd6463717767b76ab4b5246f9a",
+   "size_mb": 27.9
+  }
+ },
+ "finished": {
+  "utc": "2026-11-16T16:56:08Z",
+  "local": "2026-11-17T00:56:08+08:00"
+ }
+}

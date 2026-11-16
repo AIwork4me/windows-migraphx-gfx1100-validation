@@ -1,0 +1,5 @@
+[
+{"cat" : "Session","pid" :8044,"tid" :11624,"dur" :6181,"ts" :5,"ph" : "X","name" :"model_loading_uri","args" : {}},
+{"cat" : "Session","pid" :8044,"tid" :11624,"dur" :20448,"ts" :6651,"ph" : "X","name" :"session_initialization","args" : {}},
+{"cat" : "Session","pid" :8044,"tid" :11624,"dur" :9651,"ts" :27175,"ph" : "X","name" :"model_run","args" : {}}
+]

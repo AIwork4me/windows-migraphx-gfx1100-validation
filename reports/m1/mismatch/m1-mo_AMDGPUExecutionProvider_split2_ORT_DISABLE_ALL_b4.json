@@ -1,0 +1,19 @@
+{
+ "case": {
+  "id": "m1-mo/AMDGPUExecutionProvider/split2/ORT_DISABLE_ALL/b4",
+  "phase": "m1",
+  "ep": "AMDGPUExecutionProvider",
+  "model": "split2.onnx",
+  "batch": 4,
+  "opt_level": "ORT_DISABLE_ALL",
+  "status": "BLOCKED_DEPENDENCY",
+  "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+  "history": [
+   {
+    "at": "2026-11-16T16:44:23Z",
+    "status": "BLOCKED_DEPENDENCY"
+   }
+  ]
+ },
+ "parity": {}
+}

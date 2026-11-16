@@ -1,0 +1,82 @@
+{
+ "mission": "WIN-MIGRAPHX-GFX1100",
+ "case_id": "m1_cache_canary_run",
+ "phase": "m1",
+ "host": "DESKTOP-S6VG7J7",
+ "os": "Windows-11-10.0.26300-SP0",
+ "python": "3.12.16 (main, Oct 26 2026, 14:10:56) [MSC v.1944 64 bit (AMD64)]",
+ "argv": [
+  "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\m1_cache_canary.py",
+  "--repo",
+  "C:\\AIwork4me\\windows-migraphx-gfx1100-validation"
+ ],
+ "cwd": "C:\\AIwork4me\\windows-migraphx-gfx1100-validation",
+ "run_id": "581b538fd5ae",
+ "started": {
+  "utc": "2026-11-16T16:45:32Z",
+  "local": "2026-11-17T00:45:32+08:00"
+ },
+ "seed_policy": "numpy default_rng(seed=1100) unless stated",
+ "sets": [
+  {
+   "id": "m1-cache/AMDGPUExecutionProvider/migraphx_cache",
+   "ep": "AMDGPUExecutionProvider",
+   "options": {
+    "migraphx_cache_dir": "C:\\AIwork4me\\migraphx_cache"
+   },
+   "run1": "ok",
+   "get_providers": [
+    "CPUExecutionProvider"
+   ],
+   "run2": "ok",
+   "parity": true,
+   "status": "FAIL"
+  },
+  {
+   "id": "m1-cache/AMDGPUExecutionProvider/cache_enabled_generic",
+   "ep": "AMDGPUExecutionProvider",
+   "options": {
+    "cache_enabled": "1"
+   },
+   "run1": "ok",
+   "get_providers": [
+    "CPUExecutionProvider"
+   ],
+   "run2": "ok",
+   "parity": true,
+   "status": "FAIL"
+  },
+  {
+   "id": "m1-cache/MIGraphXExecutionProvider/migraphx_cache",
+   "ep": "MIGraphXExecutionProvider",
+   "options": {
+    "migraphx_cache_dir": "C:\\AIwork4me\\migraphx_cache"
+   },
+   "run1": "ok",
+   "get_providers": [
+    "CPUExecutionProvider"
+   ],
+   "run2": "ok",
+   "parity": true,
+   "status": "FAIL"
+  },
+  {
+   "id": "m1-cache/MIGraphXExecutionProvider/cache_enabled_generic",
+   "ep": "MIGraphXExecutionProvider",
+   "options": {
+    "cache_enabled": "1"
+   },
+   "run1": "ok",
+   "get_providers": [
+    "CPUExecutionProvider"
+   ],
+   "run2": "ok",
+   "parity": true,
+   "status": "FAIL"
+  }
+ ],
+ "finished": {
+  "utc": "2026-11-16T16:45:36Z",
+  "local": "2026-11-17T00:45:36+08:00"
+ }
+}

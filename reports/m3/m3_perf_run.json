@@ -1,0 +1,396 @@
+{
+ "mission": "WIN-MIGRAPHX-GFX1100",
+ "case_id": "m3_perf_run",
+ "phase": "m3",
+ "host": "DESKTOP-S6VG7J7",
+ "os": "Windows-11-10.0.26300-SP0",
+ "python": "3.12.16 (main, Oct 26 2026, 14:10:56) [MSC v.1944 64 bit (AMD64)]",
+ "argv": [
+  "runner/phases/m3_perf.py",
+  "--repo",
+  "."
+ ],
+ "cwd": "C:\\AIwork4me\\windows-migraphx-gfx1100-validation",
+ "run_id": "d3c255b416c7",
+ "started": {
+  "utc": "2026-11-16T16:52:56Z",
+  "local": "2026-11-17T00:52:56+08:00"
+ },
+ "seed_policy": "numpy default_rng(seed=1100) unless stated",
+ "bench": [
+  {
+   "ep": "CPUExecutionProvider",
+   "model": "identity_add",
+   "batch": 1,
+   "warmup": 20,
+   "timed": 100,
+   "cpu_ms": {
+    "p50": 0.005,
+    "mean": 0.005,
+    "p95": 0.006,
+    "n": 100
+   },
+   "status": "PASS"
+  },
+  {
+   "ep": "CPUExecutionProvider",
+   "model": "matmul",
+   "batch": 1,
+   "warmup": 20,
+   "timed": 100,
+   "cpu_ms": {
+    "p50": 0.006,
+    "mean": 0.006,
+    "p95": 0.006,
+    "n": 100
+   },
+   "status": "PASS"
+  },
+  {
+   "ep": "CPUExecutionProvider",
+   "model": "matmul",
+   "batch": 4,
+   "warmup": 20,
+   "timed": 100,
+   "cpu_ms": {
+    "p50": 0.006,
+    "mean": 0.006,
+    "p95": 0.006,
+    "n": 100
+   },
+   "status": "PASS"
+  },
+  {
+   "ep": "CPUExecutionProvider",
+   "model": "conv_relu",
+   "batch": 1,
+   "warmup": 20,
+   "timed": 100,
+   "cpu_ms": {
+    "p50": 0.028,
+    "mean": 0.029,
+    "p95": 0.034,
+    "n": 100
+   },
+   "status": "PASS"
+  },
+  {
+   "ep": "CPUExecutionProvider",
+   "model": "softmax",
+   "batch": 1,
+   "warmup": 20,
+   "timed": 100,
+   "cpu_ms": {
+    "p50": 0.005,
+    "mean": 0.005,
+    "p95": 0.005,
+    "n": 100
+   },
+   "status": "PASS"
+  },
+  {
+   "ep": "AMDGPUExecutionProvider",
+   "model": "identity_add",
+   "batch": 1,
+   "warmup": 20,
+   "timed": 100,
+   "cpu_ms": {
+    "p50": 0.005,
+    "mean": 0.005,
+    "p95": 0.006,
+    "n": 100
+   },
+   "session_create_ms": 46.5,
+   "status": "FAIL",
+   "exception": "Fail('[ONNXRuntimeError] : 1 : FAIL : HIP failure 101: invalid device ordinal; GPU=0; file=C:\\\\j\\\\amdgpu-ep\\\\src\\\\shared\\\\hip\\\\allocator.cc; line=14; expr=hipSetDevice(device_id); ')"
+  },
+  {
+   "ep": "AMDGPUExecutionProvider",
+   "model": "matmul",
+   "batch": 1,
+   "warmup": 20,
+   "timed": 100,
+   "cpu_ms": {
+    "p50": 0.005,
+    "mean": 0.005,
+    "p95": 0.006,
+    "n": 100
+   },
+   "session_create_ms": 5.2,
+   "status": "FAIL",
+   "exception": "Fail('[ONNXRuntimeError] : 1 : FAIL : HIP failure 101: invalid device ordinal; GPU=0; file=C:\\\\j\\\\amdgpu-ep\\\\src\\\\shared\\\\hip\\\\allocator.cc; line=14; expr=hipSetDevice(device_id); ')"
+  },
+  {
+   "ep": "AMDGPUExecutionProvider",
+   "model": "matmul",
+   "batch": 4,
+   "warmup": 20,
+   "timed": 100,
+   "cpu_ms": {
+    "p50": 0.006,
+    "mean": 0.006,
+    "p95": 0.006,
+    "n": 100
+   },
+   "session_create_ms": 4.9,
+   "status": "FAIL",
+   "exception": "Fail('[ONNXRuntimeError] : 1 : FAIL : HIP failure 101: invalid device ordinal; GPU=0; file=C:\\\\j\\\\amdgpu-ep\\\\src\\\\shared\\\\hip\\\\allocator.cc; line=14; expr=hipSetDevice(device_id); ')"
+  },
+  {
+   "ep": "AMDGPUExecutionProvider",
+   "model": "conv_relu",
+   "batch": 1,
+   "warmup": 20,
+   "timed": 100,
+   "cpu_ms": {
+    "p50": 0.028,
+    "mean": 0.028,
+    "p95": 0.03,
+    "n": 100
+   },
+   "session_create_ms": 5.0,
+   "status": "FAIL",
+   "exception": "Fail('[ONNXRuntimeError] : 1 : FAIL : HIP failure 101: invalid device ordinal; GPU=0; file=C:\\\\j\\\\amdgpu-ep\\\\src\\\\shared\\\\hip\\\\allocator.cc; line=14; expr=hipSetDevice(device_id); ')"
+  },
+  {
+   "ep": "AMDGPUExecutionProvider",
+   "model": "softmax",
+   "batch": 1,
+   "warmup": 20,
+   "timed": 100,
+   "cpu_ms": {
+    "p50": 0.005,
+    "mean": 0.005,
+    "p95": 0.006,
+    "n": 100
+   },
+   "session_create_ms": 5.0,
+   "status": "FAIL",
+   "exception": "Fail('[ONNXRuntimeError] : 1 : FAIL : HIP failure 101: invalid device ordinal; GPU=0; file=C:\\\\j\\\\amdgpu-ep\\\\src\\\\shared\\\\hip\\\\allocator.cc; line=14; expr=hipSetDevice(device_id); ')"
+  },
+  {
+   "ep": "MIGraphXExecutionProvider",
+   "model": "identity_add",
+   "batch": 1,
+   "warmup": 20,
+   "timed": 100,
+   "cpu_ms": {
+    "p50": 0.005,
+    "mean": 0.005,
+    "p95": 0.006,
+    "n": 100
+   },
+   "session_create_ms": 5.4,
+   "status": "FAIL",
+   "exception": "Fail('[ONNXRuntimeError] : 1 : FAIL : HIP failure 101: invalid device ordinal; GPU=0; file=C:\\\\j\\\\amdgpu-ep\\\\src\\\\shared\\\\hip\\\\allocator.cc; line=14; expr=hipSetDevice(device_id); ')"
+  },
+  {
+   "ep": "MIGraphXExecutionProvider",
+   "model": "matmul",
+   "batch": 1,
+   "warmup": 20,
+   "timed": 100,
+   "cpu_ms": {
+    "p50": 0.006,
+    "mean": 0.006,
+    "p95": 0.007,
+    "n": 100
+   },
+   "session_create_ms": 6.0,
+   "status": "FAIL",
+   "exception": "Fail('[ONNXRuntimeError] : 1 : FAIL : HIP failure 101: invalid device ordinal; GPU=0; file=C:\\\\j\\\\amdgpu-ep\\\\src\\\\shared\\\\hip\\\\allocator.cc; line=14; expr=hipSetDevice(device_id); ')"
+  },
+  {
+   "ep": "MIGraphXExecutionProvider",
+   "model": "matmul",
+   "batch": 4,
+   "warmup": 20,
+   "timed": 100,
+   "cpu_ms": {
+    "p50": 0.006,
+    "mean": 0.006,
+    "p95": 0.006,
+    "n": 100
+   },
+   "session_create_ms": 5.0,
+   "status": "FAIL",
+   "exception": "Fail('[ONNXRuntimeError] : 1 : FAIL : HIP failure 101: invalid device ordinal; GPU=0; file=C:\\\\j\\\\amdgpu-ep\\\\src\\\\shared\\\\hip\\\\allocator.cc; line=14; expr=hipSetDevice(device_id); ')"
+  },
+  {
+   "ep": "MIGraphXExecutionProvider",
+   "model": "conv_relu",
+   "batch": 1,
+   "warmup": 20,
+   "timed": 100,
+   "cpu_ms": {
+    "p50": 0.028,
+    "mean": 0.029,
+    "p95": 0.034,
+    "n": 100
+   },
+   "session_create_ms": 5.8,
+   "status": "FAIL",
+   "exception": "Fail('[ONNXRuntimeError] : 1 : FAIL : HIP failure 101: invalid device ordinal; GPU=0; file=C:\\\\j\\\\amdgpu-ep\\\\src\\\\shared\\\\hip\\\\allocator.cc; line=14; expr=hipSetDevice(device_id); ')"
+  },
+  {
+   "ep": "MIGraphXExecutionProvider",
+   "model": "softmax",
+   "batch": 1,
+   "warmup": 20,
+   "timed": 100,
+   "cpu_ms": {
+    "p50": 0.005,
+    "mean": 0.005,
+    "p95": 0.007,
+    "n": 100
+   },
+   "session_create_ms": 5.7,
+   "status": "FAIL",
+   "exception": "Fail('[ONNXRuntimeError] : 1 : FAIL : HIP failure 101: invalid device ordinal; GPU=0; file=C:\\\\j\\\\amdgpu-ep\\\\src\\\\shared\\\\hip\\\\allocator.cc; line=14; expr=hipSetDevice(device_id); ')"
+  },
+  {
+   "ep": "DmlExecutionProvider",
+   "model": "identity_add",
+   "batch": 1,
+   "warmup": 20,
+   "timed": 100,
+   "cpu_ms": {
+    "p50": 0.005,
+    "mean": 0.005,
+    "p95": 0.006,
+    "n": 100
+   },
+   "session_create_ms": 55.4,
+   "first_run_ms": 2.0,
+   "ep_ms": {
+    "p50": 0.069,
+    "mean": 0.074,
+    "p95": 0.087,
+    "n": 300,
+    "rounds": 3
+   },
+   "get_providers": [
+    "DmlExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "speedup_p50": 0.07,
+   "status": "PASS"
+  },
+  {
+   "ep": "DmlExecutionProvider",
+   "model": "matmul",
+   "batch": 1,
+   "warmup": 20,
+   "timed": 100,
+   "cpu_ms": {
+    "p50": 0.005,
+    "mean": 0.006,
+    "p95": 0.006,
+    "n": 100
+   },
+   "session_create_ms": 43.0,
+   "first_run_ms": 2.2,
+   "ep_ms": {
+    "p50": 0.081,
+    "mean": 0.089,
+    "p95": 0.129,
+    "n": 300,
+    "rounds": 3
+   },
+   "get_providers": [
+    "DmlExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "speedup_p50": 0.06,
+   "status": "PASS"
+  },
+  {
+   "ep": "DmlExecutionProvider",
+   "model": "matmul",
+   "batch": 4,
+   "warmup": 20,
+   "timed": 100,
+   "cpu_ms": {
+    "p50": 0.006,
+    "mean": 0.006,
+    "p95": 0.006,
+    "n": 100
+   },
+   "session_create_ms": 41.4,
+   "first_run_ms": 2.7,
+   "ep_ms": {
+    "p50": 0.088,
+    "mean": 0.096,
+    "p95": 0.14,
+    "n": 300,
+    "rounds": 3
+   },
+   "get_providers": [
+    "DmlExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "speedup_p50": 0.07,
+   "status": "PASS"
+  },
+  {
+   "ep": "DmlExecutionProvider",
+   "model": "conv_relu",
+   "batch": 1,
+   "warmup": 20,
+   "timed": 100,
+   "cpu_ms": {
+    "p50": 0.027,
+    "mean": 0.027,
+    "p95": 0.028,
+    "n": 100
+   },
+   "session_create_ms": 44.6,
+   "first_run_ms": 2.6,
+   "ep_ms": {
+    "p50": 0.086,
+    "mean": 0.09,
+    "p95": 0.101,
+    "n": 300,
+    "rounds": 3
+   },
+   "get_providers": [
+    "DmlExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "speedup_p50": 0.31,
+   "status": "PASS"
+  },
+  {
+   "ep": "DmlExecutionProvider",
+   "model": "softmax",
+   "batch": 1,
+   "warmup": 20,
+   "timed": 100,
+   "cpu_ms": {
+    "p50": 0.005,
+    "mean": 0.005,
+    "p95": 0.006,
+    "n": 100
+   },
+   "session_create_ms": 43.9,
+   "first_run_ms": 3.1,
+   "ep_ms": {
+    "p50": 0.083,
+    "mean": 0.093,
+    "p95": 0.143,
+    "n": 300,
+    "rounds": 3
+   },
+   "get_providers": [
+    "DmlExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "speedup_p50": 0.06,
+   "status": "PASS"
+  }
+ ],
+ "finished": {
+  "utc": "2026-11-16T16:53:01Z",
+  "local": "2026-11-17T00:53:01+08:00"
+ }
+}

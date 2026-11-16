@@ -6,15 +6,15 @@
  "os": "Windows-11-10.0.26300-SP0",
  "python": "3.12.16 (main, Oct 26 2026, 14:10:56) [MSC v.1944 64 bit (AMD64)]",
  "argv": [
-  "runner/phases/m1_operators.py",
+  "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\m1_operators.py",
   "--repo",
-  "."
+  "C:\\AIwork4me\\windows-migraphx-gfx1100-validation"
  ],
  "cwd": "C:\\AIwork4me\\windows-migraphx-gfx1100-validation",
- "run_id": "5264394b8d67",
+ "run_id": "b3144b9e1fd4",
  "started": {
-  "utc": "2026-11-16T16:32:43Z",
-  "local": "2026-11-17T00:32:43+08:00"
+  "utc": "2026-11-16T16:39:21Z",
+  "local": "2026-11-17T00:39:21+08:00"
  },
  "seed_policy": "numpy default_rng(seed=1100) unless stated",
  "cases": [
@@ -972,17 +972,45 @@
   },
   {
    "id": "m1/DmlExecutionProvider/abs/b1",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/abs/b2",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/argmax/b1",
@@ -1000,213 +1028,649 @@
   },
   {
    "id": "m1/DmlExecutionProvider/batchnorm/b1",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 12,
+    "gpu_nodes": 12,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/batchnorm/b2",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 12,
+    "gpu_nodes": 12,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/cast_f32_i32/b1",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/cast_f32_i32/b2",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/conv_relu/b1",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/conv_relu/b2",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/cos/b1",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/cos/b2",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/depthwise_conv/b1",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/depthwise_conv/b2",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/erf/b1",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/erf/b2",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/exp/b1",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/exp/b2",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/floor/b1",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/floor/b2",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/gemm/b1",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/gemm/b2",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/identity_add/b1",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/identity_add/b2",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/layernorm/b1",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/layernorm/b2",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/log/b1",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "FAIL_CORRECTNESS",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": false,
+    "per_output": {
+     "Y": "VALUE_MISMATCH"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/log/b2",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "FAIL_CORRECTNESS",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": false,
+    "per_output": {
+     "Y": "VALUE_MISMATCH"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/matmul/b1",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/matmul/b2",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/neg/b1",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/neg/b2",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/nine_out/b1",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 27,
+    "gpu_nodes": 27,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "out1": "OK",
+     "out2": "OK",
+     "out3": "OK",
+     "out4": "OK",
+     "out5": "OK",
+     "out6": "OK",
+     "out7": "OK",
+     "out8": "OK",
+     "out9": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/nine_out/b2",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 27,
+    "gpu_nodes": 27,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "out1": "OK",
+     "out2": "OK",
+     "out3": "OK",
+     "out4": "OK",
+     "out5": "OK",
+     "out6": "OK",
+     "out7": "OK",
+     "out8": "OK",
+     "out9": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/pad/b1",
@@ -1224,31 +1688,87 @@
   },
   {
    "id": "m1/DmlExecutionProvider/reduce_max/b1",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/reduce_max/b2",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/reduce_mean/b1",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/reduce_mean/b2",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/reduce_sum/b1",
@@ -1266,87 +1786,255 @@
   },
   {
    "id": "m1/DmlExecutionProvider/relu/b1",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/relu/b2",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/reshape_transpose/b1",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 6,
+    "gpu_nodes": 6,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/reshape_transpose/b2",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 6,
+    "gpu_nodes": 6,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/resize_nearest/b1",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/resize_nearest/b2",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/sigmoid/b1",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/sigmoid/b2",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/sin/b1",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/sin/b2",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/softmax/b1",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/softmax/b2",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/split2/b1",
@@ -1364,17 +2052,45 @@
   },
   {
    "id": "m1/DmlExecutionProvider/sqrt/b1",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "FAIL_CORRECTNESS",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": false,
+    "per_output": {
+     "Y": "VALUE_MISMATCH"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/sqrt/b2",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "FAIL_CORRECTNESS",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": false,
+    "per_output": {
+     "Y": "VALUE_MISMATCH"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/squeeze/b1",
@@ -1392,17 +2108,45 @@
   },
   {
    "id": "m1/DmlExecutionProvider/tanh/b1",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/tanh/b2",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 3,
+    "gpu_nodes": 3,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "Y": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/topk_gather_concat/b1",
@@ -1420,35 +2164,95 @@
   },
   {
    "id": "m1/DmlExecutionProvider/two_out_diff_shape/b1",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 6,
+    "gpu_nodes": 6,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "big": "OK",
+     "small": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/two_out_diff_shape/b2",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 6,
+    "gpu_nodes": 6,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "big": "OK",
+     "small": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/two_out_same_shape/b1",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 6,
+    "gpu_nodes": 6,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "A": "OK",
+     "B": "OK"
+    }
+   },
+   "gpu_node_verified": true
   },
   {
    "id": "m1/DmlExecutionProvider/two_out_same_shape/b2",
-   "status": "FAIL",
-   "placement": null,
-   "parity_summary": null,
-   "gpu_node_verified": null
+   "status": "PASS_CONTROL_DML",
+   "placement": {
+    "total_node_events": 6,
+    "gpu_nodes": 6,
+    "cpu_nodes": 0,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "DmlExecutionProvider"
+    ],
+    "gpu_node_ratio": 1.0
+   },
+   "parity_summary": {
+    "all_ok": true,
+    "per_output": {
+     "A": "OK",
+     "B": "OK"
+    }
+   },
+   "gpu_node_verified": true
   }
  ],
  "finished": {
-  "utc": "2026-11-16T16:32:47Z",
-  "local": "2026-11-17T00:32:47+08:00"
+  "utc": "2026-11-16T16:43:57Z",
+  "local": "2026-11-17T00:43:57+08:00"
  }
 }

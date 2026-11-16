@@ -1,0 +1,19 @@
+{
+ "case": {
+  "id": "m1-mo/MIGraphXExecutionProvider/two_out_diff_shape/ORT_ENABLE_BASIC/b4",
+  "phase": "m1",
+  "ep": "MIGraphXExecutionProvider",
+  "model": "two_out_diff_shape.onnx",
+  "batch": 4,
+  "opt_level": "ORT_ENABLE_BASIC",
+  "status": "BLOCKED_DEPENDENCY",
+  "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+  "history": [
+   {
+    "at": "2026-11-16T16:44:41Z",
+    "status": "BLOCKED_DEPENDENCY"
+   }
+  ]
+ },
+ "parity": {}
+}

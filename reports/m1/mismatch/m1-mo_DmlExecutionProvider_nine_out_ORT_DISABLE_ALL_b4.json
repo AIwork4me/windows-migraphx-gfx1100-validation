@@ -1,0 +1,19 @@
+{
+ "case": {
+  "id": "m1-mo/DmlExecutionProvider/nine_out/ORT_DISABLE_ALL/b4",
+  "phase": "m1",
+  "ep": "DmlExecutionProvider",
+  "model": "nine_out.onnx",
+  "batch": 4,
+  "opt_level": "ORT_DISABLE_ALL",
+  "status": "FAIL",
+  "exception": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\..\\ep_runner.py\", line 124, in run_case\n    so_cpu.graph_optimization_level = C.ORT_OPT_LEVELS[opt_level]\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: (): incompatible function arguments. The following argument types are supported:\n    1. (arg0: onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions, arg1: onnxruntime.capi.onnxruntime_pybind11_state.GraphOptimizationLevel) -> None\n\nInvoked with: <onnxruntime.capi.onnxruntime_pybind11_state.SessionOptions object at 0x000002090D8CF570>, 0\n",
+  "history": [
+   {
+    "at": "2026-11-16T16:45:10Z",
+    "status": "FAIL"
+   }
+  ]
+ },
+ "parity": {}
+}

@@ -1,0 +1,44 @@
+[0;93m2026-11-17 00:53:28.4254133 [W:onnxruntime:Default, onnxruntime_pybind_module.cc:45 onnxruntime::python::CreateOrtEnv] Init provider bridge failed.[m
+2026-11-17 00:53:32.584607 [WARN] [:0] auto_save_problem_cache: save failed: C:\j\AMDMIGraphX\src\file_buffer.cpp:77: write_buffer: Failure opening file: C:\Program Files\WindowsApps\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\ExecutionProvider\problem_cache.json
+m2/AMDGPUExecutionProvider/mnist-8/b1 FAIL
+2026-11-17 00:53:36.481370 [WARN] [:0] auto_save_problem_cache: save failed: C:\j\AMDMIGraphX\src\file_buffer.cpp:77: write_buffer: Failure opening file: C:\Program Files\WindowsApps\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\ExecutionProvider\problem_cache.json
+m2/AMDGPUExecutionProvider/mnist-8/b2 FAIL
+2026-11-17 00:53:49.639357 [WARN] [:0] auto_save_problem_cache: save failed: C:\j\AMDMIGraphX\src\file_buffer.cpp:77: write_buffer: Failure opening file: C:\Program Files\WindowsApps\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\ExecutionProvider\problem_cache.json
+m2/AMDGPUExecutionProvider/squeezenet1.0-12/b1 FAIL
+2026-11-17 00:54:01.331261 [WARN] [:0] auto_save_problem_cache: save failed: C:\j\AMDMIGraphX\src\file_buffer.cpp:77: write_buffer: Failure opening file: C:\Program Files\WindowsApps\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\ExecutionProvider\problem_cache.json
+m2/AMDGPUExecutionProvider/squeezenet1.0-12/b2 FAIL
+m2/AMDGPUExecutionProvider/mobilenetv2-12/b1 FAIL
+m2/AMDGPUExecutionProvider/mobilenetv2-12/b2 FAIL
+2026-11-17 00:54:13.547758 [WARN] [:0] auto_save_problem_cache: save failed: C:\j\AMDMIGraphX\src\file_buffer.cpp:77: write_buffer: Failure opening file: C:\Program Files\WindowsApps\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\ExecutionProvider\problem_cache.json
+m2/AMDGPUExecutionProvider/emotion-ferplus-8/b1 FAIL
+2026-11-17 00:54:20.975727 [WARN] [:0] auto_save_problem_cache: save failed: C:\j\AMDMIGraphX\src\file_buffer.cpp:77: write_buffer: Failure opening file: C:\Program Files\WindowsApps\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\ExecutionProvider\problem_cache.json
+m2/AMDGPUExecutionProvider/emotion-ferplus-8/b2 FAIL
+m2/AMDGPUExecutionProvider/ssd_mobilenet_v1_10/b1 FAIL
+m2/AMDGPUExecutionProvider/ssd_mobilenet_v1_10/b2 FAIL
+2026-11-17 00:54:39.794990 [WARN] [:0] auto_save_problem_cache: save failed: C:\j\AMDMIGraphX\src\file_buffer.cpp:77: write_buffer: Failure opening file: C:\Program Files\WindowsApps\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\ExecutionProvider\problem_cache.json
+m2/MIGraphXExecutionProvider/mnist-8/b1 FAIL
+2026-11-17 00:54:42.811664 [WARN] [:0] auto_save_problem_cache: save failed: C:\j\AMDMIGraphX\src\file_buffer.cpp:77: write_buffer: Failure opening file: C:\Program Files\WindowsApps\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\ExecutionProvider\problem_cache.json
+m2/MIGraphXExecutionProvider/mnist-8/b2 FAIL
+2026-11-17 00:54:54.886695 [WARN] [:0] auto_save_problem_cache: save failed: C:\j\AMDMIGraphX\src\file_buffer.cpp:77: write_buffer: Failure opening file: C:\Program Files\WindowsApps\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\ExecutionProvider\problem_cache.json
+m2/MIGraphXExecutionProvider/squeezenet1.0-12/b1 FAIL
+2026-11-17 00:55:06.562260 [WARN] [:0] auto_save_problem_cache: save failed: C:\j\AMDMIGraphX\src\file_buffer.cpp:77: write_buffer: Failure opening file: C:\Program Files\WindowsApps\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\ExecutionProvider\problem_cache.json
+m2/MIGraphXExecutionProvider/squeezenet1.0-12/b2 FAIL
+m2/MIGraphXExecutionProvider/mobilenetv2-12/b1 FAIL
+m2/MIGraphXExecutionProvider/mobilenetv2-12/b2 FAIL
+2026-11-17 00:55:17.717630 [WARN] [:0] auto_save_problem_cache: save failed: C:\j\AMDMIGraphX\src\file_buffer.cpp:77: write_buffer: Failure opening file: C:\Program Files\WindowsApps\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\ExecutionProvider\problem_cache.json
+m2/MIGraphXExecutionProvider/emotion-ferplus-8/b1 FAIL
+2026-11-17 00:55:25.167363 [WARN] [:0] auto_save_problem_cache: save failed: C:\j\AMDMIGraphX\src\file_buffer.cpp:77: write_buffer: Failure opening file: C:\Program Files\WindowsApps\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\ExecutionProvider\problem_cache.json
+m2/MIGraphXExecutionProvider/emotion-ferplus-8/b2 FAIL
+m2/MIGraphXExecutionProvider/ssd_mobilenet_v1_10/b1 FAIL
+m2/MIGraphXExecutionProvider/ssd_mobilenet_v1_10/b2 FAIL
+m2/DmlExecutionProvider/mnist-8/b1 PASS_CONTROL_DML
+m2/DmlExecutionProvider/mnist-8/b2 PASS_CONTROL_DML
+m2/DmlExecutionProvider/squeezenet1.0-12/b1 PASS_CONTROL_DML
+m2/DmlExecutionProvider/squeezenet1.0-12/b2 PASS_CONTROL_DML
+m2/DmlExecutionProvider/mobilenetv2-12/b1 PASS_CONTROL_DML
+m2/DmlExecutionProvider/mobilenetv2-12/b2 PASS_CONTROL_DML
+m2/DmlExecutionProvider/emotion-ferplus-8/b1 PASS_CONTROL_DML
+m2/DmlExecutionProvider/emotion-ferplus-8/b2 PASS_CONTROL_DML
+[1;31m2026-11-17 00:55:57.8128165 [E:onnxruntime:, sequential_executor.cc:671 onnxruntime::ExecuteKernel] Non-zero status code returned while running ConstantOfShape node. Name:'Postprocessor/BatchMultiClassNonMaxSuppression/map/while/PadOrClipBoxList/cond/zeros' Status Message: C:\__w\1\s\win-onnxruntime\onnxruntime\core\providers\dml\DmlExecutionProvider\src\MLOperatorAuthorImpl.cpp(2927)\onnxruntime_pybind11_state.pyd!00007FF92CD3E71C: (caller: 00007FF92CD109B4) Exception(1) tid(1dc4) 80070057 m2/DmlExecutionProvider/ssd_mobilenet_v1_10/b1 FAIL
+m2/DmlExecutionProvider/ssd_mobilenet_v1_10/b2 FAIL
+M2_MODELS_DONE

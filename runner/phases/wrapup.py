@@ -56,6 +56,31 @@ def main():
     with open(os.path.join(repo, "reports", "manifest.sha256"), "w", encoding="utf-8") as f:
         f.write("\n".join(sorted(man_lines)))
 
+    # 2b. performance.csv from m3 cases
+    import csv as _csv
+    led0 = L.load_ledger(led_path)
+    perf_rows = []
+    for c in led0.get("cases", []):
+        if c.get("phase") == "m3" and c.get("timing"):
+            t = c["timing"]
+            perf_rows.append({
+                "case": c["id"], "ep": c.get("ep"), "model": c.get("model"),
+                "batch": c.get("batch"), "status": c.get("status"),
+                "session_create_ms": t.get("session_create_ms"),
+                "first_run_ms": t.get("first_run_ms"),
+                "cpu_p50_ms": (t.get("cpu_ms") or {}).get("p50"),
+                "cpu_p95_ms": (t.get("cpu_ms") or {}).get("p95"),
+                "ep_p50_ms": (t.get("ep_ms") or {}).get("p50"),
+                "ep_p95_ms": (t.get("ep_ms") or {}).get("p95"),
+                "ep_mean_ms": (t.get("ep_ms") or {}).get("mean"),
+                "n_timed": (t.get("ep_ms") or {}).get("n"),
+                "rounds": (t.get("ep_ms") or {}).get("rounds"),
+                "speedup_p50": t.get("speedup_p50"),
+            })
+    with open(os.path.join(repo, "reports", "performance.csv"), "w", newline="", encoding="utf-8") as f:
+        w = _csv.DictWriter(f, fieldnames=list(perf_rows[0].keys()) if perf_rows else ["case"])
+        w.writeheader(); w.writerows(perf_rows)
+
     # 3. STATUS.md
     led = L.load_ledger(led_path)
     summ = L.phase_summary(led)

@@ -1,0 +1,19 @@
+{
+ "case": {
+  "id": "m1-mo/MIGraphXExecutionProvider/nine_out/default/b4",
+  "phase": "m1",
+  "ep": "MIGraphXExecutionProvider",
+  "model": "nine_out.onnx",
+  "batch": 4,
+  "opt_level": "default",
+  "status": "BLOCKED_DEPENDENCY",
+  "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+  "history": [
+   {
+    "at": "2026-11-16T16:44:33Z",
+    "status": "BLOCKED_DEPENDENCY"
+   }
+  ]
+ },
+ "parity": {}
+}

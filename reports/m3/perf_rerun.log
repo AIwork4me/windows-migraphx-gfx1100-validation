@@ -1,0 +1,22 @@
+[0;93m2026-11-17 00:52:56.5466612 [W:onnxruntime:Default, onnxruntime_pybind_module.cc:45 onnxruntime::python::CreateOrtEnv] Init provider bridge failed.[m
+CPUExecutionProvider/identity_add/b1 PASS cpu_p50 0.005 ep_p50 None
+CPUExecutionProvider/matmul/b1 PASS cpu_p50 0.006 ep_p50 None
+CPUExecutionProvider/matmul/b4 PASS cpu_p50 0.006 ep_p50 None
+CPUExecutionProvider/conv_relu/b1 PASS cpu_p50 0.028 ep_p50 None
+CPUExecutionProvider/softmax/b1 PASS cpu_p50 0.005 ep_p50 None
+AMDGPUExecutionProvider/identity_add/b1 FAIL cpu_p50 0.005 ep_p50 None
+AMDGPUExecutionProvider/matmul/b1 FAIL cpu_p50 0.005 ep_p50 None
+AMDGPUExecutionProvider/matmul/b4 FAIL cpu_p50 0.006 ep_p50 None
+AMDGPUExecutionProvider/conv_relu/b1 FAIL cpu_p50 0.028 ep_p50 None
+AMDGPUExecutionProvider/softmax/b1 FAIL cpu_p50 0.005 ep_p50 None
+MIGraphXExecutionProvider/identity_add/b1 FAIL cpu_p50 0.005 ep_p50 None
+MIGraphXExecutionProvider/matmul/b1 FAIL cpu_p50 0.006 ep_p50 None
+MIGraphXExecutionProvider/matmul/b4 FAIL cpu_p50 0.006 ep_p50 None
+MIGraphXExecutionProvider/conv_relu/b1 FAIL cpu_p50 0.028 ep_p50 None
+MIGraphXExecutionProvider/softmax/b1 FAIL cpu_p50 0.005 ep_p50 None
+DmlExecutionProvider/identity_add/b1 PASS cpu_p50 0.005 ep_p50 0.069
+DmlExecutionProvider/matmul/b1 PASS cpu_p50 0.005 ep_p50 0.081
+DmlExecutionProvider/matmul/b4 PASS cpu_p50 0.006 ep_p50 0.088
+DmlExecutionProvider/conv_relu/b1 PASS cpu_p50 0.027 ep_p50 0.086
+DmlExecutionProvider/softmax/b1 PASS cpu_p50 0.005 ep_p50 0.083
+M3_PERF_DONE

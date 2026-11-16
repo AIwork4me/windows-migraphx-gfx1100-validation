@@ -16,7 +16,7 @@ from ep_runner import run_case, register_ep, find_winml_ep_library
 MODELS = {
     "mnist-8": ("https://github.com/onnx/models/raw/main/validated/vision/classification/mnist/model/mnist-8.onnx", "Apache-2.0"),
     "squeezenet1.0-12": ("https://github.com/onnx/models/raw/main/validated/vision/classification/squeezenet/model/squeezenet1.0-12.onnx", "Apache-2.0"),
-    "mobilenetv2-12": ("https://github.com/onnx/models/raw/main/validated/vision/classification/mobilenetv2/model/mobilenetv2-12.onnx", "Apache-2.0"),
+    "mobilenetv2-12": ("https://github.com/onnx/models/raw/main/validated/vision/classification/mobilenet/model/mobilenetv2-12.onnx", "Apache-2.0"),
     "emotion-ferplus-8": ("https://github.com/onnx/models/raw/main/validated/vision/body_analysis/emotion_ferplus/model/emotion-ferplus-8.onnx", "MIT"),
     "ssd_mobilenet_v1_10": ("https://github.com/onnx/models/raw/main/validated/vision/object_detection_segmentation/ssd-mobilenetv1/model/ssd_mobilenet_v1_10.onnx", "Apache-2.0"),
 }

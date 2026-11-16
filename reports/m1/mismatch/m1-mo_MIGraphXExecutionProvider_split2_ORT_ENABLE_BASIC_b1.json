@@ -1,0 +1,19 @@
+{
+ "case": {
+  "id": "m1-mo/MIGraphXExecutionProvider/split2/ORT_ENABLE_BASIC/b1",
+  "phase": "m1",
+  "ep": "MIGraphXExecutionProvider",
+  "model": "split2.onnx",
+  "batch": 1,
+  "opt_level": "ORT_ENABLE_BASIC",
+  "status": "BLOCKED_DEPENDENCY",
+  "reason": "EP not registered: {'ok': False, 'error': 'no usable library path'}",
+  "history": [
+   {
+    "at": "2026-11-16T16:44:48Z",
+    "status": "BLOCKED_DEPENDENCY"
+   }
+  ]
+ },
+ "parity": {}
+}

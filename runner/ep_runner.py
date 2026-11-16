@@ -90,7 +90,15 @@ def find_winml_ep_library(ep_name: str) -> str | None:
             if not ep:
                 return None
             info = cat.info_of(ep)
-            return info.get("libraryPath") if info.get("readyState") == "Ready" else None
+            if info.get("readyState") != "Ready":
+                # package installed but not in this app graph: one bounded ensure
+                try:
+                    cat.ensure_ready(ep)
+                except Exception:
+                    pass
+                ep2, _ = cat.find(h, ep_name)
+                info = cat.info_of(ep2) if ep2 else info
+            return info.get("libraryPath") if (info.get("libraryPath", "").endswith(".dll")) else None
         finally:
             cat.release(h)
     except Exception:
