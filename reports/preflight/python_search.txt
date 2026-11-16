@@ -1,10 +1,10 @@
 ﻿=== candidate install roots ===
-MISSING: C:\Users\Rocm\AppData\Local\Programs\Python
+MISSING: C:\Users\<redacted>\AppData\Local\Programs\Python
 MISSING: C:\Program Files\Python312
 MISSING: C:\Program Files\Python311
 MISSING: C:\Program Files\Python313
 MISSING: C:\Python312
 MISSING: C:\Python311
 MISSING: C:\Python313
-MISSING: C:\Users\Rocm\miniconda3
-MISSING: C:\Users\Rocm\miniforge3
+MISSING: C:\Users\<redacted>\miniconda3
+MISSING: C:\Users\<redacted>\miniforge3

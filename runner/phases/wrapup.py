@@ -1,12 +1,14 @@
 """Wrap-up: STATUS.md, manifest.sha256, redaction scan. Safe to re-run."""
 from __future__ import annotations
-import argparse, hashlib, os, sys, re, json
+import argparse, hashlib, os, sys, re, json, platform
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
 import common as C
 import ledger as L
 
+HOSTNAME = platform.node()
 SENSITIVE_PATTERNS = [
+    (re.compile(re.escape(HOSTNAME)), "WIN-GFX1100-VAL"),  # hostname
     (re.compile(r"gh[pousr]_[A-Za-z0-9]{20,}"), "gh****"),
     (re.compile(r"C:\\Users\\Rocm", re.I), "C:\\Users\\<redacted>"),
     (re.compile(r"RdpIdd_IndirectDisplay&SESSIONID_\w+"), "RdpIdd<redacted>"),
@@ -15,7 +17,7 @@ SENSITIVE_PATTERNS = [
 
 def redact_text(t: str) -> str:
     for pat, rep in SENSITIVE_PATTERNS:
-        t = pat.sub(rep, t)
+        t = pat.sub(lambda m, rep=rep: rep, t)  # lambda: avoid \ escapes in repl
     return t
 
 

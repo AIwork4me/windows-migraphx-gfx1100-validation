@@ -39,9 +39,10 @@
 5. **真执行尝试**：单设备 `add_provider_for_devices([dev], {})` → AMD EP 工厂真实
    执行 → `hip\allocator.cc:14 hipSetDevice` → **HIP failure 101**
    （`reports/m0/*_final.log` 每 case 异常全文）。**无任何 AMD GPU PASS 被声称。**
-6. **#151 静默回退**：`reports/m5/probe151_AMDGPUExecutionProvider.json` ——
-   classic providers 注入 0.01s 建 session、`get_providers()=['CPUExecutionProvider']`、
-   推理完成，全程无告警无异常。
+6. **#151 静默回退（双 EP 实锤）**：`reports/m5/probe151_*.json` ——
+   AMDGPU 与 MIGraphX 两探针均为 SILENT_CPU_FALLBACK：classic providers 注入
+   0.01s 建 session、`get_providers()=['CPUExecutionProvider']`、推理完成，
+   全程无告警无异常。
 7. **多设备陷阱**：run4 日志 —— 传 2 个设备时 EP 报
    `only supports selection for a single device` 后 **session 级静默回退 CPU**
    （"Falling back to ['CPUExecutionProvider']" 横幅原文留痕）。
@@ -52,7 +53,7 @@
 |---|---|---|---|---|
 | M0 最小图×7×batch1/2/4 | 21 FAIL(HIP101) | 21 FAIL(HIP101) | —（方法学并入 M1/M2） | 全部数值基线 OK |
 | M1 算子(34 图×b1/2) | 92 BLOCKED* / FAIL(HIP101) | 88 同左 | **52 PASS_CONTROL** + 12 FAIL(DML 拒载/新算子) + 4 FAIL_CORRECTNESS(log/sqrt 喂值域 bug→已修) | 基线 |
-| M1 多输出(#150) | FAIL(HIP101)/BLOCKED | 同左 | 全部 by-name 正确（含 2 输出同形交换检测、9 输出、3 优化级别） | 正确 |
+| M1 多输出(#150) | FAIL(HIP101)/BLOCKED | 同左 | 默认优化级 6/6 by-name 正确（含同形交换检测、9 输出）；DISABLE_ALL/BASIC 级 DML 拒载 18 FAIL（Split 算子全级拒载）——真实对照边界，非 AMD 结论 | 正确 |
 | M2 真实模型(5 个官方 zoo) | 10 FAIL(HIP101) | 10 FAIL(HIP101) | **8 PASS_CONTROL**（mnist/squeezenet/mobilenetv2/emotion-ferplus）+ 2 FAIL(ssd: ORT/DML `sess.run()` 内 UnicodeDecodeError——上游缺陷证据） | 正确 |
 | M3 性能 | 无法测 | 无法测 | conv_relu b1: DML p50 0.086ms vs CPU 0.027ms（微图 DML 开销占优；无夸大） | p50 0.005–0.027ms |
 | M3 稳定性 soak | — | — | 30 分钟会话churn+反复推理（receipt 落盘） | — |

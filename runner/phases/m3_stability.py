@@ -21,16 +21,21 @@ class PSAPI(ctypes.Structure):
 
 def working_set_mb() -> float:
     pm = PSAPI(); pm.cb = ctypes.sizeof(PSAPI)
-    h = ctypes.windll.kernel32.GetCurrentProcess()
-    if ctypes.windll.psapi.GetProcessMemoryInfo(h, ctypes.byref(pm), pm.cb):
+    k32 = ctypes.windll.kernel32
+    k32.GetCurrentProcess.restype = ctypes.c_void_p
+    h = k32.GetCurrentProcess()
+    psapi = ctypes.windll.psapi
+    psapi.GetProcessMemoryInfo.argtypes = [ctypes.c_void_p, ctypes.c_void_p, ctypes.c_ulong]
+    psapi.GetProcessMemoryInfo.restype = ctypes.c_int
+    if psapi.GetProcessMemoryInfo(h, ctypes.byref(pm), pm.cb):
         return round(pm.WorkingSetSize / (1 << 20), 1)
-    return -1.0
+    return -1.0  # UNKNOWN if the counter is unavailable
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--repo", default=C.REPO)
-    ap.add_argument("--minutes", type=int, default=30)
+    ap.add_argument("--minutes", type=float, default=30)
     args = ap.parse_args()
     repo = os.path.abspath(args.repo)
     led = os.path.join(repo, "reports", "ledger.json")
@@ -40,15 +45,27 @@ def main():
     deadline = datetime.datetime.now() + datetime.timedelta(minutes=args.minutes)
     stats = {"inferences": 0, "sessions_created": 0, "errors": 0, "ws_peak_mb": 0.0,
              "duration_min": args.minutes}
-    # pick first registered EP
+    # pick first EP that passes a canary session (AMD -> MIGraphX -> DML control)
     ep = None
-    for cand in ("AMDGPUExecutionProvider", "MIGraphXExecutionProvider"):
-        if register_ep(cand, [find_winml_ep_library(cand)]).get("ok"):
+    for cand in ("AMDGPUExecutionProvider", "MIGraphXExecutionProvider", "DmlExecutionProvider"):
+        if not register_ep(cand, [find_winml_ep_library(cand)]).get("ok"):
+            continue
+        try:
+            so_t = ort.SessionOptions(); so_t.log_severity_level = 3
+            from ep_runner import add_ep_for_devices
+            if add_ep_for_devices(so_t, ort, cand) == 0:
+                continue
+            feeds_t = C.make_feed("identity_add", man["identity_add"], 1)
+            s_t = ort.InferenceSession(os.path.join(C.FIXTURES, "identity_add.onnx"),
+                                       sess_options=so_t)
+            s_t.run(None, feeds_t)
             ep = cand
             break
+        except Exception:
+            continue
     if not ep:
         L.upsert_case(led, {"id": "m3/stability", "phase": "m3",
-                            "status": "BLOCKED_DEPENDENCY", "reason": "no EP registered"})
+                            "status": "BLOCKED_DEPENDENCY", "reason": "no EP canary-passed"})
         C.save_receipt("m3", receipt); return 0
     receipt["ep"] = ep
     t_start = time.time()

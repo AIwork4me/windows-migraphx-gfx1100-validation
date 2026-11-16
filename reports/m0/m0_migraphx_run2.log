@@ -16,10 +16,10 @@ Traceback (most recent call last):
   File "C:\AIwork4me\windows-migraphx-gfx1100-validation\runner\phases\..\ledger.py", line 29, in _atomic_dump
     fd, tmp = tempfile.mkstemp(dir=d, suffix=".tmp")
               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Rocm\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 411, in mkstemp
+  File "C:\Users\<redacted>\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 411, in mkstemp
     return _mkstemp_inner(dir, prefix, suffix, flags, output_type)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Rocm\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 257, in _mkstemp_inner
+  File "C:\Users\<redacted>\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 257, in _mkstemp_inner
     fd = _os.open(file, flags, 0o600)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 FileNotFoundError: [Errno 2] No such file or directory: 'C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\reports\\m0\\profiles\\reports\\tmpvvz22zbk.tmp'

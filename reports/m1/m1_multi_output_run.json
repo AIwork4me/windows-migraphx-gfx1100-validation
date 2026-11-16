@@ -2,7 +2,7 @@
  "mission": "WIN-MIGRAPHX-GFX1100",
  "case_id": "m1_multi_output_run",
  "phase": "m1",
- "host": "DESKTOP-S6VG7J7",
+ "host": "WIN-GFX1100-VAL",
  "os": "Windows-11-10.0.26300-SP0",
  "python": "3.12.16 (main, Oct 26 2026, 14:10:56) [MSC v.1944 64 bit (AMD64)]",
  "argv": [

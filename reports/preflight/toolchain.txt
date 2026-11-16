@@ -1,6 +1,6 @@
 ﻿=== where.exe sweep ===
-C:\Users\Rocm\AppData\Local\Microsoft\WindowsApps\python.exe
-C:\Users\Rocm\AppData\Local\Microsoft\WindowsApps\python3.exe
+C:\Users\<redacted>\AppData\Local\Microsoft\WindowsApps\python.exe
+C:\Users\<redacted>\AppData\Local\Microsoft\WindowsApps\python3.exe
 C:\Program Files\Git\ucrt64\bin\git.exe
 C:\Program Files\Git\cmd\git.exe
 C:\Program Files\GitHub CLI\gh.exe

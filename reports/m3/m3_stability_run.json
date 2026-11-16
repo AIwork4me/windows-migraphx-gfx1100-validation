@@ -1,0 +1,35 @@
+{
+ "mission": "WIN-MIGRAPHX-GFX1100",
+ "case_id": "m3_stability_run",
+ "phase": "m3",
+ "host": "DESKTOP-S6VG7J7",
+ "os": "Windows-11-10.0.26300-SP0",
+ "python": "3.12.16 (main, Oct 26 2026, 14:10:56) [MSC v.1944 64 bit (AMD64)]",
+ "argv": [
+  "runner/phases/m3_stability.py",
+  "--repo",
+  ".",
+  "--minutes",
+  "1"
+ ],
+ "cwd": "C:\\AIwork4me\\windows-migraphx-gfx1100-validation",
+ "run_id": "ae5e462a126a",
+ "started": {
+  "utc": "2026-11-16T17:24:33Z",
+  "local": "2026-11-17T01:24:33+08:00"
+ },
+ "seed_policy": "numpy default_rng(seed=1100) unless stated",
+ "ep": "DmlExecutionProvider",
+ "stats": {
+  "inferences": 22147,
+  "sessions_created": 4430,
+  "errors": 0,
+  "ws_peak_mb": 0.0,
+  "duration_min": 1.0,
+  "actual_minutes": 0.9
+ },
+ "finished": {
+  "utc": "2026-11-16T17:25:33Z",
+  "local": "2026-11-17T01:25:33+08:00"
+ }
+}

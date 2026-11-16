@@ -16191,6 +16191,23 @@
    "id": "supervisor/wrapup",
    "phase": "supervisor",
    "status": "FAIL"
+  },
+  {
+   "actual_minutes": 0.9,
+   "duration_min": 1.0,
+   "errors": 0,
+   "history": [
+    {
+     "at": "2026-11-16T17:25:33Z",
+     "status": "PASS"
+    }
+   ],
+   "id": "m3/stability/DmlExecutionProvider",
+   "inferences": 22147,
+   "phase": "m3",
+   "sessions_created": 4430,
+   "status": "PASS",
+   "ws_peak_mb": 0.0
   }
  ],
  "deadline_local": "2026-11-17T08:30:00+08:00",
@@ -16292,5 +16309,5 @@
    "status": "FAIL"
   }
  },
- "updated_utc": "2026-11-16T17:12:56Z"
+ "updated_utc": "2026-11-16T17:25:33Z"
 }

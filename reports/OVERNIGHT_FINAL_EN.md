@@ -38,8 +38,9 @@ every ~30 min; per-task states in `reports/ledger.json` (`supervisor_tasks`).
 5. Execution attempt: single-device `add_provider_for_devices([dev], {})` →
    AMD factory runs → `hip\allocator.cc:14 hipSetDevice` → **HIP failure 101**.
    No AMD GPU PASS is claimed anywhere.
-6. #151 silent fallback proof: `reports/m5/probe151_AMDGPUExecutionProvider.json`
-   (session built in 0.01 s, providers silently CPU-only, inference completes).
+6. #151 silent fallback proof (both EPs): `reports/m5/probe151_*.json` —
+   AMDGPU and MIGraphX probes both verdict SILENT_CPU_FALLBACK (session built
+   in 0.01 s, providers silently CPU-only, inference completes, no warning).
 7. Multi-device trap: two devices → `only supports selection for a single
    device` → **session-level silent CPU fallback** (verbatim ORT banner kept
    in `reports/m0/m0_migraphx_run4.log`).
