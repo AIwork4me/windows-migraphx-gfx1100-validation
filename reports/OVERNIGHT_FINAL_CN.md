@@ -1,5 +1,7 @@
 # WIN-MIGRAPHX-GFX1100 过夜真机验证 · 最终报告（中文）
 
+> **R1 勘误与修订（2026-11-17 追加）**：本报告中“驱动门控/HIP 101 归因、#151 零告警、soak 30 分钟、52 合成算子”等表述已被 R1 轮真机证据修订，历史 receipt 未改动。见 [`reports/r1/ERRATA.md`](r1/ERRATA.md) 与 [`reports/r1/ROOT_CAUSE_REPORT_CN.md`](r1/ROOT_CAUSE_REPORT_CN.md)。
+
 - 运行窗口：2026-11-16 22:54 – 2026-11-17 (UTC+8)，物理主机（非 WSL）
 - 仓库：https://github.com/AIwork4me/windows-migraphx-gfx1100-validation （public）
 - 证据：`reports/` 下逐 case JSON receipt（命令/退出码/UTC 时间戳/profile/parity），
