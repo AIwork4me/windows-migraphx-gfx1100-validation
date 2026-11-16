@@ -63,21 +63,19 @@ def main():
     led0 = L.load_ledger(led_path)
     perf_rows = []
     for c in led0.get("cases", []):
-        if c.get("phase") == "m3" and c.get("timing"):
-            t = c["timing"]
+        if c.get("phase") == "m3" and (c.get("cpu_ms") or c.get("ep_ms") or c.get("timing")):
+            t = c.get("timing") or {}   # ep_runner form
+            flat_cpu = c.get("cpu_ms") or t.get("cpu_ms") or {}
+            flat_ep = c.get("ep_ms") or t.get("ep_ms") or {}
             perf_rows.append({
                 "case": c["id"], "ep": c.get("ep"), "model": c.get("model"),
                 "batch": c.get("batch"), "status": c.get("status"),
-                "session_create_ms": t.get("session_create_ms"),
-                "first_run_ms": t.get("first_run_ms"),
-                "cpu_p50_ms": (t.get("cpu_ms") or {}).get("p50"),
-                "cpu_p95_ms": (t.get("cpu_ms") or {}).get("p95"),
-                "ep_p50_ms": (t.get("ep_ms") or {}).get("p50"),
-                "ep_p95_ms": (t.get("ep_ms") or {}).get("p95"),
-                "ep_mean_ms": (t.get("ep_ms") or {}).get("mean"),
-                "n_timed": (t.get("ep_ms") or {}).get("n"),
-                "rounds": (t.get("ep_ms") or {}).get("rounds"),
-                "speedup_p50": t.get("speedup_p50"),
+                "session_create_ms": c.get("session_create_ms", t.get("session_create_ms")),
+                "first_run_ms": c.get("first_run_ms", t.get("first_run_ms")),
+                "cpu_p50_ms": flat_cpu.get("p50"), "cpu_p95_ms": flat_cpu.get("p95"),
+                "ep_p50_ms": flat_ep.get("p50"), "ep_p95_ms": flat_ep.get("p95"),
+                "ep_mean_ms": flat_ep.get("mean"), "n_timed": flat_ep.get("n"),
+                "rounds": flat_ep.get("rounds"), "speedup_p50": c.get("speedup_p50"),
             })
     with open(os.path.join(repo, "reports", "performance.csv"), "w", newline="", encoding="utf-8") as f:
         w = _csv.DictWriter(f, fieldnames=list(perf_rows[0].keys()) if perf_rows else ["case"])
