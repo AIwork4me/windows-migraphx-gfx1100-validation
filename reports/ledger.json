@@ -20,19 +20,49 @@
     "ROCm/HIP SDK for Windows not installed (no C:\\Program Files\\AMD\\ROCm; HIP SDK installer requires admin elevation; System32 amdhip64_6.dll is driver-shipped runtime only, no headers/import lib)"
    ],
    "evidence": "reports/m4/m4_feasibility_run.json",
+   "history": [
+    {
+     "at": "2026-11-16T17:12:55Z",
+     "status": "BLOCKED_DEPENDENCY"
+    }
+   ],
    "id": "m4/feasibility",
    "phase": "m4",
-   "status": "BLOCKED_DEPENDENCY"
+   "status": "BLOCKED_DEPENDENCY",
+   "upstreams": {
+    "AMDMIGraphX": {
+     "clone": "OK",
+     "head": "d34c354238bd3f4cdd094d994564d58d9f823581",
+     "url": "https://github.com/ROCm/AMDMIGraphX"
+    },
+    "onnxruntime": {
+     "clone": "OK",
+     "head": "368a6729835340f7ee7defbd52ee7ec95883d3dd",
+     "url": "https://github.com/microsoft/onnxruntime"
+    },
+    "onnxruntime-ep-amdgpu": {
+     "clone": "OK",
+     "head": "77bba054fbaa31091f4d01d5dda490b5caae1150",
+     "url": "https://github.com/onnxruntime/onnxruntime-ep-amdgpu"
+    }
+   }
   },
   {
    "detail": {
-    "exception": "AttributeError(\"'InferenceSession' object has no attribute 'enable_profiling'\")",
+    "exception": null,
     "get_providers": [
      "CPUExecutionProvider"
     ],
-    "verdict": "EXCEPTION_ON_SESSION_CREATE"
+    "note": "classic providers=[...] silently drops the plugin EP (issue #151 behavior); no GPU execution claimed",
+    "verdict": "SILENT_CPU_FALLBACK"
    },
    "evidence": "reports/m5\\probe151_AMDGPUExecutionProvider.json",
+   "history": [
+    {
+     "at": "2026-11-16T17:12:55Z",
+     "status": "INCONCLUSIVE"
+    }
+   ],
    "id": "m5/probe151/AMDGPUExecutionProvider",
    "phase": "m5",
    "status": "INCONCLUSIVE"
@@ -16104,6 +16134,63 @@
    "phase": "supervisor",
    "seconds": 1398.9,
    "status": "FAIL"
+  },
+  {
+   "exit_code": 0,
+   "history": [
+    {
+     "at": "2026-11-16T17:12:55Z",
+     "status": "DONE"
+    }
+   ],
+   "id": "supervisor/m4-feasibility",
+   "phase": "supervisor",
+   "seconds": 0.3,
+   "status": "DONE"
+  },
+  {
+   "detail": {
+    "exception": null,
+    "get_providers": [
+     "CPUExecutionProvider"
+    ],
+    "note": "classic providers=[...] silently drops the plugin EP (issue #151 behavior); no GPU execution claimed",
+    "verdict": "SILENT_CPU_FALLBACK"
+   },
+   "history": [
+    {
+     "at": "2026-11-16T17:12:56Z",
+     "status": "INCONCLUSIVE"
+    }
+   ],
+   "id": "m5/probe151/MIGraphXExecutionProvider",
+   "phase": "m5",
+   "status": "INCONCLUSIVE"
+  },
+  {
+   "exit_code": 0,
+   "history": [
+    {
+     "at": "2026-11-16T17:12:56Z",
+     "status": "DONE"
+    }
+   ],
+   "id": "supervisor/m5-diagnostics",
+   "phase": "supervisor",
+   "seconds": 1.0,
+   "status": "DONE"
+  },
+  {
+   "exit_code": 1,
+   "history": [
+    {
+     "at": "2026-11-16T17:12:56Z",
+     "status": "FAIL"
+    }
+   ],
+   "id": "supervisor/wrapup",
+   "phase": "supervisor",
+   "status": "FAIL"
   }
  ],
  "deadline_local": "2026-11-17T08:30:00+08:00",
@@ -16182,7 +16269,28 @@
    "log": "reports\\supervisor_logs\\m3-stability.log",
    "seconds": 1398.9,
    "status": "FAIL"
+  },
+  "m4-feasibility": {
+   "attempts": 1,
+   "est_gb_used": 0.05,
+   "exit_code": 0,
+   "log": "reports\\supervisor_logs\\m4-feasibility.log",
+   "seconds": 0.3,
+   "status": "DONE"
+  },
+  "m5-diagnostics": {
+   "attempts": 1,
+   "est_gb_used": 0.0,
+   "exit_code": 0,
+   "log": "reports\\supervisor_logs\\m5-diagnostics.log",
+   "seconds": 1.0,
+   "status": "DONE"
+  },
+  "wrapup": {
+   "exit_code": 1,
+   "seconds": 0.1,
+   "status": "FAIL"
   }
  },
- "updated_utc": "2026-11-16T17:12:45Z"
+ "updated_utc": "2026-11-16T17:12:56Z"
 }

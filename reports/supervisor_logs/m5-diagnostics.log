@@ -1,0 +1,5 @@
+probe151 AMDGPUExecutionProvider SILENT_CPU_FALLBACK
+probe151 MIGraphXExecutionProvider SILENT_CPU_FALLBACK
+M5_DIAGNOSTICS_DONE
+
+===== 2026-11-16T17:12:55Z RUN ['C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Scripts\\python.exe', 'C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\m5_diagnostics.py', '--repo', 'C:\\AIwork4me\\windows-migraphx-gfx1100-validation'] =====

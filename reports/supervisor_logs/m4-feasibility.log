@@ -1,0 +1,3 @@
+M4_FEASIBILITY_DONE BLOCKED_DEPENDENCY
+
+===== 2026-11-16T17:12:55Z RUN ['C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Scripts\\python.exe', 'C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\m4_build_feasibility.py', '--repo', 'C:\\AIwork4me\\windows-migraphx-gfx1100-validation'] =====

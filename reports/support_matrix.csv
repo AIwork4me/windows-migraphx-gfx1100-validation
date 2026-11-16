@@ -1,0 +1,381 @@
+case,phase,ep,model,batch,status,gpu_nodes,total_nodes,parity_ok,note
+m0/AMDGPUExecutionProvider/catalog,m0,,,,BLOCKED_DEPENDENCY,,,,"libraryPath not obtainable: {'name': 'AMDGPUExecutionProvider', 'version': '', 'packageFamilyName': '', 'libraryPath': '<err 0x80070015 libsize>', 'packageRootPath': '<err 0x80070015 rootsize>', 'readyState': 'NotReady'}"
+probe-test,m1,,,,,,,,
+m1/dbg/lockfix,m1,,,,PASS,,,,
+m1/AMDGPUExecutionProvider/abs/b1,m1,AMDGPUExecutionProvider,abs.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/abs/b2,m1,AMDGPUExecutionProvider,abs.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/argmax/b1,m1,AMDGPUExecutionProvider,argmax.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/argmax/b2,m1,AMDGPUExecutionProvider,argmax.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/batchnorm/b1,m1,AMDGPUExecutionProvider,batchnorm.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/batchnorm/b2,m1,AMDGPUExecutionProvider,batchnorm.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/cast_f32_i32/b1,m1,AMDGPUExecutionProvider,cast_f32_i32.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/cast_f32_i32/b2,m1,AMDGPUExecutionProvider,cast_f32_i32.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/conv_relu/b1,m1,AMDGPUExecutionProvider,conv_relu.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/conv_relu/b2,m1,AMDGPUExecutionProvider,conv_relu.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/cos/b1,m1,AMDGPUExecutionProvider,cos.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/cos/b2,m1,AMDGPUExecutionProvider,cos.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/depthwise_conv/b1,m1,AMDGPUExecutionProvider,depthwise_conv.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/depthwise_conv/b2,m1,AMDGPUExecutionProvider,depthwise_conv.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/erf/b1,m1,AMDGPUExecutionProvider,erf.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/erf/b2,m1,AMDGPUExecutionProvider,erf.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/exp/b1,m1,AMDGPUExecutionProvider,exp.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/exp/b2,m1,AMDGPUExecutionProvider,exp.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/floor/b1,m1,AMDGPUExecutionProvider,floor.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/floor/b2,m1,AMDGPUExecutionProvider,floor.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/gemm/b1,m1,AMDGPUExecutionProvider,gemm.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/gemm/b2,m1,AMDGPUExecutionProvider,gemm.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/identity_add/b1,m1,AMDGPUExecutionProvider,identity_add.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/identity_add/b2,m1,AMDGPUExecutionProvider,identity_add.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/layernorm/b1,m1,AMDGPUExecutionProvider,layernorm.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/layernorm/b2,m1,AMDGPUExecutionProvider,layernorm.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/log/b1,m1,AMDGPUExecutionProvider,log.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/log/b2,m1,AMDGPUExecutionProvider,log.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/matmul/b1,m1,AMDGPUExecutionProvider,matmul.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/matmul/b2,m1,AMDGPUExecutionProvider,matmul.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/neg/b1,m1,AMDGPUExecutionProvider,neg.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/neg/b2,m1,AMDGPUExecutionProvider,neg.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/nine_out/b1,m1,AMDGPUExecutionProvider,nine_out.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/nine_out/b2,m1,AMDGPUExecutionProvider,nine_out.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/pad/b1,m1,AMDGPUExecutionProvider,pad.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/pad/b2,m1,AMDGPUExecutionProvider,pad.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/reduce_max/b1,m1,AMDGPUExecutionProvider,reduce_max.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/reduce_max/b2,m1,AMDGPUExecutionProvider,reduce_max.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/reduce_mean/b1,m1,AMDGPUExecutionProvider,reduce_mean.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/reduce_mean/b2,m1,AMDGPUExecutionProvider,reduce_mean.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/reduce_sum/b1,m1,AMDGPUExecutionProvider,reduce_sum.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/reduce_sum/b2,m1,AMDGPUExecutionProvider,reduce_sum.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/relu/b1,m1,AMDGPUExecutionProvider,relu.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/relu/b2,m1,AMDGPUExecutionProvider,relu.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/reshape_transpose/b1,m1,AMDGPUExecutionProvider,reshape_transpose.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/reshape_transpose/b2,m1,AMDGPUExecutionProvider,reshape_transpose.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/resize_nearest/b1,m1,AMDGPUExecutionProvider,resize_nearest.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/resize_nearest/b2,m1,AMDGPUExecutionProvider,resize_nearest.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/sigmoid/b1,m1,AMDGPUExecutionProvider,sigmoid.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/sigmoid/b2,m1,AMDGPUExecutionProvider,sigmoid.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/sin/b1,m1,AMDGPUExecutionProvider,sin.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/sin/b2,m1,AMDGPUExecutionProvider,sin.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/softmax/b1,m1,AMDGPUExecutionProvider,softmax.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/softmax/b2,m1,AMDGPUExecutionProvider,softmax.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/split2/b1,m1,AMDGPUExecutionProvider,split2.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/split2/b2,m1,AMDGPUExecutionProvider,split2.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/sqrt/b1,m1,AMDGPUExecutionProvider,sqrt.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/sqrt/b2,m1,AMDGPUExecutionProvider,sqrt.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/squeeze/b1,m1,AMDGPUExecutionProvider,squeeze.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/squeeze/b2,m1,AMDGPUExecutionProvider,squeeze.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/tanh/b1,m1,AMDGPUExecutionProvider,tanh.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/tanh/b2,m1,AMDGPUExecutionProvider,tanh.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/topk_gather_concat/b1,m1,AMDGPUExecutionProvider,topk_gather_concat.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/topk_gather_concat/b2,m1,AMDGPUExecutionProvider,topk_gather_concat.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/two_out_diff_shape/b1,m1,AMDGPUExecutionProvider,two_out_diff_shape.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/two_out_diff_shape/b2,m1,AMDGPUExecutionProvider,two_out_diff_shape.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/two_out_same_shape/b1,m1,AMDGPUExecutionProvider,two_out_same_shape.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/AMDGPUExecutionProvider/two_out_same_shape/b2,m1,AMDGPUExecutionProvider,two_out_same_shape.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/abs/b1,m1,MIGraphXExecutionProvider,abs.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/abs/b2,m1,MIGraphXExecutionProvider,abs.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/argmax/b1,m1,MIGraphXExecutionProvider,argmax.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/argmax/b2,m1,MIGraphXExecutionProvider,argmax.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/batchnorm/b1,m1,MIGraphXExecutionProvider,batchnorm.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/batchnorm/b2,m1,MIGraphXExecutionProvider,batchnorm.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/cast_f32_i32/b1,m1,MIGraphXExecutionProvider,cast_f32_i32.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/cast_f32_i32/b2,m1,MIGraphXExecutionProvider,cast_f32_i32.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/conv_relu/b1,m1,MIGraphXExecutionProvider,conv_relu.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/conv_relu/b2,m1,MIGraphXExecutionProvider,conv_relu.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/cos/b1,m1,MIGraphXExecutionProvider,cos.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/cos/b2,m1,MIGraphXExecutionProvider,cos.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/depthwise_conv/b1,m1,MIGraphXExecutionProvider,depthwise_conv.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/depthwise_conv/b2,m1,MIGraphXExecutionProvider,depthwise_conv.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/erf/b1,m1,MIGraphXExecutionProvider,erf.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/erf/b2,m1,MIGraphXExecutionProvider,erf.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/exp/b1,m1,MIGraphXExecutionProvider,exp.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/exp/b2,m1,MIGraphXExecutionProvider,exp.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/floor/b1,m1,MIGraphXExecutionProvider,floor.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/floor/b2,m1,MIGraphXExecutionProvider,floor.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/gemm/b1,m1,MIGraphXExecutionProvider,gemm.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/gemm/b2,m1,MIGraphXExecutionProvider,gemm.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/identity_add/b1,m1,MIGraphXExecutionProvider,identity_add.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/identity_add/b2,m1,MIGraphXExecutionProvider,identity_add.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/layernorm/b1,m1,MIGraphXExecutionProvider,layernorm.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/layernorm/b2,m1,MIGraphXExecutionProvider,layernorm.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/log/b1,m1,MIGraphXExecutionProvider,log.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/log/b2,m1,MIGraphXExecutionProvider,log.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/matmul/b1,m1,MIGraphXExecutionProvider,matmul.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/matmul/b2,m1,MIGraphXExecutionProvider,matmul.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/neg/b1,m1,MIGraphXExecutionProvider,neg.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/neg/b2,m1,MIGraphXExecutionProvider,neg.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/nine_out/b1,m1,MIGraphXExecutionProvider,nine_out.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/nine_out/b2,m1,MIGraphXExecutionProvider,nine_out.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/pad/b1,m1,MIGraphXExecutionProvider,pad.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/pad/b2,m1,MIGraphXExecutionProvider,pad.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/reduce_max/b1,m1,MIGraphXExecutionProvider,reduce_max.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/reduce_max/b2,m1,MIGraphXExecutionProvider,reduce_max.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/reduce_mean/b1,m1,MIGraphXExecutionProvider,reduce_mean.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/reduce_mean/b2,m1,MIGraphXExecutionProvider,reduce_mean.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/reduce_sum/b1,m1,MIGraphXExecutionProvider,reduce_sum.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/reduce_sum/b2,m1,MIGraphXExecutionProvider,reduce_sum.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/relu/b1,m1,MIGraphXExecutionProvider,relu.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/relu/b2,m1,MIGraphXExecutionProvider,relu.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/reshape_transpose/b1,m1,MIGraphXExecutionProvider,reshape_transpose.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/reshape_transpose/b2,m1,MIGraphXExecutionProvider,reshape_transpose.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/resize_nearest/b1,m1,MIGraphXExecutionProvider,resize_nearest.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/resize_nearest/b2,m1,MIGraphXExecutionProvider,resize_nearest.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/sigmoid/b1,m1,MIGraphXExecutionProvider,sigmoid.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/sigmoid/b2,m1,MIGraphXExecutionProvider,sigmoid.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/sin/b1,m1,MIGraphXExecutionProvider,sin.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/sin/b2,m1,MIGraphXExecutionProvider,sin.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/softmax/b1,m1,MIGraphXExecutionProvider,softmax.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/softmax/b2,m1,MIGraphXExecutionProvider,softmax.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/split2/b1,m1,MIGraphXExecutionProvider,split2.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/split2/b2,m1,MIGraphXExecutionProvider,split2.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/sqrt/b1,m1,MIGraphXExecutionProvider,sqrt.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/sqrt/b2,m1,MIGraphXExecutionProvider,sqrt.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/squeeze/b1,m1,MIGraphXExecutionProvider,squeeze.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/squeeze/b2,m1,MIGraphXExecutionProvider,squeeze.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/tanh/b1,m1,MIGraphXExecutionProvider,tanh.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/tanh/b2,m1,MIGraphXExecutionProvider,tanh.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/topk_gather_concat/b1,m1,MIGraphXExecutionProvider,topk_gather_concat.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/topk_gather_concat/b2,m1,MIGraphXExecutionProvider,topk_gather_concat.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/two_out_diff_shape/b1,m1,MIGraphXExecutionProvider,two_out_diff_shape.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/two_out_diff_shape/b2,m1,MIGraphXExecutionProvider,two_out_diff_shape.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/two_out_same_shape/b1,m1,MIGraphXExecutionProvider,two_out_same_shape.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/MIGraphXExecutionProvider/two_out_same_shape/b2,m1,MIGraphXExecutionProvider,two_out_same_shape.onnx,2,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1/DmlExecutionProvider/abs/b1,m1,DmlExecutionProvider,abs.onnx,1,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/abs/b2,m1,DmlExecutionProvider,abs.onnx,2,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/argmax/b1,m1,DmlExecutionProvider,argmax.onnx,1,FAIL,,,,
+m1/DmlExecutionProvider/argmax/b2,m1,DmlExecutionProvider,argmax.onnx,2,FAIL,,,,
+m1/DmlExecutionProvider/batchnorm/b1,m1,DmlExecutionProvider,batchnorm.onnx,1,PASS_CONTROL_DML,12,12,True,
+m1/DmlExecutionProvider/batchnorm/b2,m1,DmlExecutionProvider,batchnorm.onnx,2,PASS_CONTROL_DML,12,12,True,
+m1/DmlExecutionProvider/cast_f32_i32/b1,m1,DmlExecutionProvider,cast_f32_i32.onnx,1,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/cast_f32_i32/b2,m1,DmlExecutionProvider,cast_f32_i32.onnx,2,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/conv_relu/b1,m1,DmlExecutionProvider,conv_relu.onnx,1,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/conv_relu/b2,m1,DmlExecutionProvider,conv_relu.onnx,2,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/cos/b1,m1,DmlExecutionProvider,cos.onnx,1,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/cos/b2,m1,DmlExecutionProvider,cos.onnx,2,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/depthwise_conv/b1,m1,DmlExecutionProvider,depthwise_conv.onnx,1,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/depthwise_conv/b2,m1,DmlExecutionProvider,depthwise_conv.onnx,2,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/erf/b1,m1,DmlExecutionProvider,erf.onnx,1,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/erf/b2,m1,DmlExecutionProvider,erf.onnx,2,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/exp/b1,m1,DmlExecutionProvider,exp.onnx,1,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/exp/b2,m1,DmlExecutionProvider,exp.onnx,2,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/floor/b1,m1,DmlExecutionProvider,floor.onnx,1,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/floor/b2,m1,DmlExecutionProvider,floor.onnx,2,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/gemm/b1,m1,DmlExecutionProvider,gemm.onnx,1,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/gemm/b2,m1,DmlExecutionProvider,gemm.onnx,2,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/identity_add/b1,m1,DmlExecutionProvider,identity_add.onnx,1,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/identity_add/b2,m1,DmlExecutionProvider,identity_add.onnx,2,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/layernorm/b1,m1,DmlExecutionProvider,layernorm.onnx,1,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/layernorm/b2,m1,DmlExecutionProvider,layernorm.onnx,2,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/log/b1,m1,DmlExecutionProvider,log.onnx,1,FAIL_CORRECTNESS,3,3,False,
+m1/DmlExecutionProvider/log/b2,m1,DmlExecutionProvider,log.onnx,2,FAIL_CORRECTNESS,3,3,False,
+m1/DmlExecutionProvider/matmul/b1,m1,DmlExecutionProvider,matmul.onnx,1,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/matmul/b2,m1,DmlExecutionProvider,matmul.onnx,2,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/neg/b1,m1,DmlExecutionProvider,neg.onnx,1,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/neg/b2,m1,DmlExecutionProvider,neg.onnx,2,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/nine_out/b1,m1,DmlExecutionProvider,nine_out.onnx,1,PASS_CONTROL_DML,27,27,True,
+m1/DmlExecutionProvider/nine_out/b2,m1,DmlExecutionProvider,nine_out.onnx,2,PASS_CONTROL_DML,27,27,True,
+m1/DmlExecutionProvider/pad/b1,m1,DmlExecutionProvider,pad.onnx,1,FAIL,,,,
+m1/DmlExecutionProvider/pad/b2,m1,DmlExecutionProvider,pad.onnx,2,FAIL,,,,
+m1/DmlExecutionProvider/reduce_max/b1,m1,DmlExecutionProvider,reduce_max.onnx,1,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/reduce_max/b2,m1,DmlExecutionProvider,reduce_max.onnx,2,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/reduce_mean/b1,m1,DmlExecutionProvider,reduce_mean.onnx,1,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/reduce_mean/b2,m1,DmlExecutionProvider,reduce_mean.onnx,2,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/reduce_sum/b1,m1,DmlExecutionProvider,reduce_sum.onnx,1,FAIL,,,,
+m1/DmlExecutionProvider/reduce_sum/b2,m1,DmlExecutionProvider,reduce_sum.onnx,2,FAIL,,,,
+m1/DmlExecutionProvider/relu/b1,m1,DmlExecutionProvider,relu.onnx,1,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/relu/b2,m1,DmlExecutionProvider,relu.onnx,2,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/reshape_transpose/b1,m1,DmlExecutionProvider,reshape_transpose.onnx,1,PASS_CONTROL_DML,6,6,True,
+m1/DmlExecutionProvider/reshape_transpose/b2,m1,DmlExecutionProvider,reshape_transpose.onnx,2,PASS_CONTROL_DML,6,6,True,
+m1/DmlExecutionProvider/resize_nearest/b1,m1,DmlExecutionProvider,resize_nearest.onnx,1,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/resize_nearest/b2,m1,DmlExecutionProvider,resize_nearest.onnx,2,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/sigmoid/b1,m1,DmlExecutionProvider,sigmoid.onnx,1,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/sigmoid/b2,m1,DmlExecutionProvider,sigmoid.onnx,2,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/sin/b1,m1,DmlExecutionProvider,sin.onnx,1,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/sin/b2,m1,DmlExecutionProvider,sin.onnx,2,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/softmax/b1,m1,DmlExecutionProvider,softmax.onnx,1,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/softmax/b2,m1,DmlExecutionProvider,softmax.onnx,2,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/split2/b1,m1,DmlExecutionProvider,split2.onnx,1,FAIL,,,,
+m1/DmlExecutionProvider/split2/b2,m1,DmlExecutionProvider,split2.onnx,2,FAIL,,,,
+m1/DmlExecutionProvider/sqrt/b1,m1,DmlExecutionProvider,sqrt.onnx,1,FAIL_CORRECTNESS,3,3,False,
+m1/DmlExecutionProvider/sqrt/b2,m1,DmlExecutionProvider,sqrt.onnx,2,FAIL_CORRECTNESS,3,3,False,
+m1/DmlExecutionProvider/squeeze/b1,m1,DmlExecutionProvider,squeeze.onnx,1,FAIL,,,,
+m1/DmlExecutionProvider/squeeze/b2,m1,DmlExecutionProvider,squeeze.onnx,2,FAIL,,,,
+m1/DmlExecutionProvider/tanh/b1,m1,DmlExecutionProvider,tanh.onnx,1,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/tanh/b2,m1,DmlExecutionProvider,tanh.onnx,2,PASS_CONTROL_DML,3,3,True,
+m1/DmlExecutionProvider/topk_gather_concat/b1,m1,DmlExecutionProvider,topk_gather_concat.onnx,1,FAIL,,,,
+m1/DmlExecutionProvider/topk_gather_concat/b2,m1,DmlExecutionProvider,topk_gather_concat.onnx,2,FAIL,,,,
+m1/DmlExecutionProvider/two_out_diff_shape/b1,m1,DmlExecutionProvider,two_out_diff_shape.onnx,1,PASS_CONTROL_DML,6,6,True,
+m1/DmlExecutionProvider/two_out_diff_shape/b2,m1,DmlExecutionProvider,two_out_diff_shape.onnx,2,PASS_CONTROL_DML,6,6,True,
+m1/DmlExecutionProvider/two_out_same_shape/b1,m1,DmlExecutionProvider,two_out_same_shape.onnx,1,PASS_CONTROL_DML,6,6,True,
+m1/DmlExecutionProvider/two_out_same_shape/b2,m1,DmlExecutionProvider,two_out_same_shape.onnx,2,PASS_CONTROL_DML,6,6,True,
+m0/MIGraphXExecutionProvider/identity_add/b1,m0,MIGraphXExecutionProvider,identity_add,1,FAIL,0,1,True,
+m0/MIGraphXExecutionProvider/identity_add/b2,m0,MIGraphXExecutionProvider,identity_add,2,FAIL,0,1,True,
+m0/MIGraphXExecutionProvider/identity_add/b4,m0,MIGraphXExecutionProvider,identity_add,4,FAIL,0,1,True,
+m0/MIGraphXExecutionProvider/matmul/b1,m0,MIGraphXExecutionProvider,matmul,1,FAIL,0,1,True,
+m0/MIGraphXExecutionProvider/matmul/b2,m0,MIGraphXExecutionProvider,matmul,2,FAIL,0,1,True,
+m0/MIGraphXExecutionProvider/matmul/b4,m0,MIGraphXExecutionProvider,matmul,4,FAIL,0,1,True,
+m0/MIGraphXExecutionProvider/conv_relu/b1,m0,MIGraphXExecutionProvider,conv_relu,1,FAIL,0,2,True,
+m0/MIGraphXExecutionProvider/conv_relu/b2,m0,MIGraphXExecutionProvider,conv_relu,2,FAIL,0,2,True,
+m0/MIGraphXExecutionProvider/conv_relu/b4,m0,MIGraphXExecutionProvider,conv_relu,4,FAIL,0,2,True,
+m0/MIGraphXExecutionProvider/softmax/b1,m0,MIGraphXExecutionProvider,softmax,1,FAIL,0,1,True,
+m0/MIGraphXExecutionProvider/softmax/b2,m0,MIGraphXExecutionProvider,softmax,2,FAIL,0,1,True,
+m0/MIGraphXExecutionProvider/softmax/b4,m0,MIGraphXExecutionProvider,softmax,4,FAIL,0,1,True,
+m0/MIGraphXExecutionProvider/reshape_transpose/b1,m0,MIGraphXExecutionProvider,reshape_transpose,1,FAIL,0,2,True,
+m0/MIGraphXExecutionProvider/reshape_transpose/b2,m0,MIGraphXExecutionProvider,reshape_transpose,2,FAIL,0,2,True,
+m0/MIGraphXExecutionProvider/reshape_transpose/b4,m0,MIGraphXExecutionProvider,reshape_transpose,4,FAIL,0,2,True,
+m0/MIGraphXExecutionProvider/two_out_same_shape/b1,m0,MIGraphXExecutionProvider,two_out_same_shape,1,FAIL,0,2,True,
+m0/MIGraphXExecutionProvider/two_out_same_shape/b2,m0,MIGraphXExecutionProvider,two_out_same_shape,2,FAIL,0,2,True,
+m0/MIGraphXExecutionProvider/two_out_same_shape/b4,m0,MIGraphXExecutionProvider,two_out_same_shape,4,FAIL,0,2,True,
+m0/MIGraphXExecutionProvider/nine_out/b1,m0,MIGraphXExecutionProvider,nine_out,1,FAIL,0,9,True,
+m0/MIGraphXExecutionProvider/nine_out/b2,m0,MIGraphXExecutionProvider,nine_out,2,FAIL,0,9,True,
+m0/MIGraphXExecutionProvider/nine_out/b4,m0,MIGraphXExecutionProvider,nine_out,4,FAIL,0,9,True,
+m0/AMDGPUExecutionProvider/identity_add/b1,m0,AMDGPUExecutionProvider,identity_add,1,FAIL,,,,
+m0/AMDGPUExecutionProvider/identity_add/b2,m0,AMDGPUExecutionProvider,identity_add,2,FAIL,,,,
+m0/AMDGPUExecutionProvider/identity_add/b4,m0,AMDGPUExecutionProvider,identity_add,4,FAIL,,,,
+m0/AMDGPUExecutionProvider/matmul/b1,m0,AMDGPUExecutionProvider,matmul,1,FAIL,,,,
+m0/AMDGPUExecutionProvider/matmul/b2,m0,AMDGPUExecutionProvider,matmul,2,FAIL,,,,
+m0/AMDGPUExecutionProvider/matmul/b4,m0,AMDGPUExecutionProvider,matmul,4,FAIL,,,,
+m0/AMDGPUExecutionProvider/conv_relu/b1,m0,AMDGPUExecutionProvider,conv_relu,1,FAIL,,,,
+m0/AMDGPUExecutionProvider/conv_relu/b2,m0,AMDGPUExecutionProvider,conv_relu,2,FAIL,,,,
+m0/AMDGPUExecutionProvider/conv_relu/b4,m0,AMDGPUExecutionProvider,conv_relu,4,FAIL,,,,
+m0/AMDGPUExecutionProvider/softmax/b1,m0,AMDGPUExecutionProvider,softmax,1,FAIL,,,,
+m0/AMDGPUExecutionProvider/softmax/b2,m0,AMDGPUExecutionProvider,softmax,2,FAIL,,,,
+m0/AMDGPUExecutionProvider/softmax/b4,m0,AMDGPUExecutionProvider,softmax,4,FAIL,,,,
+m0/AMDGPUExecutionProvider/reshape_transpose/b1,m0,AMDGPUExecutionProvider,reshape_transpose,1,FAIL,,,,
+m0/AMDGPUExecutionProvider/reshape_transpose/b2,m0,AMDGPUExecutionProvider,reshape_transpose,2,FAIL,,,,
+m0/AMDGPUExecutionProvider/reshape_transpose/b4,m0,AMDGPUExecutionProvider,reshape_transpose,4,FAIL,,,,
+m0/AMDGPUExecutionProvider/two_out_same_shape/b1,m0,AMDGPUExecutionProvider,two_out_same_shape,1,FAIL,,,,
+m0/AMDGPUExecutionProvider/two_out_same_shape/b2,m0,AMDGPUExecutionProvider,two_out_same_shape,2,FAIL,,,,
+m0/AMDGPUExecutionProvider/two_out_same_shape/b4,m0,AMDGPUExecutionProvider,two_out_same_shape,4,FAIL,,,,
+m0/AMDGPUExecutionProvider/nine_out/b1,m0,AMDGPUExecutionProvider,nine_out,1,FAIL,,,,
+m0/AMDGPUExecutionProvider/nine_out/b2,m0,AMDGPUExecutionProvider,nine_out,2,FAIL,,,,
+m0/AMDGPUExecutionProvider/nine_out/b4,m0,AMDGPUExecutionProvider,nine_out,4,FAIL,,,,
+m1-mo/AMDGPUExecutionProvider/two_out_same_shape/default/b1,m1,AMDGPUExecutionProvider,two_out_same_shape.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/AMDGPUExecutionProvider/two_out_same_shape/default/b4,m1,AMDGPUExecutionProvider,two_out_same_shape.onnx,4,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/AMDGPUExecutionProvider/two_out_same_shape/ORT_DISABLE_ALL/b1,m1,AMDGPUExecutionProvider,two_out_same_shape.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/AMDGPUExecutionProvider/two_out_same_shape/ORT_DISABLE_ALL/b4,m1,AMDGPUExecutionProvider,two_out_same_shape.onnx,4,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/AMDGPUExecutionProvider/two_out_same_shape/ORT_ENABLE_BASIC/b1,m1,AMDGPUExecutionProvider,two_out_same_shape.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/AMDGPUExecutionProvider/two_out_same_shape/ORT_ENABLE_BASIC/b4,m1,AMDGPUExecutionProvider,two_out_same_shape.onnx,4,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/AMDGPUExecutionProvider/nine_out/default/b1,m1,AMDGPUExecutionProvider,nine_out.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/AMDGPUExecutionProvider/nine_out/default/b4,m1,AMDGPUExecutionProvider,nine_out.onnx,4,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/AMDGPUExecutionProvider/nine_out/ORT_DISABLE_ALL/b1,m1,AMDGPUExecutionProvider,nine_out.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/AMDGPUExecutionProvider/nine_out/ORT_DISABLE_ALL/b4,m1,AMDGPUExecutionProvider,nine_out.onnx,4,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/AMDGPUExecutionProvider/nine_out/ORT_ENABLE_BASIC/b1,m1,AMDGPUExecutionProvider,nine_out.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/AMDGPUExecutionProvider/nine_out/ORT_ENABLE_BASIC/b4,m1,AMDGPUExecutionProvider,nine_out.onnx,4,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/AMDGPUExecutionProvider/two_out_diff_shape/default/b1,m1,AMDGPUExecutionProvider,two_out_diff_shape.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/AMDGPUExecutionProvider/two_out_diff_shape/default/b4,m1,AMDGPUExecutionProvider,two_out_diff_shape.onnx,4,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/AMDGPUExecutionProvider/two_out_diff_shape/ORT_DISABLE_ALL/b1,m1,AMDGPUExecutionProvider,two_out_diff_shape.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/AMDGPUExecutionProvider/two_out_diff_shape/ORT_DISABLE_ALL/b4,m1,AMDGPUExecutionProvider,two_out_diff_shape.onnx,4,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/AMDGPUExecutionProvider/two_out_diff_shape/ORT_ENABLE_BASIC/b1,m1,AMDGPUExecutionProvider,two_out_diff_shape.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/AMDGPUExecutionProvider/two_out_diff_shape/ORT_ENABLE_BASIC/b4,m1,AMDGPUExecutionProvider,two_out_diff_shape.onnx,4,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/AMDGPUExecutionProvider/split2/default/b1,m1,AMDGPUExecutionProvider,split2.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/AMDGPUExecutionProvider/split2/default/b4,m1,AMDGPUExecutionProvider,split2.onnx,4,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/AMDGPUExecutionProvider/split2/ORT_DISABLE_ALL/b1,m1,AMDGPUExecutionProvider,split2.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/AMDGPUExecutionProvider/split2/ORT_DISABLE_ALL/b4,m1,AMDGPUExecutionProvider,split2.onnx,4,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/AMDGPUExecutionProvider/split2/ORT_ENABLE_BASIC/b1,m1,AMDGPUExecutionProvider,split2.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/AMDGPUExecutionProvider/split2/ORT_ENABLE_BASIC/b4,m1,AMDGPUExecutionProvider,split2.onnx,4,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/MIGraphXExecutionProvider/two_out_same_shape/default/b1,m1,MIGraphXExecutionProvider,two_out_same_shape.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/MIGraphXExecutionProvider/two_out_same_shape/default/b4,m1,MIGraphXExecutionProvider,two_out_same_shape.onnx,4,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/MIGraphXExecutionProvider/two_out_same_shape/ORT_DISABLE_ALL/b1,m1,MIGraphXExecutionProvider,two_out_same_shape.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/MIGraphXExecutionProvider/two_out_same_shape/ORT_DISABLE_ALL/b4,m1,MIGraphXExecutionProvider,two_out_same_shape.onnx,4,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/MIGraphXExecutionProvider/two_out_same_shape/ORT_ENABLE_BASIC/b1,m1,MIGraphXExecutionProvider,two_out_same_shape.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/MIGraphXExecutionProvider/two_out_same_shape/ORT_ENABLE_BASIC/b4,m1,MIGraphXExecutionProvider,two_out_same_shape.onnx,4,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/MIGraphXExecutionProvider/nine_out/default/b1,m1,MIGraphXExecutionProvider,nine_out.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/MIGraphXExecutionProvider/nine_out/default/b4,m1,MIGraphXExecutionProvider,nine_out.onnx,4,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/MIGraphXExecutionProvider/nine_out/ORT_DISABLE_ALL/b1,m1,MIGraphXExecutionProvider,nine_out.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/MIGraphXExecutionProvider/nine_out/ORT_DISABLE_ALL/b4,m1,MIGraphXExecutionProvider,nine_out.onnx,4,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/MIGraphXExecutionProvider/nine_out/ORT_ENABLE_BASIC/b1,m1,MIGraphXExecutionProvider,nine_out.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/MIGraphXExecutionProvider/nine_out/ORT_ENABLE_BASIC/b4,m1,MIGraphXExecutionProvider,nine_out.onnx,4,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/MIGraphXExecutionProvider/two_out_diff_shape/default/b1,m1,MIGraphXExecutionProvider,two_out_diff_shape.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/MIGraphXExecutionProvider/two_out_diff_shape/default/b4,m1,MIGraphXExecutionProvider,two_out_diff_shape.onnx,4,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/MIGraphXExecutionProvider/two_out_diff_shape/ORT_DISABLE_ALL/b1,m1,MIGraphXExecutionProvider,two_out_diff_shape.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/MIGraphXExecutionProvider/two_out_diff_shape/ORT_DISABLE_ALL/b4,m1,MIGraphXExecutionProvider,two_out_diff_shape.onnx,4,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/MIGraphXExecutionProvider/two_out_diff_shape/ORT_ENABLE_BASIC/b1,m1,MIGraphXExecutionProvider,two_out_diff_shape.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/MIGraphXExecutionProvider/two_out_diff_shape/ORT_ENABLE_BASIC/b4,m1,MIGraphXExecutionProvider,two_out_diff_shape.onnx,4,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/MIGraphXExecutionProvider/split2/default/b1,m1,MIGraphXExecutionProvider,split2.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/MIGraphXExecutionProvider/split2/default/b4,m1,MIGraphXExecutionProvider,split2.onnx,4,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/MIGraphXExecutionProvider/split2/ORT_DISABLE_ALL/b1,m1,MIGraphXExecutionProvider,split2.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/MIGraphXExecutionProvider/split2/ORT_DISABLE_ALL/b4,m1,MIGraphXExecutionProvider,split2.onnx,4,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/MIGraphXExecutionProvider/split2/ORT_ENABLE_BASIC/b1,m1,MIGraphXExecutionProvider,split2.onnx,1,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/MIGraphXExecutionProvider/split2/ORT_ENABLE_BASIC/b4,m1,MIGraphXExecutionProvider,split2.onnx,4,BLOCKED_DEPENDENCY,,,,"EP not registered: {'ok': False, 'error': 'no usable library path'}"
+m1-mo/DmlExecutionProvider/two_out_same_shape/default/b1,m1,DmlExecutionProvider,two_out_same_shape.onnx,1,PASS_CONTROL_DML,4,4,True,
+m1-mo/DmlExecutionProvider/two_out_same_shape/default/b4,m1,DmlExecutionProvider,two_out_same_shape.onnx,4,PASS_CONTROL_DML,4,4,True,
+m1-mo/DmlExecutionProvider/two_out_same_shape/ORT_DISABLE_ALL/b1,m1,DmlExecutionProvider,two_out_same_shape.onnx,1,FAIL,,,,
+m1-mo/DmlExecutionProvider/two_out_same_shape/ORT_DISABLE_ALL/b4,m1,DmlExecutionProvider,two_out_same_shape.onnx,4,FAIL,,,,
+m1-mo/DmlExecutionProvider/two_out_same_shape/ORT_ENABLE_BASIC/b1,m1,DmlExecutionProvider,two_out_same_shape.onnx,1,FAIL,,,,
+m1-mo/DmlExecutionProvider/two_out_same_shape/ORT_ENABLE_BASIC/b4,m1,DmlExecutionProvider,two_out_same_shape.onnx,4,FAIL,,,,
+m1-mo/DmlExecutionProvider/nine_out/default/b1,m1,DmlExecutionProvider,nine_out.onnx,1,PASS_CONTROL_DML,18,18,True,
+m1-mo/DmlExecutionProvider/nine_out/default/b4,m1,DmlExecutionProvider,nine_out.onnx,4,PASS_CONTROL_DML,18,18,True,
+m1-mo/DmlExecutionProvider/nine_out/ORT_DISABLE_ALL/b1,m1,DmlExecutionProvider,nine_out.onnx,1,FAIL,,,,
+m1-mo/DmlExecutionProvider/nine_out/ORT_DISABLE_ALL/b4,m1,DmlExecutionProvider,nine_out.onnx,4,FAIL,,,,
+m1-mo/DmlExecutionProvider/nine_out/ORT_ENABLE_BASIC/b1,m1,DmlExecutionProvider,nine_out.onnx,1,FAIL,,,,
+m1-mo/DmlExecutionProvider/nine_out/ORT_ENABLE_BASIC/b4,m1,DmlExecutionProvider,nine_out.onnx,4,FAIL,,,,
+m1-mo/DmlExecutionProvider/two_out_diff_shape/default/b1,m1,DmlExecutionProvider,two_out_diff_shape.onnx,1,PASS_CONTROL_DML,4,4,True,
+m1-mo/DmlExecutionProvider/two_out_diff_shape/default/b4,m1,DmlExecutionProvider,two_out_diff_shape.onnx,4,PASS_CONTROL_DML,4,4,True,
+m1-mo/DmlExecutionProvider/two_out_diff_shape/ORT_DISABLE_ALL/b1,m1,DmlExecutionProvider,two_out_diff_shape.onnx,1,FAIL,,,,
+m1-mo/DmlExecutionProvider/two_out_diff_shape/ORT_DISABLE_ALL/b4,m1,DmlExecutionProvider,two_out_diff_shape.onnx,4,FAIL,,,,
+m1-mo/DmlExecutionProvider/two_out_diff_shape/ORT_ENABLE_BASIC/b1,m1,DmlExecutionProvider,two_out_diff_shape.onnx,1,FAIL,,,,
+m1-mo/DmlExecutionProvider/two_out_diff_shape/ORT_ENABLE_BASIC/b4,m1,DmlExecutionProvider,two_out_diff_shape.onnx,4,FAIL,,,,
+m1-mo/DmlExecutionProvider/split2/default/b1,m1,DmlExecutionProvider,split2.onnx,1,FAIL,,,,
+m1-mo/DmlExecutionProvider/split2/default/b4,m1,DmlExecutionProvider,split2.onnx,4,FAIL,,,,
+m1-mo/DmlExecutionProvider/split2/ORT_DISABLE_ALL/b1,m1,DmlExecutionProvider,split2.onnx,1,FAIL,,,,
+m1-mo/DmlExecutionProvider/split2/ORT_DISABLE_ALL/b4,m1,DmlExecutionProvider,split2.onnx,4,FAIL,,,,
+m1-mo/DmlExecutionProvider/split2/ORT_ENABLE_BASIC/b1,m1,DmlExecutionProvider,split2.onnx,1,FAIL,,,,
+m1-mo/DmlExecutionProvider/split2/ORT_ENABLE_BASIC/b4,m1,DmlExecutionProvider,split2.onnx,4,FAIL,,,,
+m1-cache/AMDGPUExecutionProvider/migraphx_cache,m1,,,,FAIL,,,,
+m1-cache/AMDGPUExecutionProvider/cache_enabled_generic,m1,,,,FAIL,,,,
+m1-cache/MIGraphXExecutionProvider/migraphx_cache,m1,,,,FAIL,,,,
+m1-cache/MIGraphXExecutionProvider/cache_enabled_generic,m1,,,,FAIL,,,,
+m2/download/mnist-8,m2,,,,PASS,,,,
+m2/AMDGPUExecutionProvider/mnist-8/b1,m2,AMDGPUExecutionProvider,mnist-8.onnx,1,FAIL,,,,
+m2/AMDGPUExecutionProvider/mnist-8/b2,m2,AMDGPUExecutionProvider,mnist-8.onnx,2,FAIL,,,,
+m2/download/squeezenet1.0-12,m2,,,,PASS,,,,
+m2/AMDGPUExecutionProvider/squeezenet1.0-12/b1,m2,AMDGPUExecutionProvider,squeezenet1.0-12.onnx,1,FAIL,,,,
+m2/AMDGPUExecutionProvider/squeezenet1.0-12/b2,m2,AMDGPUExecutionProvider,squeezenet1.0-12.onnx,2,FAIL,,,,
+m2/download/mobilenetv2-12,m2,,,,PASS,,,,
+m2/AMDGPUExecutionProvider/mobilenetv2-12/b1,m2,AMDGPUExecutionProvider,mobilenetv2-12.onnx,1,FAIL,,,,
+m2/AMDGPUExecutionProvider/mobilenetv2-12/b2,m2,AMDGPUExecutionProvider,mobilenetv2-12.onnx,2,FAIL,,,,
+m2/download/emotion-ferplus-8,m2,,,,PASS,,,,
+m2/AMDGPUExecutionProvider/emotion-ferplus-8/b1,m2,AMDGPUExecutionProvider,emotion-ferplus-8.onnx,1,FAIL,,,,
+m2/AMDGPUExecutionProvider/emotion-ferplus-8/b2,m2,AMDGPUExecutionProvider,emotion-ferplus-8.onnx,2,FAIL,,,,
+m2/download/ssd_mobilenet_v1_10,m2,,,,PASS,,,,
+m2/AMDGPUExecutionProvider/ssd_mobilenet_v1_10/b1,m2,AMDGPUExecutionProvider,ssd_mobilenet_v1_10.onnx,1,FAIL,,,,
+m2/AMDGPUExecutionProvider/ssd_mobilenet_v1_10/b2,m2,AMDGPUExecutionProvider,ssd_mobilenet_v1_10.onnx,2,FAIL,,,,
+m2/MIGraphXExecutionProvider/mnist-8/b1,m2,MIGraphXExecutionProvider,mnist-8.onnx,1,FAIL,,,,
+m2/MIGraphXExecutionProvider/mnist-8/b2,m2,MIGraphXExecutionProvider,mnist-8.onnx,2,FAIL,,,,
+m2/MIGraphXExecutionProvider/squeezenet1.0-12/b1,m2,MIGraphXExecutionProvider,squeezenet1.0-12.onnx,1,FAIL,,,,
+m2/MIGraphXExecutionProvider/squeezenet1.0-12/b2,m2,MIGraphXExecutionProvider,squeezenet1.0-12.onnx,2,FAIL,,,,
+m2/MIGraphXExecutionProvider/mobilenetv2-12/b1,m2,MIGraphXExecutionProvider,mobilenetv2-12.onnx,1,FAIL,,,,
+m2/MIGraphXExecutionProvider/mobilenetv2-12/b2,m2,MIGraphXExecutionProvider,mobilenetv2-12.onnx,2,FAIL,,,,
+m2/MIGraphXExecutionProvider/emotion-ferplus-8/b1,m2,MIGraphXExecutionProvider,emotion-ferplus-8.onnx,1,FAIL,,,,
+m2/MIGraphXExecutionProvider/emotion-ferplus-8/b2,m2,MIGraphXExecutionProvider,emotion-ferplus-8.onnx,2,FAIL,,,,
+m2/MIGraphXExecutionProvider/ssd_mobilenet_v1_10/b1,m2,MIGraphXExecutionProvider,ssd_mobilenet_v1_10.onnx,1,FAIL,,,,
+m2/MIGraphXExecutionProvider/ssd_mobilenet_v1_10/b2,m2,MIGraphXExecutionProvider,ssd_mobilenet_v1_10.onnx,2,FAIL,,,,
+m2/DmlExecutionProvider/mnist-8/b1,m2,DmlExecutionProvider,mnist-8.onnx,1,PASS_CONTROL_DML,3,3,True,
+m2/DmlExecutionProvider/mnist-8/b2,m2,DmlExecutionProvider,mnist-8.onnx,2,PASS_CONTROL_DML,3,3,True,
+m2/DmlExecutionProvider/squeezenet1.0-12/b1,m2,DmlExecutionProvider,squeezenet1.0-12.onnx,1,PASS_CONTROL_DML,3,3,True,
+m2/DmlExecutionProvider/squeezenet1.0-12/b2,m2,DmlExecutionProvider,squeezenet1.0-12.onnx,2,PASS_CONTROL_DML,3,3,True,
+m2/DmlExecutionProvider/mobilenetv2-12/b1,m2,DmlExecutionProvider,mobilenetv2-12.onnx,1,PASS_CONTROL_DML,300,300,True,
+m2/DmlExecutionProvider/mobilenetv2-12/b2,m2,DmlExecutionProvider,mobilenetv2-12.onnx,2,PASS_CONTROL_DML,300,300,True,
+m2/DmlExecutionProvider/emotion-ferplus-8/b1,m2,DmlExecutionProvider,emotion-ferplus-8.onnx,1,PASS_CONTROL_DML,3,3,True,
+m2/DmlExecutionProvider/emotion-ferplus-8/b2,m2,DmlExecutionProvider,emotion-ferplus-8.onnx,2,PASS_CONTROL_DML,3,3,True,
+m2/DmlExecutionProvider/ssd_mobilenet_v1_10/b1,m2,DmlExecutionProvider,ssd_mobilenet_v1_10.onnx,1,FAIL,,,,
+m2/DmlExecutionProvider/ssd_mobilenet_v1_10/b2,m2,DmlExecutionProvider,ssd_mobilenet_v1_10.onnx,2,FAIL,,,,
+m3/CPUExecutionProvider/identity_add/b1,m3,CPUExecutionProvider,identity_add,1,PASS,,,,
+m3/CPUExecutionProvider/matmul/b1,m3,CPUExecutionProvider,matmul,1,PASS,,,,
+m3/CPUExecutionProvider/matmul/b4,m3,CPUExecutionProvider,matmul,4,PASS,,,,
+m3/CPUExecutionProvider/conv_relu/b1,m3,CPUExecutionProvider,conv_relu,1,PASS,,,,
+m3/CPUExecutionProvider/softmax/b1,m3,CPUExecutionProvider,softmax,1,PASS,,,,
+m3/AMDGPUExecutionProvider/identity_add/b1,m3,AMDGPUExecutionProvider,identity_add,1,FAIL,,,,
+m3/AMDGPUExecutionProvider/matmul/b1,m3,AMDGPUExecutionProvider,matmul,1,FAIL,,,,
+m3/AMDGPUExecutionProvider/matmul/b4,m3,AMDGPUExecutionProvider,matmul,4,FAIL,,,,
+m3/AMDGPUExecutionProvider/conv_relu/b1,m3,AMDGPUExecutionProvider,conv_relu,1,FAIL,,,,
+m3/AMDGPUExecutionProvider/softmax/b1,m3,AMDGPUExecutionProvider,softmax,1,FAIL,,,,
+m3/MIGraphXExecutionProvider/identity_add/b1,m3,MIGraphXExecutionProvider,identity_add,1,FAIL,,,,
+m3/MIGraphXExecutionProvider/matmul/b1,m3,MIGraphXExecutionProvider,matmul,1,FAIL,,,,
+m3/MIGraphXExecutionProvider/matmul/b4,m3,MIGraphXExecutionProvider,matmul,4,FAIL,,,,
+m3/MIGraphXExecutionProvider/conv_relu/b1,m3,MIGraphXExecutionProvider,conv_relu,1,FAIL,,,,
+m3/MIGraphXExecutionProvider/softmax/b1,m3,MIGraphXExecutionProvider,softmax,1,FAIL,,,,
+m3/DmlExecutionProvider/identity_add/b1,m3,DmlExecutionProvider,identity_add,1,PASS,,,,
+m3/DmlExecutionProvider/matmul/b1,m3,DmlExecutionProvider,matmul,1,PASS,,,,
+m3/DmlExecutionProvider/matmul/b4,m3,DmlExecutionProvider,matmul,4,PASS,,,,
+m3/DmlExecutionProvider/conv_relu/b1,m3,DmlExecutionProvider,conv_relu,1,PASS,,,,
+m3/DmlExecutionProvider/softmax/b1,m3,DmlExecutionProvider,softmax,1,PASS,,,,

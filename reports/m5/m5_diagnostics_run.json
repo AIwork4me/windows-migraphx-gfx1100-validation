@@ -1,0 +1,75 @@
+{
+ "mission": "WIN-MIGRAPHX-GFX1100",
+ "case_id": "m5_diagnostics_run",
+ "phase": "m5",
+ "host": "DESKTOP-S6VG7J7",
+ "os": "Windows-11-10.0.26300-SP0",
+ "python": "3.12.16 (main, Oct 26 2026, 14:10:56) [MSC v.1944 64 bit (AMD64)]",
+ "argv": [
+  "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\m5_diagnostics.py",
+  "--repo",
+  "C:\\AIwork4me\\windows-migraphx-gfx1100-validation"
+ ],
+ "cwd": "C:\\AIwork4me\\windows-migraphx-gfx1100-validation",
+ "run_id": "4ff6621d625b",
+ "started": {
+  "utc": "2026-11-16T17:12:55Z",
+  "local": "2026-11-17T01:12:55+08:00"
+ },
+ "seed_policy": "numpy default_rng(seed=1100) unless stated",
+ "probe_151": [
+  {
+   "ep": "AMDGPUExecutionProvider",
+   "probe": "providers=[EP] classic string, unregistered",
+   "timeout_s": 90,
+   "mode": "classic-providers-list",
+   "session_create_s": 0.01,
+   "get_providers": [
+    "CPUExecutionProvider"
+   ],
+   "run": "ok",
+   "placement": {
+    "total_node_events": 2,
+    "gpu_nodes": 0,
+    "cpu_nodes": 2,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "CPUExecutionProvider"
+    ],
+    "gpu_node_ratio": 0.0
+   },
+   "stage": "completed",
+   "verdict": "SILENT_CPU_FALLBACK",
+   "note": "classic providers=[...] silently drops the plugin EP (issue #151 behavior); no GPU execution claimed"
+  },
+  {
+   "ep": "MIGraphXExecutionProvider",
+   "probe": "providers=[EP] classic string, unregistered",
+   "timeout_s": 90,
+   "mode": "classic-providers-list",
+   "session_create_s": 0.0,
+   "get_providers": [
+    "CPUExecutionProvider"
+   ],
+   "run": "ok",
+   "placement": {
+    "total_node_events": 2,
+    "gpu_nodes": 0,
+    "cpu_nodes": 2,
+    "other_ep_nodes": 0,
+    "providers_seen": [
+     "CPUExecutionProvider"
+    ],
+    "gpu_node_ratio": 0.0
+   },
+   "stage": "completed",
+   "verdict": "SILENT_CPU_FALLBACK",
+   "note": "classic providers=[...] silently drops the plugin EP (issue #151 behavior); no GPU execution claimed"
+  }
+ ],
+ "support_matrix_rows": 380,
+ "finished": {
+  "utc": "2026-11-16T17:12:56Z",
+  "local": "2026-11-17T01:12:56+08:00"
+ }
+}

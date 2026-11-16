@@ -57,14 +57,18 @@ def main():
         i += 1
         try:
             # session churn every 5th iteration
-            if i % 5 == 1:
+            if i % 5 == 1 or "sess" not in dir():
                 so = ort.SessionOptions(); so.log_severity_level = 3
-                so.add_provider_for_devices(["GPU"], ep)
+                sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+                from ep_runner import add_ep_for_devices
+                _n = add_ep_for_devices(so, ort, ep)
+                if _n == 0:
+                    raise RuntimeError(f"EP {ep} not registered")
                 model = "conv_relu" if i % 10 == 1 else "matmul"
                 b = (i // 10) % 4 + 1
                 feeds = C.make_feed(model, man[model], b)
                 sess = ort.InferenceSession(os.path.join(C.FIXTURES, model + ".onnx"),
-                                            sess_options=so, providers=["CPUExecutionProvider"])
+                                            sess_options=so)
                 stats["sessions_created"] += 1
             sess.run(None, feeds)
             stats["inferences"] += 1

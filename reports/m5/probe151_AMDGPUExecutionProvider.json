@@ -6,6 +6,15 @@
   "CPUExecutionProvider"
  ],
  "run": "ok",
- "stage": "exception",
- "exception": "AttributeError(\"'InferenceSession' object has no attribute 'enable_profiling'\")"
+ "placement": {
+  "total_node_events": 2,
+  "gpu_nodes": 0,
+  "cpu_nodes": 2,
+  "other_ep_nodes": 0,
+  "providers_seen": [
+   "CPUExecutionProvider"
+  ],
+  "gpu_node_ratio": 0.0
+ },
+ "stage": "completed"
 }

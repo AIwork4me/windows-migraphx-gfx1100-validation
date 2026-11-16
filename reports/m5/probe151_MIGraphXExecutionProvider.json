@@ -1,0 +1,20 @@
+{
+ "ep": "MIGraphXExecutionProvider",
+ "mode": "classic-providers-list",
+ "session_create_s": 0.0,
+ "get_providers": [
+  "CPUExecutionProvider"
+ ],
+ "run": "ok",
+ "placement": {
+  "total_node_events": 2,
+  "gpu_nodes": 0,
+  "cpu_nodes": 2,
+  "other_ep_nodes": 0,
+  "providers_seen": [
+   "CPUExecutionProvider"
+  ],
+  "gpu_node_ratio": 0.0
+ },
+ "stage": "completed"
+}

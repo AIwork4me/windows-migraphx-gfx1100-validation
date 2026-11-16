@@ -6,15 +6,15 @@
  "os": "Windows-11-10.0.26300-SP0",
  "python": "3.12.16 (main, Oct 26 2026, 14:10:56) [MSC v.1944 64 bit (AMD64)]",
  "argv": [
-  "runner/phases/m4_build_feasibility.py",
+  "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\phases\\m4_build_feasibility.py",
   "--repo",
-  "."
+  "C:\\AIwork4me\\windows-migraphx-gfx1100-validation"
  ],
  "cwd": "C:\\AIwork4me\\windows-migraphx-gfx1100-validation",
- "run_id": "d1e77cc60191",
+ "run_id": "3530825c1af0",
  "started": {
-  "utc": "2026-11-16T15:21:20Z",
-  "local": "2026-11-16T23:21:20+08:00"
+  "utc": "2026-11-16T17:12:55Z",
+  "local": "2026-11-17T01:12:55+08:00"
  },
  "seed_policy": "numpy default_rng(seed=1100) unless stated",
  "toolchain": {
@@ -24,8 +24,8 @@
   "hipcc": "NOT_FOUND",
   "hipconfig": "NOT_FOUND",
   "msbuild": "NOT_FOUND",
-  "git": "C:\\Program Files\\Git\\ucrt64\\bin\\git.EXE",
-  "python": "C:\\Users\\Rocm\\AppData\\Local\\Microsoft\\WindowsApps\\python.EXE"
+  "git": "C:\\Program Files\\Git\\cmd\\git.EXE",
+  "python": "C:\\Users\\Rocm\\AppData\\Local\\Programs\\Python\\Python312\\python.EXE"
  },
  "component_checks": {
   "VS2022_dir": false,
@@ -35,7 +35,7 @@
   "amdhip64_lib": "NOT_FOUND",
   "migraphx_cmake_config": "NOT_FOUND"
  },
- "disk_free_gb": 568.2,
+ "disk_free_gb": 567.1,
  "upstreams": {
   "onnxruntime-ep-amdgpu": {
    "clone": "OK",
@@ -65,7 +65,7 @@
   "ROCm/HIP SDK for Windows not installed (no C:\\Program Files\\AMD\\ROCm; HIP SDK installer requires admin elevation; System32 amdhip64_6.dll is driver-shipped runtime only, no headers/import lib)"
  ],
  "finished": {
-  "utc": "2026-11-16T15:22:58Z",
-  "local": "2026-11-16T23:22:58+08:00"
+  "utc": "2026-11-16T17:12:55Z",
+  "local": "2026-11-17T01:12:55+08:00"
  }
 }
