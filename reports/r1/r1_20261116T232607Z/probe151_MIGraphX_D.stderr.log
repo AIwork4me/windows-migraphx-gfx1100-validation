@@ -1,0 +1,3 @@
+[0;93m2026-11-17 07:37:32.9398175 [W:onnxruntime:Default, onnxruntime_pybind_module.cc:45 onnxruntime::python::CreateOrtEnv] Init provider bridge failed.[m
+C:\AIwork4me\windows-migraphx-gfx1100-validation\venv-winml\Lib\site-packages\onnxruntime\capi\onnxruntime_inference_collection.py:767: UserWarning: Specified 'providers'/'provider_options' when creating InferenceSession but SessionOptions has already been configured with providers. InferenceSession will only use the providers passed to InferenceSession().
+  warnings.warn(

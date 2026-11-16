@@ -1,0 +1,136 @@
+{
+ "schema_version": "r1/1",
+ "case_id": "r1_stats_derivation",
+ "run_id": "r1_20261116T232607Z",
+ "source_head": "c597e4f3a4bd4a98dbcca9ea36d0286ccb8bc65f",
+ "started_utc": "2026-11-16T23:39:19Z",
+ "real_hardware": true,
+ "isolated_subprocess": true,
+ "argv": [
+  "runner/r1/derive_stats.py",
+  "--run-id",
+  "r1_20261116T232607Z"
+ ],
+ "host_summary": {
+  "machine": "AMD64",
+  "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "python": "3.12.10",
+  "os": "Windows-11-10.0.26300-SP0"
+ },
+ "total_cases": 395,
+ "phase_status_counts": {
+  "m0|BLOCKED_DEPENDENCY": 1,
+  "m0|FAIL": 42,
+  "m1|?": 1,
+  "m1|BLOCKED_DEPENDENCY": 184,
+  "m1|FAIL": 34,
+  "m1|FAIL_CORRECTNESS": 4,
+  "m1|PASS": 1,
+  "m1|PASS_CONTROL_DML": 58,
+  "m2|FAIL": 22,
+  "m2|PASS": 5,
+  "m2|PASS_CONTROL_DML": 8,
+  "m3|FAIL": 10,
+  "m3|PASS": 11,
+  "m4|BLOCKED_DEPENDENCY": 1,
+  "m5|INCONCLUSIVE": 2,
+  "supervisor|DONE": 10,
+  "supervisor|FAIL": 1
+ },
+ "m1_dml_pass_composition": {
+  "total": 58,
+  "single_op_graph": 46,
+  "nine_out": 4,
+  "two_out": 8,
+  "multi_output_total": 12
+ },
+ "m1_dml_report_claim_check": "final CN report line '52 synthetic ops + 8 real-model cases' vs ledger: 58 DML passes in m1 = 46 single-op + 12 multi-output (two_out 8, nine_out 4); the '+8 real models' are m2 phase PASS_CONTROL_DML, a separate counter",
+ "m2_dml_pass_count": 8,
+ "supervisor_tasks": [
+  {
+   "id": "supervisor/m0-amdgpu",
+   "final": "DONE",
+   "history": [
+    "DONE",
+    "DONE"
+   ]
+  },
+  {
+   "id": "supervisor/m0-migraphx",
+   "final": "DONE",
+   "history": [
+    "DONE",
+    "DONE"
+   ]
+  },
+  {
+   "id": "supervisor/m1-operators",
+   "final": "DONE",
+   "history": [
+    "DONE"
+   ]
+  },
+  {
+   "id": "supervisor/m1-multiout",
+   "final": "DONE",
+   "history": [
+    "DONE"
+   ]
+  },
+  {
+   "id": "supervisor/m1-cache",
+   "final": "DONE",
+   "history": [
+    "DONE"
+   ]
+  },
+  {
+   "id": "supervisor/m2-models",
+   "final": "DONE",
+   "history": [
+    "DONE"
+   ]
+  },
+  {
+   "id": "supervisor/m3-perf",
+   "final": "DONE",
+   "history": [
+    "DONE"
+   ]
+  },
+  {
+   "id": "supervisor/m3-stability",
+   "final": "DONE",
+   "history": [
+    "FAIL",
+    "DONE"
+   ]
+  },
+  {
+   "id": "supervisor/m4-feasibility",
+   "final": "DONE",
+   "history": [
+    "DONE"
+   ]
+  },
+  {
+   "id": "supervisor/m5-diagnostics",
+   "final": "DONE",
+   "history": [
+    "DONE"
+   ]
+  },
+  {
+   "id": "supervisor/wrapup",
+   "final": "FAIL",
+   "history": [
+    "FAIL"
+   ]
+  }
+ ],
+ "supervisor_fail_note": "supervisor/m3-stability shows history [FAIL, DONE] (transient, recovered same run); supervisor/wrapup ended FAIL in the ledger but wrapup artifacts were regenerated and committed afterwards (commits e50076b/c597e4f) -- ledger is a point-in-time snapshot, not the final artifact state",
+ "cases_with_HIP101_reason": 0,
+ "finished_utc": "2026-11-16T23:39:19Z",
+ "exit_code": 0,
+ "outcome": "STATS_DERIVED"
+}

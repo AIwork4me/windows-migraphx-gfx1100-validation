@@ -1,0 +1,5 @@
+$ C:\AIwork4me\windows-migraphx-gfx1100-validation\venv-winml\Scripts\python.exe C:\AIwork4me\windows-migraphx-gfx1100-validation\runner\r1\ep_device_child.py --ep AMDGPUExecutionProvider --mode run --candidate 1 --out C:\AIwork4me\windows-migraphx-gfx1100-validation\reports\r1\r1_20261116T232607Z\epdev_AMDGPU_run_c1.json --run-id r1_20261116T232607Z
+exit=0
+--- stdout ---
+AMDGPUExecutionProvider c1 run: PASS_AMD_GPU_EXECUTED_AND_PARITY; providers=['AMDGPUExecutionProvider', 'CPUExecutionProvider']
+

@@ -1,0 +1,31 @@
+phase,case,outcome,detail
+R1.1,M1_ep_hip7_default,HIP_SET_OK,count=1 set0=0 negctl=101
+R1.1,M2_sys_hip6_default,HIP_SET_OK,count=1 set0=0 negctl=101
+R1.1,M3_ep_hip7_clearenv,HIP_SET_OK,count=1 set0=0 negctl=101
+R1.1,M4_ep_hip7_hipinit,HIP_SET_OK,count=1 set0=0 negctl=101
+R1.2,AMDGPU_run_c0,HIP101,HIP101
+R1.2,AMDGPU_run_c1,PASS_AMD_GPU_EXECUTED_AND_PARITY,ep_nodes=1 parity=0.0
+R1.2,AMDGPU_multi,EP_MISSING_FROM_SESSION,EP_MISSING_FROM_SESSION
+R1.2,MIGraphX_run_c0,HIP101,HIP101
+R1.2,MIGraphX_run_c1,PASS_AMD_GPU_EXECUTED_AND_PARITY,ep_nodes=1 parity=0.0
+R1.2,MIGraphX_multi,EP_MISSING_FROM_SESSION,EP_MISSING_FROM_SESSION
+R1.3,AMDGPU_A,EP_UNREGISTERED_SILENT_CPU_FALLBACK,stdoutEPBlock=True userWarn=True providers=['CPUExecutionProvider']
+R1.3,AMDGPU_B,HIP101,"stdoutEPBlock=False userWarn=False providers=['AMDGPUExecutionProvider', 'CPUExecutionProvider']"
+R1.3,AMDGPU_C0,HIP101,"stdoutEPBlock=False userWarn=False providers=['AMDGPUExecutionProvider', 'CPUExecutionProvider']"
+R1.3,AMDGPU_C1,PASS_AMD_GPU_EXECUTED_AND_PARITY,"stdoutEPBlock=False userWarn=False providers=['AMDGPUExecutionProvider', 'CPUExecutionProvider']"
+R1.3,AMDGPU_D,EP_MISSING_FROM_SESSION,stdoutEPBlock=True userWarn=True providers=['CPUExecutionProvider']
+R1.3,AMDGPU_E,EP_MISSING_FROM_SESSION,stdoutEPBlock=False userWarn=False providers=['CPUExecutionProvider']
+R1.3,AMDGPU_F1,EP_MISSING_FROM_SESSION,stdoutEPBlock=False userWarn=False providers=['CPUExecutionProvider']
+R1.3,AMDGPU_F2,EP_MISSING_FROM_SESSION,stdoutEPBlock=False userWarn=False providers=['CPUExecutionProvider']
+R1.3,AMDGPU_F3,HIP101,"stdoutEPBlock=False userWarn=False providers=['AMDGPUExecutionProvider', 'CPUExecutionProvider']"
+R1.3,MIGraphX_A,EP_UNREGISTERED_SILENT_CPU_FALLBACK,stdoutEPBlock=False userWarn=True providers=['CPUExecutionProvider']
+R1.3,MIGraphX_B,EP_MISSING_FROM_SESSION,stdoutEPBlock=False userWarn=False providers=['CPUExecutionProvider']
+R1.3,MIGraphX_C0,HIP101,"stdoutEPBlock=False userWarn=False providers=['MIGraphXExecutionProvider', 'CPUExecutionProvider']"
+R1.3,MIGraphX_C1,PASS_AMD_GPU_EXECUTED_AND_PARITY,"stdoutEPBlock=False userWarn=False providers=['MIGraphXExecutionProvider', 'CPUExecutionProvider']"
+R1.3,MIGraphX_D,EP_MISSING_FROM_SESSION,stdoutEPBlock=True userWarn=True providers=['CPUExecutionProvider']
+R1.3,MIGraphX_E,EP_MISSING_FROM_SESSION,stdoutEPBlock=False userWarn=False providers=['CPUExecutionProvider']
+R1.3,MIGraphX_F1,EP_MISSING_FROM_SESSION,stdoutEPBlock=False userWarn=False providers=['CPUExecutionProvider']
+R1.3,MIGraphX_F2,EP_MISSING_FROM_SESSION,stdoutEPBlock=False userWarn=False providers=['CPUExecutionProvider']
+R1.3,MIGraphX_F3,EP_MISSING_FROM_SESSION,stdoutEPBlock=False userWarn=False providers=['CPUExecutionProvider']
+R1.0,sanity_venv_cpu,SANITY_OK,"{'CPU': ['CPUExecutionProvider'], 'DML': None}"
+R1.0,sanity_venv_winml,SANITY_OK,"{'CPU': ['CPUExecutionProvider'], 'DML': ['DmlExecutionProvider', 'CPUExecutionProvider']}"

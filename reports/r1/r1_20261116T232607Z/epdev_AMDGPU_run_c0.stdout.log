@@ -1,0 +1,4 @@
+$ C:\AIwork4me\windows-migraphx-gfx1100-validation\venv-winml\Scripts\python.exe C:\AIwork4me\windows-migraphx-gfx1100-validation\runner\r1\ep_device_child.py --ep AMDGPUExecutionProvider --mode run --candidate 0 --out C:\AIwork4me\windows-migraphx-gfx1100-validation\reports\r1\r1_20261116T232607Z\epdev_AMDGPU_run_c0.json --run-id r1_20261116T232607Z
+exit=1
+--- stdout ---
+

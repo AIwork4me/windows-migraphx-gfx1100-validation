@@ -1,0 +1,48 @@
+{
+ "schema_version": "r1/1",
+ "case_id": "r1_151_C1",
+ "run_id": "r1_20261116T232607Z",
+ "source_head": "c597e4f3a4bd4a98dbcca9ea36d0286ccb8bc65f",
+ "started_utc": "2026-11-16T23:37:14Z",
+ "real_hardware": true,
+ "isolated_subprocess": true,
+ "argv": [
+  "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\r1\\probe151_matrix_child.py",
+  "--cell",
+  "C1",
+  "--ep",
+  "AMDGPUExecutionProvider",
+  "--out",
+  "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\reports\\r1\\r1_20261116T232607Z\\probe151_AMDGPU_C1.json",
+  "--run-id",
+  "r1_20261116T232607Z"
+ ],
+ "host_summary": {
+  "machine": "AMD64",
+  "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "python": "3.12.16",
+  "os": "Windows-11-10.0.26300-SP0"
+ },
+ "cell": "C1",
+ "ep": "AMDGPUExecutionProvider",
+ "ort_version": "1.30.1",
+ "registration_ok": true,
+ "matching_devices": 2,
+ "providers_arg": null,
+ "device_api_devices": 1,
+ "session_create_seconds": 0.0375,
+ "session_get_providers": [
+  "AMDGPUExecutionProvider",
+  "CPUExecutionProvider"
+ ],
+ "parity_max_abs_diff": 0.0,
+ "node_attribution": [
+  {
+   "name": "AMDGPUExecutionProvider_AMDGPUExecutionProvider_14364223795342180257_0_0_kernel_time",
+   "provider": "AMDGPUExecutionProvider"
+  }
+ ],
+ "finished_utc": "2026-11-16T23:37:16Z",
+ "exit_code": 0,
+ "outcome": "PASS_AMD_GPU_EXECUTED_AND_PARITY"
+}

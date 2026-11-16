@@ -1,0 +1,6 @@
+*************** EP Error ***************
+EP Error C:\__w\1\s\win-onnxruntime\onnxruntime\core\session\plugin_ep\ep_plugin_provider_interfaces.cc:70 onnxruntime::PluginExecutionProviderFactory::CreateProvider Error creating execution provider: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : only supports selection for a single device
+ when using None
+Falling back to ['CPUExecutionProvider'] and retrying.
+****************************************
+cell D: EP_MISSING_FROM_SESSION; providers=['CPUExecutionProvider']

@@ -1,0 +1,68 @@
+{
+ "schema_version": "r1/1",
+ "case_id": "r1_env_fingerprint",
+ "run_id": "r1_20261116T232607Z",
+ "source_head": "c597e4f3a4bd4a98dbcca9ea36d0286ccb8bc65f",
+ "started_utc": "2026-11-16T23:28:39Z",
+ "real_hardware": true,
+ "isolated_subprocess": true,
+ "argv": [
+  "runner/r1/env_fingerprint.py",
+  "--run-id",
+  "r1_20261116T232607Z",
+  "--remote-main-sha",
+  "c597e4f3a4bd4a98dbcca9ea36d0286ccb8bc65f"
+ ],
+ "host_summary": {
+  "machine": "AMD64",
+  "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "python": "3.12.10",
+  "os": "Windows-11-10.0.26300-SP0"
+ },
+ "git": {
+  "branch": "investigation/r1-hip101-root-cause",
+  "head": "c597e4f3a4bd4a98dbcca9ea36d0286ccb8bc65f",
+  "remote_main_sha": "c597e4f3a4bd4a98dbcca9ea36d0286ccb8bc65f",
+  "porcelain_clean": false
+ },
+ "adapters_wmi_order": [
+  "GameViewer Virtual Display Adapter|15.6.5.199|2026/2/28 8:00:00|ROOT\\DISPLAY\\0000",
+  "AMD Radeon RX 7900 XTX|32.0.21030.2001|2025/9/25 8:00:00|PCI\\VEN_1002&DEV_744C&SUBSYS_0E3B1002&REV_C8\\6&13FD3BF3&0&00000008",
+  "Intel(R) UHD Graphics 770|32.0.101.6129|2024/10/18 8:00:00|PCI\\VEN_8086&DEV_A780&SUBSYS_D0001458&REV_04\\3&11583659&0&10",
+  "Microsoft Remote Display Adapter|10.0.26100.9818|2006/6/21 8:00:00|SWD\\REMOTEDISPLAYENUM\\RDPIDD_INDIRECTDISPLAY&SESSIONID_0002"
+ ],
+ "amd_pnp_signed_driver": [
+  "PCI 设备|||",
+  "USB xHCI Compliant Host Controller|10.0.26100.9974|Microsoft|usbxhci.inf",
+  "High Definition Audio Bus|25.30.0.1|AMD|oem27.inf",
+  "AMD Radeon RX 7900 XTX|32.0.21030.2001|Advanced Micro Devices, Inc.|oem8.inf",
+  "PCI Express Downstream Switch Port|10.0.26100.9974|Microsoft|pci.inf",
+  "PCI Express Upstream Switch Port|10.0.26100.9974|Microsoft|pci.inf"
+ ],
+ "os": "sys.getwindowsversion(major=10, minor=0, build=26300, platform=2, service_pack='')",
+ "versions": {
+  "venv-cpu/onnxruntime": "1.32.0",
+  "venv-winml/onnxruntime": "1.30.1",
+  "python_launcher": "3.12.10"
+ },
+ "visibility_env": {
+  "HIP_VISIBLE_DEVICES": "<absent>",
+  "ROCR_VISIBLE_DEVICES": "<absent>",
+  "CUDA_VISIBLE_DEVICES": "<absent>",
+  "GPU_DEVICE_ORDINAL": "<absent>",
+  "HSA_OVERRIDE_GFX_VERSION": "<absent>",
+  "HIP_HIDDEN_DEVICES": "<absent>",
+  "AMD_VISIBLE_DEVICES": "<absent>",
+  "GGML_VISIBLE_DEVICES": "<absent>"
+ },
+ "driver_comparability": {
+  "observed_amd_driver": "32.0.21030.2001 (re-measured this run)",
+  "ms_doc_requirement": "Adrenalin 25.10.13.09+ per learn.microsoft.com supported-execution-providers (fetched 2026-11-17)",
+  "gpuopen_mapping": "25.10.13.09 <-> 32.0.21013.9005 per gpuopen.com/version-table (fetched 2026-11-17); string ordering across two different version schemes is NOT a technical compatibility proof",
+  "verdict": "COMPATIBILITY_UNVERIFIED",
+  "note": "no authoritative 32.0.21030.2001<->Adrenalin mapping checked this run; moreover R1.1 shows the raw HIP stack works on this driver, so driver age is NOT the proximate cause of HIP 101"
+ },
+ "finished_utc": "2026-11-16T23:28:41Z",
+ "exit_code": 0,
+ "outcome": "FINGERPRINT_DONE"
+}

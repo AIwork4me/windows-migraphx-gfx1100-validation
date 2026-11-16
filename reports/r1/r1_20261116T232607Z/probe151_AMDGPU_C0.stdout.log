@@ -1,0 +1,1 @@
+cell C0: HIP101: onnxruntime.capi.onnxruntime_pybind11_state.Fail: [ONNXRuntimeError] : 1 : FAIL : HIP failure 101: invalid device ordinal; GPU=0; file=C:\j\amdgpu-ep\src\shared\hip\allocator.cc; l

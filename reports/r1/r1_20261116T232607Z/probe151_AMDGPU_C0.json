@@ -1,0 +1,43 @@
+{
+ "schema_version": "r1/1",
+ "case_id": "r1_151_C0",
+ "run_id": "r1_20261116T232607Z",
+ "source_head": "c597e4f3a4bd4a98dbcca9ea36d0286ccb8bc65f",
+ "started_utc": "2026-11-16T23:37:12Z",
+ "real_hardware": true,
+ "isolated_subprocess": true,
+ "argv": [
+  "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\r1\\probe151_matrix_child.py",
+  "--cell",
+  "C0",
+  "--ep",
+  "AMDGPUExecutionProvider",
+  "--out",
+  "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\reports\\r1\\r1_20261116T232607Z\\probe151_AMDGPU_C0.json",
+  "--run-id",
+  "r1_20261116T232607Z"
+ ],
+ "host_summary": {
+  "machine": "AMD64",
+  "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "python": "3.12.16",
+  "os": "Windows-11-10.0.26300-SP0"
+ },
+ "cell": "C0",
+ "ep": "AMDGPUExecutionProvider",
+ "ort_version": "1.30.1",
+ "registration_ok": true,
+ "matching_devices": 2,
+ "providers_arg": null,
+ "device_api_devices": 1,
+ "session_create_seconds": 0.0369,
+ "session_get_providers": [
+  "AMDGPUExecutionProvider",
+  "CPUExecutionProvider"
+ ],
+ "exception": "onnxruntime.capi.onnxruntime_pybind11_state.Fail: [ONNXRuntimeError] : 1 : FAIL : HIP failure 101: invalid device ordinal; GPU=0; file=C:\\j\\amdgpu-ep\\src\\shared\\hip\\allocator.cc; line=14; expr=hipSetDevice(device_id); \n",
+ "traceback_tail": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\r1\\probe151_matrix_child.py\", line 133, in main\n    out = sess.run(None, {\"x\": xin})[0]\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py\", line 395, in run\n    return self._sess.run(output_names, input_feed, run_options)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nonnxruntime.capi.onnxruntime_pybind11_state.Fail: [ONNXRuntimeError] : 1 : FAIL : HIP failure 101: invalid device ordinal; GPU=0; file=C:\\j\\amdgpu-ep\\src\\shared\\hip\\allocator.cc; line=14; expr=hipSetDevice(device_id); \n",
+ "finished_utc": "2026-11-16T23:37:13Z",
+ "exit_code": 1,
+ "outcome": "HIP101"
+}

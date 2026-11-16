@@ -1,0 +1,43 @@
+{
+ "inventory_ref": "hip_runtime_inventory.json",
+ "epdev_AMDGPU_enumerate.json": {
+  "amdhip_loaded": [],
+  "module_count": 9
+ },
+ "epdev_AMDGPU_multi.json": {
+  "amdhip_loaded": [],
+  "module_count": 19
+ },
+ "epdev_AMDGPU_run_c0.json": {
+  "amdhip_loaded": [
+   "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdhip64_7.dll"
+  ],
+  "module_count": 25
+ },
+ "epdev_AMDGPU_run_c1.json": {
+  "amdhip_loaded": [
+   "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdhip64_7.dll"
+  ],
+  "module_count": 25
+ },
+ "epdev_MIGraphX_enumerate.json": {
+  "amdhip_loaded": [],
+  "module_count": 9
+ },
+ "epdev_MIGraphX_multi.json": {
+  "amdhip_loaded": [],
+  "module_count": 19
+ },
+ "epdev_MIGraphX_run_c0.json": {
+  "amdhip_loaded": [
+   "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdhip64_7.dll"
+  ],
+  "module_count": 25
+ },
+ "epdev_MIGraphX_run_c1.json": {
+  "amdhip_loaded": [
+   "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdhip64_7.dll"
+  ],
+  "module_count": 25
+ }
+}

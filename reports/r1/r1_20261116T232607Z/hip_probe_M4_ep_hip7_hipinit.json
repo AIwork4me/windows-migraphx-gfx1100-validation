@@ -1,0 +1,286 @@
+{
+ "schema_version": "r1/1",
+ "case_id": "r1_hip_probe_M4_ep_hip7_hipinit",
+ "run_id": "r1_20261116T232607Z",
+ "source_head": "c597e4f3a4bd4a98dbcca9ea36d0286ccb8bc65f",
+ "started_utc": "2026-11-16T23:27:25Z",
+ "real_hardware": true,
+ "isolated_subprocess": true,
+ "argv": [
+  "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\r1\\hip_probe_child.py",
+  "--dll",
+  "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdhip64_7.dll",
+  "--tag",
+  "M4_ep_hip7_hipinit",
+  "--out",
+  "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\reports\\r1\\r1_20261116T232607Z\\hip_probe_M4_ep_hip7_hipinit.json",
+  "--run-id",
+  "r1_20261116T232607Z",
+  "--hipinit"
+ ],
+ "host_summary": {
+  "machine": "AMD64",
+  "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "python": "3.12.10",
+  "os": "Windows-11-10.0.26300-SP0"
+ },
+ "requested_dll": "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdhip64_7.dll",
+ "tag": "M4_ep_hip7_hipinit",
+ "hipinit_first": true,
+ "visibility_env": {
+  "HIP_VISIBLE_DEVICES": "<absent>",
+  "ROCR_VISIBLE_DEVICES": "<absent>",
+  "CUDA_VISIBLE_DEVICES": "<absent>",
+  "GPU_DEVICE_ORDINAL": "<absent>",
+  "HSA_OVERRIDE_GFX_VERSION": "<absent>",
+  "HIP_HIDDEN_DEVICES": "<absent>",
+  "AMD_VISIBLE_DEVICES": "<absent>",
+  "GGML_VISIBLE_DEVICES": "<absent>"
+ },
+ "dll_identity": {
+  "path": "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdhip64_7.dll",
+  "sha256": "714990f5b64a767c467882fa5d8165da3cb6861942a834a602803387e533d6cc",
+  "size": 16153096,
+  "pe_machine": "x64",
+  "version": {
+   "file_version": "7.14.2610.2",
+   "product_version": "7.14.2610.2"
+  }
+ },
+ "load": {
+  "ok": true
+ },
+ "resolved_module_path": "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdhip64_7.dll",
+ "hip_modules_in_process": [],
+ "exports": {
+  "hipGetDeviceCount": true,
+  "hipSetDevice": true,
+  "hipGetDevice": true,
+  "hipRuntimeGetVersion": true,
+  "hipDriverGetVersion": true,
+  "hipDeviceGetName": true,
+  "hipGetErrorString": true,
+  "hipGetErrorName": true,
+  "hipGetVersionString": false,
+  "hipInit": true,
+  "hipGetDeviceProperties": true,
+  "hipDeviceTotalMem": true
+ },
+ "hipInit": {
+  "rc": 0,
+  "name": "no error"
+ },
+ "hipRuntimeGetVersion": {
+  "rc": 0,
+  "name": "no error",
+  "value": 71460850
+ },
+ "hipDriverGetVersion": {
+  "rc": 0,
+  "name": "no error",
+  "value": 71460850
+ },
+ "hipGetDeviceCount": {
+  "rc": 0,
+  "name": "no error",
+  "count": 1
+ },
+ "set_device_matrix": [
+  {
+   "ordinal": 0,
+   "expect": "valid",
+   "hipSetDevice": {
+    "rc": 0,
+    "name": "no error"
+   },
+   "hipGetDevice": {
+    "rc": 0,
+    "name": "no error",
+    "value": 0
+   },
+   "hipDeviceGetName": {
+    "rc": 0,
+    "name": "AMD Radeon RX 7900 XTX"
+   },
+   "hipDeviceTotalMem": {
+    "rc": 0,
+    "name": "no error",
+    "bytes": 25753026560
+   }
+  },
+  {
+   "ordinal": 1,
+   "expect": "negative_control",
+   "hipSetDevice": {
+    "rc": 101,
+    "name": "invalid device ordinal"
+   },
+   "hipGetDevice": {
+    "rc": 0,
+    "name": "no error",
+    "value": 0
+   }
+  },
+  {
+   "ordinal": -1,
+   "expect": "negative_control",
+   "hipSetDevice": {
+    "rc": 101,
+    "name": "invalid device ordinal"
+   },
+   "hipGetDevice": {
+    "rc": 0,
+    "name": "no error",
+    "value": 0
+   }
+  },
+  {
+   "ordinal": 999,
+   "expect": "negative_control",
+   "hipSetDevice": {
+    "rc": 101,
+    "name": "invalid device ordinal"
+   },
+   "hipGetDevice": {
+    "rc": 0,
+    "name": "no error",
+    "value": 0
+   }
+  }
+ ],
+ "hipGetDeviceProperties": {
+  "status": "SKIPPED_ABI_UNVERIFIED",
+  "reason": "no header provably matching these DLL builds is available on this host; mission R1.1.4 forbids unverified hipDeviceProp_t layout; hipDeviceGetName/hipDeviceTotalMem used instead"
+ },
+ "verdict": "HIP_SET_OK",
+ "finished_utc": "2026-11-16T23:27:25Z",
+ "exit_code": 0,
+ "outcome": "HIP_SET_OK",
+ "steps": [
+  {
+   "step": "dll_identity",
+   "sha256": "714990f5b64a767c467882fa5d8165da3cb6861942a834a602803387e533d6cc",
+   "size": 16153096,
+   "pe_machine": "x64",
+   "version": {
+    "file_version": "7.14.2610.2",
+    "product_version": "7.14.2610.2"
+   }
+  },
+  {
+   "step": "load",
+   "ok": true
+  },
+  {
+   "step": "resolved_module_path",
+   "path": "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdhip64_7.dll"
+  },
+  {
+   "step": "hip_modules_in_process",
+   "count": 0
+  },
+  {
+   "step": "exports",
+   "hipGetDeviceCount": true,
+   "hipSetDevice": true,
+   "hipGetDevice": true,
+   "hipRuntimeGetVersion": true,
+   "hipDriverGetVersion": true,
+   "hipDeviceGetName": true,
+   "hipGetErrorString": true,
+   "hipGetErrorName": true,
+   "hipGetVersionString": false,
+   "hipInit": true,
+   "hipGetDeviceProperties": true,
+   "hipDeviceTotalMem": true
+  },
+  {
+   "step": "hipInit",
+   "rc": 0,
+   "name": "no error"
+  },
+  {
+   "step": "hipRuntimeGetVersion",
+   "rc": 0,
+   "name": "no error",
+   "value": 71460850
+  },
+  {
+   "step": "hipDriverGetVersion",
+   "rc": 0,
+   "name": "no error",
+   "value": 71460850
+  },
+  {
+   "step": "hipGetDeviceCount",
+   "rc": 0,
+   "name": "no error",
+   "count": 1
+  },
+  {
+   "step": "set_device",
+   "ordinal": 0,
+   "expect": "valid",
+   "hipSetDevice": {
+    "rc": 0,
+    "name": "no error"
+   },
+   "hipGetDevice": {
+    "rc": 0,
+    "name": "no error",
+    "value": 0
+   },
+   "hipDeviceGetName": {
+    "rc": 0,
+    "name": "AMD Radeon RX 7900 XTX"
+   },
+   "hipDeviceTotalMem": {
+    "rc": 0,
+    "name": "no error",
+    "bytes": 25753026560
+   }
+  },
+  {
+   "step": "set_device",
+   "ordinal": 1,
+   "expect": "negative_control",
+   "hipSetDevice": {
+    "rc": 101,
+    "name": "invalid device ordinal"
+   },
+   "hipGetDevice": {
+    "rc": 0,
+    "name": "no error",
+    "value": 0
+   }
+  },
+  {
+   "step": "set_device",
+   "ordinal": -1,
+   "expect": "negative_control",
+   "hipSetDevice": {
+    "rc": 101,
+    "name": "invalid device ordinal"
+   },
+   "hipGetDevice": {
+    "rc": 0,
+    "name": "no error",
+    "value": 0
+   }
+  },
+  {
+   "step": "set_device",
+   "ordinal": 999,
+   "expect": "negative_control",
+   "hipSetDevice": {
+    "rc": 101,
+    "name": "invalid device ordinal"
+   },
+   "hipGetDevice": {
+    "rc": 0,
+    "name": "no error",
+    "value": 0
+   }
+  }
+ ]
+}

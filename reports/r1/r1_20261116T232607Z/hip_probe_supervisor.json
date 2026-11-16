@@ -1,0 +1,88 @@
+{
+ "schema_version": "r1/1",
+ "case_id": "r1_hip_probe_supervisor",
+ "run_id": "r1_20261116T232607Z",
+ "source_head": "c597e4f3a4bd4a98dbcca9ea36d0286ccb8bc65f",
+ "started_utc": "2026-11-16T23:27:24Z",
+ "real_hardware": true,
+ "isolated_subprocess": true,
+ "argv": [
+  "runner/r1/hip_probe_supervisor.py",
+  "--run-id",
+  "r1_20261116T232607Z"
+ ],
+ "host_summary": {
+  "machine": "AMD64",
+  "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "python": "3.12.10",
+  "os": "Windows-11-10.0.26300-SP0"
+ },
+ "visibility_env_parent": {
+  "HIP_VISIBLE_DEVICES": "<absent>",
+  "ROCR_VISIBLE_DEVICES": "<absent>",
+  "CUDA_VISIBLE_DEVICES": "<absent>",
+  "GPU_DEVICE_ORDINAL": "<absent>",
+  "HSA_OVERRIDE_GFX_VERSION": "<absent>",
+  "HIP_HIDDEN_DEVICES": "<absent>",
+  "AMD_VISIBLE_DEVICES": "<absent>",
+  "GGML_VISIBLE_DEVICES": "<absent>"
+ },
+ "ep_dir": "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider",
+ "inventory": [
+  {
+   "path": "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdhip64_7.dll",
+   "present": true,
+   "sha256": "714990f5b64a767c467882fa5d8165da3cb6861942a834a602803387e533d6cc",
+   "size": 16153096,
+   "pe_machine": "x64",
+   "signature": {
+    "status": "Valid",
+    "signer": "CN=Advanced Micro Devices, O=Advanced Micro Devices, S=California, C=US"
+   }
+  },
+  {
+   "path": "C:\\Windows\\System32\\amdhip64_6.dll",
+   "present": true,
+   "sha256": "8fdb9c0d0b32b96454d092845311912e64b28594ea68f27e8511e1bb16db5b6c",
+   "size": 17906624,
+   "pe_machine": "x64",
+   "signature": {
+    "status": "Valid",
+    "signer": "CN=Microsoft Windows Hardware Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+   }
+  }
+ ],
+ "matrix": [
+  {
+   "cell": "M1_ep_hip7_default",
+   "dll": "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdhip64_7.dll",
+   "exit_code": 0,
+   "verdict": "HIP_SET_OK",
+   "receipt": "reports/r1/r1_20261116T232607Z/hip_probe_M1_ep_hip7_default.json"
+  },
+  {
+   "cell": "M2_sys_hip6_default",
+   "dll": "C:\\Windows\\System32\\amdhip64_6.dll",
+   "exit_code": 0,
+   "verdict": "HIP_SET_OK",
+   "receipt": "reports/r1/r1_20261116T232607Z/hip_probe_M2_sys_hip6_default.json"
+  },
+  {
+   "cell": "M3_ep_hip7_clearenv",
+   "dll": "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdhip64_7.dll",
+   "exit_code": 0,
+   "verdict": "HIP_SET_OK",
+   "receipt": "reports/r1/r1_20261116T232607Z/hip_probe_M3_ep_hip7_clearenv.json"
+  },
+  {
+   "cell": "M4_ep_hip7_hipinit",
+   "dll": "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdhip64_7.dll",
+   "exit_code": 0,
+   "verdict": "HIP_SET_OK",
+   "receipt": "reports/r1/r1_20261116T232607Z/hip_probe_M4_ep_hip7_hipinit.json"
+  }
+ ],
+ "finished_utc": "2026-11-16T23:27:25Z",
+ "exit_code": 0,
+ "outcome": "SUPERVISOR_DONE"
+}

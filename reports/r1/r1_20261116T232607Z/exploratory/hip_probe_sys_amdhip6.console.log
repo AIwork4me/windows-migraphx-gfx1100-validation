@@ -1,0 +1,19 @@
+$ python C:\AIwork4me\windows-migraphx-gfx1100-validation\runner\phases\r1_hip_probe_child.py --dll C:\Windows\System32\amdhip64_6.dll --tag sys_amdhip6
+exit=0
+--- stdout ---
+[sys_amdhip6] load_dll: {'ok': True, 'mode': 'ctypes.CDLL(abs path)', 'step': 'load_dll'}
+[sys_amdhip6] resolved_module_path: {'path': 'C:\\Windows\\System32\\amdhip64_6.dll', 'step': 'resolved_module_path'}
+[sys_amdhip6] file_identity: {'sha256': '8fdb9c0d0b32b96454d092845311912e64b28594ea68f27e8511e1bb16db5b6c', 'size': 17906624, 'version': {'file_version': '10.0.3652.0', 'product_version': '10.0.3652.0'}, 'step': 'file_identity'}
+[sys_amdhip6] exports: {'hipGetDeviceCount': True, 'hipSetDevice': True, 'hipGetDevice': True, 'hipRuntimeGetVersion': True, 'hipDriverGetVersion': True, 'hipGetDeviceProperties': True, 'hipDeviceTotalMem': True, 'hipErrorString': False, 'hipGetVersionString': False, 'step': 'exports'}
+[sys_amdhip6] hipRuntimeGetVersion: {'rc': 0, 'name': 'hipSuccess', 'value': 60450101, 'step': 'hipRuntimeGetVersion'}
+[sys_amdhip6] hipDriverGetVersion: {'rc': 0, 'name': 'hipSuccess', 'value': 60450101, 'step': 'hipDriverGetVersion'}
+[sys_amdhip6] hipGetDeviceCount: {'rc': 0, 'name': 'hipSuccess', 'count': 1, 'step': 'hipGetDeviceCount'}
+[sys_amdhip6] set_device: {'ordinal': 0, 'hipSetDevice': {'rc': 0, 'name': 'hipSuccess'}, 'hipGetDevice': {'rc': 0, 'name': 'hipSuccess', 'value': 0}, 'step': 'set_device'}
+[sys_amdhip6] set_device: {'ordinal': 1, 'hipSetDevice': {'rc': 101, 'name': 'hipErrorInvalidDevice'}, 'hipGetDevice': {'rc': 0, 'name': 'hipSuccess', 'value': 0}, 'step': 'set_device'}
+[sys_amdhip6] set_device: {'ordinal': -1, 'hipSetDevice': {'rc': 101, 'name': 'hipErrorInvalidDevice'}, 'hipGetDevice': {'rc': 0, 'name': 'hipSuccess', 'value': 0}, 'step': 'set_device'}
+[sys_amdhip6] set_device: {'ordinal': 999, 'hipSetDevice': {'rc': 101, 'name': 'hipErrorInvalidDevice'}, 'hipGetDevice': {'rc': 0, 'name': 'hipSuccess', 'value': 0}, 'step': 'set_device'}
+[sys_amdhip6] device_props: {'ordinal': 0, 'rc': 0, 'strings': ['AMD Radeon RX 7900 XTX', 'gfx1100'], 'total_mem': 25753026560, 'step': 'device_props'}
+[sys_amdhip6] receipt -> C:\AIwork4me\windows-migraphx-gfx1100-validation\reports\r1\hip_probe_sys_amdhip6.json
+
+--- stderr ---
+
