@@ -1,0 +1,1 @@
+r2_1_1 child: valid_loop_scan.onnx MIGraphXExecutionProvider DISABLE_ALL -> FAIL_CORRECTNESS nbp={'MIGraphXExecutionProvider': 3}

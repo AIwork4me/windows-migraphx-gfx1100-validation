@@ -9,6 +9,7 @@ uv.lock.bak
 *.onnx
 !fixtures/*.onnx
 !artifacts/models/ssd_partition_fixtures/*.onnx
+!artifacts/models/r2_1_1_fixtures/*.onnx
 *.ort
 *.param
 *.bin

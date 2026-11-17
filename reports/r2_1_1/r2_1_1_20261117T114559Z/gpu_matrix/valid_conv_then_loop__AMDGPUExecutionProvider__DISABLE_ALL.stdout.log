@@ -1,0 +1,3 @@
+EP Error: [ONNXRuntimeError] : 11 : EP_FAIL : Non-zero status code returned while running AMDGPUExecutionProvider_13796314051604140744_0 node. Name:'AMDGPUExecutionProvider_AMDGPUExecutionProvider_13796314051604140744_0_0' Status Message: Failed to call function using ['AMDGPUExecutionProvider', 'CPUExecutionProvider']
+Falling back to ['CPUExecutionProvider'] and retrying.
+r2_1_1 child: valid_conv_then_loop.onnx AMDGPUExecutionProvider DISABLE_ALL -> FAIL_NO_GPU_COMPUTE nbp={'CPUExecutionProvider': 24}

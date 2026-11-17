@@ -1,0 +1,49 @@
+{
+ "schema": "r21/ssd_partition/1",
+ "model": "ssd_mobilenet_v1_10.onnx",
+ "model_sha256": "1fbcf47654165f2e0b5f1bdf3f123b9e9e1128cd6463717767b76ab4b5246f9a",
+ "ep": "AMDGPUExecutionProvider",
+ "opt": "ALL",
+ "ort": "1.30.1",
+ "started_utc": "2026-11-17T12:03:41Z",
+ "device_luid": "72346",
+ "session_create_s": 1.7,
+ "session_providers": [
+  "AMDGPUExecutionProvider",
+  "CPUExecutionProvider"
+ ],
+ "profile_file": "onnxruntime_profile__2026-11-17_20-03-42_977.json",
+ "nodes_by_provider": {
+  "CPUExecutionProvider": 5587
+ },
+ "total_node_events": 5587,
+ "cpu_op_distribution": {
+  "Cast": 964,
+  "Gather": 558,
+  "Min": 452,
+  "Max": 360,
+  "Mul": 308,
+  "Reshape": 307,
+  "Squeeze": 305,
+  "Slice": 296,
+  "Add": 290,
+  "Concat": 221,
+  "Unsqueeze": 209,
+  "Sub": 194,
+  "Split": 185,
+  "Greater": 183,
+  "Transpose": 182,
+  "NonZero": 180,
+  "Shape": 110,
+  "Equal": 92,
+  "NonMaxSuppression": 90,
+  "Conv": 47,
+  "ReorderOutput": 18,
+  "Tile": 11,
+  "Less": 4,
+  "ConstantOfShape": 4,
+  "Div": 3
+ },
+ "classification": "FAIL_NO_GPU_COMPUTE",
+ "finished_utc": "2026-11-17T12:03:47Z"
+}

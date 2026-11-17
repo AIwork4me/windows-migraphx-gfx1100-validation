@@ -1,0 +1,47 @@
+{
+ "merge_base": "7156b9b504c4c31065eb47c0191f3e2f55f316ed",
+ "head_at_audit": "2e8894eec4b94bd81af9f6a3eba1c2c4eecf83fc",
+ "total_modified": 3,
+ "summary": {
+  "CONTENT_CHANGED": 2,
+  "EOL_ONLY": 1
+ },
+ "files": [
+  {
+   "path": ".gitignore",
+   "class": "CONTENT_CHANGED",
+   "blob_merge_base": "6eb5d1a9df901c5615fc0759ce408bdd8954ea39",
+   "blob_head": "149d0e5b05fb103ccecf19a5b670929207ac0583",
+   "sha256_merge_base": "9e19c30c68ec5ccc7db8c69b44a2ec26020e42371859bbb242c9e96c73bc08c1",
+   "sha256_head": "04e363c0f3e1b0c51ef61b6864b01bdf9511250728ebf2b09235133a725b7320",
+   "bytes_merge_base": 469,
+   "bytes_head": 522,
+   "crlf_count_merge_base": 0,
+   "crlf_count_head": 0
+  },
+  {
+   "path": "README.md",
+   "class": "CONTENT_CHANGED",
+   "blob_merge_base": "bb0f8dbe086bc6088d0a14d35adbc15ea8e45f46",
+   "blob_head": "268f92c767bc1c4480746658d3c420916aa3a9ca",
+   "sha256_merge_base": "353615d8d2d1c21293de58bdde813c6f95f5155226a42438008ef3446d9e0883",
+   "sha256_head": "69157c323a71657a30560746c7a0c22fea6eb8b5eb3ff745c0dcbbddbe30e861",
+   "bytes_merge_base": 3155,
+   "bytes_head": 4315,
+   "crlf_count_merge_base": 0,
+   "crlf_count_head": 0
+  },
+  {
+   "path": "fixtures/manifest.json",
+   "class": "EOL_ONLY",
+   "blob_merge_base": "18e8eb297ff4e10afd6fe2b4e59a434e538c348a",
+   "blob_head": "5c4ef86c1b2c83bc6cba73adee276e970e632b52",
+   "sha256_merge_base": "1433721d5e28cf0f03328a6f12b9e9674fbcd243f6aa13c83683a796deb6810b",
+   "sha256_head": "e5fce864d81f885574e3749440c8cb2d2275b5b125fb4932b9d8a7077d4f2ce9",
+   "bytes_merge_base": 7155,
+   "bytes_head": 7646,
+   "crlf_count_merge_base": 0,
+   "crlf_count_head": 491
+  }
+ ]
+}

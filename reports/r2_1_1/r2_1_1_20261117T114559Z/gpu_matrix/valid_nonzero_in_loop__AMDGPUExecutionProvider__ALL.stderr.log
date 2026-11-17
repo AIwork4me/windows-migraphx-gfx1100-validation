@@ -1,0 +1,4 @@
+[0;93m2026-11-17 20:03:14.9114724 [W:onnxruntime:Default, onnxruntime_pybind_module.cc:45 onnxruntime::python::CreateOrtEnv] Init provider bridge failed.[m
+2026-11-17 20:03:16.199491 [WARN] [:0] auto_save_problem_cache: save failed: C:\j\AMDMIGraphX\src\file_buffer.cpp:77: write_buffer: Failure opening file: C:\Program Files\WindowsApps\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\ExecutionProvider\problem_cache.json
+[0;93m2026-11-17 20:03:16.8348455 [W:onnxruntime:, execution_frame.cc:921 onnxruntime::ExecutionFrame::VerifyOutputSizes] Expected shape from model of {-1} does not match actual shape of {3,1} for output S[m
+[0;93m2026-11-17 20:03:16.8559258 [W:onnxruntime:, execution_frame.cc:921 onnxruntime::ExecutionFrame::VerifyOutputSizes] Expected shape from model of {-1} does not match actual shape of {3,1} for output S[m

@@ -35,6 +35,13 @@ jobs:
         shell: pwsh
         run: |
           python runner/r2_1/r21_validate.py
+      - name: "R2.1.1 contract-valid control-flow fixtures: build + CPU oracle + model contract"
+        shell: pwsh
+        run: |
+          python runner/r2_1_1/build_valid_controlflow_fixtures.py ci_r2_1_1
+          python runner/r2_1_1/cpu_oracle_r211.py ci_r2_1_1
+          # CI runs on CPU-only hosted runners: this step attests fixture
+          # contract validity and CPU oracles ONLY, never GPU execution.
       - name: Verify manifests of tracked report dirs (if present)
         shell: pwsh
         run: |

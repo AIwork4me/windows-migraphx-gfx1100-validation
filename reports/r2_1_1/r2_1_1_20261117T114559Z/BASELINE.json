@@ -1,0 +1,91 @@
+{
+ "captured_at_utc": "2026-11-17T11:48:25+00:00",
+ "mission": "R2.1.1",
+ "host_os": "Windows-11-10.0.26300-SP0",
+ "machine": "DESKTOP-S6VG7J7",
+ "cpu_count": 24,
+ "note_interpreter": "WindowsApps python.exe store stub currently exits 49 with no output on this host; all repo tooling uses venv interpreters recorded below",
+ "pr2_live": {
+  "rc": 0,
+  "out": "{\"baseRefOid\":\"7156b9b504c4c31065eb47c0191f3e2f55f316ed\",\"headRefOid\":\"2e8894eec4b94bd81af9f6a3eba1c2c4eecf83fc\",\"isDraft\":true,\"mergeStateStatus\":\"CLEAN\",\"mergeable\":\"MERGEABLE\",\"state\":\"OPEN\",\"url\":\"https://github.com/AIwork4me/windows-migraphx-gfx1100-validation/pull/2\"}",
+  "err": ""
+ },
+ "pr_fork1_live": {
+  "rc": 0,
+  "out": "{\"baseRefOid\":\"15ded64bd998a317dfe0ccf0ead8033574dd5b86\",\"headRefOid\":\"0baccb25eb607fe43255bf4d5b09a93df8571c91\",\"isDraft\":true,\"state\":\"OPEN\",\"url\":\"https://github.com/AIwork4me/onnxruntime-ep-amdgpu/pull/1\"}",
+  "err": ""
+ },
+ "git_head_local": "2e8894eec4b94bd81af9f6a3eba1c2c4eecf83fc 2026-11-17 13:56:24 +0800",
+ "git_remote_heads": "7156b9b504c4c31065eb47c0191f3e2f55f316ed\trefs/heads/main\n2e8894eec4b94bd81af9f6a3eba1c2c4eecf83fc\trefs/heads/mission/r2-device-identity-real-models",
+ "git_status_clean": false,
+ "gpu_win32_videocontroller": [
+  {
+   "Name": "GameViewer Virtual Display Adapter",
+   "DriverVersion": "15.6.5.199",
+   "AdapterLUID": null,
+   "PNPDeviceID": "ROOT\\DISPLAY\\0000",
+   "Status": "OK"
+  },
+  {
+   "Name": "AMD Radeon RX 7900 XTX",
+   "DriverVersion": "32.0.21030.2001",
+   "AdapterLUID": null,
+   "PNPDeviceID": "PCI\\VEN_1002&DEV_744C&SUBSYS_0E3B1002&REV_C8\\6&13FD3BF3&0&00000008",
+   "Status": "OK"
+  },
+  {
+   "Name": "Intel(R) UHD Graphics 770",
+   "DriverVersion": "32.0.101.6129",
+   "AdapterLUID": null,
+   "PNPDeviceID": "PCI\\VEN_8086&DEV_A780&SUBSYS_D0001458&REV_04\\3&11583659&0&10",
+   "Status": "OK"
+  },
+  {
+   "Name": "Microsoft Remote Display Adapter",
+   "DriverVersion": "10.0.26100.9818",
+   "AdapterLUID": null,
+   "PNPDeviceID": "SWD\\REMOTEDISPLAYENUM\\RDPIDD_INDIRECTDISPLAY&SESSIONID_0002",
+   "Status": "OK"
+  }
+ ],
+ "msix_winml_packages": "{\"Name\":\"Microsoft.WinML.AMD.GPU.EP.Framework.2\",\"Version\":\"1.8.65.0\"}",
+ "amdhip64_system32": "NOT_FOUND",
+ "model_sha256": {
+  "yolo26n.onnx": {
+   "sha256": "4fc60f7e7973aae4e6cbb7ea281c860de048b62ab5fa12ed06f467e1151b8f7b",
+   "bytes": 9930306
+  },
+  "scrfd_det_10g.onnx": {
+   "sha256": "5838f7fe053675b1c7a08b633df49e7af5495cee0493c7dcf6697200b85b5b91",
+   "bytes": 16923827
+  },
+  "ssd_mobilenet_v1_10.onnx": {
+   "sha256": "1fbcf47654165f2e0b5f1bdf3f123b9e9e1128cd6463717767b76ab4b5246f9a",
+   "bytes": 29275103
+  },
+  "emotion-ferplus-8.onnx": {
+   "sha256": "a2a2ba6a335a3b29c21acb6272f962bd3d47f84952aaffa03b60986e04efa61c",
+   "bytes": 35040571
+  },
+  "mnist-8.onnx": {
+   "sha256": "2f06e72de813a8635c9bc0397ac447a601bdbfa7df4bebc278723b958831c9bf",
+   "bytes": 26454
+  },
+  "mobilenetv2-12.onnx": {
+   "sha256": "c0c3f76d93fa3fd6580652a45618618a220fced18babf65774ed169de0432ad5",
+   "bytes": 13964571
+  },
+  "squeezenet1.0-12.onnx": {
+   "sha256": "dec81a8684617770b3cf13fadc1d92565d1d453d23935fc6388b792d99c992bd",
+   "bytes": 4952956
+  }
+ },
+ "venv-cpu": "3.12.16 1.32.0 C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-cpu\\Lib\\site-packages\\onnxruntime\\__init__.py",
+ "venv-winml": "3.12.16 1.30.1 C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\__init__.py",
+ "r21_final_verdict_ref": {
+  "evidence_root": "reports/r2_1/r21_20261117T040739Z/",
+  "soak": "RCA_NOT_REPRODUCED",
+  "ssd": "LOOP_BARRIER_ISOLATED (to be re-examined by R2.1.1 causal fixtures)",
+  "guard": "GUARD_HELPER_COMPILED_TESTED (3 compilers), native build BLOCKED_TOOLCHAIN"
+ }
+}
