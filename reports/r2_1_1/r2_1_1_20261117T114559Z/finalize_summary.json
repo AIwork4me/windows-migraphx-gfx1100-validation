@@ -1,13 +1,23 @@
 {
- "entries": 101,
- "self_check_mismatches": [],
- "excluded_by_design": [
-  "manifest.sha256",
-  "finalize_summary.json",
-  "redaction_scan.json"
- ],
- "manifest": "reports/r2_1_1/r2_1_1_20261117T114559Z/manifest.sha256",
- "redaction_hits": 0,
- "redaction_files": 101,
- "generated_utc": "2026-11-17T12:11:09Z"
+ "schema": "r2_1_1/finalize/1",
+ "pr": {
+  "number": 2,
+  "url": "https://github.com/AIwork4me/windows-migraphx-gfx1100-validation/pull/2",
+  "state": "MERGED",
+  "merged_at": "2026-11-17T12:14:46Z",
+  "merge_commit": "7ae279c93629146423ed0d3be96774695233fc4e",
+  "squash": true,
+  "source_branch": "mission/r2-device-identity-real-models",
+  "final_head_before_merge": "dabe6d50cf074ef7adf2bc57dca9ea33317838fc",
+  "base_before_merge": "7156b9b504c4c31065eb47c0191f3e2f55f316ed",
+  "merged_by": "AIwork4me"
+ },
+ "main_after_merge": "7ae279c93629146423ed0d3be96774695233fc4e",
+ "ci_green_at_final_head": {
+  "push_r2_cpu_tests": "runs/44080884415 success",
+  "pr_r1_cpu_tests": "runs/44080892021 success",
+  "pr_r2_cpu_tests": "runs/44080892006 success"
+ },
+ "verdict": "MERGED_GO",
+ "generated_utc": "2026-11-17T12:15:19Z"
 }
