@@ -1,0 +1,28 @@
+{
+ "schema": "r3_a/version_manifest/1",
+ "generated_utc": "2026-11-17T12:21:02+00:00",
+ "validation_repo": {
+  "branch": "mission/r3a-native-ep-validation",
+  "baseline_main": "6b780a4335a701beab83dc2ee2c6123c664c05e7",
+  "r2_1_1_merge": "7ae279c93629146423ed0d3be96774695233fc4e"
+ },
+ "fork": {
+  "repo": "AIwork4me/onnxruntime-ep-amdgpu",
+  "pr1_url": "https://github.com/AIwork4me/onnxruntime-ep-amdgpu/pull/1",
+  "pr1_state": "OPEN Draft MERGEABLE, 6 checks SUCCESS",
+  "head": "0baccb25eb607fe43255bf4d5b09a93df8571c91",
+  "base": "15ded64bd998a317dfe0ccf0ead8033574dd5b86",
+  "upstream_drift_commits": 0,
+  "patched_files_sha256": {
+   "src/amdgpu/device_identity_guard.h": "5eb0db6d116de61f374951fb7579dd7547f0f8843ae5dc8ba41001c793f595a1",
+   "src/amdgpu/gpu_factory.cc": "f0cd2417c0d056363a428d7dbde7284d1d719352043698eeb81556b20e3e001c",
+   "tests/device_identity_guard_test.cc": "de1f003cfc55e84946680c7016e94ef6ff46f7c98a007630fb85e7e42a5c03ff"
+  }
+ },
+ "runtime": {
+  "msix": "Microsoft.WinML.AMD.GPU.EP.Framework.2 1.8.65.0",
+  "ort_winml": "1.30.1",
+  "gpu": "RX 7900 XTX gfx1100"
+ },
+ "native_binary": null
+}

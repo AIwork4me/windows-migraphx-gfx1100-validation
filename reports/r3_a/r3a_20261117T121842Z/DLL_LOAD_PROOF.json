@@ -1,0 +1,5 @@
+{
+ "schema": "r3_a/dll_load_proof/1",
+ "status": "NOT_APPLICABLE",
+ "reason": "no patched binary was built; stock MSIX EP load proof is R2 evidence (reports/r2/.../dll_load_audit.json)"
+}
