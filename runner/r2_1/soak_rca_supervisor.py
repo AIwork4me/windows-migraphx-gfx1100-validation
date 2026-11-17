@@ -103,6 +103,8 @@ def run_case(case: dict, out_dir: str) -> dict:
            "--fault", case.get("fault", "none"),
            "--teardown", case.get("teardown", "none"),
            "--exit-mode", case.get("exit_mode", "os_exit")]
+    if case.get("r2_inputs"):
+        cmd.append("--r2-inputs")
     t0 = time.time()
     receipt = {"case": name, "cmd": " ".join(cmd[1:6]) + " ...",
                "argv": cmd[1:], "budget_s": round(case["minutes"] * 60),

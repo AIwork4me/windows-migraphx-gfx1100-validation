@@ -50,6 +50,8 @@ def main():
             rec = {"classification": "RECEIPT_MISSING", "rc": r.returncode,
                    "stdout_tail": r.stdout[-400:], "stderr_tail": r.stderr[-800:]}
         rec["child_rc"] = r.returncode
+        rec["stdout_tail"] = r.stdout[-1500:]
+        rec["stderr_tail"] = r.stderr[-1500:]
         results.append(rec)
         print(f"  -> {rec.get('classification')} {rec.get('nodes_by_provider')}", flush=True)
     with open(os.path.join(out_dir, "ssd_partition_matrix.json"), "w",

@@ -1,0 +1,157 @@
+{"t_mono": 0.006, "t_utc": "2026-11-17T04:47:48.026Z", "pid": 544, "ppid": 16040, "iter": 0, "stage": "spawn", "argv_hash": "d95676ceaa7e", "model": "yolo26n.onnx", "ep": "MIGraphXExecutionProvider", "minutes": 16.0, "recreate_every": 2000, "fault": "none", "teardown": "none", "exit_mode": "os_exit", "ort": "1.30.1"}
+{"t_mono": 0.018, "t_utc": "2026-11-17T04:47:48.038Z", "pid": 544, "ppid": 16040, "iter": 0, "stage": "register_ep:enter"}
+{"t_mono": 0.033, "t_utc": "2026-11-17T04:47:48.053Z", "pid": 544, "ppid": 16040, "iter": 0, "stage": "register_ep:leave"}
+{"t_mono": 0.036, "t_utc": "2026-11-17T04:47:48.057Z", "pid": 544, "ppid": 16040, "iter": 0, "stage": "resolve_device:enter"}
+{"t_mono": 1.257, "t_utc": "2026-11-17T04:47:49.277Z", "pid": 544, "ppid": 16040, "iter": 0, "stage": "resolve_device:leave", "luid": "72346", "basis": ["unique candidate with Discrete=1 + active DXGI output", "ep=MIGraphXExecutionProvider", "description=AMD Radeon RX 7900 XTX", "discrete=True", "active_output=True", "canary: EP in providers + profile node + CPU parity"]}
+{"t_mono": 1.259, "t_utc": "2026-11-17T04:47:49.279Z", "pid": 544, "ppid": 16040, "iter": 0, "stage": "create_session:enter"}
+{"t_mono": 44.146, "t_utc": "2026-11-17T04:48:32.166Z", "pid": 544, "ppid": 16040, "iter": 0, "stage": "create_session:leave", "providers": ["MIGraphXExecutionProvider", "CPUExecutionProvider"], "model_sha256": "4fc60f7e7973aae4e6cbb7ea281c860de048b62ab5fa12ed06f467e1151b8f7b"}
+{"t_mono": 44.157, "t_utc": "2026-11-17T04:48:32.177Z", "pid": 544, "ppid": 16040, "iter": 0, "stage": "warmup:enter"}
+{"t_mono": 44.206, "t_utc": "2026-11-17T04:48:32.226Z", "pid": 544, "ppid": 16040, "iter": 0, "stage": "warmup:leave"}
+{"t_mono": 44.208, "t_utc": "2026-11-17T04:48:32.228Z", "pid": 544, "ppid": 16040, "iter": 0, "stage": "run:enter"}
+{"t_mono": 44.227, "t_utc": "2026-11-17T04:48:32.246Z", "pid": 544, "ppid": 16040, "iter": 1, "stage": "heartbeat"}
+{"t_mono": 52.822, "t_utc": "2026-11-17T04:48:40.842Z", "pid": 544, "ppid": 16040, "iter": 500, "stage": "run:iter"}
+{"t_mono": 61.31, "t_utc": "2026-11-17T04:48:49.330Z", "pid": 544, "ppid": 16040, "iter": 1000, "stage": "run:iter"}
+{"t_mono": 69.805, "t_utc": "2026-11-17T04:48:57.825Z", "pid": 544, "ppid": 16040, "iter": 1500, "stage": "run:iter"}
+{"t_mono": 74.231, "t_utc": "2026-11-17T04:49:02.251Z", "pid": 544, "ppid": 16040, "iter": 1760, "stage": "heartbeat"}
+{"t_mono": 78.322, "t_utc": "2026-11-17T04:49:06.341Z", "pid": 544, "ppid": 16040, "iter": 2000, "stage": "run:iter"}
+{"t_mono": 78.332, "t_utc": "2026-11-17T04:49:06.353Z", "pid": 544, "ppid": 16040, "iter": 2000, "stage": "recreate:enter", "n": 1}
+{"t_mono": 78.334, "t_utc": "2026-11-17T04:49:06.355Z", "pid": 544, "ppid": 16040, "iter": 2000, "stage": "create_session:enter"}
+{"t_mono": 120.761, "t_utc": "2026-11-17T04:49:48.768Z", "pid": 544, "ppid": 16040, "iter": 2000, "stage": "create_session:leave", "providers": ["MIGraphXExecutionProvider", "CPUExecutionProvider"]}
+{"t_mono": 120.772, "t_utc": "2026-11-17T04:49:48.786Z", "pid": 544, "ppid": 16040, "iter": 2000, "stage": "session_release:enter"}
+{"t_mono": 120.814, "t_utc": "2026-11-17T04:49:48.834Z", "pid": 544, "ppid": 16040, "iter": 2000, "stage": "session_release:leave"}
+{"t_mono": 120.816, "t_utc": "2026-11-17T04:49:48.836Z", "pid": 544, "ppid": 16040, "iter": 2000, "stage": "recreate:leave", "n": 1}
+{"t_mono": 120.846, "t_utc": "2026-11-17T04:49:48.866Z", "pid": 544, "ppid": 16040, "iter": 2001, "stage": "heartbeat"}
+{"t_mono": 129.379, "t_utc": "2026-11-17T04:49:57.398Z", "pid": 544, "ppid": 16040, "iter": 2500, "stage": "run:iter"}
+{"t_mono": 137.921, "t_utc": "2026-11-17T04:50:05.941Z", "pid": 544, "ppid": 16040, "iter": 3000, "stage": "run:iter"}
+{"t_mono": 146.451, "t_utc": "2026-11-17T04:50:14.467Z", "pid": 544, "ppid": 16040, "iter": 3500, "stage": "run:iter"}
+{"t_mono": 150.854, "t_utc": "2026-11-17T04:50:18.875Z", "pid": 544, "ppid": 16040, "iter": 3759, "stage": "heartbeat"}
+{"t_mono": 154.968, "t_utc": "2026-11-17T04:50:22.988Z", "pid": 544, "ppid": 16040, "iter": 4000, "stage": "run:iter"}
+{"t_mono": 154.978, "t_utc": "2026-11-17T04:50:22.999Z", "pid": 544, "ppid": 16040, "iter": 4000, "stage": "recreate:enter", "n": 2}
+{"t_mono": 154.98, "t_utc": "2026-11-17T04:50:23.001Z", "pid": 544, "ppid": 16040, "iter": 4000, "stage": "create_session:enter"}
+{"t_mono": 197.327, "t_utc": "2026-11-17T04:51:05.347Z", "pid": 544, "ppid": 16040, "iter": 4000, "stage": "create_session:leave", "providers": ["MIGraphXExecutionProvider", "CPUExecutionProvider"]}
+{"t_mono": 197.337, "t_utc": "2026-11-17T04:51:05.357Z", "pid": 544, "ppid": 16040, "iter": 4000, "stage": "session_release:enter"}
+{"t_mono": 197.374, "t_utc": "2026-11-17T04:51:05.394Z", "pid": 544, "ppid": 16040, "iter": 4000, "stage": "session_release:leave"}
+{"t_mono": 197.376, "t_utc": "2026-11-17T04:51:05.396Z", "pid": 544, "ppid": 16040, "iter": 4000, "stage": "recreate:leave", "n": 2}
+{"t_mono": 197.406, "t_utc": "2026-11-17T04:51:05.426Z", "pid": 544, "ppid": 16040, "iter": 4001, "stage": "heartbeat"}
+{"t_mono": 205.952, "t_utc": "2026-11-17T04:51:13.972Z", "pid": 544, "ppid": 16040, "iter": 4500, "stage": "run:iter"}
+{"t_mono": 214.525, "t_utc": "2026-11-17T04:51:22.546Z", "pid": 544, "ppid": 16040, "iter": 5000, "stage": "run:iter"}
+{"t_mono": 223.096, "t_utc": "2026-11-17T04:51:31.114Z", "pid": 544, "ppid": 16040, "iter": 5500, "stage": "run:iter"}
+{"t_mono": 227.412, "t_utc": "2026-11-17T04:51:35.432Z", "pid": 544, "ppid": 16040, "iter": 5753, "stage": "heartbeat"}
+{"t_mono": 231.624, "t_utc": "2026-11-17T04:51:39.644Z", "pid": 544, "ppid": 16040, "iter": 6000, "stage": "run:iter"}
+{"t_mono": 231.635, "t_utc": "2026-11-17T04:51:39.656Z", "pid": 544, "ppid": 16040, "iter": 6000, "stage": "recreate:enter", "n": 3}
+{"t_mono": 231.637, "t_utc": "2026-11-17T04:51:39.658Z", "pid": 544, "ppid": 16040, "iter": 6000, "stage": "create_session:enter"}
+{"t_mono": 273.608, "t_utc": "2026-11-17T04:52:21.629Z", "pid": 544, "ppid": 16040, "iter": 6000, "stage": "create_session:leave", "providers": ["MIGraphXExecutionProvider", "CPUExecutionProvider"]}
+{"t_mono": 273.619, "t_utc": "2026-11-17T04:52:21.639Z", "pid": 544, "ppid": 16040, "iter": 6000, "stage": "session_release:enter"}
+{"t_mono": 273.66, "t_utc": "2026-11-17T04:52:21.681Z", "pid": 544, "ppid": 16040, "iter": 6000, "stage": "session_release:leave"}
+{"t_mono": 273.663, "t_utc": "2026-11-17T04:52:21.681Z", "pid": 544, "ppid": 16040, "iter": 6000, "stage": "recreate:leave", "n": 3}
+{"t_mono": 273.692, "t_utc": "2026-11-17T04:52:21.712Z", "pid": 544, "ppid": 16040, "iter": 6001, "stage": "heartbeat"}
+{"t_mono": 282.206, "t_utc": "2026-11-17T04:52:30.226Z", "pid": 544, "ppid": 16040, "iter": 6500, "stage": "run:iter"}
+{"t_mono": 290.743, "t_utc": "2026-11-17T04:52:38.763Z", "pid": 544, "ppid": 16040, "iter": 7000, "stage": "run:iter"}
+{"t_mono": 299.298, "t_utc": "2026-11-17T04:52:47.319Z", "pid": 544, "ppid": 16040, "iter": 7500, "stage": "run:iter"}
+{"t_mono": 303.702, "t_utc": "2026-11-17T04:52:51.721Z", "pid": 544, "ppid": 16040, "iter": 7757, "stage": "heartbeat"}
+{"t_mono": 307.862, "t_utc": "2026-11-17T04:52:55.882Z", "pid": 544, "ppid": 16040, "iter": 8000, "stage": "run:iter"}
+{"t_mono": 307.865, "t_utc": "2026-11-17T04:52:55.885Z", "pid": 544, "ppid": 16040, "iter": 8000, "stage": "recreate:enter", "n": 4}
+{"t_mono": 307.867, "t_utc": "2026-11-17T04:52:55.887Z", "pid": 544, "ppid": 16040, "iter": 8000, "stage": "create_session:enter"}
+{"t_mono": 349.878, "t_utc": "2026-11-17T04:53:37.899Z", "pid": 544, "ppid": 16040, "iter": 8000, "stage": "create_session:leave", "providers": ["MIGraphXExecutionProvider", "CPUExecutionProvider"]}
+{"t_mono": 349.889, "t_utc": "2026-11-17T04:53:37.909Z", "pid": 544, "ppid": 16040, "iter": 8000, "stage": "session_release:enter"}
+{"t_mono": 349.926, "t_utc": "2026-11-17T04:53:37.946Z", "pid": 544, "ppid": 16040, "iter": 8000, "stage": "session_release:leave"}
+{"t_mono": 349.928, "t_utc": "2026-11-17T04:53:37.948Z", "pid": 544, "ppid": 16040, "iter": 8000, "stage": "recreate:leave", "n": 4}
+{"t_mono": 349.957, "t_utc": "2026-11-17T04:53:37.977Z", "pid": 544, "ppid": 16040, "iter": 8001, "stage": "heartbeat"}
+{"t_mono": 358.548, "t_utc": "2026-11-17T04:53:46.568Z", "pid": 544, "ppid": 16040, "iter": 8500, "stage": "run:iter"}
+{"t_mono": 367.126, "t_utc": "2026-11-17T04:53:55.145Z", "pid": 544, "ppid": 16040, "iter": 9000, "stage": "run:iter"}
+{"t_mono": 375.721, "t_utc": "2026-11-17T04:54:03.741Z", "pid": 544, "ppid": 16040, "iter": 9500, "stage": "run:iter"}
+{"t_mono": 379.96, "t_utc": "2026-11-17T04:54:07.979Z", "pid": 544, "ppid": 16040, "iter": 9746, "stage": "heartbeat"}
+{"t_mono": 384.338, "t_utc": "2026-11-17T04:54:12.359Z", "pid": 544, "ppid": 16040, "iter": 10000, "stage": "run:iter"}
+{"t_mono": 384.34, "t_utc": "2026-11-17T04:54:12.360Z", "pid": 544, "ppid": 16040, "iter": 10000, "stage": "recreate:enter", "n": 5}
+{"t_mono": 384.342, "t_utc": "2026-11-17T04:54:12.362Z", "pid": 544, "ppid": 16040, "iter": 10000, "stage": "create_session:enter"}
+{"t_mono": 426.564, "t_utc": "2026-11-17T04:54:54.585Z", "pid": 544, "ppid": 16040, "iter": 10000, "stage": "create_session:leave", "providers": ["MIGraphXExecutionProvider", "CPUExecutionProvider"]}
+{"t_mono": 426.566, "t_utc": "2026-11-17T04:54:54.587Z", "pid": 544, "ppid": 16040, "iter": 10000, "stage": "session_release:enter"}
+{"t_mono": 426.616, "t_utc": "2026-11-17T04:54:54.636Z", "pid": 544, "ppid": 16040, "iter": 10000, "stage": "session_release:leave"}
+{"t_mono": 426.618, "t_utc": "2026-11-17T04:54:54.638Z", "pid": 544, "ppid": 16040, "iter": 10000, "stage": "recreate:leave", "n": 5}
+{"t_mono": 426.648, "t_utc": "2026-11-17T04:54:54.658Z", "pid": 544, "ppid": 16040, "iter": 10001, "stage": "heartbeat"}
+{"t_mono": 435.149, "t_utc": "2026-11-17T04:55:03.169Z", "pid": 544, "ppid": 16040, "iter": 10500, "stage": "run:iter"}
+{"t_mono": 443.658, "t_utc": "2026-11-17T04:55:11.678Z", "pid": 544, "ppid": 16040, "iter": 11000, "stage": "run:iter"}
+{"t_mono": 452.167, "t_utc": "2026-11-17T04:55:20.174Z", "pid": 544, "ppid": 16040, "iter": 11500, "stage": "run:iter"}
+{"t_mono": 456.642, "t_utc": "2026-11-17T04:55:24.662Z", "pid": 544, "ppid": 16040, "iter": 11763, "stage": "heartbeat"}
+{"t_mono": 460.691, "t_utc": "2026-11-17T04:55:28.712Z", "pid": 544, "ppid": 16040, "iter": 12000, "stage": "run:iter"}
+{"t_mono": 460.702, "t_utc": "2026-11-17T04:55:28.722Z", "pid": 544, "ppid": 16040, "iter": 12000, "stage": "recreate:enter", "n": 6}
+{"t_mono": 460.704, "t_utc": "2026-11-17T04:55:28.724Z", "pid": 544, "ppid": 16040, "iter": 12000, "stage": "create_session:enter"}
+{"t_mono": 502.411, "t_utc": "2026-11-17T04:56:10.431Z", "pid": 544, "ppid": 16040, "iter": 12000, "stage": "create_session:leave", "providers": ["MIGraphXExecutionProvider", "CPUExecutionProvider"]}
+{"t_mono": 502.422, "t_utc": "2026-11-17T04:56:10.440Z", "pid": 544, "ppid": 16040, "iter": 12000, "stage": "session_release:enter"}
+{"t_mono": 502.457, "t_utc": "2026-11-17T04:56:10.477Z", "pid": 544, "ppid": 16040, "iter": 12000, "stage": "session_release:leave"}
+{"t_mono": 502.46, "t_utc": "2026-11-17T04:56:10.480Z", "pid": 544, "ppid": 16040, "iter": 12000, "stage": "recreate:leave", "n": 6}
+{"t_mono": 502.489, "t_utc": "2026-11-17T04:56:10.509Z", "pid": 544, "ppid": 16040, "iter": 12001, "stage": "heartbeat"}
+{"t_mono": 511.013, "t_utc": "2026-11-17T04:56:19.033Z", "pid": 544, "ppid": 16040, "iter": 12500, "stage": "run:iter"}
+{"t_mono": 519.557, "t_utc": "2026-11-17T04:56:27.577Z", "pid": 544, "ppid": 16040, "iter": 13000, "stage": "run:iter"}
+{"t_mono": 528.096, "t_utc": "2026-11-17T04:56:36.112Z", "pid": 544, "ppid": 16040, "iter": 13500, "stage": "run:iter"}
+{"t_mono": 532.499, "t_utc": "2026-11-17T04:56:40.519Z", "pid": 544, "ppid": 16040, "iter": 13757, "stage": "heartbeat"}
+{"t_mono": 536.654, "t_utc": "2026-11-17T04:56:44.675Z", "pid": 544, "ppid": 16040, "iter": 14000, "stage": "run:iter"}
+{"t_mono": 536.657, "t_utc": "2026-11-17T04:56:44.677Z", "pid": 544, "ppid": 16040, "iter": 14000, "stage": "recreate:enter", "n": 7}
+{"t_mono": 536.659, "t_utc": "2026-11-17T04:56:44.679Z", "pid": 544, "ppid": 16040, "iter": 14000, "stage": "create_session:enter"}
+{"t_mono": 578.93, "t_utc": "2026-11-17T04:57:26.950Z", "pid": 544, "ppid": 16040, "iter": 14000, "stage": "create_session:leave", "providers": ["MIGraphXExecutionProvider", "CPUExecutionProvider"]}
+{"t_mono": 578.941, "t_utc": "2026-11-17T04:57:26.961Z", "pid": 544, "ppid": 16040, "iter": 14000, "stage": "session_release:enter"}
+{"t_mono": 578.983, "t_utc": "2026-11-17T04:57:27.003Z", "pid": 544, "ppid": 16040, "iter": 14000, "stage": "session_release:leave"}
+{"t_mono": 578.985, "t_utc": "2026-11-17T04:57:27.005Z", "pid": 544, "ppid": 16040, "iter": 14000, "stage": "recreate:leave", "n": 7}
+{"t_mono": 579.013, "t_utc": "2026-11-17T04:57:27.032Z", "pid": 544, "ppid": 16040, "iter": 14001, "stage": "heartbeat"}
+{"t_mono": 587.553, "t_utc": "2026-11-17T04:57:35.574Z", "pid": 544, "ppid": 16040, "iter": 14500, "stage": "run:iter"}
+{"t_mono": 596.108, "t_utc": "2026-11-17T04:57:44.129Z", "pid": 544, "ppid": 16040, "iter": 15000, "stage": "run:iter"}
+{"t_mono": 604.677, "t_utc": "2026-11-17T04:57:52.697Z", "pid": 544, "ppid": 16040, "iter": 15500, "stage": "run:iter"}
+{"t_mono": 609.027, "t_utc": "2026-11-17T04:57:57.047Z", "pid": 544, "ppid": 16040, "iter": 15754, "stage": "heartbeat"}
+{"t_mono": 613.243, "t_utc": "2026-11-17T04:58:01.264Z", "pid": 544, "ppid": 16040, "iter": 16000, "stage": "run:iter"}
+{"t_mono": 613.254, "t_utc": "2026-11-17T04:58:01.275Z", "pid": 544, "ppid": 16040, "iter": 16000, "stage": "recreate:enter", "n": 8}
+{"t_mono": 613.256, "t_utc": "2026-11-17T04:58:01.276Z", "pid": 544, "ppid": 16040, "iter": 16000, "stage": "create_session:enter"}
+{"t_mono": 655.366, "t_utc": "2026-11-17T04:58:43.386Z", "pid": 544, "ppid": 16040, "iter": 16000, "stage": "create_session:leave", "providers": ["MIGraphXExecutionProvider", "CPUExecutionProvider"]}
+{"t_mono": 655.376, "t_utc": "2026-11-17T04:58:43.397Z", "pid": 544, "ppid": 16040, "iter": 16000, "stage": "session_release:enter"}
+{"t_mono": 655.412, "t_utc": "2026-11-17T04:58:43.433Z", "pid": 544, "ppid": 16040, "iter": 16000, "stage": "session_release:leave"}
+{"t_mono": 655.414, "t_utc": "2026-11-17T04:58:43.434Z", "pid": 544, "ppid": 16040, "iter": 16000, "stage": "recreate:leave", "n": 8}
+{"t_mono": 655.445, "t_utc": "2026-11-17T04:58:43.465Z", "pid": 544, "ppid": 16040, "iter": 16001, "stage": "heartbeat"}
+{"t_mono": 663.983, "t_utc": "2026-11-17T04:58:51.993Z", "pid": 544, "ppid": 16040, "iter": 16500, "stage": "run:iter"}
+{"t_mono": 672.583, "t_utc": "2026-11-17T04:59:00.604Z", "pid": 544, "ppid": 16040, "iter": 17000, "stage": "run:iter"}
+{"t_mono": 681.139, "t_utc": "2026-11-17T04:59:09.159Z", "pid": 544, "ppid": 16040, "iter": 17500, "stage": "run:iter"}
+{"t_mono": 685.46, "t_utc": "2026-11-17T04:59:13.472Z", "pid": 544, "ppid": 16040, "iter": 17752, "stage": "heartbeat"}
+{"t_mono": 689.71, "t_utc": "2026-11-17T04:59:17.730Z", "pid": 544, "ppid": 16040, "iter": 18000, "stage": "run:iter"}
+{"t_mono": 689.72, "t_utc": "2026-11-17T04:59:17.740Z", "pid": 544, "ppid": 16040, "iter": 18000, "stage": "recreate:enter", "n": 9}
+{"t_mono": 689.722, "t_utc": "2026-11-17T04:59:17.743Z", "pid": 544, "ppid": 16040, "iter": 18000, "stage": "create_session:enter"}
+{"t_mono": 731.775, "t_utc": "2026-11-17T04:59:59.795Z", "pid": 544, "ppid": 16040, "iter": 18000, "stage": "create_session:leave", "providers": ["MIGraphXExecutionProvider", "CPUExecutionProvider"]}
+{"t_mono": 731.785, "t_utc": "2026-11-17T04:59:59.806Z", "pid": 544, "ppid": 16040, "iter": 18000, "stage": "session_release:enter"}
+{"t_mono": 731.824, "t_utc": "2026-11-17T04:59:59.845Z", "pid": 544, "ppid": 16040, "iter": 18000, "stage": "session_release:leave"}
+{"t_mono": 731.826, "t_utc": "2026-11-17T04:59:59.847Z", "pid": 544, "ppid": 16040, "iter": 18000, "stage": "recreate:leave", "n": 9}
+{"t_mono": 731.855, "t_utc": "2026-11-17T04:59:59.865Z", "pid": 544, "ppid": 16040, "iter": 18001, "stage": "heartbeat"}
+{"t_mono": 740.369, "t_utc": "2026-11-17T05:00:08.383Z", "pid": 544, "ppid": 16040, "iter": 18500, "stage": "run:iter"}
+{"t_mono": 748.912, "t_utc": "2026-11-17T05:00:16.932Z", "pid": 544, "ppid": 16040, "iter": 19000, "stage": "run:iter"}
+{"t_mono": 757.464, "t_utc": "2026-11-17T05:00:25.483Z", "pid": 544, "ppid": 16040, "iter": 19500, "stage": "run:iter"}
+{"t_mono": 761.857, "t_utc": "2026-11-17T05:00:29.877Z", "pid": 544, "ppid": 16040, "iter": 19757, "stage": "heartbeat"}
+{"t_mono": 766.025, "t_utc": "2026-11-17T05:00:34.044Z", "pid": 544, "ppid": 16040, "iter": 20000, "stage": "run:iter"}
+{"t_mono": 766.035, "t_utc": "2026-11-17T05:00:34.056Z", "pid": 544, "ppid": 16040, "iter": 20000, "stage": "recreate:enter", "n": 10}
+{"t_mono": 766.037, "t_utc": "2026-11-17T05:00:34.058Z", "pid": 544, "ppid": 16040, "iter": 20000, "stage": "create_session:enter"}
+{"t_mono": 807.876, "t_utc": "2026-11-17T05:01:15.895Z", "pid": 544, "ppid": 16040, "iter": 20000, "stage": "create_session:leave", "providers": ["MIGraphXExecutionProvider", "CPUExecutionProvider"]}
+{"t_mono": 807.883, "t_utc": "2026-11-17T05:01:15.896Z", "pid": 544, "ppid": 16040, "iter": 20000, "stage": "session_release:enter"}
+{"t_mono": 807.933, "t_utc": "2026-11-17T05:01:15.952Z", "pid": 544, "ppid": 16040, "iter": 20000, "stage": "session_release:leave"}
+{"t_mono": 807.935, "t_utc": "2026-11-17T05:01:15.955Z", "pid": 544, "ppid": 16040, "iter": 20000, "stage": "recreate:leave", "n": 10}
+{"t_mono": 807.963, "t_utc": "2026-11-17T05:01:15.983Z", "pid": 544, "ppid": 16040, "iter": 20001, "stage": "heartbeat"}
+{"t_mono": 816.44, "t_utc": "2026-11-17T05:01:24.460Z", "pid": 544, "ppid": 16040, "iter": 20500, "stage": "run:iter"}
+{"t_mono": 824.94, "t_utc": "2026-11-17T05:01:32.961Z", "pid": 544, "ppid": 16040, "iter": 21000, "stage": "run:iter"}
+{"t_mono": 833.468, "t_utc": "2026-11-17T05:01:41.488Z", "pid": 544, "ppid": 16040, "iter": 21500, "stage": "run:iter"}
+{"t_mono": 837.968, "t_utc": "2026-11-17T05:01:45.988Z", "pid": 544, "ppid": 16040, "iter": 21763, "stage": "heartbeat"}
+{"t_mono": 842.017, "t_utc": "2026-11-17T05:01:50.036Z", "pid": 544, "ppid": 16040, "iter": 22000, "stage": "run:iter"}
+{"t_mono": 842.028, "t_utc": "2026-11-17T05:01:50.048Z", "pid": 544, "ppid": 16040, "iter": 22000, "stage": "recreate:enter", "n": 11}
+{"t_mono": 842.03, "t_utc": "2026-11-17T05:01:50.051Z", "pid": 544, "ppid": 16040, "iter": 22000, "stage": "create_session:enter"}
+{"t_mono": 883.767, "t_utc": "2026-11-17T05:02:31.787Z", "pid": 544, "ppid": 16040, "iter": 22000, "stage": "create_session:leave", "providers": ["MIGraphXExecutionProvider", "CPUExecutionProvider"]}
+{"t_mono": 883.777, "t_utc": "2026-11-17T05:02:31.797Z", "pid": 544, "ppid": 16040, "iter": 22000, "stage": "session_release:enter"}
+{"t_mono": 883.818, "t_utc": "2026-11-17T05:02:31.838Z", "pid": 544, "ppid": 16040, "iter": 22000, "stage": "session_release:leave"}
+{"t_mono": 883.82, "t_utc": "2026-11-17T05:02:31.840Z", "pid": 544, "ppid": 16040, "iter": 22000, "stage": "recreate:leave", "n": 11}
+{"t_mono": 883.849, "t_utc": "2026-11-17T05:02:31.870Z", "pid": 544, "ppid": 16040, "iter": 22001, "stage": "heartbeat"}
+{"t_mono": 892.338, "t_utc": "2026-11-17T05:02:40.359Z", "pid": 544, "ppid": 16040, "iter": 22500, "stage": "run:iter"}
+{"t_mono": 900.86, "t_utc": "2026-11-17T05:02:48.879Z", "pid": 544, "ppid": 16040, "iter": 23000, "stage": "run:iter"}
+{"t_mono": 909.364, "t_utc": "2026-11-17T05:02:57.378Z", "pid": 544, "ppid": 16040, "iter": 23500, "stage": "run:iter"}
+{"t_mono": 913.852, "t_utc": "2026-11-17T05:03:01.872Z", "pid": 544, "ppid": 16040, "iter": 23763, "stage": "heartbeat"}
+{"t_mono": 917.893, "t_utc": "2026-11-17T05:03:05.913Z", "pid": 544, "ppid": 16040, "iter": 24000, "stage": "run:iter"}
+{"t_mono": 917.903, "t_utc": "2026-11-17T05:03:05.924Z", "pid": 544, "ppid": 16040, "iter": 24000, "stage": "recreate:enter", "n": 12}
+{"t_mono": 917.905, "t_utc": "2026-11-17T05:03:05.926Z", "pid": 544, "ppid": 16040, "iter": 24000, "stage": "create_session:enter"}
+{"t_mono": 960.011, "t_utc": "2026-11-17T05:03:48.031Z", "pid": 544, "ppid": 16040, "iter": 24000, "stage": "create_session:leave", "providers": ["MIGraphXExecutionProvider", "CPUExecutionProvider"]}
+{"t_mono": 960.013, "t_utc": "2026-11-17T05:03:48.033Z", "pid": 544, "ppid": 16040, "iter": 24000, "stage": "session_release:enter"}
+{"t_mono": 960.059, "t_utc": "2026-11-17T05:03:48.079Z", "pid": 544, "ppid": 16040, "iter": 24000, "stage": "session_release:leave"}
+{"t_mono": 960.062, "t_utc": "2026-11-17T05:03:48.083Z", "pid": 544, "ppid": 16040, "iter": 24000, "stage": "recreate:leave", "n": 12}
+{"t_mono": 960.064, "t_utc": "2026-11-17T05:03:48.085Z", "pid": 544, "ppid": 16040, "iter": 24000, "stage": "run:leave", "iterations": 24000, "recreates": 12}
+{"t_mono": 960.066, "t_utc": "2026-11-17T05:03:48.087Z", "pid": 544, "ppid": 16040, "iter": 24000, "stage": "finalize", "iterations": 24000, "recreates": 12, "classification": "PASS_SOAK_COMPLETED"}
+{"t_mono": 960.11, "t_utc": "2026-11-17T05:03:48.130Z", "pid": 544, "ppid": 16040, "iter": 24000, "stage": "interpreter_exit", "classification": "PASS_SOAK_COMPLETED"}

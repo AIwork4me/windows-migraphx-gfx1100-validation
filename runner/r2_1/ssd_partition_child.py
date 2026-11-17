@@ -56,14 +56,23 @@ def main() -> int:
         so = ort.SessionOptions()
         so.graph_optimization_level = OPT_LEVELS[args.opt]
         so.enable_profiling = True
-        if args.save_optimized:
-            so.optimized_model_filepath = args.save_optimized
+
+        def _make_session():
+            s2 = ort.SessionOptions()
+            s2.graph_optimization_level = OPT_LEVELS[args.opt]
+            s2.enable_profiling = True
+            if args.save_optimized:
+                s2.optimized_model_filepath = args.save_optimized
+            if args.ep == "DML_CONTROL":
+                return ort.InferenceSession(args.model, s2,
+                                            providers=["DmlExecutionProvider",
+                                                       "CPUExecutionProvider"])
+            s2.add_provider_for_devices([devs[0]], {})
+            return ort.InferenceSession(args.model, s2)
 
         t0 = time.time()
         if args.ep == "DML_CONTROL":
-            sess = ort.InferenceSession(args.model, so,
-                                        providers=["DmlExecutionProvider",
-                                                   "CPUExecutionProvider"])
+            sess = _make_session()
         else:
             view, _ = build_identity_view(args.ep)
             canary = in_process_canary(
@@ -73,23 +82,41 @@ def main() -> int:
             devs = [d for d in ort.get_ep_devices()
                     if d.ep_name == args.ep
                     and str(_metadata_of(d).get("LUID", "")) == str(res.candidate.luid)]
-            so.add_provider_for_devices([devs[0]], {})
-            sess = ort.InferenceSession(args.model, so)
+            try:
+                sess = _make_session()
+            except Exception as e:  # noqa: BLE001
+                if "compiled nodes" in str(e) and args.save_optimized:
+                    # EP generates compiled kernels: the optimized graph
+                    # cannot be serialized. Retry WITHOUT saving; record it.
+                    receipt["optimized_model_save"] = "SKIPPED_COMPILED_NODES"
+                    args.save_optimized = None
+                    sess = _make_session()
+                else:
+                    raise
         receipt["session_create_s"] = round(time.time() - t0, 2)
         receipt["session_providers"] = sess.get_providers()
 
         # deterministic input from live input specs (R2 rule: other dynamic
-        # dims -> explicit size; SSD input is NHWC 1x300x300x3)
+        # dims -> explicit size; SSD input is NHWC 1x300x300x3 uint8)
         rng = np.random.default_rng(2026)
+        is_ssd = os.path.basename(args.model).startswith("ssd_mobilenet")
         feeds = {}
         for i in sess.get_inputs():
             shape = [d if isinstance(d, int) and d > 0 else 0 for d in i.shape]
-            if "ssd" in args.model:
+            if is_ssd:
                 shape = [1, 300, 300, 3]
             for j, d in enumerate(shape):
                 if d == 0:
                     shape[j] = 8
-            feeds[i.name] = rng.standard_normal(shape).astype(np.float32) * 0.1
+            t = str(i.type).replace("tensor(", "").replace(")", "")
+            if t == "tensor(uint8)" or t == "uint8":
+                feeds[i.name] = rng.integers(0, 256, size=shape).astype(np.uint8)
+            elif t in ("tensor(int64)", "int64"):
+                feeds[i.name] = rng.integers(0, 10, size=shape).astype(np.int64)
+            elif t in ("tensor(int32)", "int32"):
+                feeds[i.name] = rng.integers(0, 10, size=shape).astype(np.int32)
+            else:
+                feeds[i.name] = rng.standard_normal(shape).astype(np.float32) * 0.1
         sess.run(None, feeds)
         profile_path = sess.end_profiling()
         receipt["profile_file"] = os.path.basename(profile_path)
@@ -108,7 +135,8 @@ def main() -> int:
         receipt["total_node_events"] = len(nodes)
         receipt["cpu_op_distribution"] = dict(sorted(
             {k.split(":", 1)[1]: v for k, v in ops.items()
-             if k.startswith("cpu:")}.items(), key=lambda kv: -kv[1])[:25])
+             if k.lower().startswith("cpuexecutionprovider:")}.items(),
+            key=lambda kv: -kv[1])[:25])
 
         ep_nodes = by_prov.get(args.ep, 0)
         if args.ep == "DML_CONTROL":

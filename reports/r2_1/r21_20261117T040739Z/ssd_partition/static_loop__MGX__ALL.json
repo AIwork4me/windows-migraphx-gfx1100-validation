@@ -1,0 +1,24 @@
+{
+ "schema": "r21/ssd_partition/1",
+ "model": "static_loop.onnx",
+ "model_sha256": "6e6d44df9ebfe936c0b3da1ccbd0b36c677d7f9406c412aba13af06f5e4b3354",
+ "ep": "MIGraphXExecutionProvider",
+ "opt": "ALL",
+ "ort": "1.30.1",
+ "started_utc": "2026-11-17T05:51:06Z",
+ "device_luid": "72346",
+ "optimized_model_save": "SKIPPED_COMPILED_NODES",
+ "session_create_s": 2.3,
+ "session_providers": [
+  "MIGraphXExecutionProvider",
+  "CPUExecutionProvider"
+ ],
+ "profile_file": "onnxruntime_profile__2026-11-17_13-51-08_990.json",
+ "nodes_by_provider": {
+  "CPUExecutionProvider": 7
+ },
+ "total_node_events": 7,
+ "cpu_op_distribution": {},
+ "classification": "FAIL_NO_GPU_COMPUTE",
+ "finished_utc": "2026-11-17T05:51:08Z"
+}

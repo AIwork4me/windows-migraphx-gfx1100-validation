@@ -1,0 +1,17 @@
+{
+ "schema": "r21/ssd_partition/1",
+ "model": "ssd_mobilenet_v1_10.onnx",
+ "model_sha256": "1fbcf47654165f2e0b5f1bdf3f123b9e9e1128cd6463717767b76ab4b5246f9a",
+ "ep": "DML_CONTROL",
+ "opt": "ALL",
+ "ort": "1.30.1",
+ "started_utc": "2026-11-17T05:50:44Z",
+ "session_create_s": 4.62,
+ "session_providers": [
+  "DmlExecutionProvider",
+  "CPUExecutionProvider"
+ ],
+ "classification": "ERROR_RUNTIME",
+ "error": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\r2_1\\ssd_partition_child.py\", line 120, in main\n    sess.run(None, feeds)\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py\", line 395, in run\n    return self._sess.run(output_names, input_feed, run_options)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nUnicodeDecodeError: 'utf-8' codec can't decode byte 0xb2 in position 704: invalid start byte\n",
+ "finished_utc": "2026-11-17T05:50:49Z"
+}

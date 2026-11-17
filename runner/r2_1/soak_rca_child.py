@@ -70,6 +70,9 @@ def main() -> int:
     ap.add_argument("--teardown", default="none", choices=["none", "explicit"],
                     help="explicit: del sess + gc.collect after run window")
     ap.add_argument("--exit-mode", default="os_exit", choices=["os_exit", "interpreter"])
+    ap.add_argument("--r2-inputs", action="store_true",
+                    help="replicate R2 soak_child input path: rebuild feeds via "
+                         "session_inputs() EVERY iteration (R2's allocation churn)")
     args = ap.parse_args()
 
     fh = open(args.out, "a", encoding="utf-8", newline="\n")
@@ -139,18 +142,24 @@ def main() -> int:
         sess.run(None, feeds0)
         emit(fh, "warmup:leave")
 
-        emit(fh, "run:enter")
+        emit(fh, "run:enter", r2_inputs=bool(args.r2_inputs))
         rng = np.random.default_rng(args.seed)
         # deterministic varying input (R2 semantics: seeded per iteration)
         base = np.asarray(feeds0[list(feeds0)[0]], dtype=np.float32)
+        first_name = list(feeds0)[0]
         recreates = 0
         while time.time() < t_end:
             if args.fault == "blocked_run" and it >= 200:
                 emit(fh, "fault:blocked_run", iter_=it)
                 time.sleep(10_000)
-            wiggle = rng.standard_normal(base.shape).astype(np.float32) * 0.01
-            feeds = {name: (base + wiggle if name == list(feeds0)[0] else v)
-                     for name, v in feeds0.items()}
+            if args.r2_inputs:
+                # exact R2 soak_child path: per-iteration session_inputs()
+                feeds = session_inputs(sess, 1, model_name=os.path.basename(args.model),
+                                       input_size=640)
+            else:
+                wiggle = rng.standard_normal(base.shape).astype(np.float32) * 0.01
+                feeds = {name: (base + wiggle if name == first_name else v)
+                         for name, v in feeds0.items()}
             sess.run(None, feeds)
             it += 1
             if it % args.log_every == 0:
