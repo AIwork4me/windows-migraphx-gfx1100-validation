@@ -1,0 +1,158 @@
+{
+  "captured_at_utc": "2026-11-17T04:08:27+00:00",
+  "host_os": "Windows-11-10.0.26300-SP0",
+  "machine": "DESKTOP-S6VG7J7",
+  "pr_primary_2": {
+    "baseRefOid": "7156b9b504c4c31065eb47c0191f3e2f55f316ed",
+    "headRefOid": "f32f4aa1ffce4872608e5e94874a5ee15f08a634",
+    "isDraft": true,
+    "number": 2,
+    "state": "OPEN",
+    "url": "https://github.com/AIwork4me/windows-migraphx-gfx1100-validation/pull/2"
+  },
+  "pr_fork_1": {
+    "baseRefOid": "15ded64bd998a317dfe0ccf0ead8033574dd5b86",
+    "headRefOid": "e3dd9afc27ae47bb343240137b7c22f301dcce81",
+    "isDraft": true,
+    "number": 1,
+    "state": "OPEN",
+    "url": "https://github.com/AIwork4me/onnxruntime-ep-amdgpu/pull/1"
+  },
+  "repos": {
+    "primary": {
+      "path": "C:\\AIwork4me\\windows-migraphx-gfx1100-validation",
+      "branch": "mission/r2-device-identity-real-models",
+      "head_local": "f32f4aa1ffce4872608e5e94874a5ee15f08a634",
+      "head_remote": "f32f4aa1ffce4872608e5e94874a5ee15f08a634",
+      "status_porcelain": "?? runner/r2_1/",
+      "describe": "f32f4aa",
+      "eol_config": {
+        "core.autocrlf": "true",
+        "core.eol": "(unset)"
+      }
+    },
+    "fork": {
+      "path": "C:\\AIwork4me\\fork-amdgpu-ep",
+      "branch": "fix/windows-dxgi-hip-device-identity",
+      "head_local": "e3dd9afc27ae47bb343240137b7c22f301dcce81",
+      "head_remote": "e3dd9afc27ae47bb343240137b7c22f301dcce81",
+      "status_porcelain": "",
+      "describe": "e3dd9af",
+      "eol_config": {
+        "core.autocrlf": "true",
+        "core.eol": "(unset)"
+      }
+    }
+  },
+  "venvs": {
+    "venv-winml": {
+      "python_exe": "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Scripts\\python.exe",
+      "python": {
+        "ver": "3.12.16 (main, Oct 26 2026, 14:10:56) [MSC v.1944 64 bit (AMD64)]",
+        "exe": "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Scripts\\python.exe"
+      },
+      "onnxruntime": {
+        "ort": "1.30.1",
+        "pyd_sha256": "e786f70012ddfc5247fd3ddcba43fbe70554e3b7ad2a85e9533b6cc068e328f0",
+        "providers": [
+          "DmlExecutionProvider",
+          "CPUExecutionProvider"
+        ]
+      }
+    },
+    "venv-cpu": {
+      "python_exe": "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-cpu\\Scripts\\python.exe",
+      "python": {
+        "ver": "3.12.16 (main, Oct 26 2026, 14:10:56) [MSC v.1944 64 bit (AMD64)]",
+        "exe": "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-cpu\\Scripts\\python.exe"
+      },
+      "onnxruntime": {
+        "ort": "1.32.0",
+        "pyd_sha256": "d4d9df764064dee9216dfa9a3933beaefc480b9c421a62d3f681168cec90c23c",
+        "providers": [
+          "AzureExecutionProvider",
+          "CPUExecutionProvider"
+        ]
+      }
+    }
+  },
+  "gpu_win32_videocontroller": [
+    {
+      "Name": "GameViewer Virtual Display Adapter",
+      "DriverVersion": "15.6.5.199",
+      "AdapterLUID": null,
+      "PNPDeviceID": "ROOT\\DISPLAY\\0000",
+      "Status": "OK"
+    },
+    {
+      "Name": "AMD Radeon RX 7900 XTX",
+      "DriverVersion": "32.0.21030.2001",
+      "AdapterLUID": null,
+      "PNPDeviceID": "PCI\\VEN_1002&DEV_744C&SUBSYS_0E3B1002&REV_C8\\6&13FD3BF3&0&00000008",
+      "Status": "OK"
+    },
+    {
+      "Name": "Intel(R) UHD Graphics 770",
+      "DriverVersion": "32.0.101.6129",
+      "AdapterLUID": null,
+      "PNPDeviceID": "PCI\\VEN_8086&DEV_A780&SUBSYS_D0001458&REV_04\\3&11583659&0&10",
+      "Status": "OK"
+    },
+    {
+      "Name": "Microsoft Remote Display Adapter",
+      "DriverVersion": "10.0.26100.9818",
+      "AdapterLUID": null,
+      "PNPDeviceID": "SWD\\REMOTEDISPLAYENUM\\RDPIDD_INDIRECTDISPLAY&SESSIONID_0002",
+      "Status": "OK"
+    }
+  ],
+  "msix_winml_packages": [
+    {
+      "Name": "Microsoft.WinML.AMD.GPU.EP.Framework.2",
+      "Version": "1.8.65.0",
+      "PackageFullName": "Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe"
+    }
+  ],
+  "amdhip64_system32": {
+    "path": "C:\\Windows\\System32\\amdhip64_6.dll",
+    "sha256": "8fdb9c0d0b32b96454d092845311912e64b28594ea68f27e8511e1bb16db5b6c"
+  },
+  "tools": {
+    "cl": null,
+    "clang": null,
+    "clang++": null,
+    "gcc": null,
+    "g++": null,
+    "cmake": null,
+    "ninja": null,
+    "make": null,
+    "git": "C:\\Program Files\\Git\\ucrt64\\bin\\git.EXE",
+    "gh": "C:\\Program Files\\GitHub CLI\\gh.EXE",
+    "uv": "<USERPROFILE>\\bin\\uv.EXE",
+    "py-spy": null,
+    "where": "C:\\WINDOWS\\system32\\where.EXE",
+    "vswhere_latest": "NOT_INSTALLED"
+  },
+  "disk": {
+    "repo": {
+      "free_bytes": 607850516480,
+      "free_gib": 566.1
+    },
+    "artifacts": {
+      "free_bytes": 607850516480,
+      "free_gib": 566.1
+    },
+    "system": {
+      "free_bytes": 607850516480,
+      "free_gib": 566.1
+    }
+  },
+  "env_subset": {
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "NUMBER_OF_PROCESSORS": "24",
+    "OS": "Windows_NT",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "PATH": "<USERPROFILE>\\bin;C:\\Program Files\\Git\\ucrt64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\ucrt64\\bin;C:\\Program Files\\Git\\usr\\bin;<USERPROFILE>\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\GitHub CLI;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs;<USERPROFILE>\\.cargo\\bin;<USERPROFILE>\\AppData\\Local\\Microsoft\\WindowsApps;<USERPROFILE>\\AppData\\Local\\Microsoft\\WinGet\\Packages\\astral-sh.uv_Microsoft.Winget.Source_8wekyb3d8bbwe;<USERPROFILE>\\AppData\\Roaming\\npm;<USERPROFILE>\\AppData\\Local\\Programs\\ZCode\\resources\\tools\\ripgrep;<USERPROFILE>\\AppData\\Local\\Programs\\ZCode\\resources\\tools\\ugrep;C:\\Program Files\\nodejs;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl"
+  },
+  "cpu_count": 24
+}
