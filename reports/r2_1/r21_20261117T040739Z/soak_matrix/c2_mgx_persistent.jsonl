@@ -1,0 +1,16 @@
+{"t_mono": 0.006, "t_utc": "2026-11-17T04:35:47.300Z", "pid": 2448, "ppid": 18840, "iter": 0, "stage": "spawn", "argv_hash": "d95676ceaa7e", "model": "yolo26n.onnx", "ep": "MIGraphXExecutionProvider", "minutes": 12.0, "recreate_every": 0, "fault": "none", "teardown": "none", "exit_mode": "os_exit", "ort": "1.30.1"}
+{"t_mono": 0.018, "t_utc": "2026-11-17T04:35:47.314Z", "pid": 2448, "ppid": 18840, "iter": 0, "stage": "register_ep:enter"}
+{"t_mono": 0.032, "t_utc": "2026-11-17T04:35:47.327Z", "pid": 2448, "ppid": 18840, "iter": 0, "stage": "register_ep:leave"}
+{"t_mono": 0.036, "t_utc": "2026-11-17T04:35:47.332Z", "pid": 2448, "ppid": 18840, "iter": 0, "stage": "resolve_device:enter"}
+{"t_mono": 1.68, "t_utc": "2026-11-17T04:35:48.974Z", "pid": 2448, "ppid": 18840, "iter": 0, "stage": "resolve_device:leave", "luid": "72346", "basis": ["unique candidate with Discrete=1 + active DXGI output", "ep=MIGraphXExecutionProvider", "description=AMD Radeon RX 7900 XTX", "discrete=True", "active_output=True", "canary: EP in providers + profile node + CPU parity"]}
+{"t_mono": 1.682, "t_utc": "2026-11-17T04:35:48.977Z", "pid": 2448, "ppid": 18840, "iter": 0, "stage": "create_session:enter"}
+{"t_mono": 43.71, "t_utc": "2026-11-17T04:36:31.006Z", "pid": 2448, "ppid": 18840, "iter": 0, "stage": "create_session:leave", "providers": ["MIGraphXExecutionProvider", "CPUExecutionProvider"], "model_sha256": "4fc60f7e7973aae4e6cbb7ea281c860de048b62ab5fa12ed06f467e1151b8f7b"}
+{"t_mono": 43.721, "t_utc": "2026-11-17T04:36:31.016Z", "pid": 2448, "ppid": 18840, "iter": 0, "stage": "warmup:enter"}
+{"t_mono": 43.762, "t_utc": "2026-11-17T04:36:31.058Z", "pid": 2448, "ppid": 18840, "iter": 0, "stage": "warmup:leave"}
+{"t_mono": 43.765, "t_utc": "2026-11-17T04:36:31.060Z", "pid": 2448, "ppid": 18840, "iter": 0, "stage": "run:enter"}
+{"t_mono": 43.783, "t_utc": "2026-11-17T04:36:31.078Z", "pid": 2448, "ppid": 18840, "iter": 1, "stage": "heartbeat"}
+{"t_mono": 52.27, "t_utc": "2026-11-17T04:36:39.565Z", "pid": 2448, "ppid": 18840, "iter": 500, "stage": "run:iter"}
+{"t_mono": 60.751, "t_utc": "2026-11-17T04:36:48.045Z", "pid": 2448, "ppid": 18840, "iter": 1000, "stage": "run:iter"}
+{"t_mono": 69.269, "t_utc": "2026-11-17T04:36:56.564Z", "pid": 2448, "ppid": 18840, "iter": 1500, "stage": "run:iter"}
+{"t_mono": 73.783, "t_utc": "2026-11-17T04:37:01.079Z", "pid": 2448, "ppid": 18840, "iter": 1764, "stage": "heartbeat"}
+{"t_mono": 77.827, "t_utc": "2026-11-17T04:37:05.123Z", "pid": 2448, "ppid": 18840, "iter": 2000, "stage": "run:iter"}

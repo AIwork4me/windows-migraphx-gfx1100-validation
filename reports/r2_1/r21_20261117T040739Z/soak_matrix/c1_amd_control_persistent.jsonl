@@ -19,3 +19,43 @@
 {"t_mono": 103.557, "t_utc": "2026-11-17T04:31:30.436Z", "pid": 8376, "ppid": 6056, "iter": 3500, "stage": "run:iter"}
 {"t_mono": 103.883, "t_utc": "2026-11-17T04:31:30.762Z", "pid": 8376, "ppid": 6056, "iter": 3519, "stage": "heartbeat"}
 {"t_mono": 112.102, "t_utc": "2026-11-17T04:31:38.981Z", "pid": 8376, "ppid": 6056, "iter": 4000, "stage": "run:iter"}
+{"t_mono": 120.636, "t_utc": "2026-11-17T04:31:47.516Z", "pid": 8376, "ppid": 6056, "iter": 4500, "stage": "run:iter"}
+{"t_mono": 129.224, "t_utc": "2026-11-17T04:31:56.103Z", "pid": 8376, "ppid": 6056, "iter": 5000, "stage": "run:iter"}
+{"t_mono": 133.882, "t_utc": "2026-11-17T04:32:00.762Z", "pid": 8376, "ppid": 6056, "iter": 5272, "stage": "heartbeat"}
+{"t_mono": 137.79, "t_utc": "2026-11-17T04:32:04.668Z", "pid": 8376, "ppid": 6056, "iter": 5500, "stage": "run:iter"}
+{"t_mono": 146.353, "t_utc": "2026-11-17T04:32:13.232Z", "pid": 8376, "ppid": 6056, "iter": 6000, "stage": "run:iter"}
+{"t_mono": 154.873, "t_utc": "2026-11-17T04:32:21.752Z", "pid": 8376, "ppid": 6056, "iter": 6500, "stage": "run:iter"}
+{"t_mono": 163.445, "t_utc": "2026-11-17T04:32:30.324Z", "pid": 8376, "ppid": 6056, "iter": 7000, "stage": "run:iter"}
+{"t_mono": 163.898, "t_utc": "2026-11-17T04:32:30.778Z", "pid": 8376, "ppid": 6056, "iter": 7026, "stage": "heartbeat"}
+{"t_mono": 172.006, "t_utc": "2026-11-17T04:32:38.885Z", "pid": 8376, "ppid": 6056, "iter": 7500, "stage": "run:iter"}
+{"t_mono": 180.5, "t_utc": "2026-11-17T04:32:47.379Z", "pid": 8376, "ppid": 6056, "iter": 8000, "stage": "run:iter"}
+{"t_mono": 189.02, "t_utc": "2026-11-17T04:32:55.899Z", "pid": 8376, "ppid": 6056, "iter": 8500, "stage": "run:iter"}
+{"t_mono": 193.901, "t_utc": "2026-11-17T04:33:00.780Z", "pid": 8376, "ppid": 6056, "iter": 8787, "stage": "heartbeat"}
+{"t_mono": 197.551, "t_utc": "2026-11-17T04:33:04.429Z", "pid": 8376, "ppid": 6056, "iter": 9000, "stage": "run:iter"}
+{"t_mono": 206.035, "t_utc": "2026-11-17T04:33:12.914Z", "pid": 8376, "ppid": 6056, "iter": 9500, "stage": "run:iter"}
+{"t_mono": 214.51, "t_utc": "2026-11-17T04:33:21.389Z", "pid": 8376, "ppid": 6056, "iter": 10000, "stage": "run:iter"}
+{"t_mono": 222.986, "t_utc": "2026-11-17T04:33:29.865Z", "pid": 8376, "ppid": 6056, "iter": 10500, "stage": "run:iter"}
+{"t_mono": 223.904, "t_utc": "2026-11-17T04:33:30.782Z", "pid": 8376, "ppid": 6056, "iter": 10554, "stage": "heartbeat"}
+{"t_mono": 231.537, "t_utc": "2026-11-17T04:33:38.416Z", "pid": 8376, "ppid": 6056, "iter": 11000, "stage": "run:iter"}
+{"t_mono": 240.049, "t_utc": "2026-11-17T04:33:46.927Z", "pid": 8376, "ppid": 6056, "iter": 11500, "stage": "run:iter"}
+{"t_mono": 248.536, "t_utc": "2026-11-17T04:33:55.415Z", "pid": 8376, "ppid": 6056, "iter": 12000, "stage": "run:iter"}
+{"t_mono": 253.905, "t_utc": "2026-11-17T04:34:00.784Z", "pid": 8376, "ppid": 6056, "iter": 12315, "stage": "heartbeat"}
+{"t_mono": 257.056, "t_utc": "2026-11-17T04:34:03.934Z", "pid": 8376, "ppid": 6056, "iter": 12500, "stage": "run:iter"}
+{"t_mono": 265.558, "t_utc": "2026-11-17T04:34:12.437Z", "pid": 8376, "ppid": 6056, "iter": 13000, "stage": "run:iter"}
+{"t_mono": 274.083, "t_utc": "2026-11-17T04:34:20.963Z", "pid": 8376, "ppid": 6056, "iter": 13500, "stage": "run:iter"}
+{"t_mono": 282.54, "t_utc": "2026-11-17T04:34:29.419Z", "pid": 8376, "ppid": 6056, "iter": 14000, "stage": "run:iter"}
+{"t_mono": 283.92, "t_utc": "2026-11-17T04:34:30.798Z", "pid": 8376, "ppid": 6056, "iter": 14081, "stage": "heartbeat"}
+{"t_mono": 291.015, "t_utc": "2026-11-17T04:34:37.894Z", "pid": 8376, "ppid": 6056, "iter": 14500, "stage": "run:iter"}
+{"t_mono": 299.662, "t_utc": "2026-11-17T04:34:46.541Z", "pid": 8376, "ppid": 6056, "iter": 15000, "stage": "run:iter"}
+{"t_mono": 308.397, "t_utc": "2026-11-17T04:34:55.275Z", "pid": 8376, "ppid": 6056, "iter": 15500, "stage": "run:iter"}
+{"t_mono": 313.932, "t_utc": "2026-11-17T04:35:00.810Z", "pid": 8376, "ppid": 6056, "iter": 15823, "stage": "heartbeat"}
+{"t_mono": 316.988, "t_utc": "2026-11-17T04:35:03.866Z", "pid": 8376, "ppid": 6056, "iter": 16000, "stage": "run:iter"}
+{"t_mono": 325.638, "t_utc": "2026-11-17T04:35:12.517Z", "pid": 8376, "ppid": 6056, "iter": 16500, "stage": "run:iter"}
+{"t_mono": 334.193, "t_utc": "2026-11-17T04:35:21.071Z", "pid": 8376, "ppid": 6056, "iter": 17000, "stage": "run:iter"}
+{"t_mono": 342.757, "t_utc": "2026-11-17T04:35:29.636Z", "pid": 8376, "ppid": 6056, "iter": 17500, "stage": "run:iter"}
+{"t_mono": 343.938, "t_utc": "2026-11-17T04:35:30.816Z", "pid": 8376, "ppid": 6056, "iter": 17569, "stage": "heartbeat"}
+{"t_mono": 351.265, "t_utc": "2026-11-17T04:35:38.144Z", "pid": 8376, "ppid": 6056, "iter": 18000, "stage": "run:iter"}
+{"t_mono": 359.794, "t_utc": "2026-11-17T04:35:46.673Z", "pid": 8376, "ppid": 6056, "iter": 18500, "stage": "run:iter"}
+{"t_mono": 360.035, "t_utc": "2026-11-17T04:35:46.913Z", "pid": 8376, "ppid": 6056, "iter": 18514, "stage": "run:leave", "iterations": 18514, "recreates": 0}
+{"t_mono": 360.045, "t_utc": "2026-11-17T04:35:46.925Z", "pid": 8376, "ppid": 6056, "iter": 18514, "stage": "finalize", "iterations": 18514, "recreates": 0, "classification": "PASS_SOAK_COMPLETED"}
+{"t_mono": 360.087, "t_utc": "2026-11-17T04:35:46.965Z", "pid": 8376, "ppid": 6056, "iter": 18514, "stage": "interpreter_exit", "classification": "PASS_SOAK_COMPLETED"}

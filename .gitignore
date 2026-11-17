@@ -8,6 +8,7 @@ uv.lock.bak
 # large binaries / weights / dumps (never push)
 *.onnx
 !fixtures/*.onnx
+!artifacts/models/ssd_partition_fixtures/*.onnx
 *.ort
 *.param
 *.bin
