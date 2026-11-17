@@ -31,7 +31,7 @@ jobs:
         shell: pwsh
         run: |
           python runner/r2/ci_r2_check.py
-      - name: R2.1 hardened evidence gate (adversarial: EP node count > 0, typed parity, LUID, manifest)
+      - name: "R2.1 hardened evidence gate (adversarial; EP node count > 0, typed parity, LUID, manifest)"
         shell: pwsh
         run: |
           python runner/r2_1/r21_validate.py
