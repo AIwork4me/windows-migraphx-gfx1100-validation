@@ -185,8 +185,14 @@ def validate_ledger_and_matrix(run_dir):
     return errs
 
 
-def verify_manifest(run_dir):
-    """Byte-hash every manifest entry; detect falsified files."""
+def verify_manifest(run_dir, base=None):
+    """Byte-hash every manifest entry; detect falsified files.
+
+    Paths in the manifest are relative to ``base`` (default: repo root, the
+    published-manifest contract). The temp-dir self-test passes its own
+    base so it works on any drive layout.
+    """
+    base = base or REPO
     man_p = os.path.join(run_dir, "manifest.sha256")
     if not os.path.isfile(man_p):
         return [f"{man_p}: not found"]
@@ -198,7 +204,7 @@ def verify_manifest(run_dir):
                 errs.append(f"manifest line malformed: {line[:60]!r}")
                 continue
             want, rel = parts
-            fp = os.path.join(REPO, rel.replace("/", os.sep))
+            fp = os.path.join(base, rel.replace("/", os.sep))
             n += 1
             if not os.path.isfile(fp):
                 errs.append(f"manifest entry missing on disk: {rel}")

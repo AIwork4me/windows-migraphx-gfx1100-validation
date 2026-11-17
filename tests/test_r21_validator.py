@@ -204,20 +204,24 @@ class LedgerMatrixAndManifest(unittest.TestCase):
 
     def test_falsified_manifest_rejected(self):
         import hashlib
-        tmp = tempfile.mkdtemp(prefix="r21_man_")
-        target = os.path.join(tmp, "dummy.json")
+        # self-contained manifest root: entries are relative to the temp
+        # base (CI checkouts live on a different drive than TEMP)
+        base = tempfile.mkdtemp(prefix="r21_man_base_")
+        sub = os.path.join(base, "ev")
+        os.makedirs(sub)
+        target = os.path.join(sub, "dummy.json")
         with open(target, "w") as f:
             f.write("{}")
-        rel = os.path.relpath(target, V.REPO).replace(os.sep, "/")
+        rel = "ev/dummy.json"
         wrong = "0" * 64
-        with open(os.path.join(tmp, "manifest.sha256"), "w") as f:
+        with open(os.path.join(sub, "manifest.sha256"), "w") as f:
             f.write(f"{wrong}  {rel}\n")
-        errs = V.verify_manifest(tmp)
+        errs = V.verify_manifest(sub, base=base)
         self.assertTrue(any("mismatch" in e for e in errs), errs)
         good = hashlib.sha256(open(target, "rb").read()).hexdigest()
-        with open(os.path.join(tmp, "manifest.sha256"), "w") as f:
+        with open(os.path.join(sub, "manifest.sha256"), "w") as f:
             f.write(f"{good}  {rel}\n")
-        errs = V.verify_manifest(tmp)
+        errs = V.verify_manifest(sub, base=base)
         self.assertEqual(errs, [])
 
 
