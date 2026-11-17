@@ -99,6 +99,14 @@ function (line drift from the local checkout revision).
 AMDGPU/MIGraphX on this host move from "CONDITIONAL NO-GO (driver)" to
 **GO with the condition that the DxgiAdapterNumber=0 candidate is selected
 explicitly** (device API + `runner/r1/fail_closed.py::pick_device_by_dxgi_adapter`).
+Caveats: `DxgiAdapterNumber=0` is an **experimental fact of this host's
+current enumeration**, not a portable default; R1 numeric parity used a
+simple Add graph vs a NumPy reference (from R2 on, real models are compared
+per-output against an ORT CPU reference from the same build). The
+registered-MIGraphX classic drop (B/F3) has no *fallback-specific* warning,
+but its stderr still carries one process-level env-init line
+`Init provider bridge failed` (present in every cell, not a fallback
+detector; ISSUE_151 doc note 3a).
 
 ## Single most valuable authorized follow-up experiment
 

@@ -13,14 +13,14 @@ and lost the diagnostic output).
 | Cell | Configuration | AMDGPU EP | MIGraphX EP |
 |---|---|---|---|
 | A | **unregistered** + classic `providers=[ep,'CPUExecutionProvider']` | CPU-only session; **UserWarning on stderr** ("not in available provider names") + ORT "EP Error / Falling back to ['CPUExecutionProvider']" block **on stdout** | same |
-| B | **registered** + classic `providers=[ep,'CPUExecutionProvider']` | EP engaged → **HIP 101** (ordinal bug, see root-cause report) | **silent drop**: CPU-only session, **no warning, no exception** |
+| B | **registered** + classic `providers=[ep,'CPUExecutionProvider']` | EP engaged → **HIP 101** (ordinal bug, see root-cause report) | **drop with no *fallback-specific* signal**: CPU-only session, no exception, no provider-fallback warning; stderr still carries the generic env-init warning `Init provider bridge failed` (see note 3a) |
 | C0 | registered + device API, candidate Dxgi=1 | HIP 101 | HIP 101 |
 | C1 | registered + device API, candidate Dxgi=0 | **PASS AMD GPU executed + parity** | **PASS AMD GPU executed + parity** |
 | D | registered + device API, **two** devices | factory `INVALID_ARGUMENT "only supports selection for a single device"`; ORT catches it, prints EP Error block (**stdout**) + retry with `['CPUExecutionProvider']`; Python adds UserWarning; final session CPU-only | same |
 | E | explicit `providers=['CPUExecutionProvider']` | clean CPU (control) | clean CPU |
-| F1 | registered, `providers` arg not passed (plain `InferenceSession(model)`) | CPU-only, no warning | CPU-only, no warning |
-| F2 | registered, `providers=[]` | CPU-only, no warning | CPU-only, no warning |
-| F3 | registered, `providers=[ep]` (no CPU entry) | EP engaged → HIP 101 | silent drop → CPU-only, no warning |
+| F1 | registered, `providers` arg not passed (plain `InferenceSession(model)`) | CPU-only, no warning | CPU-only, no fallback signal (env-init warning only, note 3a) |
+| F2 | registered, `providers=[]` | CPU-only, no warning | CPU-only, no fallback signal (env-init warning only, note 3a) |
+| F3 | registered, `providers=[ep]` (no CPU entry) | EP engaged → HIP 101 | silent drop → CPU-only, no fallback-specific warning (env-init warning only, note 3a) |
 
 ## Precise statements (what #151-class behavior is and is not)
 
@@ -32,8 +32,20 @@ and lost the diagnostic output).
    Round-1's "zero warning" observation was a capture artifact (DEVNULL).
 3. The genuinely warning-free cases on this build:
    - registered MIGraphX EP + classic providers (B/F3): no stdout block,
-     no stderr warning, CPU-only session.
+     no per-session provider-fallback warning, CPU-only session.
    - F1/F2 shape (no/empty providers): arguably caller intent, no signals.
+
+   3a. **Scope caveat (R2.0 revision):** "warning-free" above means *no
+   fallback-specific warning*. Every cell's stderr (including A, B, F3)
+   still shows one generic environment-init warning:
+   `[W:onnxruntime:Default, onnxruntime_pybind_module.cc:45 CreateOrtEnv]
+   Init provider bridge failed.` — emitted once at `CreateOrtEnv`/import
+   time in this plugin-EP build, regardless of
+   which provider the session later uses. It is **not** correlated with
+   the silent drop and must not be cited as a fallback detector. Raw
+   evidence: `probe151_MIGraphX_{B,F3}.stderr.log` (159 bytes, exactly
+   this one line) vs `probe151_MIGraphX_A.stderr.log` (same line + the
+   real fallback UserWarning).
 4. `get_available_providers()` ≠ `get_ep_devices()` ≠ session
    `get_providers()`: after registration AMDGPU appears in none of the
    first two until enumeration, but MIGraphX-classic still doesn't reach the

@@ -94,8 +94,14 @@ DxgiAdapterNumber 只有在**恰好等于** HIP ordinal 时才碰巧正确——
 - AMDGPU/MIGraphX EP 从“本机驱动下 CONDITIONAL NO-GO”修订为
   **“选对设备候选（DxgiAdapterNumber=0）即真机 GPU 可用（GO，附条件：必须显式选对候选）"**，
   前提是使用 device API + `pick_device_by_dxgi_adapter`（见 runner/r1/fail_closed.py）。
+  注意：`DxgiAdapterNumber=0` 是**本主机当前枚举下的实验事实**，不是可移植默认值；
+  R1 数值对照对象是简单 Add 图 vs NumPy 参考（R2 起真实模型一律用同构建 ORT CPU
+  reference 做逐输出比对）。
 - "驱动门控”降级为未确证假设；"#151 零告警”限定为旧证据采集缺陷（DEVNULL），
-  新证据显示多数回退路径有 stdout/stderr 痕迹。
+  新证据显示多数回退路径有 stdout/stderr 痕迹。MIGraphX classic 丢弃（B/F3）无
+  fallback 专属告警，但其 stderr 仍有一行与回退无关的进程级
+  `Init provider bridge failed` 环境初始化告警（所有 cell 均出现，
+  见 ISSUE_151 文档注 3a）。
 
 ## 下一步最有价值的单一授权实验
 

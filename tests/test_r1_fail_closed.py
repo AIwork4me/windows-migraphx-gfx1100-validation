@@ -115,6 +115,24 @@ class TestFailClosed(unittest.TestCase):
         d = pick_device_by_dxgi_adapter(FakeORT(devs), EP, "0")
         self.assertIsNotNone(d)
 
+    def test_pick_device_adapter_number_is_required(self):
+        # R2.0 hardening: adapter_number must stay an explicit argument.
+        # A default of "0" would turn this host-specific workaround into a
+        # portable-looking policy (Dxgi index != HIP ordinal != PCI BDF).
+        devs = [FakeDevice(EP, {"DxgiAdapterNumber": "0"})]
+        with self.assertRaises(TypeError):
+            pick_device_by_dxgi_adapter(FakeORT(devs), EP)
+
+    def test_pick_device_duplicate_adapter_numbers_fails_closed(self):
+        # Two candidates advertising the same DxgiAdapterNumber: picking
+        # either one silently is a guess; the helper must not pretend the
+        # mapping is unique. (Full identity-based resolution lives in
+        # runner/r2/device_resolver.py; this guards the R1 entry point.)
+        devs = [FakeDevice(EP, {"DxgiAdapterNumber": "0"}),
+                FakeDevice(EP, {"DxgiAdapterNumber": "0"})]
+        with self.assertRaises(GPUUnavailableError):
+            pick_device_by_dxgi_adapter(FakeORT(devs), EP, "0")
+
 
 class TestRedaction(unittest.TestCase):
     def test_userhome_redacted(self):

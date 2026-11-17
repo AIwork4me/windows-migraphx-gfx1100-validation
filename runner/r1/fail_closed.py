@@ -75,14 +75,24 @@ def assert_ep_executed(sess, ep_name: str, run_fn) -> dict:
             "profile_file": prof}
 
 
-def pick_device_by_dxgi_adapter(ort, ep_name: str, adapter_number: str = "0"):
+def pick_device_by_dxgi_adapter(ort, ep_name: str, adapter_number: str):
     """Pick the ep device whose metadata DxgiAdapterNumber == adapter_number.
+
+    HOST-SPECIFIC WORKAROUND / EXPLICIT EXPERIMENT ENTRY -- not a portable
+    default policy. adapter_number is deliberately required (no default):
+    "DxgiAdapterNumber=0" is only known to map to the physical RX 7900 XTX
+    on THIS host's current adapter enumeration. Discrete=1 + Dxgi=0 does
+    NOT prove the entry maps to HIP ordinal 0 on any other host; DXGI
+    index, LUID, PCI BDF and HIP ordinal are different namespaces (see
+    R2 docs/R2_DEVICE_IDENTITY.md and runner/r2/device_resolver.py for the
+    fail-closed identity-based selection that supersedes this helper).
 
     Rationale (R1 root cause): amdgpu-ep uses DxgiAdapterNumber as the HIP
     device ordinal; on hosts where the AMD GPU is not DXGI adapter 0 the
     other entry fails with HIP 101 'invalid device ordinal'.
     Raises GPUUnavailableError when no such device exists.
     """
+    matches = []
     for d in ort.get_ep_devices():
         if d.ep_name != ep_name:
             continue
@@ -91,7 +101,16 @@ def pick_device_by_dxgi_adapter(ort, ep_name: str, adapter_number: str = "0"):
         except Exception:
             md = {}
         if str(md.get("DxgiAdapterNumber", "")) == adapter_number:
-            return d
+            matches.append(d)
+    if len(matches) > 1:
+        # Duplicate DxgiAdapterNumber across ep devices: choosing either
+        # one silently would be a guess (DXGI index is not a unique
+        # physical identity). Fail closed; see R2 device resolver.
+        raise GPUUnavailableError(
+            f"{len(matches)} {ep_name} devices advertise DxgiAdapterNumber="
+            f"{adapter_number!r}; physical identity ambiguous")
+    if matches:
+        return matches[0]
     raise GPUUnavailableError(
         f"no {ep_name} device with DxgiAdapterNumber={adapter_number!r}; "
         f"available: {[d.ep_name for d in ort.get_ep_devices()]}")
