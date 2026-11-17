@@ -32,7 +32,7 @@
    "status": "FOUND"
   },
   "python": {
-   "which": "C:\\Users\\Rocm\\AppData\\Local\\Microsoft\\WindowsApps\\python.EXE",
+   "which": "<REDACTED>\\AppData\\Local\\Microsoft\\WindowsApps\\python.EXE",
    "status": "FOUND"
   },
   "py": {

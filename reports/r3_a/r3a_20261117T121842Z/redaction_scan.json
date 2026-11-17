@@ -1,16 +1,5 @@
 {
- "files_scanned": 9,
- "hits": [
-  {
-   "file": "BUILD_LEDGER.json",
-   "pattern": "user_profile",
-   "context": "on\": {\n   \"which\": \"C:\\\\Users\\\\Rocm\\\\AppData\\\\Local\\\\Mi"
-  },
-  {
-   "file": "BUILD_LEDGER.json",
-   "pattern": "username",
-   "context": "which\": \"C:\\\\Users\\\\Rocm\\\\AppData\\\\Local\\\\Mi"
-  }
- ],
- "generated_utc": "2026-11-17T12:22:08Z"
+ "files_scanned": 10,
+ "hits": [],
+ "generated_utc": "2026-11-17T12:22:28Z"
 }
