@@ -199,8 +199,10 @@ def build_manifest(out_dir: str) -> dict:
         for fn in files:
             p = os.path.join(root, fn)
             rel = os.path.relpath(p, REPO).replace("\\", "/")
-            if rel.endswith("manifest.sha256") or rel.endswith("redaction_scan.json"):
-                continue  # manifest must not hash itself or its own input scan
+            if rel.endswith("manifest.sha256") or rel.endswith("redaction_scan.json") \
+                    or rel.endswith("finalize_summary.json"):
+                continue  # meta outputs: manifest must not hash itself or
+                # files written after the manifest (round-1 E8 lesson)
             entries.append({"path": rel, "sha256": sha256_of(p),
                             "bytes": os.path.getsize(p)})
     entries.sort(key=lambda e: e["path"])
