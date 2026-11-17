@@ -1,0 +1,13 @@
+{
+ "entries": 9,
+ "self_check_mismatches": [],
+ "excluded_by_design": [
+  "manifest.sha256",
+  "finalize_summary.json",
+  "redaction_scan.json"
+ ],
+ "manifest": "reports/r3_a/r3a_20261117T121842Z/manifest.sha256",
+ "redaction_hits": 0,
+ "redaction_files": 10,
+ "generated_utc": "2026-11-17T12:22:28Z"
+}

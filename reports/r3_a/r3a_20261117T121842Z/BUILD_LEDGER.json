@@ -1,0 +1,239 @@
+{
+ "schema": "r3_a/build_ledger/1",
+ "generated_utc": "2026-11-17T12:19:35+00:00",
+ "host": "Windows 11 build 26300 (owner machine, no admin rights used)",
+ "tools": {
+  "cl": {
+   "which": null,
+   "status": "NOT_FOUND"
+  },
+  "cmake": {
+   "which": null,
+   "status": "NOT_FOUND"
+  },
+  "ninja": {
+   "which": null,
+   "status": "NOT_FOUND"
+  },
+  "hipcc": {
+   "which": null,
+   "status": "NOT_FOUND"
+  },
+  "clang++": {
+   "which": null,
+   "status": "NOT_FOUND"
+  },
+  "g++": {
+   "which": null,
+   "status": "NOT_FOUND"
+  },
+  "git": {
+   "which": "C:\\Program Files\\Git\\ucrt64\\bin\\git.EXE",
+   "status": "FOUND"
+  },
+  "python": {
+   "which": "<REDACTED>\\AppData\\Local\\Microsoft\\WindowsApps\\python.EXE",
+   "status": "FOUND"
+  },
+  "py": {
+   "which": null,
+   "status": "NOT_FOUND"
+  },
+  "vswhere": {
+   "path": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Installer\\vswhere.exe",
+   "status": "NOT_FOUND"
+  }
+ },
+ "sdks": {
+  "hip_sdk_dir": {
+   "path": "C:\\Program Files\\AMD\\ROCm",
+   "status": "NOT_FOUND"
+  },
+  "rocm_dir": {
+   "path": "C:\\Program Files\\AMD\\ROCm",
+   "status": "NOT_FOUND"
+  },
+  "migraphx_include": {
+   "path": "C:\\Program Files\\AMD\\ROCm\\include\\migraphx",
+   "status": "NOT_FOUND"
+  },
+  "migraphx_lib": {
+   "path": "C:\\Program Files\\AMD\\ROCm\\lib",
+   "status": "NOT_FOUND"
+  },
+  "amd_dir": {
+   "path": "C:\\Program Files\\AMD",
+   "status": "NOT_FOUND"
+  },
+  "hip_sdk_installer_key": {
+   "rc": 1,
+   "out": "",
+   "err": ""
+  }
+ },
+ "msix_dev_probe": {
+  "path": "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe",
+  "headers": 0,
+  "import_libs": 0,
+  "dlls": [
+   {
+    "name": "amdgpu-ep.dll",
+    "sha256": "cb7496b3ab8f9daf2948b6030db5ec795596072ffcb25d3c55a28e4c0df7f8ab",
+    "bytes": 548304
+   },
+   {
+    "name": "amdhip64_7.dll",
+    "sha256": "714990f5b64a767c467882fa5d8165da3cb6861942a834a602803387e533d6cc",
+    "bytes": 16153096
+   },
+   {
+    "name": "amdmlss.dll",
+    "sha256": "249cae143b0695ec22ce3a28f09df4050ce30535095e15ec50153ec042f633ec",
+    "bytes": 15505968
+   },
+   {
+    "name": "amd_comgr0714.dll",
+    "sha256": "1c976c95a2eaf92dca029a3a6cf9f43bd22efe50c2e2249e40d929e4b34c68ea",
+    "bytes": 119743968
+   },
+   {
+    "name": "custom_kernels_gfx1151.dll",
+    "sha256": "a3488ccd4213a3e6800fac6ef9988b8f537eb84899de3ced23f44ac2d16b9f84",
+    "bytes": 13397984
+   },
+   {
+    "name": "directx-backend.dll",
+    "sha256": "0292084948042fe19a6ddc8e074002d05ad0aa5be1fa10aeaf7c8035a7c7a73f",
+    "bytes": 11124184
+   },
+   {
+    "name": "hip-backend.dll",
+    "sha256": "9a50da9ad7b50e1b38cfa3767afb79ae0651f8703bcc500977862190b2938807",
+    "bytes": 295384
+   },
+   {
+    "name": "hip-compiler.dll",
+    "sha256": "8f98b6c251c46fac03b04244eb1efe70fdac8fa92c8b3583daefee46074855d4",
+    "bytes": 59566088
+   },
+   {
+    "name": "hipblaslt.dll",
+    "sha256": "d0c7b29697878f49bd3a2ac86651c011b916717e1f978c76e705fd4d7641eff2",
+    "bytes": 6979080
+   },
+   {
+    "name": "hipgpu.dll",
+    "sha256": "620251081765b963dd2cac62185c98ad3b788db1b3a1cc84c69bf3fd56e03de0",
+    "bytes": 34693600
+   },
+   {
+    "name": "hiprtc-builtins0714.dll",
+    "sha256": "e7ee5bdd4f3f174f14037063fce93ff00765ded812cf47ca7d848b43c81b871d",
+    "bytes": 937944
+   },
+   {
+    "name": "hiprtc0714.dll",
+    "sha256": "0531f03da26c0f9a6f1133ace3c32acc2fcfa4055d566fb973ef04c29fad2077",
+    "bytes": 1275840
+   },
+   {
+    "name": "migraphx-backend.dll",
+    "sha256": "db3b66941d77a43a96ace7078d664e5ca3852473f90f77d44a1c00300d9e7264",
+    "bytes": 2353112
+   },
+   {
+    "name": "migraphx.dll",
+    "sha256": "1b14623bbc2b9ae1e328511d1b078b358cad2a3d5b01d9246cb97638c1d987fe",
+    "bytes": 50775560
+   },
+   {
+    "name": "migraphx_c.dll",
+    "sha256": "ce8da09995ce26a76b76f7cf436b30a949e50b2d721851c107682beb714e08f5",
+    "bytes": 632784
+   },
+   {
+    "name": "migraphx_device.dll",
+    "sha256": "75f36b1466837361fa5ddae6cd87b5ca6b50004259924b3901b65ffe5d608f9a",
+    "bytes": 14666712
+   },
+   {
+    "name": "migraphx_gpu.dll",
+    "sha256": "d6e842770a8a8c0ae8237faf3fa7f7b06b6ef3a0f522baa868b40a6537bd96ef",
+    "bytes": 99254280
+   },
+   {
+    "name": "migraphx_onnx.dll",
+    "sha256": "a25c0707f5bdc8499db5ca94998b173d9384aa4c16d60d43164d2e317ba713ca",
+    "bytes": 3767240
+   },
+   {
+    "name": "MIOpen.dll",
+    "sha256": "102a42d8a9c27b4247242fc8773db8e3a49fe5e9e726f4dd24aa407d8daa94d2",
+    "bytes": 69436896
+   },
+   {
+    "name": "onnxruntime_providers_migraphx.dll",
+    "sha256": "27cd82550a25b6c5aeeaa1dc91bdfeeec1ccc70e35bbd4aa54222c335c89e449",
+    "bytes": 658904
+   },
+   {
+    "name": "onnxruntime_providers_shared.dll",
+    "sha256": "3623c4a5e1ec6f0d70298e99862bcba2734ee40b2fe5748571482366a7185182",
+    "bytes": 139728
+   },
+   {
+    "name": "rocblas.dll",
+    "sha256": "ea2ef86e753268f9aac4e7541dc44ee5bf974b09877bf273490de43dc0404a99",
+    "bytes": 26196488
+   }
+  ],
+  "status": "FOUND"
+ },
+ "git_states": {
+  "fork": {
+   "head": "0baccb25eb607fe43255bf4d5b09a93df8571c91",
+   "branch": "fix/windows-dxgi-hip-device-identity",
+   "clean": true
+  },
+  "validation_repo": {
+   "head": "6b780a4335a701beab83dc2ee2c6123c664c05e7",
+   "branch": "mission/r3a-native-ep-validation",
+   "clean": false
+  },
+  "fork_upstream_main": "15ded64bd998a317dfe0ccf0ead8033574dd5b86",
+  "drift_vs_base": true
+ },
+ "build_attempts": [
+  {
+   "target": "native full AMD plugin EP (amdgpu-ep.dll + migraphx-backend.dll) from fork source",
+   "attempt": "NOT_ATTEMPTED_ON_HOST",
+   "classification": "BLOCKED_DEPENDENCY",
+   "missing": [
+    "MSVC compiler (cl NOT_FOUND, vswhere NOT_FOUND -> no Visual Studio instance)",
+    "CMake / Ninja (NOT_FOUND)",
+    "Windows HIP SDK (no C:\\Program Files\\AMD\\ROCm, no HKLM\\SOFTWARE\\AMD\\HIP SDK key)",
+    "MIGraphX C++ headers + import libs (official Windows HIP SDK does not ship MIGraphX dev; WinML MSIX contains only runtime DLLs - 0 headers, 0 .lib found by legal probe)",
+    "ORT C API headers/libs matching the plugin EP ABI (requires a matching onnxruntime source build or dev package; none present)"
+   ],
+   "legal_sources": [
+    "Visual Studio 2022 Community (needs admin install authorization): https://visualstudio.microsoft.com/",
+    "Windows HIP SDK installer via AMD ROCm portal (needs admin): https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html",
+    "MIGraphX Windows dev libs: no public standalone distribution known; requires building ROCm/AMDMIGraphX from source (deps/onnxruntime-ep-amdgpu vendors AMDMIGraphX sources, itself needing the above toolchain)"
+   ],
+   "admin_authorization": "NEEDS_OWNER_AUTH (explicitly not granted)"
+  },
+  {
+   "target": "guard decision logic (device_identity_guard.h)",
+   "attempt": "COMPILED_AND_RUN_IN_CI",
+   "classification": "GUARD_HELPER_CI_PASS",
+   "evidence": "fork .github/workflows/guard-helper-cpp.yml: ubuntu g++ & clang++ (-Wall -Wextra -Werror), windows MSVC cl /W4 /WX; 6 check runs SUCCESS at fork head 0baccb25eb607fe43255bf4d5b09a93df8571c91"
+  }
+ ],
+ "layered_verdicts": {
+  "GUARD_HELPER_CI_PASS": true,
+  "NATIVE_COMPILED": false,
+  "NATIVE_PLUGIN_REGISTERED": false,
+  "PATCHED_GPU_EXECUTED_WITH_PARITY": false,
+  "IDENTITY_MAPPING_PORTABLE_VERIFIED": false
+ }
+}

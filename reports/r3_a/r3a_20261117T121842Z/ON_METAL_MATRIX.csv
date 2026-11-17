@@ -1,0 +1,3 @@
+binary,provenance,on_metal_status
+stock MSIX 1.8.65.0,WinML AMD GPU EP Framework.2 official package,VALIDATED_BY_R2_and_R2_1_1 (234 PASS receipts; 28-case control-flow matrix)
+patched fork DLL,NOT_BUILT (BLOCKED_DEPENDENCY),NOT_TESTED

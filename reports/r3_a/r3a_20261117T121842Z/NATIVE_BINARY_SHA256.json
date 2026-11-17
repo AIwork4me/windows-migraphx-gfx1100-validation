@@ -1,0 +1,10 @@
+{
+ "schema": "r3_a/native_binary_sha256/1",
+ "status": "NO_NATIVE_BINARY_EXISTS",
+ "reason": "NATIVE_COMPILED BLOCKED_DEPENDENCY (see BUILD_LEDGER.json)",
+ "expected_when_unblocked": [
+  "amdgpu-ep.dll",
+  "migraphx-backend.dll",
+  "directx-backend.dll"
+ ]
+}
