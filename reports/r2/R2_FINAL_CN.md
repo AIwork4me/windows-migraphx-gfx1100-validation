@@ -75,7 +75,9 @@ Receipts：`reports/r2/<run>/cases/*.json`（每个含 providers、nodes_by_prov
 | matmul(64维,合成) × 双EP | ~0.15 | 0.007 | 0.04×（GPU 更慢） | launch 开销主导，如实记录 |
 
 - 线程设定：default（记录于 receipt）；GPU 显存/利用率：NOT_MEASURED（无可靠用户态计数器，不编造）；进程工作集仪表失效 → NOT_MEASURED。
-- Soak：yolo26n × 2 EP × 15 分钟，变输入循环 + 会话重建 + 30s 心跳 + 断点 checkpoint；迭代数/错误数/重建次数见 `SOAK.csv` 与 receipts（结果以 receipt 为准，未观察到错误重置类事件则如实写 0 error；不据此宣称"无泄漏"，样本时长仅 15 分钟）。
+- Soak（yolo26n × 2 EP × 15 分钟预算，变输入 + 会话重建 + 30s 心跳 + 看门狗）：
+  **AMDGPU PASS_SOAK_COMPLETED**（15.55 分钟、24000 迭代、0 错误、12 次会话重建、rc=0 干净退出）；
+  **MIGraphX FAIL_SOAK_NO_CLEAN_EXIT_HEALTHY_IN_WINDOW**（窗口内心跳至 iter 9856、0 错误、4 次重建，随后 20 分钟无新 checkpoint 且进程存活 → 看门狗树杀；疑似退出路径/长跑停滞，未隔离复现，不作上游结论）。无 TDR/设备重置事件；不据此宣称"无泄漏"。
 
 ## F. 上游补丁（R2.4）
 

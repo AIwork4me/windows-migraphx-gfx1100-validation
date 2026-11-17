@@ -1,0 +1,74 @@
+{
+ "schema_version": "r2/soak/1",
+ "case_id": "r2_soak_yolo26n.onnx_MIGraphXExecutionProvider",
+ "model": "yolo26n.onnx",
+ "model_sha256": "4fc60f7e7973aae4e6cbb7ea281c860de048b62ab5fa12ed06f467e1151b8f7b",
+ "ep": "MIGraphXExecutionProvider",
+ "minutes_budget": 15.0,
+ "started_utc": "2026-11-17T01:41:57Z",
+ "real_hardware": true,
+ "heartbeats": [
+  {
+   "t": "2026-11-17T01:42:41Z",
+   "iter": 1,
+   "ws_mb": 0.0
+  },
+  {
+   "t": "2026-11-17T01:43:11Z",
+   "iter": 1897,
+   "ws_mb": 0.0
+  },
+  {
+   "t": "2026-11-17T01:43:55Z",
+   "iter": 2000,
+   "ws_mb": 0.0
+  },
+  {
+   "t": "2026-11-17T01:44:25Z",
+   "iter": 3903,
+   "ws_mb": 0.0
+  },
+  {
+   "t": "2026-11-17T01:45:08Z",
+   "iter": 4000,
+   "ws_mb": 0.0
+  },
+  {
+   "t": "2026-11-17T01:45:38Z",
+   "iter": 5905,
+   "ws_mb": 0.0
+  },
+  {
+   "t": "2026-11-17T01:46:21Z",
+   "iter": 6000,
+   "ws_mb": 0.0
+  },
+  {
+   "t": "2026-11-17T01:46:51Z",
+   "iter": 7882,
+   "ws_mb": 0.0
+  },
+  {
+   "t": "2026-11-17T01:47:36Z",
+   "iter": 8000,
+   "ws_mb": 0.0
+  },
+  {
+   "t": "2026-11-17T01:48:06Z",
+   "iter": 9856,
+   "ws_mb": 0.0
+  }
+ ],
+ "errors": [],
+ "iterations": 9856,
+ "session_recreates": 4,
+ "device_luid": 72346,
+ "classification": "FAIL_SOAK_NO_CLEAN_EXIT_HEALTHY_IN_WINDOW",
+ "hung_detail": "heartbeats healthy through the checkpoint record (0 errors, session recreates at 2000/4000/6000/8000 boundaries, last checkpoint iter 9856); 15-min budget elapsed without a final receipt / clean process exit; watchdog tree-killed. Two earlier launch attempts were entangled by orphaned venv-launcher/real-python process pairs (operator killed; forensic reads interleaved multiple writers on this path). What is PROVEN: 0 in-window errors on MIGraphX EP long-run with session recreation. What is NOT proven: clean shutdown and behavior beyond ~15 min. Suspect (not isolated): shutdown-path hang in ORT/MIGraphX non-daemon threads.",
+ "verdict": "MIGraphX long-run stability suspect under repeated session recreation; needs isolation repro (single variable: recreate_every) before any upstream report",
+ "last_heartbeat": {
+  "t": "2026-11-17T01:48:06Z",
+  "iter": 9856,
+  "ws_mb": 0.0
+ }
+}

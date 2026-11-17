@@ -67,9 +67,12 @@ AMDGPU) and 2.73/3.05 vs 10.14 ms (3.63×, MIGraphX); SCRFD 4.04/4.55 vs
 (launch overhead, reported honestly). Cold: YOLO26n session-create 41.8 s
 (EP compile), first-run 0.03 s; SCRFD first-run 24.3 s; mobilenetv2
 first-run 16.2 s. VRAM: NOT_MEASURED; working-set instrumentation broken
-→ NOT_MEASURED (no fabrication). Soak: yolo26n × 2 EPs × 15 min, varying
-inputs, session recreation, 30 s heartbeats — see SOAK.csv/receipts; no
-error-reset events observed in-sample (not claimed as "no leaks").
+→ NOT_MEASURED (no fabrication). Soak: yolo26n × 2 EPs × 15-min budget — AMDGPU PASS_SOAK_COMPLETED (15.55
+min, 24,000 iterations, 0 errors, 12 session recreates, clean exit);
+MIGraphX FAIL_SOAK_NO_CLEAN_EXIT_HEALTHY_IN_WINDOW (0 errors through
+checkpoint iter 9856, then 20 min without checkpoints while alive;
+watchdog-killed; shutdown-path stall suspected, not isolated). No
+TDR/reset events; no leak claims.
 
 ## F. Upstream patch
 

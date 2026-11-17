@@ -47,10 +47,104 @@
    "t": "2026-11-17T01:26:28Z",
    "iter": 7896,
    "ws_mb": 0.0
+  },
+  {
+   "t": "2026-11-17T01:27:12Z",
+   "iter": 8000,
+   "ws_mb": 0.0
+  },
+  {
+   "t": "2026-11-17T01:27:42Z",
+   "iter": 9838,
+   "ws_mb": 0.0
+  },
+  {
+   "t": "2026-11-17T01:28:27Z",
+   "iter": 10000,
+   "ws_mb": 0.0
+  },
+  {
+   "t": "2026-11-17T01:28:57Z",
+   "iter": 11905,
+   "ws_mb": 0.0
+  },
+  {
+   "t": "2026-11-17T01:29:41Z",
+   "iter": 12000,
+   "ws_mb": 0.0
+  },
+  {
+   "t": "2026-11-17T01:30:11Z",
+   "iter": 13909,
+   "ws_mb": 0.0
+  },
+  {
+   "t": "2026-11-17T01:30:54Z",
+   "iter": 14000,
+   "ws_mb": 0.0
+  },
+  {
+   "t": "2026-11-17T01:31:24Z",
+   "iter": 15879,
+   "ws_mb": 0.0
+  },
+  {
+   "t": "2026-11-17T01:32:08Z",
+   "iter": 16000,
+   "ws_mb": 0.0
+  },
+  {
+   "t": "2026-11-17T01:32:38Z",
+   "iter": 17900,
+   "ws_mb": 0.0
+  },
+  {
+   "t": "2026-11-17T01:33:22Z",
+   "iter": 18000,
+   "ws_mb": 0.0
+  },
+  {
+   "t": "2026-11-17T01:33:52Z",
+   "iter": 19900,
+   "ws_mb": 0.0
+  },
+  {
+   "t": "2026-11-17T01:34:36Z",
+   "iter": 20000,
+   "ws_mb": 0.0
+  },
+  {
+   "t": "2026-11-17T01:35:06Z",
+   "iter": 21882,
+   "ws_mb": 0.0
+  },
+  {
+   "t": "2026-11-17T01:35:50Z",
+   "iter": 22000,
+   "ws_mb": 0.0
+  },
+  {
+   "t": "2026-11-17T01:36:20Z",
+   "iter": 23855,
+   "ws_mb": 0.0
+  },
+  {
+   "t": "2026-11-17T01:37:05Z",
+   "iter": 24000,
+   "ws_mb": 0.0
   }
  ],
  "errors": [],
- "iterations": 0,
- "session_recreates": 3,
- "device_luid": 72346
+ "iterations": 24000,
+ "session_recreates": 12,
+ "device_luid": 72346,
+ "working_set_slope_mb_per_hb": 0.0,
+ "working_set_first_last_mb": [
+  0.0,
+  0.0
+ ],
+ "classification": "PASS_SOAK_COMPLETED",
+ "finished_utc": "2026-11-17T01:37:05Z",
+ "soak_window_minutes_observed": 15.55,
+ "postmortem_note": "driver log: rc=0, clean child exit. Earlier interim reads of this file saw a pre-final checkpoint due to read timing during the run; the process tree actually hung later, on the MIGraphX child/driver pair (killed manually, see soak_yolo26n__MIGraphX.json note). In-window: 24000 iterations, 0 errors, session recreates as counted, 15.55 minutes of heartbeats."
 }

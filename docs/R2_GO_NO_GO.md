@@ -13,7 +13,7 @@ evidence class.
 | Real models — multi-output detector SCRFD det_10g | **GO** | 9-output detector, full-coverage PASS both EPs @640; #150 by-name compare strict (all 9 outputs distinct shapes; no swap detected) |
 | Real model — ssd_mobilenet_v1_10 | **NO_GO (this model on AMD EPs)** | FAIL_NO_GPU_COMPUTE both EPs (0/5587 nodes on EP, whole-graph CPU partition; visible, not silent; DML ran it in round-1) |
 | Performance | **GO (measured)** | YOLO26n p50 2.73 ms vs CPU 9.81 ms (3.5×), SCRFD 5.5×, mobilenetv2 1.65×, squeezenet 1.78×; tiny matmul slower on GPU (launch overhead) reported honestly; cold session-create 41.8 s for YOLO26n (EP compile) |
-| Stability soak | see final SOAK.csv | 15 min × 2 EPs yolo26n loop, varying inputs, session lifecycle, heartbeats; verdicts in receipts |
+| Stability soak | **CONDITIONAL** | AMDGPU: 15.55 min, 24,000 iterations, 0 errors, 12 session recreates, rc=0 clean exit. MIGraphX: 0 errors to iter 9856 (~6 min of checkpoints) then no further checkpoints for 20 min with the process alive; watchdog tree-killed → `FAIL_SOAK_NO_CLEAN_EXIT_HEALTHY_IN_WINDOW` (shutdown/late-run stall suspected, not isolated; earlier attempts entangled by orphaned launcher pairs). No TDR/reset events; working-set instrumentation broken → NOT_MEASURED; no leak claims from 15-min samples |
 | Upstream patch | **PATCH_PREPARED_UNBUILT** | guard + pure-C++ helper + tests written, NOT compiled (BLOCKED_TOOLCHAIN: no MSVC/SDK/HIP SDK); fork Draft PR AIwork4me/onnxruntime-ep-amdgpu#1; `GUARD_ONLY_NOT_FULL_FIX` |
 | OCR (P1) | **BLOCKED_TOOLCHAIN** | paddle2onnx native DLL cannot load; assets + exact error recorded |
 | SAM/SAM2 (P1) | **BLOCKED_MODEL_ASSET** | no license-clear official ONNX obtainable this round |
