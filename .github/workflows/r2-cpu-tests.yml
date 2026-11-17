@@ -23,7 +23,7 @@ jobs:
         run: pip install numpy onnx onnxruntime
       - name: Compile all tracked python
         run: python -m compileall -q runner tests
-      - name: Unit tests (r1 fail-closed + r2 device resolver + smoke)
+      - name: Unit tests (r1 fail-closed + r2 device resolver + r2.1 adversarial validator + smoke)
         run: python -m unittest discover -s tests -v
       - name: Validate R1 ledger/manifests parse
         run: python runner/r1/ci_parse_check.py
@@ -31,6 +31,10 @@ jobs:
         shell: pwsh
         run: |
           python runner/r2/ci_r2_check.py
+      - name: R2.1 hardened evidence gate (adversarial: EP node count > 0, typed parity, LUID, manifest)
+        shell: pwsh
+        run: |
+          python runner/r2_1/r21_validate.py
       - name: Verify manifests of tracked report dirs (if present)
         shell: pwsh
         run: |

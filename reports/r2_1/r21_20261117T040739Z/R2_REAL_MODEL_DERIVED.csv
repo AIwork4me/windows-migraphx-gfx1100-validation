@@ -1,0 +1,15 @@
+case,model,ep,batch,opt,real_model,ledger_status,ledger_classification,gpu_node_ratio,parity_all_ok,elapsed_s,receipt
+emotion-ferplus-8__AMDGPU__b1__ALL,emotion-ferplus-8,AMDGPUExecutionProvider,1,ALL,True,DONE,PASS_GPU_CORRECT_FULL_COVERAGE,1.0,True,8.5,reports/r2/r2_20261117T004504Z/cases/emotion-ferplus-8__AMDGPU__b1__ALL.json
+emotion-ferplus-8__MIGraphX__b1__ALL,emotion-ferplus-8,MIGraphXExecutionProvider,1,ALL,True,DONE,PASS_GPU_CORRECT_FULL_COVERAGE,1.0,True,8.9,reports/r2/r2_20261117T004504Z/cases/emotion-ferplus-8__MIGraphX__b1__ALL.json
+mnist-8__AMDGPU__b1__ALL,mnist-8,AMDGPUExecutionProvider,1,ALL,True,DONE,PASS_GPU_CORRECT_FULL_COVERAGE,1.0,True,4.2,reports/r2/r2_20261117T004504Z/cases/mnist-8__AMDGPU__b1__ALL.json
+mnist-8__MIGraphX__b1__ALL,mnist-8,MIGraphXExecutionProvider,1,ALL,True,DONE,PASS_GPU_CORRECT_FULL_COVERAGE,1.0,True,4.2,reports/r2/r2_20261117T004504Z/cases/mnist-8__MIGraphX__b1__ALL.json
+mobilenetv2-12__AMDGPU__b1__ALL,mobilenetv2-12,AMDGPUExecutionProvider,1,ALL,True,DONE,PASS_GPU_CORRECT_FULL_COVERAGE,1.0,True,30.4,reports/r2/r2_20261117T004504Z/cases/mobilenetv2-12__AMDGPU__b1__ALL.json
+mobilenetv2-12__MIGraphX__b1__ALL,mobilenetv2-12,MIGraphXExecutionProvider,1,ALL,True,DONE,PASS_GPU_CORRECT_FULL_COVERAGE,1.0,True,18.8,reports/r2/r2_20261117T004504Z/cases/mobilenetv2-12__MIGraphX__b1__ALL.json
+scrfd_det_10g__AMDGPU__b1__ALL,scrfd_det_10g,AMDGPUExecutionProvider,1,ALL,True,DONE,PASS_GPU_CORRECT_FULL_COVERAGE,1.0,True,30.2,reports/r2/r2_20261117T004504Z/cases/scrfd_det_10g__AMDGPU__b1__ALL.json
+scrfd_det_10g__MIGraphX__b1__ALL,scrfd_det_10g,MIGraphXExecutionProvider,1,ALL,True,DONE,PASS_GPU_CORRECT_FULL_COVERAGE,1.0,True,25.3,reports/r2/r2_20261117T004504Z/cases/scrfd_det_10g__MIGraphX__b1__ALL.json
+squeezenet1.0-12__AMDGPU__b1__ALL,squeezenet1.0-12,AMDGPUExecutionProvider,1,ALL,True,DONE,PASS_GPU_CORRECT_FULL_COVERAGE,1.0,True,13.1,reports/r2/r2_20261117T004504Z/cases/squeezenet1.0-12__AMDGPU__b1__ALL.json
+squeezenet1.0-12__MIGraphX__b1__ALL,squeezenet1.0-12,MIGraphXExecutionProvider,1,ALL,True,DONE,PASS_GPU_CORRECT_FULL_COVERAGE,1.0,True,12.5,reports/r2/r2_20261117T004504Z/cases/squeezenet1.0-12__MIGraphX__b1__ALL.json
+ssd_mobilenet_v1_10__AMDGPU__b1__ALL,ssd_mobilenet_v1_10,AMDGPUExecutionProvider,1,ALL,True,FAILED,FAIL_NO_GPU_COMPUTE,0.0,True,11.6,reports/r2/r2_20261117T004504Z/cases/ssd_mobilenet_v1_10__AMDGPU__b1__ALL.json
+ssd_mobilenet_v1_10__MIGraphX__b1__ALL,ssd_mobilenet_v1_10,MIGraphXExecutionProvider,1,ALL,True,FAILED,FAIL_NO_GPU_COMPUTE,0.0,True,11.9,reports/r2/r2_20261117T004504Z/cases/ssd_mobilenet_v1_10__MIGraphX__b1__ALL.json
+yolo26n__AMDGPU__b1__ALL,yolo26n,AMDGPUExecutionProvider,1,ALL,True,DONE,PASS_GPU_CORRECT_FULL_COVERAGE,1.0,True,62.4,reports/r2/r2_20261117T004504Z/cases/yolo26n__AMDGPU__b1__ALL.json
+yolo26n__MIGraphX__b1__ALL,yolo26n,MIGraphXExecutionProvider,1,ALL,True,DONE,PASS_GPU_CORRECT_FULL_COVERAGE,1.0,True,43.6,reports/r2/r2_20261117T004504Z/cases/yolo26n__MIGraphX__b1__ALL.json
