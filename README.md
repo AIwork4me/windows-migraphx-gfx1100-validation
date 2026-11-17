@@ -1,5 +1,24 @@
 # windows-migraphx-gfx1100-validation
 
+> **R2 verdict (2026-11-17, run `r2_20261117T004504Z`) — READ THIS FIRST:**
+> - **R2 supersedes the overnight CONDITIONAL NO-GO below.** With the
+>   fail-closed device resolver selecting the PHYSICAL XTX (LUID 72346,
+>   proven via DXCore Discrete=1 + sole active DXGI output + HIP ordinal0
+>   name/mem match), **AMDGPU EP and MIGraphX EP both execute real models
+>   on the real GPU**: 234/290 matrix cases PASS with full node coverage
+>   and same-build ORT-CPU parity, including **YOLO26n end-to-end**
+>   (5/5 identical detections vs CPU on bus.jpg, classes {person, bus}),
+>   **SCRFD det_10g (9 outputs)** and 4 ONNX Model Zoo classifiers.
+>   Measured speedups: YOLO26n 3.5x, SCRFD 5.5x (p50, batch 1).
+> - **What is still NOT proven:** this is one host's official WinML EP
+>   MSIX package -- NOT generic Windows compatibility, NOT an upstream
+>   merge, NOT a native ROCm build. Upstream guard patch exists as
+>   PATCH_PREPARED_UNBUILT fork Draft PR (no MSVC toolchain on host).
+> - Key evidence: `reports/r2/r2_20261117T004504Z/`, summaries:
+>   `docs/R2_GO_NO_GO.md`, `docs/R2_DEVICE_IDENTITY.md`,
+>   `reports/r2/R2_FINAL_CN.md` / `_EN.md`.
+
+
 Real-machine validation of AMD MIGraphX / AMDGPU Execution Providers on
 **native Windows 11 (build 26300) + Radeon RX 7900 XTX (gfx1100, DEV_744C)**,
 against Windows ML plugin EPs, ONNX Runtime CPU parity, multi-output

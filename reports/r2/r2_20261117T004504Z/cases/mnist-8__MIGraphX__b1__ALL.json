@@ -1,0 +1,98 @@
+{
+ "schema_version": "r2/model_case/1",
+ "case_id": "r2_mnist-8.onnx_MIGraphXExecutionProvider_b1_ALL",
+ "phase": "r2.2",
+ "model": "mnist-8.onnx",
+ "model_sha256": "2f06e72de813a8635c9bc0397ac447a601bdbfa7df4bebc278723b958831c9bf",
+ "ep": "MIGraphXExecutionProvider",
+ "batch": 1,
+ "opt_level": "ALL",
+ "tolerance": {
+  "atol": 0.01,
+  "rtol": 0.01
+ },
+ "ort_version": "1.30.1",
+ "ep_library": "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdgpu-ep.dll",
+ "started_utc": "2026-11-17T01:03:18Z",
+ "real_hardware": true,
+ "dxgi_validated": true,
+ "device_resolution": {
+  "luid": 72346,
+  "dxgi_adapter_number": "0",
+  "discrete": true,
+  "basis": [
+   "unique candidate with Discrete=1 + active DXGI output",
+   "ep=MIGraphXExecutionProvider",
+   "description=AMD Radeon RX 7900 XTX",
+   "discrete=True",
+   "active_output=True",
+   "canary: EP in providers + profile node + CPU parity"
+  ],
+  "canary": {
+   "passed": true,
+   "parity_max_abs": 0.0
+  }
+ },
+ "session_create_s": 2.329,
+ "session_providers": [
+  "MIGraphXExecutionProvider",
+  "CPUExecutionProvider"
+ ],
+ "input_names": [
+  "Input3"
+ ],
+ "input_shapes": {
+  "Input3": [
+   1,
+   1,
+   28,
+   28
+  ]
+ },
+ "output_names": [
+  "Plus214_Output_0"
+ ],
+ "run_s": 0.014,
+ "parity": {
+  "outputs_expected": [
+   "Plus214_Output_0"
+  ],
+  "outputs_actual": [
+   "Plus214_Output_0"
+  ],
+  "names_match": true,
+  "per_output": {
+   "Plus214_Output_0": {
+    "dtype_expected": "float32",
+    "dtype_actual": "float32",
+    "shape_expected": [
+     1,
+     10
+    ],
+    "shape_actual": [
+     1,
+     10
+    ],
+    "status": "OK",
+    "max_abs_diff": 0.0,
+    "mean_abs_diff": 0.0,
+    "allclose": true
+   }
+  },
+  "all_ok": true
+ },
+ "profile": {
+  "file": "mnist-8__MIGraphX__b1__ALL_profile_2026-11-17_09-03-19_757.json",
+  "nodes_by_provider": {
+   "MIGraphXExecutionProvider": 1
+  },
+  "ep_node_ops": {
+   "MIGraphXExecutionProvider_16878305854388983441_0": 1
+  },
+  "total_node_events": 1
+ },
+ "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+ "gpu_node_ratio": 1.0,
+ "finished_utc": "2026-11-17T01:03:22Z",
+ "wall_s": 3.915
+}

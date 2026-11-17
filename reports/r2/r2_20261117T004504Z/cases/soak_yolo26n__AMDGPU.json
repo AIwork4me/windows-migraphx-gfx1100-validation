@@ -1,0 +1,56 @@
+{
+ "schema_version": "r2/soak/1",
+ "case_id": "r2_soak_yolo26n.onnx_AMDGPUExecutionProvider",
+ "model": "yolo26n.onnx",
+ "model_sha256": "4fc60f7e7973aae4e6cbb7ea281c860de048b62ab5fa12ed06f467e1151b8f7b",
+ "ep": "AMDGPUExecutionProvider",
+ "minutes_budget": 15.0,
+ "started_utc": "2026-11-17T01:21:32Z",
+ "real_hardware": true,
+ "heartbeats": [
+  {
+   "t": "2026-11-17T01:22:15Z",
+   "iter": 1,
+   "ws_mb": 0.0
+  },
+  {
+   "t": "2026-11-17T01:22:45Z",
+   "iter": 1909,
+   "ws_mb": 0.0
+  },
+  {
+   "t": "2026-11-17T01:23:29Z",
+   "iter": 2000,
+   "ws_mb": 0.0
+  },
+  {
+   "t": "2026-11-17T01:23:59Z",
+   "iter": 3890,
+   "ws_mb": 0.0
+  },
+  {
+   "t": "2026-11-17T01:24:44Z",
+   "iter": 4000,
+   "ws_mb": 0.0
+  },
+  {
+   "t": "2026-11-17T01:25:14Z",
+   "iter": 5876,
+   "ws_mb": 0.0
+  },
+  {
+   "t": "2026-11-17T01:25:58Z",
+   "iter": 6000,
+   "ws_mb": 0.0
+  },
+  {
+   "t": "2026-11-17T01:26:28Z",
+   "iter": 7896,
+   "ws_mb": 0.0
+  }
+ ],
+ "errors": [],
+ "iterations": 0,
+ "session_recreates": 3,
+ "device_luid": 72346
+}

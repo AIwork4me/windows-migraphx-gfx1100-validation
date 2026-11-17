@@ -37,3 +37,4 @@ reports/**/*.parquet
 *.tmp
 
 /onnxruntime_profile__*.json
+*.pt

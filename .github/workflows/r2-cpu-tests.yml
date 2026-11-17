@@ -1,0 +1,38 @@
+name: r2-cpu-tests
+
+# Pure-CPU CI for R2: static + unit + receipt-schema checks. This runner
+# has NO AMD GPU and NO WinML EP packages; nothing here can or does
+# validate GPU execution. All hardware claims live in reports/r2
+# receipts produced on the physical Windows gfx1100 host.
+
+on:
+  push:
+    branches: [main, "mission/**"]
+  pull_request:
+    branches: [main]
+
+jobs:
+  cpu-tests:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install CPU-only test deps
+        run: pip install numpy onnx onnxruntime
+      - name: Compile all tracked python
+        run: python -m compileall -q runner tests
+      - name: Unit tests (r1 fail-closed + r2 device resolver + smoke)
+        run: python -m unittest discover -s tests -v
+      - name: Validate R1 ledger/manifests parse
+        run: python runner/r1/ci_parse_check.py
+      - name: Validate R2 ledger + receipt schema + CSV contracts
+        shell: pwsh
+        run: |
+          python runner/r2/ci_r2_check.py
+      - name: Verify manifests of tracked report dirs (if present)
+        shell: pwsh
+        run: |
+          $m = "reports/r2/r2_20261117T004504Z/manifest.sha256"
+          if (Test-Path $m) { python runner/r2/verify_manifest.py --manifest $m }

@@ -1,0 +1,39 @@
+{
+ "schema_version": "r2/model_case/1",
+ "case_id": "r2_split2.onnx_MIGraphXExecutionProvider_b1_BASIC",
+ "phase": "r2.2",
+ "model": "split2.onnx",
+ "model_sha256": "cf9c053bdce5e07bde62291e2b346e2ea10a8b6142ff9c22fcfa466757894981",
+ "ep": "MIGraphXExecutionProvider",
+ "batch": 1,
+ "opt_level": "BASIC",
+ "tolerance": {
+  "atol": 0.0001,
+  "rtol": 0.001
+ },
+ "ort_version": "1.30.1",
+ "ep_library": "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdgpu-ep.dll",
+ "started_utc": "2026-11-17T01:07:27Z",
+ "real_hardware": true,
+ "dxgi_validated": true,
+ "device_resolution": {
+  "luid": 72346,
+  "dxgi_adapter_number": "0",
+  "discrete": true,
+  "basis": [
+   "unique candidate with Discrete=1 + active DXGI output",
+   "ep=MIGraphXExecutionProvider",
+   "description=AMD Radeon RX 7900 XTX",
+   "discrete=True",
+   "active_output=True",
+   "canary: EP in providers + profile node + CPU parity"
+  ],
+  "canary": {
+   "passed": true,
+   "parity_max_abs": 0.0
+  }
+ },
+ "classification": "FAIL_RUNTIME",
+ "error": "session create: InvalidGraph: [ONNXRuntimeError] : 10 : INVALID_GRAPH : Load model from C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\fixtures\\split2.onnx failed:This is an invalid model. In Node, (\"\", Split, \"\", -1) : (\"X\": tensor(float),) -> (\"A\": tensor(float),\"B\": tensor(float),) , Error Unrecognized attribute: num_outputs for operator Split",
+ "finished_utc": "2026-11-17T01:07:28Z"
+}

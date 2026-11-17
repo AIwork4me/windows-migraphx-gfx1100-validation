@@ -1,0 +1,96 @@
+{
+ "schema_version": "r2/model_case/1",
+ "case_id": "r2_sqrt.onnx_MIGraphXExecutionProvider_b2_ALL",
+ "phase": "r2.2",
+ "model": "sqrt.onnx",
+ "model_sha256": "03af80c5c1e372dbca36aa04efd2f8f54fb678a3b669e7569f373922c902132d",
+ "ep": "MIGraphXExecutionProvider",
+ "batch": 2,
+ "opt_level": "ALL",
+ "tolerance": {
+  "atol": 0.0001,
+  "rtol": 0.001
+ },
+ "ort_version": "1.30.1",
+ "ep_library": "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdgpu-ep.dll",
+ "started_utc": "2026-11-17T01:07:46Z",
+ "real_hardware": true,
+ "dxgi_validated": true,
+ "device_resolution": {
+  "luid": 72346,
+  "dxgi_adapter_number": "0",
+  "discrete": true,
+  "basis": [
+   "unique candidate with Discrete=1 + active DXGI output",
+   "ep=MIGraphXExecutionProvider",
+   "description=AMD Radeon RX 7900 XTX",
+   "discrete=True",
+   "active_output=True",
+   "canary: EP in providers + profile node + CPU parity"
+  ],
+  "canary": {
+   "passed": true,
+   "parity_max_abs": 0.0
+  }
+ },
+ "session_create_s": 0.0,
+ "session_providers": [
+  "MIGraphXExecutionProvider",
+  "CPUExecutionProvider"
+ ],
+ "input_names": [
+  "X"
+ ],
+ "input_shapes": {
+  "X": [
+   2,
+   16
+  ]
+ },
+ "output_names": [
+  "Y"
+ ],
+ "run_s": 0.278,
+ "parity": {
+  "outputs_expected": [
+   "Y"
+  ],
+  "outputs_actual": [
+   "Y"
+  ],
+  "names_match": true,
+  "per_output": {
+   "Y": {
+    "dtype_expected": "float32",
+    "dtype_actual": "float32",
+    "shape_expected": [
+     2,
+     16
+    ],
+    "shape_actual": [
+     2,
+     16
+    ],
+    "status": "OK",
+    "max_abs_diff": 0.0,
+    "mean_abs_diff": 0.0,
+    "allclose": true
+   }
+  },
+  "all_ok": true
+ },
+ "profile": {
+  "file": "sqrt__MIGraphX__b2__ALL_profile_2026-11-17_09-07-47_520.json",
+  "nodes_by_provider": {
+   "MIGraphXExecutionProvider": 1
+  },
+  "ep_node_ops": {
+   "MIGraphXExecutionProvider_12175762464039265745_0": 1
+  },
+  "total_node_events": 1
+ },
+ "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+ "gpu_node_ratio": 1.0,
+ "finished_utc": "2026-11-17T01:07:47Z",
+ "wall_s": 1.59
+}

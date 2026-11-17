@@ -1,0 +1,10 @@
+[0;93m2026-11-17 09:12:22.0943524 [W:onnxruntime:Default, onnxruntime_pybind_module.cc:45 onnxruntime::python::CreateOrtEnv] Init provider bridge failed.[m
+2026-11-17 09:12:23.339154 [WARN] [:0] auto_save_problem_cache: save failed: C:\j\AMDMIGraphX\src\file_buffer.cpp:77: write_buffer: Failure opening file: C:\Program Files\WindowsApps\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\ExecutionProvider\problem_cache.json
+2026-11-17 09:12:23.938426 [WARN] [:0] PARSE_LOOP max_iterations exceeds the maximum loop iterations limit, it will be changed from 9223372036854775807 to 65535.
+Warning: onnx model is not topologically sorted. Attempting to sort...
+2026-11-17 09:12:23.955166 [WARN] [:0] PARSE_LOOP max_iterations exceeds the maximum loop iterations limit, it will be changed from 9223372036854775807 to 65535.
+Warning: onnx model is not topologically sorted. Attempting to sort...
+: Error: C:\j\AMDMIGraphX\src\include\migraphx/check_shapes.hpp:90: check_dynamic: nonzero: Dynamic shapes not supported
+[1;31m2026-11-17 09:12:23.9736496 [E:onnxruntime:, sequential_executor.cc:671 onnxruntime::ExecuteKernel] Non-zero status code returned while running AMDGPUExecutionProvider_3021175870320492928_0 node. Name:'AMDGPUExecutionProvider_AMDGPUExecutionProvider_3021175870320492928_0_0' Status Message: Failed to call function[m
+C:\AIwork4me\windows-migraphx-gfx1100-validation\venv-winml\Lib\site-packages\onnxruntime\capi\onnxruntime_inference_collection.py:767: UserWarning: Specified 'providers'/'provider_options' when creating InferenceSession but SessionOptions has already been configured with providers. InferenceSession will only use the providers passed to InferenceSession().
+  warnings.warn(

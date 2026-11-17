@@ -1,0 +1,39 @@
+{
+ "schema_version": "r2/model_case/1",
+ "case_id": "r2_argmax.onnx_MIGraphXExecutionProvider_b1_ALL",
+ "phase": "r2.2",
+ "model": "argmax.onnx",
+ "model_sha256": "29f67df3c515e3d6c8d81d272e76a27ee0fbc2d4ca75ed041f0dacc2f5c6134b",
+ "ep": "MIGraphXExecutionProvider",
+ "batch": 1,
+ "opt_level": "ALL",
+ "tolerance": {
+  "atol": 0.0001,
+  "rtol": 0.001
+ },
+ "ort_version": "1.30.1",
+ "ep_library": "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdgpu-ep.dll",
+ "started_utc": "2026-11-17T01:06:30Z",
+ "real_hardware": true,
+ "dxgi_validated": true,
+ "device_resolution": {
+  "luid": 72346,
+  "dxgi_adapter_number": "0",
+  "discrete": true,
+  "basis": [
+   "unique candidate with Discrete=1 + active DXGI output",
+   "ep=MIGraphXExecutionProvider",
+   "description=AMD Radeon RX 7900 XTX",
+   "discrete=True",
+   "active_output=True",
+   "canary: EP in providers + profile node + CPU parity"
+  ],
+  "canary": {
+   "passed": true,
+   "parity_max_abs": 0.0
+  }
+ },
+ "classification": "FAIL_RUNTIME",
+ "error": "session create: Fail: [ONNXRuntimeError] : 1 : FAIL : Load model from C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\fixtures\\argmax.onnx failed:Type Error: Type (tensor(float)) of output arg (Y) of node () does not match expected type (tensor(int64)).",
+ "finished_utc": "2026-11-17T01:06:31Z"
+}

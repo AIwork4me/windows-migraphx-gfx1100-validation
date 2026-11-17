@@ -1,4 +1,4 @@
-"""R2.1 self-validating DXGI adapter enumeration via ctypes (no SDK needed).
+r"""R2.1 self-validating DXGI adapter enumeration via ctypes (no SDK needed).
 
 Purpose: produce the authoritative (DXGI index -> description, LUID, VRAM,
 flags, outputs) table that ORT core's device_discovery.cc consumes, so we
