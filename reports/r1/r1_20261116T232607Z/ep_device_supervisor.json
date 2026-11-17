@@ -1,0 +1,114 @@
+{
+ "schema_version": "r1/1",
+ "case_id": "r1_ep_device_supervisor",
+ "run_id": "r1_20261116T232607Z",
+ "source_head": "c597e4f3a4bd4a98dbcca9ea36d0286ccb8bc65f",
+ "started_utc": "2026-11-16T23:34:02Z",
+ "real_hardware": true,
+ "isolated_subprocess": true,
+ "argv": [
+  "runner/r1/ep_device_supervisor.py",
+  "--run-id",
+  "r1_20261116T232607Z",
+  "--timeout",
+  "240"
+ ],
+ "host_summary": {
+  "machine": "AMD64",
+  "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "python": "3.12.10",
+  "os": "Windows-11-10.0.26300-SP0"
+ },
+ "summary": [
+  {
+   "ep": "AMDGPUExecutionProvider",
+   "enumerate_exit": 0,
+   "matching_devices": 2,
+   "total_ep_devices": 6,
+   "candidates": [
+    {
+     "index": 0,
+     "exit_code": 1,
+     "outcome": "HIP101"
+    },
+    {
+     "index": 1,
+     "exit_code": 0,
+     "outcome": "PASS_AMD_GPU_EXECUTED_AND_PARITY"
+    }
+   ],
+   "multi": {
+    "exit_code": 0,
+    "outcome": "EP_MISSING_FROM_SESSION"
+   }
+  },
+  {
+   "ep": "MIGraphXExecutionProvider",
+   "enumerate_exit": 0,
+   "matching_devices": 2,
+   "total_ep_devices": 6,
+   "candidates": [
+    {
+     "index": 0,
+     "exit_code": 1,
+     "outcome": "HIP101"
+    },
+    {
+     "index": 1,
+     "exit_code": 0,
+     "outcome": "PASS_AMD_GPU_EXECUTED_AND_PARITY"
+    }
+   ],
+   "multi": {
+    "exit_code": 0,
+    "outcome": "EP_MISSING_FROM_SESSION"
+   }
+  }
+ ],
+ "dll_load_audit": {
+  "inventory_ref": "hip_runtime_inventory.json",
+  "epdev_AMDGPU_enumerate.json": {
+   "amdhip_loaded": [],
+   "module_count": 9
+  },
+  "epdev_AMDGPU_multi.json": {
+   "amdhip_loaded": [],
+   "module_count": 19
+  },
+  "epdev_AMDGPU_run_c0.json": {
+   "amdhip_loaded": [
+    "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdhip64_7.dll"
+   ],
+   "module_count": 25
+  },
+  "epdev_AMDGPU_run_c1.json": {
+   "amdhip_loaded": [
+    "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdhip64_7.dll"
+   ],
+   "module_count": 25
+  },
+  "epdev_MIGraphX_enumerate.json": {
+   "amdhip_loaded": [],
+   "module_count": 9
+  },
+  "epdev_MIGraphX_multi.json": {
+   "amdhip_loaded": [],
+   "module_count": 19
+  },
+  "epdev_MIGraphX_run_c0.json": {
+   "amdhip_loaded": [
+    "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdhip64_7.dll"
+   ],
+   "module_count": 25
+  },
+  "epdev_MIGraphX_run_c1.json": {
+   "amdhip_loaded": [
+    "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdhip64_7.dll"
+   ],
+   "module_count": 25
+  }
+ },
+ "finished_utc": "2026-11-16T23:34:16Z",
+ "exit_code": 0,
+ "outcome": "EPDEV_DONE"
+}

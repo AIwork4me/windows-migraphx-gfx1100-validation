@@ -1,0 +1,10 @@
+$ C:\AIwork4me\windows-migraphx-gfx1100-validation\venv-winml\Scripts\python.exe C:\AIwork4me\windows-migraphx-gfx1100-validation\runner\r1\ep_device_child.py --ep MIGraphXExecutionProvider --mode multi --candidate 0 --out C:\AIwork4me\windows-migraphx-gfx1100-validation\reports\r1\r1_20261116T232607Z\epdev_MIGraphX_multi.json --run-id r1_20261116T232607Z
+exit=0
+--- stdout ---
+*************** EP Error ***************
+EP Error C:\__w\1\s\win-onnxruntime\onnxruntime\core\session\plugin_ep\ep_plugin_provider_interfaces.cc:70 onnxruntime::PluginExecutionProviderFactory::CreateProvider Error creating execution provider: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : only supports selection for a single device
+ when using None
+Falling back to ['CPUExecutionProvider'] and retrying.
+****************************************
+MIGraphXExecutionProvider c0 multi: EP_MISSING_FROM_SESSION; providers=['CPUExecutionProvider']
+

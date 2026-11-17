@@ -1,0 +1,5 @@
+*************** EP Error ***************
+EP Error Unknown Provider Type: AMDGPUExecutionProvider when using ['AMDGPUExecutionProvider', 'CPUExecutionProvider']
+Falling back to ['CPUExecutionProvider'] and retrying.
+****************************************
+cell A: EP_UNREGISTERED_SILENT_CPU_FALLBACK; providers=['CPUExecutionProvider']

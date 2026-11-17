@@ -1,5 +1,7 @@
 # WIN-MIGRAPHX-GFX1100 Overnight Real-Machine Validation — Final Report (EN)
 
+> **R1 errata & revisions (added 2026-11-17)**: the driver-gating/HIP 101 attribution, the '#151 zero-warning' wording, the 30-min soak placeholder and the '52 synthetic ops' count in this report were revised by round R1 on-metal evidence; historical receipts unchanged. See [`reports/r1/ERRATA.md`](r1/ERRATA.md) and [`reports/r1/ROOT_CAUSE_REPORT_EN.md`](r1/ROOT_CAUSE_REPORT_EN.md).
+
 - Window: 2026-11-16 22:54 → 2026-11-17 (UTC+8), physical host (no WSL)
 - Repo: https://github.com/AIwork4me/windows-migraphx-gfx1100-validation (public)
 - Every claim below is backed by a receipt JSON under `reports/` (command, exit

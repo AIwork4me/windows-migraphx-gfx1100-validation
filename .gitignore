@@ -35,3 +35,5 @@ reports/**/*.parquet
 
 # ledger atomic-write temp files
 *.tmp
+
+/onnxruntime_profile__*.json

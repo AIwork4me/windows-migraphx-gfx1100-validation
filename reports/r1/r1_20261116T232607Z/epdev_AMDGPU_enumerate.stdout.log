@@ -1,0 +1,5 @@
+$ C:\AIwork4me\windows-migraphx-gfx1100-validation\venv-winml\Scripts\python.exe C:\AIwork4me\windows-migraphx-gfx1100-validation\runner\r1\ep_device_child.py --ep AMDGPUExecutionProvider --mode enumerate --out C:\AIwork4me\windows-migraphx-gfx1100-validation\reports\r1\r1_20261116T232607Z\epdev_AMDGPU_enumerate.json --run-id r1_20261116T232607Z
+exit=0
+--- stdout ---
+enumerated: 6 ep devices, 2 match AMDGPUExecutionProvider
+

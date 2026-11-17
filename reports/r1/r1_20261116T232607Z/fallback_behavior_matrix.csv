@@ -1,0 +1,19 @@
+ep,cell,exit_code,outcome,stdout_ep_error_block,stdout_falling_back,stderr_has_userwarning,providers,seconds
+AMDGPUExecutionProvider,A,0,EP_UNREGISTERED_SILENT_CPU_FALLBACK,True,True,True,['CPUExecutionProvider'],0.006
+AMDGPUExecutionProvider,B,1,HIP101,False,False,False,"['AMDGPUExecutionProvider', 'CPUExecutionProvider']",0.0364
+AMDGPUExecutionProvider,C0,1,HIP101,False,False,False,"['AMDGPUExecutionProvider', 'CPUExecutionProvider']",0.0369
+AMDGPUExecutionProvider,C1,0,PASS_AMD_GPU_EXECUTED_AND_PARITY,False,False,False,"['AMDGPUExecutionProvider', 'CPUExecutionProvider']",0.0375
+AMDGPUExecutionProvider,D,0,EP_MISSING_FROM_SESSION,True,True,True,['CPUExecutionProvider'],0.0069
+AMDGPUExecutionProvider,E,0,EP_MISSING_FROM_SESSION,False,False,False,['CPUExecutionProvider'],0.0045
+AMDGPUExecutionProvider,F1,0,EP_MISSING_FROM_SESSION,False,False,False,['CPUExecutionProvider'],0.0041
+AMDGPUExecutionProvider,F2,0,EP_MISSING_FROM_SESSION,False,False,False,['CPUExecutionProvider'],0.0044
+AMDGPUExecutionProvider,F3,1,HIP101,False,False,False,"['AMDGPUExecutionProvider', 'CPUExecutionProvider']",0.0402
+MIGraphXExecutionProvider,A,0,EP_UNREGISTERED_SILENT_CPU_FALLBACK,False,False,True,['CPUExecutionProvider'],0.0045
+MIGraphXExecutionProvider,B,0,EP_MISSING_FROM_SESSION,False,False,False,['CPUExecutionProvider'],0.0043
+MIGraphXExecutionProvider,C0,1,HIP101,False,False,False,"['MIGraphXExecutionProvider', 'CPUExecutionProvider']",0.0351
+MIGraphXExecutionProvider,C1,0,PASS_AMD_GPU_EXECUTED_AND_PARITY,False,False,False,"['MIGraphXExecutionProvider', 'CPUExecutionProvider']",0.0357
+MIGraphXExecutionProvider,D,0,EP_MISSING_FROM_SESSION,True,True,True,['CPUExecutionProvider'],0.0067
+MIGraphXExecutionProvider,E,0,EP_MISSING_FROM_SESSION,False,False,False,['CPUExecutionProvider'],0.0044
+MIGraphXExecutionProvider,F1,0,EP_MISSING_FROM_SESSION,False,False,False,['CPUExecutionProvider'],0.0042
+MIGraphXExecutionProvider,F2,0,EP_MISSING_FROM_SESSION,False,False,False,['CPUExecutionProvider'],0.0046
+MIGraphXExecutionProvider,F3,0,EP_MISSING_FROM_SESSION,False,False,False,['CPUExecutionProvider'],0.0046

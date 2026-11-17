@@ -1,0 +1,19 @@
+$ python C:\AIwork4me\windows-migraphx-gfx1100-validation\runner\phases\r1_hip_probe_child.py --dll C:\Program Files\WindowsApps\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\ExecutionProvider\amdhip64_7.dll --tag ep_amdhip64_7
+exit=0
+--- stdout ---
+[ep_amdhip64_7] load_dll: {'ok': True, 'mode': 'ctypes.CDLL(abs path)', 'step': 'load_dll'}
+[ep_amdhip64_7] resolved_module_path: {'path': 'C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdhip64_7.dll', 'step': 'resolved_module_path'}
+[ep_amdhip64_7] file_identity: {'sha256': '714990f5b64a767c467882fa5d8165da3cb6861942a834a602803387e533d6cc', 'size': 16153096, 'version': {'file_version': '7.14.2610.2', 'product_version': '7.14.2610.2'}, 'step': 'file_identity'}
+[ep_amdhip64_7] exports: {'hipGetDeviceCount': True, 'hipSetDevice': True, 'hipGetDevice': True, 'hipRuntimeGetVersion': True, 'hipDriverGetVersion': True, 'hipGetDeviceProperties': True, 'hipDeviceTotalMem': True, 'hipErrorString': False, 'hipGetVersionString': False, 'step': 'exports'}
+[ep_amdhip64_7] hipRuntimeGetVersion: {'rc': 0, 'name': 'hipSuccess', 'value': 71460850, 'step': 'hipRuntimeGetVersion'}
+[ep_amdhip64_7] hipDriverGetVersion: {'rc': 0, 'name': 'hipSuccess', 'value': 71460850, 'step': 'hipDriverGetVersion'}
+[ep_amdhip64_7] hipGetDeviceCount: {'rc': 0, 'name': 'hipSuccess', 'count': 1, 'step': 'hipGetDeviceCount'}
+[ep_amdhip64_7] set_device: {'ordinal': 0, 'hipSetDevice': {'rc': 0, 'name': 'hipSuccess'}, 'hipGetDevice': {'rc': 0, 'name': 'hipSuccess', 'value': 0}, 'step': 'set_device'}
+[ep_amdhip64_7] set_device: {'ordinal': 1, 'hipSetDevice': {'rc': 101, 'name': 'hipErrorInvalidDevice'}, 'hipGetDevice': {'rc': 0, 'name': 'hipSuccess', 'value': 0}, 'step': 'set_device'}
+[ep_amdhip64_7] set_device: {'ordinal': -1, 'hipSetDevice': {'rc': 101, 'name': 'hipErrorInvalidDevice'}, 'hipGetDevice': {'rc': 0, 'name': 'hipSuccess', 'value': 0}, 'step': 'set_device'}
+[ep_amdhip64_7] set_device: {'ordinal': 999, 'hipSetDevice': {'rc': 101, 'name': 'hipErrorInvalidDevice'}, 'hipGetDevice': {'rc': 0, 'name': 'hipSuccess', 'value': 0}, 'step': 'set_device'}
+[ep_amdhip64_7] device_props: {'ordinal': 0, 'rc': 0, 'strings': ['AMD Radeon RX 7900 XTX', 'gfx1100'], 'total_mem': 25753026560, 'step': 'device_props'}
+[ep_amdhip64_7] receipt -> C:\AIwork4me\windows-migraphx-gfx1100-validation\reports\r1\hip_probe_ep_amdhip64_7.json
+
+--- stderr ---
+

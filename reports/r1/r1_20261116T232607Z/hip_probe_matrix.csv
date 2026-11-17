@@ -1,0 +1,5 @@
+cell,dll,exit_code,verdict,receipt
+M1_ep_hip7_default,C:\Program Files\WindowsApps\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\ExecutionProvider\amdhip64_7.dll,0,HIP_SET_OK,reports/r1/r1_20261116T232607Z/hip_probe_M1_ep_hip7_default.json
+M2_sys_hip6_default,C:\Windows\System32\amdhip64_6.dll,0,HIP_SET_OK,reports/r1/r1_20261116T232607Z/hip_probe_M2_sys_hip6_default.json
+M3_ep_hip7_clearenv,C:\Program Files\WindowsApps\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\ExecutionProvider\amdhip64_7.dll,0,HIP_SET_OK,reports/r1/r1_20261116T232607Z/hip_probe_M3_ep_hip7_clearenv.json
+M4_ep_hip7_hipinit,C:\Program Files\WindowsApps\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\ExecutionProvider\amdhip64_7.dll,0,HIP_SET_OK,reports/r1/r1_20261116T232607Z/hip_probe_M4_ep_hip7_hipinit.json

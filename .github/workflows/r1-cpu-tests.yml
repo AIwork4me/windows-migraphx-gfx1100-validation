@@ -1,0 +1,28 @@
+name: r1-cpu-tests
+
+# Pure-CPU CI: static + unit tests only. This runner has NO AMD GPU and NO
+# WinML EP packages; nothing here can or does validate GPU execution. All
+# hardware claims live in reports/r1 receipts produced on the real host.
+
+on:
+  push:
+    branches: [main, "investigation/**"]
+  pull_request:
+    branches: [main]
+
+jobs:
+  cpu-tests:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install CPU-only test deps
+        run: pip install numpy onnx onnxruntime
+      - name: Compile all tracked python
+        run: python -m compileall -q runner tests
+      - name: Unit tests (fail-closed helpers, redaction)
+        run: python -m unittest discover -s tests -v
+      - name: Validate R1 ledger/manifests parse
+        run: python runner/r1/ci_parse_check.py

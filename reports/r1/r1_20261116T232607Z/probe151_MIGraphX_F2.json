@@ -1,0 +1,47 @@
+{
+ "schema_version": "r1/1",
+ "case_id": "r1_151_F2",
+ "run_id": "r1_20261116T232607Z",
+ "source_head": "c597e4f3a4bd4a98dbcca9ea36d0286ccb8bc65f",
+ "started_utc": "2026-11-16T23:37:37Z",
+ "real_hardware": true,
+ "isolated_subprocess": true,
+ "argv": [
+  "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\r1\\probe151_matrix_child.py",
+  "--cell",
+  "F2",
+  "--ep",
+  "MIGraphXExecutionProvider",
+  "--out",
+  "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\reports\\r1\\r1_20261116T232607Z\\probe151_MIGraphX_F2.json",
+  "--run-id",
+  "r1_20261116T232607Z"
+ ],
+ "host_summary": {
+  "machine": "AMD64",
+  "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "python": "3.12.16",
+  "os": "Windows-11-10.0.26300-SP0"
+ },
+ "cell": "F2",
+ "ep": "MIGraphXExecutionProvider",
+ "ort_version": "1.30.1",
+ "registration_ok": true,
+ "matching_devices": 2,
+ "providers_arg": [],
+ "device_api_devices": 0,
+ "session_create_seconds": 0.0046,
+ "session_get_providers": [
+  "CPUExecutionProvider"
+ ],
+ "parity_max_abs_diff": 0.0,
+ "node_attribution": [
+  {
+   "name": "Add_0_kernel_time",
+   "provider": "CPUExecutionProvider"
+  }
+ ],
+ "finished_utc": "2026-11-16T23:37:39Z",
+ "exit_code": 0,
+ "outcome": "EP_MISSING_FROM_SESSION"
+}

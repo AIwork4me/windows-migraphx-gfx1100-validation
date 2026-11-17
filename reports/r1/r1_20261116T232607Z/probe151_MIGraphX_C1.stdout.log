@@ -1,0 +1,1 @@
+cell C1: PASS_AMD_GPU_EXECUTED_AND_PARITY; providers=['MIGraphXExecutionProvider', 'CPUExecutionProvider']

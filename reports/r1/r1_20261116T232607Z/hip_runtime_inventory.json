@@ -1,0 +1,24 @@
+[
+ {
+  "path": "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdhip64_7.dll",
+  "present": true,
+  "sha256": "714990f5b64a767c467882fa5d8165da3cb6861942a834a602803387e533d6cc",
+  "size": 16153096,
+  "pe_machine": "x64",
+  "signature": {
+   "status": "Valid",
+   "signer": "CN=Advanced Micro Devices, O=Advanced Micro Devices, S=California, C=US"
+  }
+ },
+ {
+  "path": "C:\\Windows\\System32\\amdhip64_6.dll",
+  "present": true,
+  "sha256": "8fdb9c0d0b32b96454d092845311912e64b28594ea68f27e8511e1bb16db5b6c",
+  "size": 17906624,
+  "pe_machine": "x64",
+  "signature": {
+   "status": "Valid",
+   "signer": "CN=Microsoft Windows Hardware Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+  }
+ }
+]

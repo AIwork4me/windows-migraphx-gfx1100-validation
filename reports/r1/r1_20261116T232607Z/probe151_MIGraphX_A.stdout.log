@@ -1,0 +1,1 @@
+cell A: EP_UNREGISTERED_SILENT_CPU_FALLBACK; providers=['CPUExecutionProvider']

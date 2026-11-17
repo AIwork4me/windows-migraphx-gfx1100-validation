@@ -1,0 +1,267 @@
+{
+ "schema_version": "r1/1",
+ "case_id": "r1_151_matrix_supervisor",
+ "run_id": "r1_20261116T232607Z",
+ "source_head": "c597e4f3a4bd4a98dbcca9ea36d0286ccb8bc65f",
+ "started_utc": "2026-11-16T23:37:10Z",
+ "real_hardware": true,
+ "isolated_subprocess": true,
+ "argv": [
+  "runner/r1/probe151_matrix_supervisor.py",
+  "--run-id",
+  "r1_20261116T232607Z",
+  "--timeout",
+  "200"
+ ],
+ "host_summary": {
+  "machine": "AMD64",
+  "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "python": "3.12.10",
+  "os": "Windows-11-10.0.26300-SP0"
+ },
+ "matrix": [
+  {
+   "ep": "AMDGPUExecutionProvider",
+   "cell": "A",
+   "exit_code": 0,
+   "outcome": "EP_UNREGISTERED_SILENT_CPU_FALLBACK",
+   "stdout_ep_error_block": true,
+   "stdout_falling_back": true,
+   "stderr_has_userwarning": true,
+   "providers": [
+    "CPUExecutionProvider"
+   ],
+   "seconds": 0.006
+  },
+  {
+   "ep": "AMDGPUExecutionProvider",
+   "cell": "B",
+   "exit_code": 1,
+   "outcome": "HIP101",
+   "stdout_ep_error_block": false,
+   "stdout_falling_back": false,
+   "stderr_has_userwarning": false,
+   "providers": [
+    "AMDGPUExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "seconds": 0.0364
+  },
+  {
+   "ep": "AMDGPUExecutionProvider",
+   "cell": "C0",
+   "exit_code": 1,
+   "outcome": "HIP101",
+   "stdout_ep_error_block": false,
+   "stdout_falling_back": false,
+   "stderr_has_userwarning": false,
+   "providers": [
+    "AMDGPUExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "seconds": 0.0369
+  },
+  {
+   "ep": "AMDGPUExecutionProvider",
+   "cell": "C1",
+   "exit_code": 0,
+   "outcome": "PASS_AMD_GPU_EXECUTED_AND_PARITY",
+   "stdout_ep_error_block": false,
+   "stdout_falling_back": false,
+   "stderr_has_userwarning": false,
+   "providers": [
+    "AMDGPUExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "seconds": 0.0375
+  },
+  {
+   "ep": "AMDGPUExecutionProvider",
+   "cell": "D",
+   "exit_code": 0,
+   "outcome": "EP_MISSING_FROM_SESSION",
+   "stdout_ep_error_block": true,
+   "stdout_falling_back": true,
+   "stderr_has_userwarning": true,
+   "providers": [
+    "CPUExecutionProvider"
+   ],
+   "seconds": 0.0069
+  },
+  {
+   "ep": "AMDGPUExecutionProvider",
+   "cell": "E",
+   "exit_code": 0,
+   "outcome": "EP_MISSING_FROM_SESSION",
+   "stdout_ep_error_block": false,
+   "stdout_falling_back": false,
+   "stderr_has_userwarning": false,
+   "providers": [
+    "CPUExecutionProvider"
+   ],
+   "seconds": 0.0045
+  },
+  {
+   "ep": "AMDGPUExecutionProvider",
+   "cell": "F1",
+   "exit_code": 0,
+   "outcome": "EP_MISSING_FROM_SESSION",
+   "stdout_ep_error_block": false,
+   "stdout_falling_back": false,
+   "stderr_has_userwarning": false,
+   "providers": [
+    "CPUExecutionProvider"
+   ],
+   "seconds": 0.0041
+  },
+  {
+   "ep": "AMDGPUExecutionProvider",
+   "cell": "F2",
+   "exit_code": 0,
+   "outcome": "EP_MISSING_FROM_SESSION",
+   "stdout_ep_error_block": false,
+   "stdout_falling_back": false,
+   "stderr_has_userwarning": false,
+   "providers": [
+    "CPUExecutionProvider"
+   ],
+   "seconds": 0.0044
+  },
+  {
+   "ep": "AMDGPUExecutionProvider",
+   "cell": "F3",
+   "exit_code": 1,
+   "outcome": "HIP101",
+   "stdout_ep_error_block": false,
+   "stdout_falling_back": false,
+   "stderr_has_userwarning": false,
+   "providers": [
+    "AMDGPUExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "seconds": 0.0402
+  },
+  {
+   "ep": "MIGraphXExecutionProvider",
+   "cell": "A",
+   "exit_code": 0,
+   "outcome": "EP_UNREGISTERED_SILENT_CPU_FALLBACK",
+   "stdout_ep_error_block": false,
+   "stdout_falling_back": false,
+   "stderr_has_userwarning": true,
+   "providers": [
+    "CPUExecutionProvider"
+   ],
+   "seconds": 0.0045
+  },
+  {
+   "ep": "MIGraphXExecutionProvider",
+   "cell": "B",
+   "exit_code": 0,
+   "outcome": "EP_MISSING_FROM_SESSION",
+   "stdout_ep_error_block": false,
+   "stdout_falling_back": false,
+   "stderr_has_userwarning": false,
+   "providers": [
+    "CPUExecutionProvider"
+   ],
+   "seconds": 0.0043
+  },
+  {
+   "ep": "MIGraphXExecutionProvider",
+   "cell": "C0",
+   "exit_code": 1,
+   "outcome": "HIP101",
+   "stdout_ep_error_block": false,
+   "stdout_falling_back": false,
+   "stderr_has_userwarning": false,
+   "providers": [
+    "MIGraphXExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "seconds": 0.0351
+  },
+  {
+   "ep": "MIGraphXExecutionProvider",
+   "cell": "C1",
+   "exit_code": 0,
+   "outcome": "PASS_AMD_GPU_EXECUTED_AND_PARITY",
+   "stdout_ep_error_block": false,
+   "stdout_falling_back": false,
+   "stderr_has_userwarning": false,
+   "providers": [
+    "MIGraphXExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "seconds": 0.0357
+  },
+  {
+   "ep": "MIGraphXExecutionProvider",
+   "cell": "D",
+   "exit_code": 0,
+   "outcome": "EP_MISSING_FROM_SESSION",
+   "stdout_ep_error_block": true,
+   "stdout_falling_back": true,
+   "stderr_has_userwarning": true,
+   "providers": [
+    "CPUExecutionProvider"
+   ],
+   "seconds": 0.0067
+  },
+  {
+   "ep": "MIGraphXExecutionProvider",
+   "cell": "E",
+   "exit_code": 0,
+   "outcome": "EP_MISSING_FROM_SESSION",
+   "stdout_ep_error_block": false,
+   "stdout_falling_back": false,
+   "stderr_has_userwarning": false,
+   "providers": [
+    "CPUExecutionProvider"
+   ],
+   "seconds": 0.0044
+  },
+  {
+   "ep": "MIGraphXExecutionProvider",
+   "cell": "F1",
+   "exit_code": 0,
+   "outcome": "EP_MISSING_FROM_SESSION",
+   "stdout_ep_error_block": false,
+   "stdout_falling_back": false,
+   "stderr_has_userwarning": false,
+   "providers": [
+    "CPUExecutionProvider"
+   ],
+   "seconds": 0.0042
+  },
+  {
+   "ep": "MIGraphXExecutionProvider",
+   "cell": "F2",
+   "exit_code": 0,
+   "outcome": "EP_MISSING_FROM_SESSION",
+   "stdout_ep_error_block": false,
+   "stdout_falling_back": false,
+   "stderr_has_userwarning": false,
+   "providers": [
+    "CPUExecutionProvider"
+   ],
+   "seconds": 0.0046
+  },
+  {
+   "ep": "MIGraphXExecutionProvider",
+   "cell": "F3",
+   "exit_code": 0,
+   "outcome": "EP_MISSING_FROM_SESSION",
+   "stdout_ep_error_block": false,
+   "stdout_falling_back": false,
+   "stderr_has_userwarning": false,
+   "providers": [
+    "CPUExecutionProvider"
+   ],
+   "seconds": 0.0046
+  }
+ ],
+ "finished_utc": "2026-11-16T23:37:41Z",
+ "exit_code": 0,
+ "outcome": "MATRIX_DONE"
+}
