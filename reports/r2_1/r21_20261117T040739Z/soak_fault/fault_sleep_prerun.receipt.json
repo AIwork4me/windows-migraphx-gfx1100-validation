@@ -1,0 +1,204 @@
+{
+ "case": "fault_sleep_prerun",
+ "cmd": "-I C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\r2_1\\soak_rca_child.py --model C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\artifacts\\models\\yolo26n.onnx --ep ...",
+ "argv": [
+  "-I",
+  "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\r2_1\\soak_rca_child.py",
+  "--model",
+  "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\artifacts\\models\\yolo26n.onnx",
+  "--ep",
+  "MIGraphXExecutionProvider",
+  "--minutes",
+  "0.2",
+  "--recreate-every",
+  "0",
+  "--out",
+  "reports/r2_1/r21_20261117T040739Z/soak_fault\\fault_sleep_prerun.jsonl",
+  "--log-every",
+  "500",
+  "--fault",
+  "sleep_prerun",
+  "--teardown",
+  "none",
+  "--exit-mode",
+  "os_exit"
+ ],
+ "budget_s": 12,
+ "started_utc": "2026-11-17T04:25:14Z",
+ "samples": [
+  {
+   "t": "2026-11-17T04:25:14Z",
+   "alive": true,
+   "rss_mb": 2.1,
+   "threads": 3,
+   "handles": 57,
+   "cpu_user_s": 0.0,
+   "cpu_system_s": 0.0,
+   "status": "running",
+   "cpu_rate": null
+  },
+  {
+   "t": "2026-11-17T04:25:19Z",
+   "alive": true,
+   "rss_mb": 5.2,
+   "threads": 3,
+   "handles": 61,
+   "cpu_user_s": 0.02,
+   "cpu_system_s": 0.0,
+   "status": "running",
+   "cpu_rate": 0.0
+  },
+  {
+   "t": "2026-11-17T04:25:24Z",
+   "alive": true,
+   "rss_mb": 5.2,
+   "threads": 3,
+   "handles": 61,
+   "cpu_user_s": 0.02,
+   "cpu_system_s": 0.0,
+   "status": "running",
+   "cpu_rate": 0.0
+  },
+  {
+   "t": "2026-11-17T04:25:29Z",
+   "alive": true,
+   "rss_mb": 5.2,
+   "threads": 3,
+   "handles": 61,
+   "cpu_user_s": 0.02,
+   "cpu_system_s": 0.0,
+   "status": "running",
+   "cpu_rate": 0.0
+  },
+  {
+   "t": "2026-11-17T04:25:34Z",
+   "alive": true,
+   "rss_mb": 5.2,
+   "threads": 3,
+   "handles": 61,
+   "cpu_user_s": 0.02,
+   "cpu_system_s": 0.0,
+   "status": "running",
+   "cpu_rate": 0.0
+  },
+  {
+   "t": "2026-11-17T04:25:39Z",
+   "alive": true,
+   "rss_mb": 5.2,
+   "threads": 3,
+   "handles": 61,
+   "cpu_user_s": 0.02,
+   "cpu_system_s": 0.0,
+   "status": "running",
+   "cpu_rate": 0.0
+  },
+  {
+   "t": "2026-11-17T04:25:44Z",
+   "alive": true,
+   "rss_mb": 5.1,
+   "threads": 1,
+   "handles": 61,
+   "cpu_user_s": 0.02,
+   "cpu_system_s": 0.0,
+   "status": "running",
+   "cpu_rate": 0.0
+  },
+  {
+   "t": "2026-11-17T04:25:49Z",
+   "alive": true,
+   "rss_mb": 5.1,
+   "threads": 1,
+   "handles": 61,
+   "cpu_user_s": 0.02,
+   "cpu_system_s": 0.0,
+   "status": "running",
+   "cpu_rate": 0.0
+  },
+  {
+   "t": "2026-11-17T04:25:54Z",
+   "alive": true,
+   "rss_mb": 5.1,
+   "threads": 1,
+   "handles": 61,
+   "cpu_user_s": 0.02,
+   "cpu_system_s": 0.0,
+   "status": "running",
+   "cpu_rate": 0.0
+  },
+  {
+   "t": "2026-11-17T04:25:59Z",
+   "alive": true,
+   "rss_mb": 5.1,
+   "threads": 1,
+   "handles": 61,
+   "cpu_user_s": 0.02,
+   "cpu_system_s": 0.0,
+   "status": "running",
+   "cpu_rate": 0.0
+  },
+  {
+   "t": "2026-11-17T04:26:04Z",
+   "alive": true,
+   "rss_mb": 5.1,
+   "threads": 1,
+   "handles": 61,
+   "cpu_user_s": 0.02,
+   "cpu_system_s": 0.0,
+   "status": "running",
+   "cpu_rate": 0.0
+  },
+  {
+   "t": "2026-11-17T04:26:09Z",
+   "alive": true,
+   "rss_mb": 5.1,
+   "threads": 1,
+   "handles": 61,
+   "cpu_user_s": 0.02,
+   "cpu_system_s": 0.0,
+   "status": "running",
+   "cpu_rate": 0.0
+  },
+  {
+   "t": "2026-11-17T04:26:14Z",
+   "alive": true,
+   "rss_mb": 5.1,
+   "threads": 1,
+   "handles": 61,
+   "cpu_user_s": 0.02,
+   "cpu_system_s": 0.0,
+   "status": "running",
+   "cpu_rate": 0.0
+  }
+ ],
+ "pid": 12084,
+ "forensics": {
+  "last_events": [
+   "{\"t_mono\": 0.005, \"t_utc\": \"2026-11-17T04:25:14.301Z\", \"pid\": 7156, \"ppid\": 12084, \"iter\": 0, \"stage\": \"spawn\", \"argv_hash\": \"d95676ceaa7e\", \"model\": \"yolo26n.onnx\", \"ep\": \"MIGraphXExecutionProvider\", \"minutes\": 0.2, \"recreate_every\": 0, \"fault\": \"sleep_prerun\", \"teardown\": \"none\", \"exit_mode\": \"os_exit\", \"ort\": \"1.30.1\"}",
+   "{\"t_mono\": 0.018, \"t_utc\": \"2026-11-17T04:25:14.314Z\", \"pid\": 7156, \"ppid\": 12084, \"iter\": 0, \"stage\": \"fault:sleep_prerun\"}"
+  ],
+  "final_sample": {
+   "t": "2026-11-17T04:26:15Z",
+   "alive": true,
+   "rss_mb": 5.1,
+   "threads": 1,
+   "handles": 61,
+   "cpu_user_s": 0.02,
+   "cpu_system_s": 0.0,
+   "status": "running",
+   "cpu_rate": null
+  },
+  "stall_detail": {
+   "stage": "fault:sleep_prerun",
+   "stage_base": "fault",
+   "iter": 0,
+   "no_progress_s": 60.5,
+   "grace_s": 60
+  }
+ },
+ "classification": "TIMEOUT_STALL",
+ "exit_code": 15,
+ "wall_s": 61.5,
+ "jsonl_events": 2,
+ "last_event": "{\"t_mono\": 0.018, \"t_utc\": \"2026-11-17T04:25:14.314Z\", \"pid\": 7156, \"ppid\": 12084, \"iter\": 0, \"stage\": \"fault:sleep_prerun\"}",
+ "finished_utc": "2026-11-17T04:26:15Z"
+}

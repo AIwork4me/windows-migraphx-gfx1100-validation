@@ -1,5 +1,11 @@
 # R2 最终报告（中文）— Windows AMD EP 设备身份与真实模型验证
 
+> **R2.1 勘误（2026-11-17）**：本报告有 8 处表述已在
+> `reports/r2_1/r21_20261117T040739Z/R21_ERRATA.md` 更正（每 EP 117 合成 PASS 口径、
+> YOLO 加速比为 mean 比而非 p50 比、1314→1319 manifest 计数、LATEST.md 过期 SHA、
+> bus.jpg 实际已入库、MODEL_MATRIX 空投影、soak 结论措辞、CI 门禁强度）。
+> 原始 run 目录 `reports/r2/r2_20261117T004504Z/` 未改动。
+
 Run: `r2_20261117T004504Z`｜主机：原生 Windows 11 26300 + Radeon RX 7900 XTX (gfx1100)｜
 ORT: onnxruntime-windowsml 1.30.1（插件 EP 构建）｜AMD EP 包：Microsoft.WinML.AMD.GPU.EP.Framework.2 1.8.65.0（官方 MSIX，未改动）
 证据根目录：`reports/r2/r2_20261117T004504Z/`（1314 文件，SHA256 manifest 自校验通过；脱敏扫描 0 命中）

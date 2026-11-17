@@ -1,5 +1,12 @@
 # R2 Final Report (EN) — Windows AMD EP device identity & real-model validation
 
+> **R2.1 Errata (2026-11-17)**: eight statements in this report are corrected
+> in `reports/r2_1/r21_20261117T040739Z/R21_ERRATA.md` (per-EP 117 = 111
+> synthetic + 6 real, YOLO speedup is a ratio of means not p50s, manifest
+> entry count 1319 not 1314, stale LATEST.md SHA, bus.jpg is tracked,
+> empty MODEL_MATRIX projection superseded, soak wording, CI gate strength).
+> The frozen run dir `reports/r2/r2_20261117T004504Z/` is unmodified.
+
 Run `r2_20261117T004504Z` on native Windows 11 26300 + RX 7900 XTX (gfx1100),
 onnxruntime-windowsml 1.30.1, official WinML AMD EP MSIX 1.8.65.0 (untouched).
 Evidence root: `reports/r2/r2_20261117T004504Z/` (1314 files, self-verified
