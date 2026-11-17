@@ -1,0 +1,43 @@
+{
+ "validated": false,
+ "resolved_module_path": "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdhip64_7.dll",
+ "sha256": "714990f5b64a767c467882fa5d8165da3cb6861942a834a602803387e533d6cc",
+ "hipGetDeviceCount": {
+  "rc": 0,
+  "count": 1
+ },
+ "devices": [
+  {
+   "ordinal": 0,
+   "attributes": {
+    "pci_bus_id": {
+     "rc": 0,
+     "value": 0,
+     "attr_enum": 13
+    },
+    "pci_device_id": {
+     "rc": 0,
+     "value": 1,
+     "attr_enum": 14
+    },
+    "pci_domain_id": {
+     "rc": 0,
+     "value": 64,
+     "attr_enum": 25
+    }
+   },
+   "hipDeviceTotalMem": {
+    "rc": 0,
+    "bytes": 25753026560
+   },
+   "hipGetDeviceProperties": {
+    "rc": 0,
+    "ascii_strings_found": [
+     "AMD Radeon RX 7900 XTX",
+     "gfx1100"
+    ]
+   }
+  }
+ ],
+ "bdf_match_ordinal0": false
+}

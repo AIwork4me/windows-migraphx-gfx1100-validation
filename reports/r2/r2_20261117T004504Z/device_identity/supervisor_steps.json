@@ -1,0 +1,113 @@
+{
+ "started_utc": "2026-11-17T00:47:39Z",
+ "run_id": "r2_20261117T004504Z",
+ "pnp_target_gpu": {
+  "Name": "AMD Radeon RX 7900 XTX",
+  "InstanceId": "PCI\\VEN_1002&DEV_744C&SUBSYS_0E3B1002&REV_C8\\6&13FD3BF3&0&00000008",
+  "Status": "OK",
+  "Location": "PCI bus 3, device 0, function 0",
+  "HardwareIds": [
+   "PCI\\VEN_1002&DEV_744C&SUBSYS_0E3B1002&REV_C8",
+   "PCI\\VEN_1002&DEV_744C&SUBSYS_0E3B1002",
+   "PCI\\VEN_1002&DEV_744C&CC_030000",
+   "PCI\\VEN_1002&DEV_744C&CC_0300"
+  ],
+  "pci_bdf": {
+   "bus": 3,
+   "device": 0,
+   "function": 0,
+   "raw": "PCI bus 3, device 0, function 0"
+  }
+ },
+ "dxgi_probe": {
+  "argv": [
+   "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-cpu\\Scripts\\python.exe",
+   "-I",
+   "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\r2\\dxgi_probe.py",
+   "--out",
+   "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\reports\\r2\\r2_20261117T004504Z\\device_identity\\dxgi_adapters.json"
+  ],
+  "rc": 0,
+  "stdout_log": "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\reports\\r2\\r2_20261117T004504Z\\device_identity\\dxgi_adapters.stdout.log",
+  "stderr_log": "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\reports\\r2\\r2_20261117T004504Z\\device_identity\\dxgi_adapters.stderr.log"
+ },
+ "hip_probe_ep_hip7": {
+  "argv": [
+   "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-cpu\\Scripts\\python.exe",
+   "-I",
+   "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\r2\\hip_identity_probe.py",
+   "--dll",
+   "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdhip64_7.dll",
+   "--tag",
+   "ep_hip7",
+   "--out",
+   "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\reports\\r2\\r2_20261117T004504Z\\device_identity\\hip_identity_ep_hip7.json",
+   "--expect-bus",
+   "3",
+   "--expect-device",
+   "0",
+   "--expect-domain",
+   "0"
+  ],
+  "rc": 3,
+  "stdout_log": "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\reports\\r2\\r2_20261117T004504Z\\device_identity\\hip_identity_ep_hip7.stdout.log",
+  "stderr_log": "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\reports\\r2\\r2_20261117T004504Z\\device_identity\\hip_identity_ep_hip7.stderr.log"
+ },
+ "hip_probe_sys_hip6": {
+  "argv": [
+   "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-cpu\\Scripts\\python.exe",
+   "-I",
+   "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\r2\\hip_identity_probe.py",
+   "--dll",
+   "C:\\Windows\\System32\\amdhip64_6.dll",
+   "--tag",
+   "sys_hip6",
+   "--out",
+   "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\reports\\r2\\r2_20261117T004504Z\\device_identity\\hip_identity_sys_hip6.json",
+   "--expect-bus",
+   "3",
+   "--expect-device",
+   "0",
+   "--expect-domain",
+   "0"
+  ],
+  "rc": 3,
+  "stdout_log": "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\reports\\r2\\r2_20261117T004504Z\\device_identity\\hip_identity_sys_hip6.stdout.log",
+  "stderr_log": "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\reports\\r2\\r2_20261117T004504Z\\device_identity\\hip_identity_sys_hip6.stderr.log"
+ },
+ "epdev_AMDGPUExecutionProvider": {
+  "argv": [
+   "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Scripts\\python.exe",
+   "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\r1\\ep_device_child.py",
+   "--ep",
+   "AMDGPUExecutionProvider",
+   "--mode",
+   "enumerate",
+   "--out",
+   "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\reports\\r2\\r2_20261117T004504Z\\device_identity\\epdev_AMDGPU_enumerate.json",
+   "--run-id",
+   "r2_20261117T004504Z"
+  ],
+  "rc": 0,
+  "stdout_log": "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\reports\\r2\\r2_20261117T004504Z\\device_identity\\epdev_AMDGPU_enumerate.stdout.log",
+  "stderr_log": "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\reports\\r2\\r2_20261117T004504Z\\device_identity\\epdev_AMDGPU_enumerate.stderr.log"
+ },
+ "epdev_MIGraphXExecutionProvider": {
+  "argv": [
+   "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Scripts\\python.exe",
+   "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\r1\\ep_device_child.py",
+   "--ep",
+   "MIGraphXExecutionProvider",
+   "--mode",
+   "enumerate",
+   "--out",
+   "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\reports\\r2\\r2_20261117T004504Z\\device_identity\\epdev_MIGraphX_enumerate.json",
+   "--run-id",
+   "r2_20261117T004504Z"
+  ],
+  "rc": 0,
+  "stdout_log": "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\reports\\r2\\r2_20261117T004504Z\\device_identity\\epdev_MIGraphX_enumerate.stdout.log",
+  "stderr_log": "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\reports\\r2\\r2_20261117T004504Z\\device_identity\\epdev_MIGraphX_enumerate.stderr.log"
+ },
+ "finished_utc": "2026-11-17T00:47:51Z"
+}

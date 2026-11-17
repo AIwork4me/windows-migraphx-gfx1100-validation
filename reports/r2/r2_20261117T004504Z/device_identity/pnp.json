@@ -1,0 +1,86 @@
+{
+ "PnP": [
+  {
+   "Name": "GameViewer Virtual Display Adapter",
+   "InstanceId": "ROOT\\DISPLAY\\0000",
+   "Status": "OK",
+   "Location": null,
+   "HardwareIds": [
+    "Root\\GameViewerIddDriver"
+   ],
+   "pci_bdf": null
+  },
+  {
+   "Name": "Microsoft Remote Display Adapter",
+   "InstanceId": "SWD\\REMOTEDISPLAYENUM\\RDPIDD_INDIRECTDISPLAY&SESSIONID_0002",
+   "Status": "OK",
+   "Location": null,
+   "HardwareIds": [
+    "RdpIdd_IndirectDisplay"
+   ],
+   "pci_bdf": null
+  },
+  {
+   "Name": "AMD Radeon RX 7900 XTX",
+   "InstanceId": "PCI\\VEN_1002&DEV_744C&SUBSYS_0E3B1002&REV_C8\\6&13FD3BF3&0&00000008",
+   "Status": "OK",
+   "Location": "PCI bus 3, device 0, function 0",
+   "HardwareIds": [
+    "PCI\\VEN_1002&DEV_744C&SUBSYS_0E3B1002&REV_C8",
+    "PCI\\VEN_1002&DEV_744C&SUBSYS_0E3B1002",
+    "PCI\\VEN_1002&DEV_744C&CC_030000",
+    "PCI\\VEN_1002&DEV_744C&CC_0300"
+   ],
+   "pci_bdf": {
+    "bus": 3,
+    "device": 0,
+    "function": 0,
+    "raw": "PCI bus 3, device 0, function 0"
+   }
+  },
+  {
+   "Name": "Intel(R) UHD Graphics 770",
+   "InstanceId": "PCI\\VEN_8086&DEV_A780&SUBSYS_D0001458&REV_04\\3&11583659&0&10",
+   "Status": "OK",
+   "Location": "PCI bus 0, device 2, function 0",
+   "HardwareIds": [
+    "PCI\\VEN_8086&DEV_A780&SUBSYS_D0001458&REV_04",
+    "PCI\\VEN_8086&DEV_A780&SUBSYS_D0001458",
+    "PCI\\VEN_8086&DEV_A780&CC_030000",
+    "PCI\\VEN_8086&DEV_A780&CC_0300"
+   ],
+   "pci_bdf": {
+    "bus": 0,
+    "device": 2,
+    "function": 0,
+    "raw": "PCI bus 0, device 2, function 0"
+   }
+  }
+ ],
+ "VideoControllers": [
+  {
+   "Name": "GameViewer Virtual Display Adapter",
+   "PNPDeviceID": "ROOT\\DISPLAY\\0000",
+   "DriverVersion": "15.6.5.199",
+   "AdapterCompatibility": "GameViewer"
+  },
+  {
+   "Name": "AMD Radeon RX 7900 XTX",
+   "PNPDeviceID": "PCI\\VEN_1002&DEV_744C&SUBSYS_0E3B1002&REV_C8\\6&13FD3BF3&0&00000008",
+   "DriverVersion": "32.0.21030.2001",
+   "AdapterCompatibility": "Advanced Micro Devices, Inc."
+  },
+  {
+   "Name": "Intel(R) UHD Graphics 770",
+   "PNPDeviceID": "PCI\\VEN_8086&DEV_A780&SUBSYS_D0001458&REV_04\\3&11583659&0&10",
+   "DriverVersion": "32.0.101.6129",
+   "AdapterCompatibility": "Intel Corporation"
+  },
+  {
+   "Name": "Microsoft Remote Display Adapter",
+   "PNPDeviceID": "SWD\\REMOTEDISPLAYENUM\\RDPIDD_INDIRECTDISPLAY&SESSIONID_0002",
+   "DriverVersion": "10.0.26100.9818",
+   "AdapterCompatibility": "Microsoft"
+  }
+ ]
+}

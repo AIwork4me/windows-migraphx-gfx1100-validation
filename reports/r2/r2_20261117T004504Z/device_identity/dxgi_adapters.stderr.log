@@ -1,0 +1,2 @@
+C:\AIwork4me\windows-migraphx-gfx1100-validation\runner\r2\dxgi_probe.py:31: SyntaxWarning: invalid escape sequence '\D'
+  table (joins DXGI adapters to GDI \\.\DISPLAYn and PnP DeviceID).

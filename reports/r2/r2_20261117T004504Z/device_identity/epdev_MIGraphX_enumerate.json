@@ -1,0 +1,190 @@
+{
+ "schema_version": "r1/1",
+ "case_id": "r1_epdev_MIGraphXExecutionProvider_enumerate",
+ "run_id": "r2_20261117T004504Z",
+ "source_head": "<unset>",
+ "started_utc": "2026-11-17T00:47:50Z",
+ "real_hardware": true,
+ "isolated_subprocess": true,
+ "argv": [
+  "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\r1\\ep_device_child.py",
+  "--ep",
+  "MIGraphXExecutionProvider",
+  "--mode",
+  "enumerate",
+  "--out",
+  "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\reports\\r2\\r2_20261117T004504Z\\device_identity\\epdev_MIGraphX_enumerate.json",
+  "--run-id",
+  "r2_20261117T004504Z"
+ ],
+ "host_summary": {
+  "machine": "AMD64",
+  "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "python": "3.12.16",
+  "os": "Windows-11-10.0.26300-SP0"
+ },
+ "ep": "MIGraphXExecutionProvider",
+ "mode": "enumerate",
+ "candidate": 0,
+ "ort_version": "1.30.1",
+ "ep_library": "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdgpu-ep.dll",
+ "registration": {
+  "ok": true,
+  "lib": "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdgpu-ep.dll"
+ },
+ "total_ep_devices": 6,
+ "matching_devices": 2,
+ "all_ep_names": [
+  "CPUExecutionProvider",
+  "DmlExecutionProvider",
+  "MIGraphXExecutionProvider"
+ ],
+ "devices": [
+  {
+   "index": 0,
+   "ep_name": "CPUExecutionProvider",
+   "ep_vendor": "Microsoft",
+   "ep_metadata": "{'version': '1.30.1'}",
+   "ep_options": "{}",
+   "device": {
+    "repr": "<onnxruntime.capi.onnxruntime_pybind11_state.OrtHardwareDevice object at 0x000002890A9D4870>",
+    "vendor": "Intel",
+    "type": "OrtHardwareDeviceType.CPU",
+    "vendor_id": 32902,
+    "device_id": 7,
+    "metadata": "{'Description': '13th Gen Intel(R) Core(TM) i7-13700K'}",
+    "_dir_public": [
+     "device_id",
+     "metadata",
+     "type",
+     "vendor",
+     "vendor_id"
+    ]
+   }
+  },
+  {
+   "index": 1,
+   "ep_name": "DmlExecutionProvider",
+   "ep_vendor": "Microsoft",
+   "ep_metadata": "{'version': '1.30.1'}",
+   "ep_options": "{'device_id': '2'}",
+   "device": {
+    "repr": "<onnxruntime.capi.onnxruntime_pybind11_state.OrtHardwareDevice object at 0x000002890A9D3DF0>",
+    "vendor": "Intel Corporation",
+    "type": "OrtHardwareDeviceType.GPU",
+    "vendor_id": 32902,
+    "device_id": 42880,
+    "metadata": "{'Description': 'Intel(R) UHD Graphics 770', 'Discrete': '0', 'DxgiAdapterNumber': '2', 'DxgiHighPerformanceIndex': '2', 'DxgiVideoMemory': '128 MB', 'LUID': '80099'}",
+    "_dir_public": [
+     "device_id",
+     "metadata",
+     "type",
+     "vendor",
+     "vendor_id"
+    ]
+   }
+  },
+  {
+   "index": 2,
+   "ep_name": "DmlExecutionProvider",
+   "ep_vendor": "Microsoft",
+   "ep_metadata": "{'version': '1.30.1'}",
+   "ep_options": "{'device_id': '1'}",
+   "device": {
+    "repr": "<onnxruntime.capi.onnxruntime_pybind11_state.OrtHardwareDevice object at 0x000002890A9D3DF0>",
+    "vendor": "Advanced Micro Devices, Inc.",
+    "type": "OrtHardwareDeviceType.GPU",
+    "vendor_id": 4098,
+    "device_id": 29772,
+    "metadata": "{'Description': 'AMD Radeon RX 7900 XTX', 'DxgiAdapterNumber': '1', 'DxgiHighPerformanceIndex': '1', 'DxgiVideoMemory': '24560 MB', 'LUID': '118045'}",
+    "_dir_public": [
+     "device_id",
+     "metadata",
+     "type",
+     "vendor",
+     "vendor_id"
+    ]
+   }
+  },
+  {
+   "index": 3,
+   "ep_name": "DmlExecutionProvider",
+   "ep_vendor": "Microsoft",
+   "ep_metadata": "{'version': '1.30.1'}",
+   "ep_options": "{'device_id': '0'}",
+   "device": {
+    "repr": "<onnxruntime.capi.onnxruntime_pybind11_state.OrtHardwareDevice object at 0x000002890BA52CB0>",
+    "vendor": "Advanced Micro Devices, Inc.",
+    "type": "OrtHardwareDeviceType.GPU",
+    "vendor_id": 4098,
+    "device_id": 29772,
+    "metadata": "{'Description': 'AMD Radeon RX 7900 XTX', 'Discrete': '1', 'DxgiAdapterNumber': '0', 'DxgiHighPerformanceIndex': '0', 'DxgiVideoMemory': '24560 MB', 'LUID': '72346'}",
+    "_dir_public": [
+     "device_id",
+     "metadata",
+     "type",
+     "vendor",
+     "vendor_id"
+    ]
+   }
+  },
+  {
+   "index": 4,
+   "ep_name": "MIGraphXExecutionProvider",
+   "ep_vendor": "AMD",
+   "ep_metadata": "{'library_path': 'C:\\\\Program Files\\\\WindowsApps\\\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\\\ExecutionProvider\\\\amdgpu-ep.dll', 'version': '0.1.0'}",
+   "ep_options": "{}",
+   "device": {
+    "repr": "<onnxruntime.capi.onnxruntime_pybind11_state.OrtHardwareDevice object at 0x000002890A9D36B0>",
+    "vendor": "Advanced Micro Devices, Inc.",
+    "type": "OrtHardwareDeviceType.GPU",
+    "vendor_id": 4098,
+    "device_id": 29772,
+    "metadata": "{'Description': 'AMD Radeon RX 7900 XTX', 'DxgiAdapterNumber': '1', 'DxgiHighPerformanceIndex': '1', 'DxgiVideoMemory': '24560 MB', 'LUID': '118045'}",
+    "_dir_public": [
+     "device_id",
+     "metadata",
+     "type",
+     "vendor",
+     "vendor_id"
+    ]
+   }
+  },
+  {
+   "index": 5,
+   "ep_name": "MIGraphXExecutionProvider",
+   "ep_vendor": "AMD",
+   "ep_metadata": "{'library_path': 'C:\\\\Program Files\\\\WindowsApps\\\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\\\ExecutionProvider\\\\amdgpu-ep.dll', 'version': '0.1.0'}",
+   "ep_options": "{}",
+   "device": {
+    "repr": "<onnxruntime.capi.onnxruntime_pybind11_state.OrtHardwareDevice object at 0x000002890BA52F70>",
+    "vendor": "Advanced Micro Devices, Inc.",
+    "type": "OrtHardwareDeviceType.GPU",
+    "vendor_id": 4098,
+    "device_id": 29772,
+    "metadata": "{'Description': 'AMD Radeon RX 7900 XTX', 'Discrete': '1', 'DxgiAdapterNumber': '0', 'DxgiHighPerformanceIndex': '0', 'DxgiVideoMemory': '24560 MB', 'LUID': '72346'}",
+    "_dir_public": [
+     "device_id",
+     "metadata",
+     "type",
+     "vendor",
+     "vendor_id"
+    ]
+   }
+  }
+ ],
+ "modules_after_registration": [
+  "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\numpy\\_core\\_multiarray_umath.cp312-win_amd64.pyd",
+  "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\numpy\\linalg\\_umath_linalg.cp312-win_amd64.pyd",
+  "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdgpu-ep.dll",
+  "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\migraphx-backend.dll",
+  "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\migraphx_c.dll",
+  "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\migraphx_onnx.dll",
+  "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\migraphx.dll",
+  "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\hip-backend.dll",
+  "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\hipgpu.dll"
+ ],
+ "finished_utc": "2026-11-17T00:47:51Z",
+ "exit_code": 0,
+ "outcome": "ENUMERATED"
+}
