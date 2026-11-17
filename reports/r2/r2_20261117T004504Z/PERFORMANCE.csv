@@ -1,0 +1,11 @@
+case,classification,rc,receipt
+matmul__AMDGPU,PASS_PERF_MEASURED,0,reports\r2\r2_20261117T004504Z\cases\perf_matmul__AMDGPU.json
+matmul__MIGraphX,PASS_PERF_MEASURED,0,reports\r2\r2_20261117T004504Z\cases\perf_matmul__MIGraphX.json
+yolo26n__AMDGPU,PASS_PERF_MEASURED,0,reports\r2\r2_20261117T004504Z\cases\perf_yolo26n__AMDGPU.json
+yolo26n__MIGraphX,PASS_PERF_MEASURED,0,reports\r2\r2_20261117T004504Z\cases\perf_yolo26n__MIGraphX.json
+mobilenetv2-12__AMDGPU,PASS_PERF_MEASURED,0,reports\r2\r2_20261117T004504Z\cases\perf_mobilenetv2-12__AMDGPU.json
+mobilenetv2-12__MIGraphX,PASS_PERF_MEASURED,0,reports\r2\r2_20261117T004504Z\cases\perf_mobilenetv2-12__MIGraphX.json
+scrfd_det_10g__AMDGPU,PASS_PERF_MEASURED,0,reports\r2\r2_20261117T004504Z\cases\perf_scrfd_det_10g__AMDGPU.json
+scrfd_det_10g__MIGraphX,PASS_PERF_MEASURED,0,reports\r2\r2_20261117T004504Z\cases\perf_scrfd_det_10g__MIGraphX.json
+squeezenet1.0-12__AMDGPU,PASS_PERF_MEASURED,0,reports\r2\r2_20261117T004504Z\cases\perf_squeezenet1.0-12__AMDGPU.json
+squeezenet1.0-12__MIGraphX,PASS_PERF_MEASURED,0,reports\r2\r2_20261117T004504Z\cases\perf_squeezenet1.0-12__MIGraphX.json

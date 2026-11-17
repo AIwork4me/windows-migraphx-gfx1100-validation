@@ -1,5 +1,41 @@
 # windows-migraphx-gfx1100-validation
 
+> **R2.1.1 correction (2026-11-17, run `r2_1_1_20261117T114559Z`) — SSD
+> causality corrected:** R2.1's "an opset-10 Loop IS the barrier" is
+> **REVOKED** — a contract-valid carried-only static Loop **PASSES on
+> both AMD EPs** on the real GPU. The full-SSD whole-graph-CPU outcome is
+> re-attributed to **NonZero's dynamic-shape handling inside the NMS Loop**
+> (SSD places all 180 NonZero ops inside its first Loop body; MIGraphX
+> `check_dynamic: nonzero` reproduced) plus a separate EP-internal
+> Conv→Loop parse stride defect. New defect classes isolated on both EPs:
+> `LOOP_SCAN_OUTPUT_INCORRECT` (silent wrong scan values, carried output
+> exact), `NONZERO_FIXED_COUNT_INCORRECT` (fixed-size output regardless
+> of true count), `CONV_TO_LOOP_PARSE_STRIDE_FAIL`. Evidence:
+> `reports/r2_1_1/r2_1_1_20261117T114559Z/` (28-case matrix, CPU oracle
+> 19/19, SSD full-graph re-run). `reports/r1/LATEST.md` /
+> `reports/r2/LATEST.md` record the SHAs **as published at their run
+> time**, not the current HEAD.
+
+> **R2 verdict (2026-11-17, run `r2_20261117T004504Z`) — READ THIS FIRST:**
+> - **R2 supersedes the overnight CONDITIONAL NO-GO below.** With the
+>   fail-closed device resolver selecting the PHYSICAL XTX (LUID 72346,
+>   proven via DXCore Discrete=1 + sole active DXGI output + HIP ordinal0
+>   name/mem match), **AMDGPU EP and MIGraphX EP both execute real models
+>   on the real GPU**: 234/290 matrix cases PASS with full node coverage
+>   and same-build ORT-CPU parity, including **YOLO26n end-to-end**
+>   (5/5 identical detections vs CPU on bus.jpg, classes {person, bus}),
+>   **SCRFD det_10g (9 outputs)** and 4 ONNX Model Zoo classifiers.
+>   Measured speedups: YOLO26n 3.5x, SCRFD 5.5x (p50, batch 1).
+> - **What is still NOT proven:** this is one host's official WinML EP
+>   MSIX package -- NOT generic Windows compatibility, NOT an upstream
+>   merge, NOT a native ROCm build. Upstream guard patch status per R2.1:
+>   GUARD_HELPER_COMPILED_TESTED (g++/clang++/MSVC in CI); native
+>   full-EP build still BLOCKED_TOOLCHAIN (no MSVC/HIP SDK on host).
+> - Key evidence: `reports/r2/r2_20261117T004504Z/`, summaries:
+>   `docs/R2_GO_NO_GO.md`, `docs/R2_DEVICE_IDENTITY.md`,
+>   `reports/r2/R2_FINAL_CN.md` / `_EN.md`.
+
+
 Real-machine validation of AMD MIGraphX / AMDGPU Execution Providers on
 **native Windows 11 (build 26300) + Radeon RX 7900 XTX (gfx1100, DEV_744C)**,
 against Windows ML plugin EPs, ONNX Runtime CPU parity, multi-output

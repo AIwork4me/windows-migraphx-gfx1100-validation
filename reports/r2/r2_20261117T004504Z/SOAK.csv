@@ -1,0 +1,3 @@
+case,classification,iterations,errors,session_recreates,minutes_budget,last_heartbeat_utc,working_set
+yolo26n__AMDGPU,PASS_SOAK_COMPLETED,24000,0,12,15.0,2026-11-17T01:37:05Z,NOT_MEASURED (instrumentation broken)
+yolo26n__MIGraphX,FAIL_SOAK_NO_CLEAN_EXIT_HEALTHY_IN_WINDOW,9856,0,4,15.0,2026-11-17T01:48:06Z,NOT_MEASURED (instrumentation broken)

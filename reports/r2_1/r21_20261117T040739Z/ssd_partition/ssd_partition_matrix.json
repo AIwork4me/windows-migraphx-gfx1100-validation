@@ -1,0 +1,376 @@
+{
+ "cases": [
+  {
+   "schema": "r21/ssd_partition/1",
+   "model": "ssd_mobilenet_v1_10.onnx",
+   "model_sha256": "1fbcf47654165f2e0b5f1bdf3f123b9e9e1128cd6463717767b76ab4b5246f9a",
+   "ep": "AMDGPUExecutionProvider",
+   "opt": "ALL",
+   "ort": "1.30.1",
+   "started_utc": "2026-11-17T05:50:07Z",
+   "device_luid": "72346",
+   "optimized_model_save": "SKIPPED_COMPILED_NODES",
+   "session_create_s": 2.67,
+   "session_providers": [
+    "AMDGPUExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "profile_file": "onnxruntime_profile__2026-11-17_13-50-09_931.json",
+   "nodes_by_provider": {
+    "CPUExecutionProvider": 5587
+   },
+   "total_node_events": 5587,
+   "cpu_op_distribution": {},
+   "classification": "FAIL_NO_GPU_COMPUTE",
+   "finished_utc": "2026-11-17T05:50:14Z",
+   "child_rc": 0,
+   "stdout_tail": "EP Error: [ONNXRuntimeError] : 11 : EP_FAIL : Non-zero status code returned while running AMDGPUExecutionProvider_3021175870320492928_0 node. Name:'AMDGPUExecutionProvider_AMDGPUExecutionProvider_3021175870320492928_0_0' Status Message: Failed to call function using ['AMDGPUExecutionProvider', 'CPUExecutionProvider']\nFalling back to ['CPUExecutionProvider'] and retrying.\nAMDGPUExecutionProvider ALL -> FAIL_NO_GPU_COMPUTE {'CPUExecutionProvider': 5587}\n",
+   "stderr_tail": ": C:\\j\\AMDMIGraphX\\src\\file_buffer.cpp:77: write_buffer: Failure opening file: C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\problem_cache.json\n2026-11-17 13:50:09.896622 [WARN] [:0] PARSE_LOOP max_iterations exceeds the maximum loop iterations limit, it will be changed from 9223372036854775807 to 65535.\nWarning: onnx model is not topologically sorted. Attempting to sort...\n2026-11-17 13:50:09.912204 [WARN] [:0] PARSE_LOOP max_iterations exceeds the maximum loop iterations limit, it will be changed from 9223372036854775807 to 65535.\nWarning: onnx model is not topologically sorted. Attempting to sort...\n: Error: C:\\j\\AMDMIGraphX\\src\\include\\migraphx/check_shapes.hpp:90: check_dynamic: nonzero: Dynamic shapes not supported\n\u001b[1;31m2026-11-17 13:50:09.9299080 [E:onnxruntime:, sequential_executor.cc:671 onnxruntime::ExecuteKernel] Non-zero status code returned while running AMDGPUExecutionProvider_3021175870320492928_0 node. Name:'AMDGPUExecutionProvider_AMDGPUExecutionProvider_3021175870320492928_0_0' Status Message: Failed to call function\u001b[m\nC:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py:767: UserWarning: Specified 'providers'/'provider_options' when creating InferenceSession but SessionOptions has already been configured with providers. InferenceSession will only use the providers passed to InferenceSession().\n  warnings.warn(\n"
+  },
+  {
+   "schema": "r21/ssd_partition/1",
+   "model": "ssd_mobilenet_v1_10.onnx",
+   "model_sha256": "1fbcf47654165f2e0b5f1bdf3f123b9e9e1128cd6463717767b76ab4b5246f9a",
+   "ep": "MIGraphXExecutionProvider",
+   "opt": "ALL",
+   "ort": "1.30.1",
+   "started_utc": "2026-11-17T05:50:15Z",
+   "device_luid": "72346",
+   "optimized_model_save": "SKIPPED_COMPILED_NODES",
+   "session_create_s": 2.44,
+   "session_providers": [
+    "MIGraphXExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "profile_file": "onnxruntime_profile__2026-11-17_13-50-17_534.json",
+   "nodes_by_provider": {
+    "CPUExecutionProvider": 5587
+   },
+   "total_node_events": 5587,
+   "cpu_op_distribution": {},
+   "classification": "FAIL_NO_GPU_COMPUTE",
+   "finished_utc": "2026-11-17T05:50:22Z",
+   "child_rc": 0,
+   "stdout_tail": "EP Error: [ONNXRuntimeError] : 11 : EP_FAIL : Non-zero status code returned while running MIGraphXExecutionProvider_3021175870320492928_0 node. Name:'MIGraphXExecutionProvider_MIGraphXExecutionProvider_3021175870320492928_0_0' Status Message: Failed to call function using ['MIGraphXExecutionProvider', 'CPUExecutionProvider']\nFalling back to ['CPUExecutionProvider'] and retrying.\nMIGraphXExecutionProvider ALL -> FAIL_NO_GPU_COMPUTE {'CPUExecutionProvider': 5587}\n",
+   "stderr_tail": "\\AMDMIGraphX\\src\\file_buffer.cpp:77: write_buffer: Failure opening file: C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\problem_cache.json\n2026-11-17 13:50:17.499925 [WARN] [:0] PARSE_LOOP max_iterations exceeds the maximum loop iterations limit, it will be changed from 9223372036854775807 to 65535.\nWarning: onnx model is not topologically sorted. Attempting to sort...\n2026-11-17 13:50:17.516291 [WARN] [:0] PARSE_LOOP max_iterations exceeds the maximum loop iterations limit, it will be changed from 9223372036854775807 to 65535.\nWarning: onnx model is not topologically sorted. Attempting to sort...\n: Error: C:\\j\\AMDMIGraphX\\src\\include\\migraphx/check_shapes.hpp:90: check_dynamic: nonzero: Dynamic shapes not supported\n\u001b[1;31m2026-11-17 13:50:17.5334586 [E:onnxruntime:, sequential_executor.cc:671 onnxruntime::ExecuteKernel] Non-zero status code returned while running MIGraphXExecutionProvider_3021175870320492928_0 node. Name:'MIGraphXExecutionProvider_MIGraphXExecutionProvider_3021175870320492928_0_0' Status Message: Failed to call function\u001b[m\nC:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py:767: UserWarning: Specified 'providers'/'provider_options' when creating InferenceSession but SessionOptions has already been configured with providers. InferenceSession will only use the providers passed to InferenceSession().\n  warnings.warn(\n"
+  },
+  {
+   "schema": "r21/ssd_partition/1",
+   "model": "ssd_mobilenet_v1_10.onnx",
+   "model_sha256": "1fbcf47654165f2e0b5f1bdf3f123b9e9e1128cd6463717767b76ab4b5246f9a",
+   "ep": "AMDGPUExecutionProvider",
+   "opt": "DISABLE_ALL",
+   "ort": "1.30.1",
+   "started_utc": "2026-11-17T05:50:22Z",
+   "device_luid": "72346",
+   "optimized_model_save": "SKIPPED_COMPILED_NODES",
+   "session_create_s": 2.05,
+   "session_providers": [
+    "AMDGPUExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "profile_file": "onnxruntime_profile__2026-11-17_13-50-24_761.json",
+   "nodes_by_provider": {
+    "CPUExecutionProvider": 6169
+   },
+   "total_node_events": 6169,
+   "cpu_op_distribution": {},
+   "classification": "FAIL_NO_GPU_COMPUTE",
+   "finished_utc": "2026-11-17T05:50:29Z",
+   "child_rc": 0,
+   "stdout_tail": "EP Error: [ONNXRuntimeError] : 11 : EP_FAIL : Non-zero status code returned while running AMDGPUExecutionProvider_3021175870320492928_0 node. Name:'AMDGPUExecutionProvider_AMDGPUExecutionProvider_3021175870320492928_0_0' Status Message: Failed to call function using ['AMDGPUExecutionProvider', 'CPUExecutionProvider']\nFalling back to ['CPUExecutionProvider'] and retrying.\nAMDGPUExecutionProvider DISABLE_ALL -> FAIL_NO_GPU_COMPUTE {'CPUExecutionProvider': 6169}\n",
+   "stderr_tail": ": C:\\j\\AMDMIGraphX\\src\\file_buffer.cpp:77: write_buffer: Failure opening file: C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\problem_cache.json\n2026-11-17 13:50:24.712781 [WARN] [:0] PARSE_LOOP max_iterations exceeds the maximum loop iterations limit, it will be changed from 9223372036854775807 to 65535.\nWarning: onnx model is not topologically sorted. Attempting to sort...\n2026-11-17 13:50:24.729850 [WARN] [:0] PARSE_LOOP max_iterations exceeds the maximum loop iterations limit, it will be changed from 9223372036854775807 to 65535.\nWarning: onnx model is not topologically sorted. Attempting to sort...\n: Error: C:\\j\\AMDMIGraphX\\src\\include\\migraphx/check_shapes.hpp:90: check_dynamic: nonzero: Dynamic shapes not supported\n\u001b[1;31m2026-11-17 13:50:24.7599437 [E:onnxruntime:, sequential_executor.cc:671 onnxruntime::ExecuteKernel] Non-zero status code returned while running AMDGPUExecutionProvider_3021175870320492928_0 node. Name:'AMDGPUExecutionProvider_AMDGPUExecutionProvider_3021175870320492928_0_0' Status Message: Failed to call function\u001b[m\nC:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py:767: UserWarning: Specified 'providers'/'provider_options' when creating InferenceSession but SessionOptions has already been configured with providers. InferenceSession will only use the providers passed to InferenceSession().\n  warnings.warn(\n"
+  },
+  {
+   "schema": "r21/ssd_partition/1",
+   "model": "ssd_mobilenet_v1_10.onnx",
+   "model_sha256": "1fbcf47654165f2e0b5f1bdf3f123b9e9e1128cd6463717767b76ab4b5246f9a",
+   "ep": "AMDGPUExecutionProvider",
+   "opt": "BASIC",
+   "ort": "1.30.1",
+   "started_utc": "2026-11-17T05:50:29Z",
+   "device_luid": "72346",
+   "optimized_model_save": "SKIPPED_COMPILED_NODES",
+   "session_create_s": 2.51,
+   "session_providers": [
+    "AMDGPUExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "profile_file": "onnxruntime_profile__2026-11-17_13-50-32_159.json",
+   "nodes_by_provider": {
+    "CPUExecutionProvider": 5614
+   },
+   "total_node_events": 5614,
+   "cpu_op_distribution": {},
+   "classification": "FAIL_NO_GPU_COMPUTE",
+   "finished_utc": "2026-11-17T05:50:36Z",
+   "child_rc": 0,
+   "stdout_tail": "EP Error: [ONNXRuntimeError] : 11 : EP_FAIL : Non-zero status code returned while running AMDGPUExecutionProvider_3021175870320492928_0 node. Name:'AMDGPUExecutionProvider_AMDGPUExecutionProvider_3021175870320492928_0_0' Status Message: Failed to call function using ['AMDGPUExecutionProvider', 'CPUExecutionProvider']\nFalling back to ['CPUExecutionProvider'] and retrying.\nAMDGPUExecutionProvider BASIC -> FAIL_NO_GPU_COMPUTE {'CPUExecutionProvider': 5614}\n",
+   "stderr_tail": ": C:\\j\\AMDMIGraphX\\src\\file_buffer.cpp:77: write_buffer: Failure opening file: C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\problem_cache.json\n2026-11-17 13:50:32.124247 [WARN] [:0] PARSE_LOOP max_iterations exceeds the maximum loop iterations limit, it will be changed from 9223372036854775807 to 65535.\nWarning: onnx model is not topologically sorted. Attempting to sort...\n2026-11-17 13:50:32.140688 [WARN] [:0] PARSE_LOOP max_iterations exceeds the maximum loop iterations limit, it will be changed from 9223372036854775807 to 65535.\nWarning: onnx model is not topologically sorted. Attempting to sort...\n: Error: C:\\j\\AMDMIGraphX\\src\\include\\migraphx/check_shapes.hpp:90: check_dynamic: nonzero: Dynamic shapes not supported\n\u001b[1;31m2026-11-17 13:50:32.1581099 [E:onnxruntime:, sequential_executor.cc:671 onnxruntime::ExecuteKernel] Non-zero status code returned while running AMDGPUExecutionProvider_3021175870320492928_0 node. Name:'AMDGPUExecutionProvider_AMDGPUExecutionProvider_3021175870320492928_0_0' Status Message: Failed to call function\u001b[m\nC:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py:767: UserWarning: Specified 'providers'/'provider_options' when creating InferenceSession but SessionOptions has already been configured with providers. InferenceSession will only use the providers passed to InferenceSession().\n  warnings.warn(\n"
+  },
+  {
+   "schema": "r21/ssd_partition/1",
+   "model": "ssd_mobilenet_v1_10.onnx",
+   "model_sha256": "1fbcf47654165f2e0b5f1bdf3f123b9e9e1128cd6463717767b76ab4b5246f9a",
+   "ep": "AMDGPUExecutionProvider",
+   "opt": "EXTENDED",
+   "ort": "1.30.1",
+   "started_utc": "2026-11-17T05:50:37Z",
+   "device_luid": "72346",
+   "optimized_model_save": "SKIPPED_COMPILED_NODES",
+   "session_create_s": 2.48,
+   "session_providers": [
+    "AMDGPUExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "profile_file": "onnxruntime_profile__2026-11-17_13-50-39_676.json",
+   "nodes_by_provider": {
+    "CPUExecutionProvider": 5579
+   },
+   "total_node_events": 5579,
+   "cpu_op_distribution": {},
+   "classification": "FAIL_NO_GPU_COMPUTE",
+   "finished_utc": "2026-11-17T05:50:44Z",
+   "child_rc": 0,
+   "stdout_tail": "EP Error: [ONNXRuntimeError] : 11 : EP_FAIL : Non-zero status code returned while running AMDGPUExecutionProvider_3021175870320492928_0 node. Name:'AMDGPUExecutionProvider_AMDGPUExecutionProvider_3021175870320492928_0_0' Status Message: Failed to call function using ['AMDGPUExecutionProvider', 'CPUExecutionProvider']\nFalling back to ['CPUExecutionProvider'] and retrying.\nAMDGPUExecutionProvider EXTENDED -> FAIL_NO_GPU_COMPUTE {'CPUExecutionProvider': 5579}\n",
+   "stderr_tail": ": C:\\j\\AMDMIGraphX\\src\\file_buffer.cpp:77: write_buffer: Failure opening file: C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\problem_cache.json\n2026-11-17 13:50:39.641998 [WARN] [:0] PARSE_LOOP max_iterations exceeds the maximum loop iterations limit, it will be changed from 9223372036854775807 to 65535.\nWarning: onnx model is not topologically sorted. Attempting to sort...\n2026-11-17 13:50:39.658829 [WARN] [:0] PARSE_LOOP max_iterations exceeds the maximum loop iterations limit, it will be changed from 9223372036854775807 to 65535.\nWarning: onnx model is not topologically sorted. Attempting to sort...\n: Error: C:\\j\\AMDMIGraphX\\src\\include\\migraphx/check_shapes.hpp:90: check_dynamic: nonzero: Dynamic shapes not supported\n\u001b[1;31m2026-11-17 13:50:39.6746294 [E:onnxruntime:, sequential_executor.cc:671 onnxruntime::ExecuteKernel] Non-zero status code returned while running AMDGPUExecutionProvider_3021175870320492928_0 node. Name:'AMDGPUExecutionProvider_AMDGPUExecutionProvider_3021175870320492928_0_0' Status Message: Failed to call function\u001b[m\nC:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py:767: UserWarning: Specified 'providers'/'provider_options' when creating InferenceSession but SessionOptions has already been configured with providers. InferenceSession will only use the providers passed to InferenceSession().\n  warnings.warn(\n"
+  },
+  {
+   "schema": "r21/ssd_partition/1",
+   "model": "ssd_mobilenet_v1_10.onnx",
+   "model_sha256": "1fbcf47654165f2e0b5f1bdf3f123b9e9e1128cd6463717767b76ab4b5246f9a",
+   "ep": "DML_CONTROL",
+   "opt": "ALL",
+   "ort": "1.30.1",
+   "started_utc": "2026-11-17T05:50:44Z",
+   "session_create_s": 4.62,
+   "session_providers": [
+    "DmlExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "classification": "ERROR_RUNTIME",
+   "error": "Traceback (most recent call last):\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\r2_1\\ssd_partition_child.py\", line 120, in main\n    sess.run(None, feeds)\n  File \"C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py\", line 395, in run\n    return self._sess.run(output_names, input_feed, run_options)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nUnicodeDecodeError: 'utf-8' codec can't decode byte 0xb2 in position 704: invalid start byte\n",
+   "finished_utc": "2026-11-17T05:50:49Z",
+   "child_rc": 2,
+   "stdout_tail": "DML_CONTROL ALL -> ERROR_RUNTIME None\n",
+   "stderr_tail": "\u001b[0;93m2026-11-17 13:50:44.6669600 [W:onnxruntime:Default, onnxruntime_pybind_module.cc:45 onnxruntime::python::CreateOrtEnv] Init provider bridge failed.\u001b[m\n\u001b[0;93m2026-11-17 13:50:49.2833377 [W:onnxruntime:, inference_session.cc:3040 onnxruntime::InferenceSession::Initialize] Serializing optimized model with Graph Optimization level greater than ORT_ENABLE_EXTENDED and the NchwcTransformer enabled. The generated model may contain hardware specific optimizations, and should only be used in the same environment the model was optimized in.\u001b[m\n\u001b[1;31m2026-11-17 13:50:49.5198596 [E:onnxruntime:, sequential_executor.cc:671 onnxruntime::ExecuteKernel] Non-zero status code returned while running ConstantOfShape node. Name:'Postprocessor/BatchMultiClassNonMaxSuppression/map/while/PadOrClipBoxList/cond/zeros' Status Message: C:\\__w\\1\\s\\win-onnxruntime\\onnxruntime\\core\\providers\\dml\\DmlExecutionProvider\\src\\MLOperatorAuthorImpl.cpp(2927)\\onnxruntime_pybind11_state.pyd!00007FF91F02E71C: (caller: 00007FF91F0009B4) Exception(1) tid(2c08) 80070057 ",
+   "optimized_model_artifact": "removed by evidence-dir policy (no *.onnx in run dir); case already ERROR_RUNTIME, artifact not used as evidence"
+  },
+  {
+   "schema": "r21/ssd_partition/1",
+   "model": "static_conv3.onnx",
+   "model_sha256": "f0d92616bcb27c6ff312a5467aadb114eeba28793497c34dcb44142b27c5fb52",
+   "ep": "AMDGPUExecutionProvider",
+   "opt": "ALL",
+   "ort": "1.30.1",
+   "started_utc": "2026-11-17T05:50:49Z",
+   "device_luid": "72346",
+   "optimized_model_save": "SKIPPED_COMPILED_NODES",
+   "session_create_s": 3.75,
+   "session_providers": [
+    "AMDGPUExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "profile_file": "onnxruntime_profile__2026-11-17_13-50-52_364.json",
+   "nodes_by_provider": {
+    "AMDGPUExecutionProvider": 1
+   },
+   "total_node_events": 1,
+   "cpu_op_distribution": {},
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "finished_utc": "2026-11-17T05:50:53Z",
+   "child_rc": 0,
+   "stdout_tail": "AMDGPUExecutionProvider ALL -> PASS_GPU_CORRECT_FULL_COVERAGE {'AMDGPUExecutionProvider': 1}\n",
+   "stderr_tail": "\u001b[0;93m2026-11-17 13:50:49.7843848 [W:onnxruntime:Default, onnxruntime_pybind_module.cc:45 onnxruntime::python::CreateOrtEnv] Init provider bridge failed.\u001b[m\n2026-11-17 13:50:51.155170 [WARN] [:0] auto_save_problem_cache: save failed: C:\\j\\AMDMIGraphX\\src\\file_buffer.cpp:77: write_buffer: Failure opening file: C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\problem_cache.json\n2026-11-17 13:50:53.550402 [WARN] [:0] auto_save_problem_cache: save failed: C:\\j\\AMDMIGraphX\\src\\file_buffer.cpp:77: write_buffer: Failure opening file: C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\problem_cache.json\n"
+  },
+  {
+   "schema": "r21/ssd_partition/1",
+   "model": "static_conv3.onnx",
+   "model_sha256": "f0d92616bcb27c6ff312a5467aadb114eeba28793497c34dcb44142b27c5fb52",
+   "ep": "MIGraphXExecutionProvider",
+   "opt": "ALL",
+   "ort": "1.30.1",
+   "started_utc": "2026-11-17T05:50:53Z",
+   "device_luid": "72346",
+   "optimized_model_save": "SKIPPED_COMPILED_NODES",
+   "session_create_s": 3.62,
+   "session_providers": [
+    "MIGraphXExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "profile_file": "onnxruntime_profile__2026-11-17_13-50-56_264.json",
+   "nodes_by_provider": {
+    "MIGraphXExecutionProvider": 1
+   },
+   "total_node_events": 1,
+   "cpu_op_distribution": {},
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "finished_utc": "2026-11-17T05:50:57Z",
+   "child_rc": 0,
+   "stdout_tail": "MIGraphXExecutionProvider ALL -> PASS_GPU_CORRECT_FULL_COVERAGE {'MIGraphXExecutionProvider': 1}\n",
+   "stderr_tail": "\u001b[0;93m2026-11-17 13:50:53.8327984 [W:onnxruntime:Default, onnxruntime_pybind_module.cc:45 onnxruntime::python::CreateOrtEnv] Init provider bridge failed.\u001b[m\n2026-11-17 13:50:55.058402 [WARN] [:0] auto_save_problem_cache: save failed: C:\\j\\AMDMIGraphX\\src\\file_buffer.cpp:77: write_buffer: Failure opening file: C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\problem_cache.json\n2026-11-17 13:50:57.468033 [WARN] [:0] auto_save_problem_cache: save failed: C:\\j\\AMDMIGraphX\\src\\file_buffer.cpp:77: write_buffer: Failure opening file: C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\problem_cache.json\n"
+  },
+  {
+   "schema": "r21/ssd_partition/1",
+   "model": "dynamic_conv3.onnx",
+   "model_sha256": "5275825fcdcca2530d5278b3380a643bdcabef193c3f9dbfe3d3413dc31aee29",
+   "ep": "AMDGPUExecutionProvider",
+   "opt": "ALL",
+   "ort": "1.30.1",
+   "started_utc": "2026-11-17T05:50:57Z",
+   "device_luid": "72346",
+   "optimized_model_save": "SKIPPED_COMPILED_NODES",
+   "session_create_s": 1.56,
+   "session_providers": [
+    "AMDGPUExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "profile_file": "onnxruntime_profile__2026-11-17_13-50-59_312.json",
+   "nodes_by_provider": {
+    "AMDGPUExecutionProvider": 1
+   },
+   "total_node_events": 1,
+   "cpu_op_distribution": {},
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "finished_utc": "2026-11-17T05:51:00Z",
+   "child_rc": 0,
+   "stdout_tail": "AMDGPUExecutionProvider ALL -> PASS_GPU_CORRECT_FULL_COVERAGE {'AMDGPUExecutionProvider': 1}\n",
+   "stderr_tail": "\u001b[0;93m2026-11-17 13:50:57.7316184 [W:onnxruntime:Default, onnxruntime_pybind_module.cc:45 onnxruntime::python::CreateOrtEnv] Init provider bridge failed.\u001b[m\n2026-11-17 13:50:59.303649 [WARN] [:0] auto_save_problem_cache: save failed: C:\\j\\AMDMIGraphX\\src\\file_buffer.cpp:77: write_buffer: Failure opening file: C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\problem_cache.json\n"
+  },
+  {
+   "schema": "r21/ssd_partition/1",
+   "model": "dynamic_conv3.onnx",
+   "model_sha256": "5275825fcdcca2530d5278b3380a643bdcabef193c3f9dbfe3d3413dc31aee29",
+   "ep": "MIGraphXExecutionProvider",
+   "opt": "ALL",
+   "ort": "1.30.1",
+   "started_utc": "2026-11-17T05:51:00Z",
+   "device_luid": "72346",
+   "optimized_model_save": "SKIPPED_COMPILED_NODES",
+   "session_create_s": 1.54,
+   "session_providers": [
+    "MIGraphXExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "profile_file": "onnxruntime_profile__2026-11-17_13-51-02_334.json",
+   "nodes_by_provider": {
+    "MIGraphXExecutionProvider": 1
+   },
+   "total_node_events": 1,
+   "cpu_op_distribution": {},
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "finished_utc": "2026-11-17T05:51:03Z",
+   "child_rc": 0,
+   "stdout_tail": "MIGraphXExecutionProvider ALL -> PASS_GPU_CORRECT_FULL_COVERAGE {'MIGraphXExecutionProvider': 1}\n",
+   "stderr_tail": "\u001b[0;93m2026-11-17 13:51:00.7709882 [W:onnxruntime:Default, onnxruntime_pybind_module.cc:45 onnxruntime::python::CreateOrtEnv] Init provider bridge failed.\u001b[m\n2026-11-17 13:51:02.324554 [WARN] [:0] auto_save_problem_cache: save failed: C:\\j\\AMDMIGraphX\\src\\file_buffer.cpp:77: write_buffer: Failure opening file: C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\problem_cache.json\n"
+  },
+  {
+   "schema": "r21/ssd_partition/1",
+   "model": "static_loop.onnx",
+   "model_sha256": "6e6d44df9ebfe936c0b3da1ccbd0b36c677d7f9406c412aba13af06f5e4b3354",
+   "ep": "AMDGPUExecutionProvider",
+   "opt": "ALL",
+   "ort": "1.30.1",
+   "started_utc": "2026-11-17T05:51:03Z",
+   "device_luid": "72346",
+   "optimized_model_save": "SKIPPED_COMPILED_NODES",
+   "session_create_s": 2.53,
+   "session_providers": [
+    "AMDGPUExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "profile_file": "onnxruntime_profile__2026-11-17_13-51-06_389.json",
+   "nodes_by_provider": {
+    "CPUExecutionProvider": 7
+   },
+   "total_node_events": 7,
+   "cpu_op_distribution": {},
+   "classification": "FAIL_NO_GPU_COMPUTE",
+   "finished_utc": "2026-11-17T05:51:06Z",
+   "child_rc": 0,
+   "stdout_tail": "EP Error: [ONNXRuntimeError] : 11 : EP_FAIL : Non-zero status code returned while running AMDGPUExecutionProvider_2004297202612229483_0 node. Name:'AMDGPUExecutionProvider_AMDGPUExecutionProvider_2004297202612229483_0_0' Status Message: Failed to call function using ['AMDGPUExecutionProvider', 'CPUExecutionProvider']\nFalling back to ['CPUExecutionProvider'] and retrying.\nAMDGPUExecutionProvider ALL -> FAIL_NO_GPU_COMPUTE {'CPUExecutionProvider': 7}\n",
+   "stderr_tail": "correct shape {float_type, {3, 1, 4, 4}, {16, 16, 4, 1}} for parameter: b_seq should be: float_type, {1, 1, 4, 4}, {16, 16, 4, 1}\n\u001b[1;31m2026-11-17 13:51:06.3882988 [E:onnxruntime:, sequential_executor.cc:671 onnxruntime::ExecuteKernel] Non-zero status code returned while running AMDGPUExecutionProvider_2004297202612229483_0 node. Name:'AMDGPUExecutionProvider_AMDGPUExecutionProvider_2004297202612229483_0_0' Status Message: Failed to call function\u001b[m\nC:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py:767: UserWarning: Specified 'providers'/'provider_options' when creating InferenceSession but SessionOptions has already been configured with providers. InferenceSession will only use the providers passed to InferenceSession().\n  warnings.warn(\n\u001b[0;93m2026-11-17 13:51:06.3907009 [W:onnxruntime:, execution_frame.cc:921 onnxruntime::ExecutionFrame::VerifyOutputSizes] Expected shape from model of {1,1,4,4} does not match actual shape of {3,1,4,4} for output b_out\u001b[m\n\u001b[0;93m2026-11-17 13:51:06.3909236 [W:onnxruntime:, execution_frame.cc:921 onnxruntime::ExecutionFrame::VerifyOutputSizes] Expected shape from model of {1,1,4,4} does not match actual shape of {3,1,4,4} for output b_out\u001b[m\n\u001b[0;93m2026-11-17 13:51:06.3911296 [W:onnxruntime:, execution_frame.cc:921 onnxruntime::ExecutionFrame::VerifyOutputSizes] Expected shape from model of {1,1,4,4} does not match actual shape of {3,1,4,4} for output b_out\u001b[m\n"
+  },
+  {
+   "schema": "r21/ssd_partition/1",
+   "model": "static_loop.onnx",
+   "model_sha256": "6e6d44df9ebfe936c0b3da1ccbd0b36c677d7f9406c412aba13af06f5e4b3354",
+   "ep": "MIGraphXExecutionProvider",
+   "opt": "ALL",
+   "ort": "1.30.1",
+   "started_utc": "2026-11-17T05:51:06Z",
+   "device_luid": "72346",
+   "optimized_model_save": "SKIPPED_COMPILED_NODES",
+   "session_create_s": 2.3,
+   "session_providers": [
+    "MIGraphXExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "profile_file": "onnxruntime_profile__2026-11-17_13-51-08_990.json",
+   "nodes_by_provider": {
+    "CPUExecutionProvider": 7
+   },
+   "total_node_events": 7,
+   "cpu_op_distribution": {},
+   "classification": "FAIL_NO_GPU_COMPUTE",
+   "finished_utc": "2026-11-17T05:51:08Z",
+   "child_rc": 0,
+   "stdout_tail": "EP Error: [ONNXRuntimeError] : 11 : EP_FAIL : Non-zero status code returned while running MIGraphXExecutionProvider_2004297202612229483_0 node. Name:'MIGraphXExecutionProvider_MIGraphXExecutionProvider_2004297202612229483_0_0' Status Message: Failed to call function using ['MIGraphXExecutionProvider', 'CPUExecutionProvider']\nFalling back to ['CPUExecutionProvider'] and retrying.\nMIGraphXExecutionProvider ALL -> FAIL_NO_GPU_COMPUTE {'CPUExecutionProvider': 7}\n",
+   "stderr_tail": "t shape {float_type, {3, 1, 4, 4}, {16, 16, 4, 1}} for parameter: b_seq should be: float_type, {1, 1, 4, 4}, {16, 16, 4, 1}\n\u001b[1;31m2026-11-17 13:51:08.9890547 [E:onnxruntime:, sequential_executor.cc:671 onnxruntime::ExecuteKernel] Non-zero status code returned while running MIGraphXExecutionProvider_2004297202612229483_0 node. Name:'MIGraphXExecutionProvider_MIGraphXExecutionProvider_2004297202612229483_0_0' Status Message: Failed to call function\u001b[m\nC:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py:767: UserWarning: Specified 'providers'/'provider_options' when creating InferenceSession but SessionOptions has already been configured with providers. InferenceSession will only use the providers passed to InferenceSession().\n  warnings.warn(\n\u001b[0;93m2026-11-17 13:51:08.9914576 [W:onnxruntime:, execution_frame.cc:921 onnxruntime::ExecutionFrame::VerifyOutputSizes] Expected shape from model of {1,1,4,4} does not match actual shape of {3,1,4,4} for output b_out\u001b[m\n\u001b[0;93m2026-11-17 13:51:08.9916910 [W:onnxruntime:, execution_frame.cc:921 onnxruntime::ExecutionFrame::VerifyOutputSizes] Expected shape from model of {1,1,4,4} does not match actual shape of {3,1,4,4} for output b_out\u001b[m\n\u001b[0;93m2026-11-17 13:51:08.9918890 [W:onnxruntime:, execution_frame.cc:921 onnxruntime::ExecutionFrame::VerifyOutputSizes] Expected shape from model of {1,1,4,4} does not match actual shape of {3,1,4,4} for output b_out\u001b[m\n"
+  },
+  {
+   "schema": "r21/ssd_partition/1",
+   "model": "static_conv_loop.onnx",
+   "model_sha256": "c66a1694167f2c7844cfcf0ff67a93ce738de47b6b9ca22c14352d395377f0f5",
+   "ep": "AMDGPUExecutionProvider",
+   "opt": "ALL",
+   "ort": "1.30.1",
+   "started_utc": "2026-11-17T05:51:09Z",
+   "device_luid": "72346",
+   "optimized_model_save": "SKIPPED_COMPILED_NODES",
+   "session_create_s": 3.0,
+   "session_providers": [
+    "AMDGPUExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "profile_file": "onnxruntime_profile__2026-11-17_13-51-12_278.json",
+   "nodes_by_provider": {
+    "CPUExecutionProvider": 9
+   },
+   "total_node_events": 9,
+   "cpu_op_distribution": {},
+   "classification": "FAIL_NO_GPU_COMPUTE",
+   "finished_utc": "2026-11-17T05:51:12Z",
+   "child_rc": 0,
+   "stdout_tail": "EP Error: [ONNXRuntimeError] : 11 : EP_FAIL : Non-zero status code returned while running AMDGPUExecutionProvider_3941596867150087691_0 node. Name:'AMDGPUExecutionProvider_AMDGPUExecutionProvider_3941596867150087691_0_0' Status Message: Failed to call function using ['AMDGPUExecutionProvider', 'CPUExecutionProvider']\nFalling back to ['CPUExecutionProvider'] and retrying.\nAMDGPUExecutionProvider ALL -> FAIL_NO_GPU_COMPUTE {'CPUExecutionProvider': 9}\n",
+   "stderr_tail": "v] Init provider bridge failed.\u001b[m\n2026-11-17 13:51:10.338393 [WARN] [:0] auto_save_problem_cache: save failed: C:\\j\\AMDMIGraphX\\src\\file_buffer.cpp:77: write_buffer: Failure opening file: C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\problem_cache.json\n2026-11-17 13:51:12.232416 [WARN] [:0] auto_save_problem_cache: save failed: C:\\j\\AMDMIGraphX\\src\\file_buffer.cpp:77: write_buffer: Failure opening file: C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\problem_cache.json\n: Error: C:\\j\\AMDMIGraphX\\src\\program.cpp:539: operator(): Incorrect shape {float_type, {1, 1, 8, 8}, {64, 1, 8, 1}} for parameter: b_seq should be: float_type, {1, 1, 8, 8}, {64, 64, 8, 1}\n\u001b[1;31m2026-11-17 13:51:12.2767234 [E:onnxruntime:, sequential_executor.cc:671 onnxruntime::ExecuteKernel] Non-zero status code returned while running AMDGPUExecutionProvider_3941596867150087691_0 node. Name:'AMDGPUExecutionProvider_AMDGPUExecutionProvider_3941596867150087691_0_0' Status Message: Failed to call function\u001b[m\nC:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py:767: UserWarning: Specified 'providers'/'provider_options' when creating InferenceSession but SessionOptions has already been configured with providers. InferenceSession will only use the providers passed to InferenceSession().\n  warnings.warn(\n"
+  },
+  {
+   "schema": "r21/ssd_partition/1",
+   "model": "static_conv_loop.onnx",
+   "model_sha256": "c66a1694167f2c7844cfcf0ff67a93ce738de47b6b9ca22c14352d395377f0f5",
+   "ep": "MIGraphXExecutionProvider",
+   "opt": "ALL",
+   "ort": "1.30.1",
+   "started_utc": "2026-11-17T05:51:12Z",
+   "device_luid": "72346",
+   "optimized_model_save": "SKIPPED_COMPILED_NODES",
+   "session_create_s": 3.11,
+   "session_providers": [
+    "MIGraphXExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "profile_file": "onnxruntime_profile__2026-11-17_13-51-15_702.json",
+   "nodes_by_provider": {
+    "CPUExecutionProvider": 9
+   },
+   "total_node_events": 9,
+   "cpu_op_distribution": {},
+   "classification": "FAIL_NO_GPU_COMPUTE",
+   "finished_utc": "2026-11-17T05:51:15Z",
+   "child_rc": 0,
+   "stdout_tail": "EP Error: [ONNXRuntimeError] : 11 : EP_FAIL : Non-zero status code returned while running MIGraphXExecutionProvider_3941596867150087691_0 node. Name:'MIGraphXExecutionProvider_MIGraphXExecutionProvider_3941596867150087691_0_0' Status Message: Failed to call function using ['MIGraphXExecutionProvider', 'CPUExecutionProvider']\nFalling back to ['CPUExecutionProvider'] and retrying.\nMIGraphXExecutionProvider ALL -> FAIL_NO_GPU_COMPUTE {'CPUExecutionProvider': 9}\n",
+   "stderr_tail": "t provider bridge failed.\u001b[m\n2026-11-17 13:51:13.862212 [WARN] [:0] auto_save_problem_cache: save failed: C:\\j\\AMDMIGraphX\\src\\file_buffer.cpp:77: write_buffer: Failure opening file: C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\problem_cache.json\n2026-11-17 13:51:15.654852 [WARN] [:0] auto_save_problem_cache: save failed: C:\\j\\AMDMIGraphX\\src\\file_buffer.cpp:77: write_buffer: Failure opening file: C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\problem_cache.json\n: Error: C:\\j\\AMDMIGraphX\\src\\program.cpp:539: operator(): Incorrect shape {float_type, {1, 1, 8, 8}, {64, 1, 8, 1}} for parameter: b_seq should be: float_type, {1, 1, 8, 8}, {64, 64, 8, 1}\n\u001b[1;31m2026-11-17 13:51:15.7005737 [E:onnxruntime:, sequential_executor.cc:671 onnxruntime::ExecuteKernel] Non-zero status code returned while running MIGraphXExecutionProvider_3941596867150087691_0 node. Name:'MIGraphXExecutionProvider_MIGraphXExecutionProvider_3941596867150087691_0_0' Status Message: Failed to call function\u001b[m\nC:\\AIwork4me\\windows-migraphx-gfx1100-validation\\venv-winml\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py:767: UserWarning: Specified 'providers'/'provider_options' when creating InferenceSession but SessionOptions has already been configured with providers. InferenceSession will only use the providers passed to InferenceSession().\n  warnings.warn(\n"
+  }
+ ]
+}

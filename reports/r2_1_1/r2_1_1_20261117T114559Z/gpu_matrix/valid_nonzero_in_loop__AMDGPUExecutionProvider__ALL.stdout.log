@@ -1,0 +1,1 @@
+r2_1_1 child: valid_nonzero_in_loop.onnx AMDGPUExecutionProvider ALL -> FAIL_CORRECTNESS nbp={'AMDGPUExecutionProvider': 2}

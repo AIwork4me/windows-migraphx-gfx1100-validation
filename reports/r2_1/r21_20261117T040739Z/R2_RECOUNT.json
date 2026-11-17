@@ -1,0 +1,60 @@
+{
+ "source": {
+  "ledger": "reports/r2/r2_20261117T004504Z/ledger.json",
+  "ledger_sha256": "070ed8d154eaefbcabb030b899e581e535c97756d5ea0aec1c1ddf06bf2e4c0c",
+  "run_id": "r2_20261117T004504Z",
+  "finalized_utc": "2026-11-17T02:28:39Z"
+ },
+ "total": 290,
+ "by_classification": {
+  "PASS_GPU_CORRECT_FULL_COVERAGE": 234,
+  "SKIPPED_FIXTURE_DEFECT": 54,
+  "FAIL_NO_GPU_COMPUTE": 2
+ },
+ "synthetic_operator": {
+  "total": 276,
+  "by_classification": {
+   "PASS_GPU_CORRECT_FULL_COVERAGE": 222,
+   "SKIPPED_FIXTURE_DEFECT": 54
+  }
+ },
+ "real_model": {
+  "total": 14,
+  "by_classification": {
+   "PASS_GPU_CORRECT_FULL_COVERAGE": 12,
+   "FAIL_NO_GPU_COMPUTE": 2
+  },
+  "models": [
+   "emotion-ferplus-8",
+   "mnist-8",
+   "mobilenetv2-12",
+   "scrfd_det_10g",
+   "squeezenet1.0-12",
+   "ssd_mobilenet_v1_10",
+   "yolo26n"
+  ]
+ },
+ "per_ep": {
+  "AMDGPUExecutionProvider": {
+   "PASS_GPU_CORRECT_FULL_COVERAGE": 117,
+   "SKIPPED_FIXTURE_DEFECT": 27,
+   "FAIL_NO_GPU_COMPUTE": 1
+  },
+  "MIGraphXExecutionProvider": {
+   "PASS_GPU_CORRECT_FULL_COVERAGE": 117,
+   "SKIPPED_FIXTURE_DEFECT": 27,
+   "FAIL_NO_GPU_COMPUTE": 1
+  }
+ },
+ "derived_facts": {
+  "synthetic_pass_per_ep": 111,
+  "real_pass_per_ep": 6,
+  "note_117_clarification": "117 PASS per EP = 111 synthetic + 6 real-model. The earlier phrase '117 synthetic PASS per EP' in the review request conflated these."
+ },
+ "receipt_integrity": {
+  "cases": 290,
+  "receipt_missing": [],
+  "identity_mismatches": [],
+  "identity_check_note": "ledger case ids use short EP alias (abs__AMDGPU__b1__ALL); receipt case_id uses full form (r2_abs.onnx_AMDGPUExecutionProvider_b1_ALL); compared after canonical normalization"
+ }
+}

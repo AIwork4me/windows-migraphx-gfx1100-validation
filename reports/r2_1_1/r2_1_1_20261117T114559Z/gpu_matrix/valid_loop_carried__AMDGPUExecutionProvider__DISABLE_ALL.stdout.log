@@ -1,0 +1,1 @@
+r2_1_1 child: valid_loop_carried.onnx AMDGPUExecutionProvider DISABLE_ALL -> PASS_GPU_EXECUTED nbp={'AMDGPUExecutionProvider': 3}

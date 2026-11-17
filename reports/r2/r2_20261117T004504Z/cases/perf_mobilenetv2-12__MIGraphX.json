@@ -1,0 +1,48 @@
+{
+ "schema_version": "r2/perf/1",
+ "case_id": "r2_perf_mobilenetv2-12.onnx_MIGraphXExecutionProvider_b1",
+ "model": "mobilenetv2-12.onnx",
+ "model_sha256": "c0c3f76d93fa3fd6580652a45618618a220fced18babf65774ed169de0432ad5",
+ "ep": "MIGraphXExecutionProvider",
+ "batch": 1,
+ "warmup": 10,
+ "runs": 100,
+ "ort_version": "1.30.1",
+ "started_utc": "2026-11-17T01:18:09Z",
+ "real_hardware": true,
+ "threads": "default",
+ "classification": "PASS_PERF_MEASURED",
+ "cold": {
+  "register_s": 0.01,
+  "session_create_s": 0.029,
+  "first_run_s": 16.04
+ },
+ "gpu": {
+  "n": 100,
+  "p50_ms": 0.878,
+  "p95_ms": 1.138,
+  "mean_ms": 0.915,
+  "std_ms": 0.112,
+  "min_ms": 0.782,
+  "max_ms": 1.298,
+  "throughput_qps": 1093.1
+ },
+ "cpu": {
+  "n": 30,
+  "p50_ms": 1.345,
+  "p95_ms": 1.805,
+  "mean_ms": 1.457,
+  "std_ms": 0.244,
+  "min_ms": 1.157,
+  "max_ms": 1.875,
+  "throughput_qps": 686.33
+ },
+ "gpu_vs_cpu_speedup_mean": 1.59,
+ "working_set_mb": {
+  "before": -1.0,
+  "after": -1.0
+ },
+ "gpu_vram": "NOT_MEASURED",
+ "ep_node_ratio_profiled_run": 1.0,
+ "finished_utc": "2026-11-17T01:18:43Z"
+}

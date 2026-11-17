@@ -1,0 +1,48 @@
+{
+ "schema_version": "r2/perf/1",
+ "case_id": "r2_perf_yolo26n.onnx_AMDGPUExecutionProvider_b1",
+ "model": "yolo26n.onnx",
+ "model_sha256": "4fc60f7e7973aae4e6cbb7ea281c860de048b62ab5fa12ed06f467e1151b8f7b",
+ "ep": "AMDGPUExecutionProvider",
+ "batch": 1,
+ "warmup": 10,
+ "runs": 100,
+ "ort_version": "1.30.1",
+ "started_utc": "2026-11-17T01:14:43Z",
+ "real_hardware": true,
+ "threads": "default",
+ "classification": "PASS_PERF_MEASURED",
+ "cold": {
+  "register_s": 0.009,
+  "session_create_s": 41.765,
+  "first_run_s": 0.029
+ },
+ "gpu": {
+  "n": 100,
+  "p50_ms": 2.733,
+  "p95_ms": 3.344,
+  "mean_ms": 2.888,
+  "std_ms": 0.375,
+  "min_ms": 2.62,
+  "max_ms": 4.649,
+  "throughput_qps": 346.3
+ },
+ "cpu": {
+  "n": 30,
+  "p50_ms": 9.812,
+  "p95_ms": 10.603,
+  "mean_ms": 9.998,
+  "std_ms": 0.446,
+  "min_ms": 9.487,
+  "max_ms": 11.18,
+  "throughput_qps": 100.02
+ },
+ "gpu_vs_cpu_speedup_mean": 3.46,
+ "working_set_mb": {
+  "before": -1.0,
+  "after": -1.0
+ },
+ "gpu_vram": "NOT_MEASURED",
+ "ep_node_ratio_profiled_run": 1.0,
+ "finished_utc": "2026-11-17T01:16:09Z"
+}

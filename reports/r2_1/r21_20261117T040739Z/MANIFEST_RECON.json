@@ -1,0 +1,29 @@
+{
+ "dir_files_total": 1322,
+ "manifest_entries": 1319,
+ "excluded_from_manifest": [
+  "reports/r2/r2_20261117T004504Z/finalize_summary.json",
+  "reports/r2/r2_20261117T004504Z/manifest.sha256",
+  "reports/r2/r2_20261117T004504Z/redaction_scan.json"
+ ],
+ "manifest_entries_missing_on_disk": [],
+ "manifest_hash_mismatches": [],
+ "stale_doc_claims": {
+  "R2_FINAL_CN/EN says": "1314 files / 1314 entries",
+  "actual_manifest_entries": 1319,
+  "finalize_summary_says": {
+   "entries": 1319,
+   "redaction_files_scanned": 1322
+  },
+  "explanation": "1314 was a pre-refresh snapshot count. Final manifest has 1319 entries; finalize scanned 1322 files including post-manifest additions (finalize_summary.json written after manifest, excluded by design)."
+ },
+ "provenance_corrections": {
+  "bus.jpg": {
+   "provenance_csv_says": "NO (gitignored weights; hash only)",
+   "actual": "TRACKED in git at artifacts/models/bus.jpg since commit c497143, present in PR #2 diff (added)",
+   "sha256_verified": true,
+   "license": "AGPL-3.0 (ultralytics official public sample image); redistribution permitted with attribution; contains no private data",
+   "resolution": "kept tracked; corrected claim recorded in R2.1 errata; weights files remain gitignored/hash-only"
+  }
+ }
+}

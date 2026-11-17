@@ -1,0 +1,47 @@
+{
+ "schema": "r2/env_fingerprint/1",
+ "generated_utc": "2026-11-17T01:23:58Z",
+ "os": "Microsoft Windows 11 \u05e8\u04b5\ufffd\ufffd 10.0.26300",
+ "git": {
+  "branch": "mission/r2-device-identity-real-models",
+  "head": "054117e3a4079cbaf6e7864c9cad3b77fcc43ff4",
+  "remote_main": "7156b9b504c4c31065eb47c0191f3e2f55f316ed",
+  "dirty_files": 34
+ },
+ "ort": {
+  "venv_winml": "1.30.1",
+  "venv_cpu": "1.32.0"
+ },
+ "amd_ep_package": {
+  "name": "Microsoft.WinML.AMD.GPU.EP.Framework.2 1.8.65.0 (MSIX)",
+  "dir": "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider",
+  "dlls": {
+   "amdgpu-ep.dll": {
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdgpu-ep.dll",
+    "sha256": "cb7496b3ab8f9daf2948b6030db5ec795596072ffcb25d3c55a28e4c0df7f8ab",
+    "size": 548304
+   },
+   "amdhip64_7.dll": {
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdhip64_7.dll",
+    "sha256": "714990f5b64a767c467882fa5d8165da3cb6861942a834a602803387e533d6cc",
+    "size": 16153096
+   },
+   "migraphx.dll": {
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\migraphx.dll",
+    "sha256": "1b14623bbc2b9ae1e328511d1b078b358cad2a3d5b01d9246cb97638c1d987fe",
+    "size": 50775560
+   },
+   "MIOpen.dll": {
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\MIOpen.dll",
+    "sha256": "102a42d8a9c27b4247242fc8773db8e3a49fe5e9e726f4dd24aa407d8daa94d2",
+    "size": 69436896
+   },
+   "amdhip64_6.dll (System32)": {
+    "path": "C:\\Windows\\System32\\amdhip64_6.dll",
+    "sha256": "8fdb9c0d0b32b96454d092845311912e64b28594ea68f27e8511e1bb16db5b6c",
+    "size": 17906624
+   }
+  }
+ },
+ "driver_note": "AMD PnP driver 32.0.21030.2001 (unchanged since R1); Adrenalin mapping COMPATIBILITY_UNVERIFIED"
+}

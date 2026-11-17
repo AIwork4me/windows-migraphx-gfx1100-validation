@@ -1,0 +1,48 @@
+{
+ "schema_version": "r2/perf/1",
+ "case_id": "r2_perf_squeezenet1.0-12.onnx_AMDGPUExecutionProvider_b1",
+ "model": "squeezenet1.0-12.onnx",
+ "model_sha256": "dec81a8684617770b3cf13fadc1d92565d1d453d23935fc6388b792d99c992bd",
+ "ep": "AMDGPUExecutionProvider",
+ "batch": 1,
+ "warmup": 10,
+ "runs": 100,
+ "ort_version": "1.30.1",
+ "started_utc": "2026-11-17T01:20:27Z",
+ "real_hardware": true,
+ "threads": "default",
+ "classification": "PASS_PERF_MEASURED",
+ "cold": {
+  "register_s": 0.009,
+  "session_create_s": 11.28,
+  "first_run_s": 0.011
+ },
+ "gpu": {
+  "n": 100,
+  "p50_ms": 0.69,
+  "p95_ms": 0.892,
+  "mean_ms": 0.709,
+  "std_ms": 0.082,
+  "min_ms": 0.611,
+  "max_ms": 0.954,
+  "throughput_qps": 1409.77
+ },
+ "cpu": {
+  "n": 30,
+  "p50_ms": 1.271,
+  "p95_ms": 1.433,
+  "mean_ms": 1.259,
+  "std_ms": 0.124,
+  "min_ms": 1.073,
+  "max_ms": 1.583,
+  "throughput_qps": 794.49
+ },
+ "gpu_vs_cpu_speedup_mean": 1.78,
+ "working_set_mb": {
+  "before": -1.0,
+  "after": -1.0
+ },
+ "gpu_vram": "NOT_MEASURED",
+ "ep_node_ratio_profiled_run": 1.0,
+ "finished_utc": "2026-11-17T01:20:51Z"
+}

@@ -1,0 +1,613 @@
+{
+ "schema": "r2/device_identity_map/1",
+ "run_id": "r2_20261117T004504Z",
+ "generated_utc": "2026-11-17T00:47:51Z",
+ "pnp": {
+  "PnP": [
+   {
+    "Name": "GameViewer Virtual Display Adapter",
+    "InstanceId": "ROOT\\DISPLAY\\0000",
+    "Status": "OK",
+    "Location": null,
+    "HardwareIds": [
+     "Root\\GameViewerIddDriver"
+    ],
+    "pci_bdf": null
+   },
+   {
+    "Name": "Microsoft Remote Display Adapter",
+    "InstanceId": "SWD\\REMOTEDISPLAYENUM\\RDPIDD_INDIRECTDISPLAY&SESSIONID_0002",
+    "Status": "OK",
+    "Location": null,
+    "HardwareIds": [
+     "RdpIdd_IndirectDisplay"
+    ],
+    "pci_bdf": null
+   },
+   {
+    "Name": "AMD Radeon RX 7900 XTX",
+    "InstanceId": "PCI\\VEN_1002&DEV_744C&SUBSYS_0E3B1002&REV_C8\\6&13FD3BF3&0&00000008",
+    "Status": "OK",
+    "Location": "PCI bus 3, device 0, function 0",
+    "HardwareIds": [
+     "PCI\\VEN_1002&DEV_744C&SUBSYS_0E3B1002&REV_C8",
+     "PCI\\VEN_1002&DEV_744C&SUBSYS_0E3B1002",
+     "PCI\\VEN_1002&DEV_744C&CC_030000",
+     "PCI\\VEN_1002&DEV_744C&CC_0300"
+    ],
+    "pci_bdf": {
+     "bus": 3,
+     "device": 0,
+     "function": 0,
+     "raw": "PCI bus 3, device 0, function 0"
+    }
+   },
+   {
+    "Name": "Intel(R) UHD Graphics 770",
+    "InstanceId": "PCI\\VEN_8086&DEV_A780&SUBSYS_D0001458&REV_04\\3&11583659&0&10",
+    "Status": "OK",
+    "Location": "PCI bus 0, device 2, function 0",
+    "HardwareIds": [
+     "PCI\\VEN_8086&DEV_A780&SUBSYS_D0001458&REV_04",
+     "PCI\\VEN_8086&DEV_A780&SUBSYS_D0001458",
+     "PCI\\VEN_8086&DEV_A780&CC_030000",
+     "PCI\\VEN_8086&DEV_A780&CC_0300"
+    ],
+    "pci_bdf": {
+     "bus": 0,
+     "device": 2,
+     "function": 0,
+     "raw": "PCI bus 0, device 2, function 0"
+    }
+   }
+  ],
+  "VideoControllers": [
+   {
+    "Name": "GameViewer Virtual Display Adapter",
+    "PNPDeviceID": "ROOT\\DISPLAY\\0000",
+    "DriverVersion": "15.6.5.199",
+    "AdapterCompatibility": "GameViewer"
+   },
+   {
+    "Name": "AMD Radeon RX 7900 XTX",
+    "PNPDeviceID": "PCI\\VEN_1002&DEV_744C&SUBSYS_0E3B1002&REV_C8\\6&13FD3BF3&0&00000008",
+    "DriverVersion": "32.0.21030.2001",
+    "AdapterCompatibility": "Advanced Micro Devices, Inc."
+   },
+   {
+    "Name": "Intel(R) UHD Graphics 770",
+    "PNPDeviceID": "PCI\\VEN_8086&DEV_A780&SUBSYS_D0001458&REV_04\\3&11583659&0&10",
+    "DriverVersion": "32.0.101.6129",
+    "AdapterCompatibility": "Intel Corporation"
+   },
+   {
+    "Name": "Microsoft Remote Display Adapter",
+    "PNPDeviceID": "SWD\\REMOTEDISPLAYENUM\\RDPIDD_INDIRECTDISPLAY&SESSIONID_0002",
+    "DriverVersion": "10.0.26100.9818",
+    "AdapterCompatibility": "Microsoft"
+   }
+  ]
+ },
+ "dxgi": [
+  {
+   "dxgi_index": 0,
+   "description": "AMD Radeon RX 7900 XTX",
+   "vendor_id": "1002",
+   "device_id": "744c",
+   "subsys_id": "0e3b1002",
+   "revision": 200,
+   "dedicated_video_memory_bytes": 25753026560,
+   "dedicated_system_memory_bytes": 0,
+   "shared_system_memory_bytes": 17057857536,
+   "luid_low": 72346,
+   "luid_high": 0,
+   "luid_key": 72346,
+   "flags": 0,
+   "flag_is_remote": false,
+   "flag_is_software": false,
+   "num_outputs_reported": 1,
+   "outputs": [
+    {
+     "output_index": 0,
+     "device_name": "\\\\.\\DISPLAY1",
+     "attached_to_desktop": true,
+     "desktop_rect": [
+      0,
+      0,
+      2048,
+      1152
+     ],
+     "rotation": 1
+    }
+   ]
+  },
+  {
+   "dxgi_index": 1,
+   "description": "AMD Radeon RX 7900 XTX",
+   "vendor_id": "1002",
+   "device_id": "744c",
+   "subsys_id": "0e3b1002",
+   "revision": 200,
+   "dedicated_video_memory_bytes": 25753026560,
+   "dedicated_system_memory_bytes": 0,
+   "shared_system_memory_bytes": 17057857536,
+   "luid_low": 118045,
+   "luid_high": 0,
+   "luid_key": 118045,
+   "flags": 0,
+   "flag_is_remote": false,
+   "flag_is_software": false,
+   "num_outputs_reported": 0,
+   "outputs": []
+  },
+  {
+   "dxgi_index": 2,
+   "description": "Intel(R) UHD Graphics 770",
+   "vendor_id": "8086",
+   "device_id": "a780",
+   "subsys_id": "d0001458",
+   "revision": 4,
+   "dedicated_video_memory_bytes": 134217728,
+   "dedicated_system_memory_bytes": 0,
+   "shared_system_memory_bytes": 17057857536,
+   "luid_low": 80099,
+   "luid_high": 0,
+   "luid_key": 80099,
+   "flags": 0,
+   "flag_is_remote": false,
+   "flag_is_software": false,
+   "num_outputs_reported": 0,
+   "outputs": []
+  },
+  {
+   "dxgi_index": 3,
+   "description": "AMD Radeon RX 7900 XTX",
+   "vendor_id": "1002",
+   "device_id": "744c",
+   "subsys_id": "0e3b1002",
+   "revision": 200,
+   "dedicated_video_memory_bytes": 25753026560,
+   "dedicated_system_memory_bytes": 0,
+   "shared_system_memory_bytes": 17057857536,
+   "luid_low": 617528,
+   "luid_high": 0,
+   "luid_key": 617528,
+   "flags": 0,
+   "flag_is_remote": false,
+   "flag_is_software": false,
+   "num_outputs_reported": 0,
+   "outputs": []
+  },
+  {
+   "dxgi_index": 4,
+   "description": "Microsoft Basic Render Driver",
+   "vendor_id": "1414",
+   "device_id": "008c",
+   "subsys_id": "00000000",
+   "revision": 0,
+   "dedicated_video_memory_bytes": 0,
+   "dedicated_system_memory_bytes": 0,
+   "shared_system_memory_bytes": 17057857536,
+   "luid_low": 79992,
+   "luid_high": 0,
+   "luid_key": 79992,
+   "flags": 2,
+   "flag_is_remote": false,
+   "flag_is_software": true,
+   "num_outputs_reported": 0,
+   "outputs": []
+  }
+ ],
+ "dxgi_validated": true,
+ "gdi": [
+  {
+   "gdi_index": 0,
+   "device_name": "\\\\.\\DISPLAY1",
+   "device_string": "Microsoft Remote Display Adapter",
+   "state_flags": 67108869,
+   "device_id": "RdpIdd_IndirectDisplay",
+   "device_key": ""
+  },
+  {
+   "gdi_index": 1,
+   "device_name": "\\\\.\\DISPLAY2",
+   "device_string": "Microsoft Remote Display Adapter",
+   "state_flags": 67108864,
+   "device_id": "RdpIdd_IndirectDisplay",
+   "device_key": ""
+  },
+  {
+   "gdi_index": 2,
+   "device_name": "\\\\.\\DISPLAY3",
+   "device_string": "Microsoft Remote Display Adapter",
+   "state_flags": 67108864,
+   "device_id": "RdpIdd_IndirectDisplay",
+   "device_key": ""
+  },
+  {
+   "gdi_index": 3,
+   "device_name": "\\\\.\\DISPLAY4",
+   "device_string": "Microsoft Remote Display Adapter",
+   "state_flags": 67108864,
+   "device_id": "RdpIdd_IndirectDisplay",
+   "device_key": ""
+  },
+  {
+   "gdi_index": 4,
+   "device_name": "\\\\.\\DISPLAY5",
+   "device_string": "Microsoft Remote Display Adapter",
+   "state_flags": 67108864,
+   "device_id": "RdpIdd_IndirectDisplay",
+   "device_key": ""
+  },
+  {
+   "gdi_index": 5,
+   "device_name": "\\\\.\\DISPLAY6",
+   "device_string": "Microsoft Remote Display Adapter",
+   "state_flags": 67108864,
+   "device_id": "RdpIdd_IndirectDisplay",
+   "device_key": ""
+  },
+  {
+   "gdi_index": 6,
+   "device_name": "\\\\.\\DISPLAY7",
+   "device_string": "Microsoft Remote Display Adapter",
+   "state_flags": 67108864,
+   "device_id": "RdpIdd_IndirectDisplay",
+   "device_key": ""
+  },
+  {
+   "gdi_index": 7,
+   "device_name": "\\\\.\\DISPLAY8",
+   "device_string": "Microsoft Remote Display Adapter",
+   "state_flags": 67108864,
+   "device_id": "RdpIdd_IndirectDisplay",
+   "device_key": ""
+  },
+  {
+   "gdi_index": 8,
+   "device_name": "\\\\.\\DISPLAY9",
+   "device_string": "Microsoft Remote Display Adapter",
+   "state_flags": 67108864,
+   "device_id": "RdpIdd_IndirectDisplay",
+   "device_key": ""
+  },
+  {
+   "gdi_index": 9,
+   "device_name": "\\\\.\\DISPLAY10",
+   "device_string": "Microsoft Remote Display Adapter",
+   "state_flags": 67108864,
+   "device_id": "RdpIdd_IndirectDisplay",
+   "device_key": ""
+  },
+  {
+   "gdi_index": 10,
+   "device_name": "\\\\.\\DISPLAY11",
+   "device_string": "Microsoft Remote Display Adapter",
+   "state_flags": 67108864,
+   "device_id": "RdpIdd_IndirectDisplay",
+   "device_key": ""
+  },
+  {
+   "gdi_index": 11,
+   "device_name": "\\\\.\\DISPLAY12",
+   "device_string": "Microsoft Remote Display Adapter",
+   "state_flags": 67108864,
+   "device_id": "RdpIdd_IndirectDisplay",
+   "device_key": ""
+  },
+  {
+   "gdi_index": 12,
+   "device_name": "\\\\.\\DISPLAY13",
+   "device_string": "Microsoft Remote Display Adapter",
+   "state_flags": 67108864,
+   "device_id": "RdpIdd_IndirectDisplay",
+   "device_key": ""
+  },
+  {
+   "gdi_index": 13,
+   "device_name": "\\\\.\\DISPLAY14",
+   "device_string": "Microsoft Remote Display Adapter",
+   "state_flags": 67108864,
+   "device_id": "RdpIdd_IndirectDisplay",
+   "device_key": ""
+  },
+  {
+   "gdi_index": 14,
+   "device_name": "\\\\.\\DISPLAY15",
+   "device_string": "Microsoft Remote Display Adapter",
+   "state_flags": 67108864,
+   "device_id": "RdpIdd_IndirectDisplay",
+   "device_key": ""
+  },
+  {
+   "gdi_index": 15,
+   "device_name": "\\\\.\\DISPLAY16",
+   "device_string": "Microsoft Remote Display Adapter",
+   "state_flags": 67108864,
+   "device_id": "RdpIdd_IndirectDisplay",
+   "device_key": ""
+  }
+ ],
+ "hip": {
+  "ep_hip7": {
+   "count": {
+    "rc": 0,
+    "count": 1
+   },
+   "ordinal0_name_strings": [
+    "AMD Radeon RX 7900 XTX",
+    "gfx1100"
+   ],
+   "ordinal0_total_mem": 25753026560,
+   "pci_attrs": {
+    "pci_bus_id": 0,
+    "pci_device_id": 1,
+    "pci_domain_id": 64
+   },
+   "bdf_match_ordinal0": false
+  },
+  "sys_hip6": {
+   "count": {
+    "rc": 0,
+    "count": 1
+   },
+   "ordinal0_name_strings": [
+    "AMD Radeon RX 7900 XTX",
+    "gfx1100"
+   ],
+   "ordinal0_total_mem": 25753026560,
+   "pci_attrs": {
+    "pci_bus_id": 0,
+    "pci_device_id": 1,
+    "pci_domain_id": 2
+   },
+   "bdf_match_ordinal0": false
+  }
+ },
+ "ep_devices": {
+  "AMDGPUExecutionProvider": [
+   {
+    "ep_name": "CPUExecutionProvider",
+    "vendor_id": 32902,
+    "device_id": 7,
+    "metadata": {
+     "Description": "13th Gen Intel(R) Core(TM) i7-13700K"
+    }
+   },
+   {
+    "ep_name": "DmlExecutionProvider",
+    "vendor_id": 32902,
+    "device_id": 42880,
+    "metadata": {
+     "Description": "Intel(R) UHD Graphics 770",
+     "Discrete": "0",
+     "DxgiAdapterNumber": "2",
+     "DxgiHighPerformanceIndex": "2",
+     "DxgiVideoMemory": "128 MB",
+     "LUID": "80099"
+    }
+   },
+   {
+    "ep_name": "DmlExecutionProvider",
+    "vendor_id": 4098,
+    "device_id": 29772,
+    "metadata": {
+     "Description": "AMD Radeon RX 7900 XTX",
+     "DxgiAdapterNumber": "1",
+     "DxgiHighPerformanceIndex": "1",
+     "DxgiVideoMemory": "24560 MB",
+     "LUID": "118045"
+    }
+   },
+   {
+    "ep_name": "DmlExecutionProvider",
+    "vendor_id": 4098,
+    "device_id": 29772,
+    "metadata": {
+     "Description": "AMD Radeon RX 7900 XTX",
+     "Discrete": "1",
+     "DxgiAdapterNumber": "0",
+     "DxgiHighPerformanceIndex": "0",
+     "DxgiVideoMemory": "24560 MB",
+     "LUID": "72346"
+    }
+   },
+   {
+    "ep_name": "AMDGPUExecutionProvider",
+    "vendor_id": 4098,
+    "device_id": 29772,
+    "metadata": {
+     "Description": "AMD Radeon RX 7900 XTX",
+     "DxgiAdapterNumber": "1",
+     "DxgiHighPerformanceIndex": "1",
+     "DxgiVideoMemory": "24560 MB",
+     "LUID": "118045"
+    }
+   },
+   {
+    "ep_name": "AMDGPUExecutionProvider",
+    "vendor_id": 4098,
+    "device_id": 29772,
+    "metadata": {
+     "Description": "AMD Radeon RX 7900 XTX",
+     "Discrete": "1",
+     "DxgiAdapterNumber": "0",
+     "DxgiHighPerformanceIndex": "0",
+     "DxgiVideoMemory": "24560 MB",
+     "LUID": "72346"
+    }
+   }
+  ],
+  "MIGraphXExecutionProvider": [
+   {
+    "ep_name": "CPUExecutionProvider",
+    "vendor_id": 32902,
+    "device_id": 7,
+    "metadata": {
+     "Description": "13th Gen Intel(R) Core(TM) i7-13700K"
+    }
+   },
+   {
+    "ep_name": "DmlExecutionProvider",
+    "vendor_id": 32902,
+    "device_id": 42880,
+    "metadata": {
+     "Description": "Intel(R) UHD Graphics 770",
+     "Discrete": "0",
+     "DxgiAdapterNumber": "2",
+     "DxgiHighPerformanceIndex": "2",
+     "DxgiVideoMemory": "128 MB",
+     "LUID": "80099"
+    }
+   },
+   {
+    "ep_name": "DmlExecutionProvider",
+    "vendor_id": 4098,
+    "device_id": 29772,
+    "metadata": {
+     "Description": "AMD Radeon RX 7900 XTX",
+     "DxgiAdapterNumber": "1",
+     "DxgiHighPerformanceIndex": "1",
+     "DxgiVideoMemory": "24560 MB",
+     "LUID": "118045"
+    }
+   },
+   {
+    "ep_name": "DmlExecutionProvider",
+    "vendor_id": 4098,
+    "device_id": 29772,
+    "metadata": {
+     "Description": "AMD Radeon RX 7900 XTX",
+     "Discrete": "1",
+     "DxgiAdapterNumber": "0",
+     "DxgiHighPerformanceIndex": "0",
+     "DxgiVideoMemory": "24560 MB",
+     "LUID": "72346"
+    }
+   },
+   {
+    "ep_name": "MIGraphXExecutionProvider",
+    "vendor_id": 4098,
+    "device_id": 29772,
+    "metadata": {
+     "Description": "AMD Radeon RX 7900 XTX",
+     "DxgiAdapterNumber": "1",
+     "DxgiHighPerformanceIndex": "1",
+     "DxgiVideoMemory": "24560 MB",
+     "LUID": "118045"
+    }
+   },
+   {
+    "ep_name": "MIGraphXExecutionProvider",
+    "vendor_id": 4098,
+    "device_id": 29772,
+    "metadata": {
+     "Description": "AMD Radeon RX 7900 XTX",
+     "Discrete": "1",
+     "DxgiAdapterNumber": "0",
+     "DxgiHighPerformanceIndex": "0",
+     "DxgiVideoMemory": "24560 MB",
+     "LUID": "72346"
+    }
+   }
+  ]
+ },
+ "S5_ort_luids_in_dxgi": {
+  "ort_luids": [
+   [
+    "AMDGPUExecutionProvider",
+    80099
+   ],
+   [
+    "AMDGPUExecutionProvider",
+    118045
+   ],
+   [
+    "AMDGPUExecutionProvider",
+    72346
+   ],
+   [
+    "AMDGPUExecutionProvider",
+    118045
+   ],
+   [
+    "AMDGPUExecutionProvider",
+    72346
+   ],
+   [
+    "MIGraphXExecutionProvider",
+    80099
+   ],
+   [
+    "MIGraphXExecutionProvider",
+    118045
+   ],
+   [
+    "MIGraphXExecutionProvider",
+    72346
+   ],
+   [
+    "MIGraphXExecutionProvider",
+    118045
+   ],
+   [
+    "MIGraphXExecutionProvider",
+    72346
+   ]
+  ],
+  "missing_from_dxgi": [],
+  "ok": true
+ },
+ "amd_dxgi_entries": [
+  {
+   "dxgi_index": 0,
+   "luid": 72346,
+   "description": "AMD Radeon RX 7900 XTX",
+   "vram_bytes": 25753026560,
+   "flags": 0,
+   "num_outputs": 1,
+   "has_active_output": true,
+   "ort_metadata": {
+    "ep": "MIGraphXExecutionProvider",
+    "DxgiAdapterNumber": "0",
+    "Discrete": "1",
+    "DxgiHighPerformanceIndex": "0"
+   }
+  },
+  {
+   "dxgi_index": 1,
+   "luid": 118045,
+   "description": "AMD Radeon RX 7900 XTX",
+   "vram_bytes": 25753026560,
+   "flags": 0,
+   "num_outputs": 0,
+   "has_active_output": false,
+   "ort_metadata": {
+    "ep": "MIGraphXExecutionProvider",
+    "DxgiAdapterNumber": "1",
+    "Discrete": null,
+    "DxgiHighPerformanceIndex": "1"
+   }
+  },
+  {
+   "dxgi_index": 3,
+   "luid": 617528,
+   "description": "AMD Radeon RX 7900 XTX",
+   "vram_bytes": 25753026560,
+   "flags": 0,
+   "num_outputs": 0,
+   "has_active_output": false,
+   "ort_metadata": null
+  }
+ ],
+ "verdicts": {
+  "dxgi_enumeration": "VALIDATED",
+  "hip_pci_bdf": "NOT_EXPOSED",
+  "gameviewer_luid_attribution": "GAMEVIEWER_CAUSALITY_UNCONFIRMED",
+  "discrete_amd_entry": 72346,
+  "active_output_amd_entry": 72346,
+  "physical_xtx_luid": 72346,
+  "physical_xtx_identity_basis": "DXCore Discrete=1 + sole active DXGI output + HIP ordinal0 name=gfx1100/RX7900XTX and totalMem==DXGI VRAM (HIP PCI BDF itself NOT_EXPOSED on Windows)"
+ }
+}

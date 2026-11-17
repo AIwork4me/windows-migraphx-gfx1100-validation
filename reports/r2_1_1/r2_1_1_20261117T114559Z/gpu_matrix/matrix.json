@@ -1,0 +1,2309 @@
+{
+ "schema": "r2_1_1/gpu_matrix_driver/1",
+ "cases": [
+  {
+   "schema": "r2_1_1/gpu_matrix/1",
+   "fixture": "valid_conv_then_loop.onnx",
+   "model_sha256": "790a14109f11640356b9ad9c6fda9640b70c424664f9edf0e0d136adc188ef9d",
+   "ep": "AMDGPUExecutionProvider",
+   "opt": "ALL",
+   "ort": "1.30.1",
+   "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.001
+   },
+   "started_utc": "2026-11-17T11:58:31Z",
+   "device_luid": "72346",
+   "device_basis": [
+    "unique candidate with Discrete=1 + active DXGI output",
+    "ep=AMDGPUExecutionProvider",
+    "description=AMD Radeon RX 7900 XTX",
+    "discrete=True",
+    "active_output=True",
+    "canary: EP in providers + profile node + CPU parity"
+   ],
+   "session_create_s": 1.01,
+   "session_providers": [
+    "AMDGPUExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "parity": [
+    {
+     "input_index": 0,
+     "outputs": {
+      "Y": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        8,
+        8
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 1,
+     "outputs": {
+      "Y": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        8,
+        8
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 2,
+     "outputs": {
+      "Y": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        8,
+        8
+       ]
+      }
+     }
+    }
+   ],
+   "nodes_by_provider": {
+    "CPUExecutionProvider": 27
+   },
+   "total_node_events": 27,
+   "classification": "FAIL_NO_GPU_COMPUTE",
+   "finished_utc": "2026-11-17T11:58:34Z",
+   "child_rc": 0,
+   "wall_s": 2.6
+  },
+  {
+   "schema": "r2_1_1/gpu_matrix/1",
+   "fixture": "valid_conv_then_loop.onnx",
+   "model_sha256": "790a14109f11640356b9ad9c6fda9640b70c424664f9edf0e0d136adc188ef9d",
+   "ep": "AMDGPUExecutionProvider",
+   "opt": "DISABLE_ALL",
+   "ort": "1.30.1",
+   "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.001
+   },
+   "started_utc": "2026-11-17T11:58:29Z",
+   "device_luid": "72346",
+   "device_basis": [
+    "unique candidate with Discrete=1 + active DXGI output",
+    "ep=AMDGPUExecutionProvider",
+    "description=AMD Radeon RX 7900 XTX",
+    "discrete=True",
+    "active_output=True",
+    "canary: EP in providers + profile node + CPU parity"
+   ],
+   "session_create_s": 1.03,
+   "session_providers": [
+    "AMDGPUExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "parity": [
+    {
+     "input_index": 0,
+     "outputs": {
+      "Y": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        8,
+        8
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 1,
+     "outputs": {
+      "Y": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        8,
+        8
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 2,
+     "outputs": {
+      "Y": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        8,
+        8
+       ]
+      }
+     }
+    }
+   ],
+   "nodes_by_provider": {
+    "CPUExecutionProvider": 24
+   },
+   "total_node_events": 24,
+   "classification": "FAIL_NO_GPU_COMPUTE",
+   "finished_utc": "2026-11-17T11:58:31Z",
+   "child_rc": 0,
+   "wall_s": 2.6
+  },
+  {
+   "schema": "r2_1_1/gpu_matrix/1",
+   "fixture": "valid_conv_then_loop.onnx",
+   "model_sha256": "790a14109f11640356b9ad9c6fda9640b70c424664f9edf0e0d136adc188ef9d",
+   "ep": "MIGraphXExecutionProvider",
+   "opt": "ALL",
+   "ort": "1.30.1",
+   "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.001
+   },
+   "started_utc": "2026-11-17T11:58:37Z",
+   "device_luid": "72346",
+   "device_basis": [
+    "unique candidate with Discrete=1 + active DXGI output",
+    "ep=MIGraphXExecutionProvider",
+    "description=AMD Radeon RX 7900 XTX",
+    "discrete=True",
+    "active_output=True",
+    "canary: EP in providers + profile node + CPU parity"
+   ],
+   "session_create_s": 0.87,
+   "session_providers": [
+    "MIGraphXExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "parity": [
+    {
+     "input_index": 0,
+     "outputs": {
+      "Y": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        8,
+        8
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 1,
+     "outputs": {
+      "Y": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        8,
+        8
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 2,
+     "outputs": {
+      "Y": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        8,
+        8
+       ]
+      }
+     }
+    }
+   ],
+   "nodes_by_provider": {
+    "CPUExecutionProvider": 27
+   },
+   "total_node_events": 27,
+   "classification": "FAIL_NO_GPU_COMPUTE",
+   "finished_utc": "2026-11-17T11:58:39Z",
+   "child_rc": 0,
+   "wall_s": 2.5
+  },
+  {
+   "schema": "r2_1_1/gpu_matrix/1",
+   "fixture": "valid_conv_then_loop.onnx",
+   "model_sha256": "790a14109f11640356b9ad9c6fda9640b70c424664f9edf0e0d136adc188ef9d",
+   "ep": "MIGraphXExecutionProvider",
+   "opt": "DISABLE_ALL",
+   "ort": "1.30.1",
+   "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.001
+   },
+   "started_utc": "2026-11-17T11:58:34Z",
+   "device_luid": "72346",
+   "device_basis": [
+    "unique candidate with Discrete=1 + active DXGI output",
+    "ep=MIGraphXExecutionProvider",
+    "description=AMD Radeon RX 7900 XTX",
+    "discrete=True",
+    "active_output=True",
+    "canary: EP in providers + profile node + CPU parity"
+   ],
+   "session_create_s": 1.01,
+   "session_providers": [
+    "MIGraphXExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "parity": [
+    {
+     "input_index": 0,
+     "outputs": {
+      "Y": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        8,
+        8
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 1,
+     "outputs": {
+      "Y": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        8,
+        8
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 2,
+     "outputs": {
+      "Y": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        8,
+        8
+       ]
+      }
+     }
+    }
+   ],
+   "nodes_by_provider": {
+    "CPUExecutionProvider": 24
+   },
+   "total_node_events": 24,
+   "classification": "FAIL_NO_GPU_COMPUTE",
+   "finished_utc": "2026-11-17T11:58:36Z",
+   "child_rc": 0,
+   "wall_s": 2.8
+  },
+  {
+   "schema": "r2_1_1/gpu_matrix/1",
+   "fixture": "valid_loop_carried.onnx",
+   "model_sha256": "8cf3434e5ab14fad31e2239eec9f4054ae2d3bfab5b9b38d1acba8294eafb1b5",
+   "ep": "AMDGPUExecutionProvider",
+   "opt": "ALL",
+   "ort": "1.30.1",
+   "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.001
+   },
+   "started_utc": "2026-11-17T11:58:13Z",
+   "device_luid": "72346",
+   "device_basis": [
+    "unique candidate with Discrete=1 + active DXGI output",
+    "ep=AMDGPUExecutionProvider",
+    "description=AMD Radeon RX 7900 XTX",
+    "discrete=True",
+    "active_output=True",
+    "canary: EP in providers + profile node + CPU parity"
+   ],
+   "session_create_s": 0.49,
+   "session_providers": [
+    "AMDGPUExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "parity": [
+    {
+     "input_index": 0,
+     "outputs": {
+      "Y": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        4,
+        4
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 1,
+     "outputs": {
+      "Y": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        4,
+        4
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 2,
+     "outputs": {
+      "Y": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        4,
+        4
+       ]
+      }
+     }
+    }
+   ],
+   "nodes_by_provider": {
+    "AMDGPUExecutionProvider": 3
+   },
+   "total_node_events": 3,
+   "classification": "PASS_GPU_EXECUTED",
+   "finished_utc": "2026-11-17T11:58:15Z",
+   "child_rc": 0,
+   "wall_s": 2.2
+  },
+  {
+   "schema": "r2_1_1/gpu_matrix/1",
+   "fixture": "valid_loop_carried.onnx",
+   "model_sha256": "8cf3434e5ab14fad31e2239eec9f4054ae2d3bfab5b9b38d1acba8294eafb1b5",
+   "ep": "AMDGPUExecutionProvider",
+   "opt": "DISABLE_ALL",
+   "ort": "1.30.1",
+   "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.001
+   },
+   "started_utc": "2026-11-17T11:58:07Z",
+   "device_luid": "72346",
+   "device_basis": [
+    "unique candidate with Discrete=1 + active DXGI output",
+    "ep=AMDGPUExecutionProvider",
+    "description=AMD Radeon RX 7900 XTX",
+    "discrete=True",
+    "active_output=True",
+    "canary: EP in providers + profile node + CPU parity"
+   ],
+   "session_create_s": 0.74,
+   "session_providers": [
+    "AMDGPUExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "parity": [
+    {
+     "input_index": 0,
+     "outputs": {
+      "Y": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        4,
+        4
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 1,
+     "outputs": {
+      "Y": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        4,
+        4
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 2,
+     "outputs": {
+      "Y": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        4,
+        4
+       ]
+      }
+     }
+    }
+   ],
+   "nodes_by_provider": {
+    "AMDGPUExecutionProvider": 3
+   },
+   "total_node_events": 3,
+   "classification": "PASS_GPU_EXECUTED",
+   "finished_utc": "2026-11-17T11:58:12Z",
+   "child_rc": 0,
+   "wall_s": 5.3
+  },
+  {
+   "schema": "r2_1_1/gpu_matrix/1",
+   "fixture": "valid_loop_carried.onnx",
+   "model_sha256": "8cf3434e5ab14fad31e2239eec9f4054ae2d3bfab5b9b38d1acba8294eafb1b5",
+   "ep": "MIGraphXExecutionProvider",
+   "opt": "ALL",
+   "ort": "1.30.1",
+   "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.001
+   },
+   "started_utc": "2026-11-17T11:58:17Z",
+   "device_luid": "72346",
+   "device_basis": [
+    "unique candidate with Discrete=1 + active DXGI output",
+    "ep=MIGraphXExecutionProvider",
+    "description=AMD Radeon RX 7900 XTX",
+    "discrete=True",
+    "active_output=True",
+    "canary: EP in providers + profile node + CPU parity"
+   ],
+   "session_create_s": 0.6,
+   "session_providers": [
+    "MIGraphXExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "parity": [
+    {
+     "input_index": 0,
+     "outputs": {
+      "Y": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        4,
+        4
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 1,
+     "outputs": {
+      "Y": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        4,
+        4
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 2,
+     "outputs": {
+      "Y": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        4,
+        4
+       ]
+      }
+     }
+    }
+   ],
+   "nodes_by_provider": {
+    "MIGraphXExecutionProvider": 3
+   },
+   "total_node_events": 3,
+   "classification": "PASS_GPU_EXECUTED",
+   "finished_utc": "2026-11-17T11:58:19Z",
+   "child_rc": 0,
+   "wall_s": 2.2
+  },
+  {
+   "schema": "r2_1_1/gpu_matrix/1",
+   "fixture": "valid_loop_carried.onnx",
+   "model_sha256": "8cf3434e5ab14fad31e2239eec9f4054ae2d3bfab5b9b38d1acba8294eafb1b5",
+   "ep": "MIGraphXExecutionProvider",
+   "opt": "DISABLE_ALL",
+   "ort": "1.30.1",
+   "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.001
+   },
+   "started_utc": "2026-11-17T11:58:15Z",
+   "device_luid": "72346",
+   "device_basis": [
+    "unique candidate with Discrete=1 + active DXGI output",
+    "ep=MIGraphXExecutionProvider",
+    "description=AMD Radeon RX 7900 XTX",
+    "discrete=True",
+    "active_output=True",
+    "canary: EP in providers + profile node + CPU parity"
+   ],
+   "session_create_s": 0.59,
+   "session_providers": [
+    "MIGraphXExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "parity": [
+    {
+     "input_index": 0,
+     "outputs": {
+      "Y": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        4,
+        4
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 1,
+     "outputs": {
+      "Y": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        4,
+        4
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 2,
+     "outputs": {
+      "Y": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        4,
+        4
+       ]
+      }
+     }
+    }
+   ],
+   "nodes_by_provider": {
+    "MIGraphXExecutionProvider": 3
+   },
+   "total_node_events": 3,
+   "classification": "PASS_GPU_EXECUTED",
+   "finished_utc": "2026-11-17T11:58:17Z",
+   "child_rc": 0,
+   "wall_s": 2.2
+  },
+  {
+   "schema": "r2_1_1/gpu_matrix/1",
+   "fixture": "valid_loop_plus_nonzero.onnx",
+   "model_sha256": "9533856aa51b207a15b68fc8a5e0fa4ca16efdeae46b737e89c570c99e8f6fa1",
+   "ep": "AMDGPUExecutionProvider",
+   "opt": "ALL",
+   "ort": "1.30.1",
+   "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.001
+   },
+   "started_utc": "2026-11-17T11:59:01Z",
+   "device_luid": "72346",
+   "device_basis": [
+    "unique candidate with Discrete=1 + active DXGI output",
+    "ep=AMDGPUExecutionProvider",
+    "description=AMD Radeon RX 7900 XTX",
+    "discrete=True",
+    "active_output=True",
+    "canary: EP in providers + profile node + CPU parity"
+   ],
+   "session_create_s": 0.48,
+   "session_providers": [
+    "AMDGPUExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "parity": [
+    {
+     "input_index": 0,
+     "outputs": {
+      "Z": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        4,
+        16
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 1,
+     "outputs": {
+      "Z": {
+       "match": false,
+       "max_abs": -1.0,
+       "shape": [
+        4,
+        16
+       ]
+      }
+     }
+    }
+   ],
+   "nodes_by_provider": {
+    "AMDGPUExecutionProvider": 2
+   },
+   "total_node_events": 2,
+   "classification": "FAIL_CORRECTNESS",
+   "finished_utc": "2026-11-17T11:59:03Z",
+   "child_rc": 0,
+   "wall_s": 2.1
+  },
+  {
+   "schema": "r2_1_1/gpu_matrix/1",
+   "fixture": "valid_loop_plus_nonzero.onnx",
+   "model_sha256": "9533856aa51b207a15b68fc8a5e0fa4ca16efdeae46b737e89c570c99e8f6fa1",
+   "ep": "AMDGPUExecutionProvider",
+   "opt": "DISABLE_ALL",
+   "ort": "1.30.1",
+   "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.001
+   },
+   "started_utc": "2026-11-17T11:58:59Z",
+   "device_luid": "72346",
+   "device_basis": [
+    "unique candidate with Discrete=1 + active DXGI output",
+    "ep=AMDGPUExecutionProvider",
+    "description=AMD Radeon RX 7900 XTX",
+    "discrete=True",
+    "active_output=True",
+    "canary: EP in providers + profile node + CPU parity"
+   ],
+   "session_create_s": 0.84,
+   "session_providers": [
+    "AMDGPUExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "parity": [
+    {
+     "input_index": 0,
+     "outputs": {
+      "Z": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        4,
+        16
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 1,
+     "outputs": {
+      "Z": {
+       "match": false,
+       "max_abs": -1.0,
+       "shape": [
+        4,
+        16
+       ]
+      }
+     }
+    }
+   ],
+   "nodes_by_provider": {
+    "AMDGPUExecutionProvider": 2
+   },
+   "total_node_events": 2,
+   "classification": "FAIL_CORRECTNESS",
+   "finished_utc": "2026-11-17T11:59:01Z",
+   "child_rc": 0,
+   "wall_s": 2.3
+  },
+  {
+   "schema": "r2_1_1/gpu_matrix/1",
+   "fixture": "valid_loop_plus_nonzero.onnx",
+   "model_sha256": "9533856aa51b207a15b68fc8a5e0fa4ca16efdeae46b737e89c570c99e8f6fa1",
+   "ep": "MIGraphXExecutionProvider",
+   "opt": "ALL",
+   "ort": "1.30.1",
+   "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.001
+   },
+   "started_utc": "2026-11-17T11:59:05Z",
+   "device_luid": "72346",
+   "device_basis": [
+    "unique candidate with Discrete=1 + active DXGI output",
+    "ep=MIGraphXExecutionProvider",
+    "description=AMD Radeon RX 7900 XTX",
+    "discrete=True",
+    "active_output=True",
+    "canary: EP in providers + profile node + CPU parity"
+   ],
+   "session_create_s": 0.58,
+   "session_providers": [
+    "MIGraphXExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "parity": [
+    {
+     "input_index": 0,
+     "outputs": {
+      "Z": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        4,
+        16
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 1,
+     "outputs": {
+      "Z": {
+       "match": false,
+       "max_abs": -1.0,
+       "shape": [
+        4,
+        16
+       ]
+      }
+     }
+    }
+   ],
+   "nodes_by_provider": {
+    "MIGraphXExecutionProvider": 2
+   },
+   "total_node_events": 2,
+   "classification": "FAIL_CORRECTNESS",
+   "finished_utc": "2026-11-17T11:59:07Z",
+   "child_rc": 0,
+   "wall_s": 2.4
+  },
+  {
+   "schema": "r2_1_1/gpu_matrix/1",
+   "fixture": "valid_loop_plus_nonzero.onnx",
+   "model_sha256": "9533856aa51b207a15b68fc8a5e0fa4ca16efdeae46b737e89c570c99e8f6fa1",
+   "ep": "MIGraphXExecutionProvider",
+   "opt": "DISABLE_ALL",
+   "ort": "1.30.1",
+   "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.001
+   },
+   "started_utc": "2026-11-17T11:59:03Z",
+   "device_luid": "72346",
+   "device_basis": [
+    "unique candidate with Discrete=1 + active DXGI output",
+    "ep=MIGraphXExecutionProvider",
+    "description=AMD Radeon RX 7900 XTX",
+    "discrete=True",
+    "active_output=True",
+    "canary: EP in providers + profile node + CPU parity"
+   ],
+   "session_create_s": 0.48,
+   "session_providers": [
+    "MIGraphXExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "parity": [
+    {
+     "input_index": 0,
+     "outputs": {
+      "Z": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        4,
+        16
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 1,
+     "outputs": {
+      "Z": {
+       "match": false,
+       "max_abs": -1.0,
+       "shape": [
+        4,
+        16
+       ]
+      }
+     }
+    }
+   ],
+   "nodes_by_provider": {
+    "MIGraphXExecutionProvider": 2
+   },
+   "total_node_events": 2,
+   "classification": "FAIL_CORRECTNESS",
+   "finished_utc": "2026-11-17T11:59:05Z",
+   "child_rc": 0,
+   "wall_s": 2.2
+  },
+  {
+   "schema": "r2_1_1/gpu_matrix/1",
+   "fixture": "valid_loop_scan.onnx",
+   "model_sha256": "5352ea42667228b5dc1e6bbd9061a41ddfe9bdb9707d9ccc64bf81fdc06e13c2",
+   "ep": "AMDGPUExecutionProvider",
+   "opt": "ALL",
+   "ort": "1.30.1",
+   "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.001
+   },
+   "started_utc": "2026-11-17T11:58:22Z",
+   "device_luid": "72346",
+   "device_basis": [
+    "unique candidate with Discrete=1 + active DXGI output",
+    "ep=AMDGPUExecutionProvider",
+    "description=AMD Radeon RX 7900 XTX",
+    "discrete=True",
+    "active_output=True",
+    "canary: EP in providers + profile node + CPU parity"
+   ],
+   "session_create_s": 0.63,
+   "session_providers": [
+    "AMDGPUExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "parity": [
+    {
+     "input_index": 0,
+     "outputs": {
+      "Z": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        4,
+        4
+       ]
+      },
+      "Y": {
+       "match": false,
+       "max_abs": 1.0087085962295532,
+       "shape": [
+        3,
+        1,
+        1,
+        4,
+        4
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 1,
+     "outputs": {
+      "Z": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        4,
+        4
+       ]
+      },
+      "Y": {
+       "match": false,
+       "max_abs": 0.8968505859375,
+       "shape": [
+        3,
+        1,
+        1,
+        4,
+        4
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 2,
+     "outputs": {
+      "Z": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        4,
+        4
+       ]
+      },
+      "Y": {
+       "match": false,
+       "max_abs": 1.1508479118347168,
+       "shape": [
+        3,
+        1,
+        1,
+        4,
+        4
+       ]
+      }
+     }
+    }
+   ],
+   "nodes_by_provider": {
+    "AMDGPUExecutionProvider": 3
+   },
+   "total_node_events": 3,
+   "classification": "FAIL_CORRECTNESS",
+   "finished_utc": "2026-11-17T11:58:24Z",
+   "child_rc": 0,
+   "wall_s": 2.3
+  },
+  {
+   "schema": "r2_1_1/gpu_matrix/1",
+   "fixture": "valid_loop_scan.onnx",
+   "model_sha256": "5352ea42667228b5dc1e6bbd9061a41ddfe9bdb9707d9ccc64bf81fdc06e13c2",
+   "ep": "AMDGPUExecutionProvider",
+   "opt": "DISABLE_ALL",
+   "ort": "1.30.1",
+   "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.001
+   },
+   "started_utc": "2026-11-17T11:58:19Z",
+   "device_luid": "72346",
+   "device_basis": [
+    "unique candidate with Discrete=1 + active DXGI output",
+    "ep=AMDGPUExecutionProvider",
+    "description=AMD Radeon RX 7900 XTX",
+    "discrete=True",
+    "active_output=True",
+    "canary: EP in providers + profile node + CPU parity"
+   ],
+   "session_create_s": 0.98,
+   "session_providers": [
+    "AMDGPUExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "parity": [
+    {
+     "input_index": 0,
+     "outputs": {
+      "Z": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        4,
+        4
+       ]
+      },
+      "Y": {
+       "match": false,
+       "max_abs": 1.0087085962295532,
+       "shape": [
+        3,
+        1,
+        1,
+        4,
+        4
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 1,
+     "outputs": {
+      "Z": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        4,
+        4
+       ]
+      },
+      "Y": {
+       "match": false,
+       "max_abs": 0.8968505859375,
+       "shape": [
+        3,
+        1,
+        1,
+        4,
+        4
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 2,
+     "outputs": {
+      "Z": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        4,
+        4
+       ]
+      },
+      "Y": {
+       "match": false,
+       "max_abs": 1.1508479118347168,
+       "shape": [
+        3,
+        1,
+        1,
+        4,
+        4
+       ]
+      }
+     }
+    }
+   ],
+   "nodes_by_provider": {
+    "AMDGPUExecutionProvider": 3
+   },
+   "total_node_events": 3,
+   "classification": "FAIL_CORRECTNESS",
+   "finished_utc": "2026-11-17T11:58:22Z",
+   "child_rc": 0,
+   "wall_s": 2.5
+  },
+  {
+   "schema": "r2_1_1/gpu_matrix/1",
+   "fixture": "valid_loop_scan.onnx",
+   "model_sha256": "5352ea42667228b5dc1e6bbd9061a41ddfe9bdb9707d9ccc64bf81fdc06e13c2",
+   "ep": "MIGraphXExecutionProvider",
+   "opt": "ALL",
+   "ort": "1.30.1",
+   "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.001
+   },
+   "started_utc": "2026-11-17T11:58:26Z",
+   "device_luid": "72346",
+   "device_basis": [
+    "unique candidate with Discrete=1 + active DXGI output",
+    "ep=MIGraphXExecutionProvider",
+    "description=AMD Radeon RX 7900 XTX",
+    "discrete=True",
+    "active_output=True",
+    "canary: EP in providers + profile node + CPU parity"
+   ],
+   "session_create_s": 0.6,
+   "session_providers": [
+    "MIGraphXExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "parity": [
+    {
+     "input_index": 0,
+     "outputs": {
+      "Z": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        4,
+        4
+       ]
+      },
+      "Y": {
+       "match": false,
+       "max_abs": 1.0087085962295532,
+       "shape": [
+        3,
+        1,
+        1,
+        4,
+        4
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 1,
+     "outputs": {
+      "Z": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        4,
+        4
+       ]
+      },
+      "Y": {
+       "match": false,
+       "max_abs": 0.8968505859375,
+       "shape": [
+        3,
+        1,
+        1,
+        4,
+        4
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 2,
+     "outputs": {
+      "Z": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        4,
+        4
+       ]
+      },
+      "Y": {
+       "match": false,
+       "max_abs": 1.1508479118347168,
+       "shape": [
+        3,
+        1,
+        1,
+        4,
+        4
+       ]
+      }
+     }
+    }
+   ],
+   "nodes_by_provider": {
+    "MIGraphXExecutionProvider": 3
+   },
+   "total_node_events": 3,
+   "classification": "FAIL_CORRECTNESS",
+   "finished_utc": "2026-11-17T11:58:28Z",
+   "child_rc": 0,
+   "wall_s": 2.3
+  },
+  {
+   "schema": "r2_1_1/gpu_matrix/1",
+   "fixture": "valid_loop_scan.onnx",
+   "model_sha256": "5352ea42667228b5dc1e6bbd9061a41ddfe9bdb9707d9ccc64bf81fdc06e13c2",
+   "ep": "MIGraphXExecutionProvider",
+   "opt": "DISABLE_ALL",
+   "ort": "1.30.1",
+   "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.001
+   },
+   "started_utc": "2026-11-17T11:58:24Z",
+   "device_luid": "72346",
+   "device_basis": [
+    "unique candidate with Discrete=1 + active DXGI output",
+    "ep=MIGraphXExecutionProvider",
+    "description=AMD Radeon RX 7900 XTX",
+    "discrete=True",
+    "active_output=True",
+    "canary: EP in providers + profile node + CPU parity"
+   ],
+   "session_create_s": 0.49,
+   "session_providers": [
+    "MIGraphXExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "parity": [
+    {
+     "input_index": 0,
+     "outputs": {
+      "Z": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        4,
+        4
+       ]
+      },
+      "Y": {
+       "match": false,
+       "max_abs": 1.0087085962295532,
+       "shape": [
+        3,
+        1,
+        1,
+        4,
+        4
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 1,
+     "outputs": {
+      "Z": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        4,
+        4
+       ]
+      },
+      "Y": {
+       "match": false,
+       "max_abs": 0.8968505859375,
+       "shape": [
+        3,
+        1,
+        1,
+        4,
+        4
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 2,
+     "outputs": {
+      "Z": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        4,
+        4
+       ]
+      },
+      "Y": {
+       "match": false,
+       "max_abs": 1.1508479118347168,
+       "shape": [
+        3,
+        1,
+        1,
+        4,
+        4
+       ]
+      }
+     }
+    }
+   ],
+   "nodes_by_provider": {
+    "MIGraphXExecutionProvider": 3
+   },
+   "total_node_events": 3,
+   "classification": "FAIL_CORRECTNESS",
+   "finished_utc": "2026-11-17T11:58:26Z",
+   "child_rc": 0,
+   "wall_s": 2.2
+  },
+  {
+   "schema": "r2_1_1/gpu_matrix/1",
+   "fixture": "valid_nonzero_dynamic.onnx",
+   "model_sha256": "17dfde7677edf991a242b1c5418b23355517a90ca38bec4e487113f782245c51",
+   "ep": "AMDGPUExecutionProvider",
+   "opt": "ALL",
+   "ort": "1.30.1",
+   "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.001
+   },
+   "started_utc": "2026-11-17T11:58:51Z",
+   "device_luid": "72346",
+   "device_basis": [
+    "unique candidate with Discrete=1 + active DXGI output",
+    "ep=AMDGPUExecutionProvider",
+    "description=AMD Radeon RX 7900 XTX",
+    "discrete=True",
+    "active_output=True",
+    "canary: EP in providers + profile node + CPU parity"
+   ],
+   "session_create_s": 0.01,
+   "session_providers": [
+    "AMDGPUExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "parity": [
+    {
+     "input_index": 0,
+     "outputs": {
+      "Y": {
+       "match": false,
+       "max_abs": -1.0,
+       "shape": [
+        2,
+        42
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 1,
+     "outputs": {
+      "Y": {
+       "match": false,
+       "max_abs": -1.0,
+       "shape": [
+        2,
+        12
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 2,
+     "outputs": {
+      "Y": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        2,
+        18
+       ]
+      }
+     }
+    }
+   ],
+   "nodes_by_provider": {
+    "AMDGPUExecutionProvider": 3
+   },
+   "total_node_events": 3,
+   "classification": "FAIL_CORRECTNESS",
+   "finished_utc": "2026-11-17T11:58:53Z",
+   "child_rc": 0,
+   "wall_s": 2.7
+  },
+  {
+   "schema": "r2_1_1/gpu_matrix/1",
+   "fixture": "valid_nonzero_dynamic.onnx",
+   "model_sha256": "17dfde7677edf991a242b1c5418b23355517a90ca38bec4e487113f782245c51",
+   "ep": "AMDGPUExecutionProvider",
+   "opt": "DISABLE_ALL",
+   "ort": "1.30.1",
+   "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.001
+   },
+   "started_utc": "2026-11-17T11:58:47Z",
+   "device_luid": "72346",
+   "device_basis": [
+    "unique candidate with Discrete=1 + active DXGI output",
+    "ep=AMDGPUExecutionProvider",
+    "description=AMD Radeon RX 7900 XTX",
+    "discrete=True",
+    "active_output=True",
+    "canary: EP in providers + profile node + CPU parity"
+   ],
+   "session_create_s": 0.01,
+   "session_providers": [
+    "AMDGPUExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "parity": [
+    {
+     "input_index": 0,
+     "outputs": {
+      "Y": {
+       "match": false,
+       "max_abs": -1.0,
+       "shape": [
+        2,
+        42
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 1,
+     "outputs": {
+      "Y": {
+       "match": false,
+       "max_abs": -1.0,
+       "shape": [
+        2,
+        12
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 2,
+     "outputs": {
+      "Y": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        2,
+        18
+       ]
+      }
+     }
+    }
+   ],
+   "nodes_by_provider": {
+    "AMDGPUExecutionProvider": 3
+   },
+   "total_node_events": 3,
+   "classification": "FAIL_CORRECTNESS",
+   "finished_utc": "2026-11-17T11:58:51Z",
+   "child_rc": 0,
+   "wall_s": 3.5
+  },
+  {
+   "schema": "r2_1_1/gpu_matrix/1",
+   "fixture": "valid_nonzero_dynamic.onnx",
+   "model_sha256": "17dfde7677edf991a242b1c5418b23355517a90ca38bec4e487113f782245c51",
+   "ep": "MIGraphXExecutionProvider",
+   "opt": "ALL",
+   "ort": "1.30.1",
+   "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.001
+   },
+   "started_utc": "2026-11-17T11:58:56Z",
+   "device_luid": "72346",
+   "device_basis": [
+    "unique candidate with Discrete=1 + active DXGI output",
+    "ep=MIGraphXExecutionProvider",
+    "description=AMD Radeon RX 7900 XTX",
+    "discrete=True",
+    "active_output=True",
+    "canary: EP in providers + profile node + CPU parity"
+   ],
+   "session_create_s": 0.01,
+   "session_providers": [
+    "MIGraphXExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "parity": [
+    {
+     "input_index": 0,
+     "outputs": {
+      "Y": {
+       "match": false,
+       "max_abs": -1.0,
+       "shape": [
+        2,
+        42
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 1,
+     "outputs": {
+      "Y": {
+       "match": false,
+       "max_abs": -1.0,
+       "shape": [
+        2,
+        12
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 2,
+     "outputs": {
+      "Y": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        2,
+        18
+       ]
+      }
+     }
+    }
+   ],
+   "nodes_by_provider": {
+    "MIGraphXExecutionProvider": 3
+   },
+   "total_node_events": 3,
+   "classification": "FAIL_CORRECTNESS",
+   "finished_utc": "2026-11-17T11:58:59Z",
+   "child_rc": 0,
+   "wall_s": 2.5
+  },
+  {
+   "schema": "r2_1_1/gpu_matrix/1",
+   "fixture": "valid_nonzero_dynamic.onnx",
+   "model_sha256": "17dfde7677edf991a242b1c5418b23355517a90ca38bec4e487113f782245c51",
+   "ep": "MIGraphXExecutionProvider",
+   "opt": "DISABLE_ALL",
+   "ort": "1.30.1",
+   "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.001
+   },
+   "started_utc": "2026-11-17T11:58:54Z",
+   "device_luid": "72346",
+   "device_basis": [
+    "unique candidate with Discrete=1 + active DXGI output",
+    "ep=MIGraphXExecutionProvider",
+    "description=AMD Radeon RX 7900 XTX",
+    "discrete=True",
+    "active_output=True",
+    "canary: EP in providers + profile node + CPU parity"
+   ],
+   "session_create_s": 0.01,
+   "session_providers": [
+    "MIGraphXExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "parity": [
+    {
+     "input_index": 0,
+     "outputs": {
+      "Y": {
+       "match": false,
+       "max_abs": -1.0,
+       "shape": [
+        2,
+        42
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 1,
+     "outputs": {
+      "Y": {
+       "match": false,
+       "max_abs": -1.0,
+       "shape": [
+        2,
+        12
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 2,
+     "outputs": {
+      "Y": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        2,
+        18
+       ]
+      }
+     }
+    }
+   ],
+   "nodes_by_provider": {
+    "MIGraphXExecutionProvider": 3
+   },
+   "total_node_events": 3,
+   "classification": "FAIL_CORRECTNESS",
+   "finished_utc": "2026-11-17T11:58:56Z",
+   "child_rc": 0,
+   "wall_s": 2.8
+  },
+  {
+   "schema": "r2_1_1/gpu_matrix/1",
+   "fixture": "valid_nonzero_in_loop.onnx",
+   "model_sha256": "f03044e5317485a76fda8c4770b22892ad3701eccb5678118a544530487a93d5",
+   "ep": "AMDGPUExecutionProvider",
+   "opt": "ALL",
+   "ort": "1.30.1",
+   "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.001
+   },
+   "started_utc": "2026-11-17T12:03:15Z",
+   "device_luid": "72346",
+   "device_basis": [
+    "unique candidate with Discrete=1 + active DXGI output",
+    "ep=AMDGPUExecutionProvider",
+    "description=AMD Radeon RX 7900 XTX",
+    "discrete=True",
+    "active_output=True",
+    "canary: EP in providers + profile node + CPU parity"
+   ],
+   "session_create_s": 0.61,
+   "session_providers": [
+    "AMDGPUExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "parity": [
+    {
+     "input_index": 0,
+     "outputs": {
+      "Z": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        4,
+        4
+       ]
+      },
+      "S": {
+       "match": false,
+       "max_abs": -1.0,
+       "shape": [
+        3,
+        1
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 1,
+     "outputs": {
+      "Z": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        4,
+        4
+       ]
+      },
+      "S": {
+       "match": false,
+       "max_abs": -1.0,
+       "shape": [
+        3,
+        1
+       ]
+      }
+     }
+    }
+   ],
+   "nodes_by_provider": {
+    "AMDGPUExecutionProvider": 2
+   },
+   "total_node_events": 2,
+   "classification": "FAIL_CORRECTNESS",
+   "finished_utc": "2026-11-17T12:03:16Z",
+   "child_rc": 0
+  },
+  {
+   "schema": "r2_1_1/gpu_matrix/1",
+   "fixture": "valid_nonzero_in_loop.onnx",
+   "model_sha256": "f03044e5317485a76fda8c4770b22892ad3701eccb5678118a544530487a93d5",
+   "ep": "AMDGPUExecutionProvider",
+   "opt": "DISABLE_ALL",
+   "ort": "1.30.1",
+   "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.001
+   },
+   "started_utc": "2026-11-17T12:03:12Z",
+   "device_luid": "72346",
+   "device_basis": [
+    "unique candidate with Discrete=1 + active DXGI output",
+    "ep=AMDGPUExecutionProvider",
+    "description=AMD Radeon RX 7900 XTX",
+    "discrete=True",
+    "active_output=True",
+    "canary: EP in providers + profile node + CPU parity"
+   ],
+   "session_create_s": 0.93,
+   "session_providers": [
+    "AMDGPUExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "parity": [
+    {
+     "input_index": 0,
+     "outputs": {
+      "Z": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        4,
+        4
+       ]
+      },
+      "S": {
+       "match": false,
+       "max_abs": -1.0,
+       "shape": [
+        3,
+        1
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 1,
+     "outputs": {
+      "Z": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        4,
+        4
+       ]
+      },
+      "S": {
+       "match": false,
+       "max_abs": -1.0,
+       "shape": [
+        3,
+        1
+       ]
+      }
+     }
+    }
+   ],
+   "nodes_by_provider": {
+    "AMDGPUExecutionProvider": 2
+   },
+   "total_node_events": 2,
+   "classification": "FAIL_CORRECTNESS",
+   "finished_utc": "2026-11-17T12:03:14Z",
+   "child_rc": 0
+  },
+  {
+   "schema": "r2_1_1/gpu_matrix/1",
+   "fixture": "valid_nonzero_in_loop.onnx",
+   "model_sha256": "f03044e5317485a76fda8c4770b22892ad3701eccb5678118a544530487a93d5",
+   "ep": "MIGraphXExecutionProvider",
+   "opt": "ALL",
+   "ort": "1.30.1",
+   "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.001
+   },
+   "started_utc": "2026-11-17T12:03:19Z",
+   "device_luid": "72346",
+   "device_basis": [
+    "unique candidate with Discrete=1 + active DXGI output",
+    "ep=MIGraphXExecutionProvider",
+    "description=AMD Radeon RX 7900 XTX",
+    "discrete=True",
+    "active_output=True",
+    "canary: EP in providers + profile node + CPU parity"
+   ],
+   "session_create_s": 0.63,
+   "session_providers": [
+    "MIGraphXExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "parity": [
+    {
+     "input_index": 0,
+     "outputs": {
+      "Z": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        4,
+        4
+       ]
+      },
+      "S": {
+       "match": false,
+       "max_abs": -1.0,
+       "shape": [
+        3,
+        1
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 1,
+     "outputs": {
+      "Z": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        4,
+        4
+       ]
+      },
+      "S": {
+       "match": false,
+       "max_abs": -1.0,
+       "shape": [
+        3,
+        1
+       ]
+      }
+     }
+    }
+   ],
+   "nodes_by_provider": {
+    "MIGraphXExecutionProvider": 2
+   },
+   "total_node_events": 2,
+   "classification": "FAIL_CORRECTNESS",
+   "finished_utc": "2026-11-17T12:03:21Z",
+   "child_rc": 0
+  },
+  {
+   "schema": "r2_1_1/gpu_matrix/1",
+   "fixture": "valid_nonzero_in_loop.onnx",
+   "model_sha256": "f03044e5317485a76fda8c4770b22892ad3701eccb5678118a544530487a93d5",
+   "ep": "MIGraphXExecutionProvider",
+   "opt": "DISABLE_ALL",
+   "ort": "1.30.1",
+   "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.001
+   },
+   "started_utc": "2026-11-17T12:03:17Z",
+   "device_luid": "72346",
+   "device_basis": [
+    "unique candidate with Discrete=1 + active DXGI output",
+    "ep=MIGraphXExecutionProvider",
+    "description=AMD Radeon RX 7900 XTX",
+    "discrete=True",
+    "active_output=True",
+    "canary: EP in providers + profile node + CPU parity"
+   ],
+   "session_create_s": 0.6,
+   "session_providers": [
+    "MIGraphXExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "parity": [
+    {
+     "input_index": 0,
+     "outputs": {
+      "Z": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        4,
+        4
+       ]
+      },
+      "S": {
+       "match": false,
+       "max_abs": -1.0,
+       "shape": [
+        3,
+        1
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 1,
+     "outputs": {
+      "Z": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        1,
+        1,
+        4,
+        4
+       ]
+      },
+      "S": {
+       "match": false,
+       "max_abs": -1.0,
+       "shape": [
+        3,
+        1
+       ]
+      }
+     }
+    }
+   ],
+   "nodes_by_provider": {
+    "MIGraphXExecutionProvider": 2
+   },
+   "total_node_events": 2,
+   "classification": "FAIL_CORRECTNESS",
+   "finished_utc": "2026-11-17T12:03:19Z",
+   "child_rc": 0
+  },
+  {
+   "schema": "r2_1_1/gpu_matrix/1",
+   "fixture": "valid_nonzero_static.onnx",
+   "model_sha256": "f1f9d770bb4dfbc0ea8916f6d8fd2f6bf7d552507c0ee40e42a8f14d77d96d8b",
+   "ep": "AMDGPUExecutionProvider",
+   "opt": "ALL",
+   "ort": "1.30.1",
+   "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.001
+   },
+   "started_utc": "2026-11-17T11:58:41Z",
+   "device_luid": "72346",
+   "device_basis": [
+    "unique candidate with Discrete=1 + active DXGI output",
+    "ep=AMDGPUExecutionProvider",
+    "description=AMD Radeon RX 7900 XTX",
+    "discrete=True",
+    "active_output=True",
+    "canary: EP in providers + profile node + CPU parity"
+   ],
+   "session_create_s": 0.37,
+   "session_providers": [
+    "AMDGPUExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "parity": [
+    {
+     "input_index": 0,
+     "outputs": {
+      "Y": {
+       "match": false,
+       "max_abs": -1.0,
+       "shape": [
+        2,
+        20
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 1,
+     "outputs": {
+      "Y": {
+       "match": false,
+       "max_abs": -1.0,
+       "shape": [
+        2,
+        20
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 2,
+     "outputs": {
+      "Y": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        2,
+        20
+       ]
+      }
+     }
+    }
+   ],
+   "nodes_by_provider": {
+    "AMDGPUExecutionProvider": 3
+   },
+   "total_node_events": 3,
+   "classification": "FAIL_CORRECTNESS",
+   "finished_utc": "2026-11-17T11:58:43Z",
+   "child_rc": 0,
+   "wall_s": 2.1
+  },
+  {
+   "schema": "r2_1_1/gpu_matrix/1",
+   "fixture": "valid_nonzero_static.onnx",
+   "model_sha256": "f1f9d770bb4dfbc0ea8916f6d8fd2f6bf7d552507c0ee40e42a8f14d77d96d8b",
+   "ep": "AMDGPUExecutionProvider",
+   "opt": "DISABLE_ALL",
+   "ort": "1.30.1",
+   "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.001
+   },
+   "started_utc": "2026-11-17T11:58:39Z",
+   "device_luid": "72346",
+   "device_basis": [
+    "unique candidate with Discrete=1 + active DXGI output",
+    "ep=AMDGPUExecutionProvider",
+    "description=AMD Radeon RX 7900 XTX",
+    "discrete=True",
+    "active_output=True",
+    "canary: EP in providers + profile node + CPU parity"
+   ],
+   "session_create_s": 0.64,
+   "session_providers": [
+    "AMDGPUExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "parity": [
+    {
+     "input_index": 0,
+     "outputs": {
+      "Y": {
+       "match": false,
+       "max_abs": -1.0,
+       "shape": [
+        2,
+        20
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 1,
+     "outputs": {
+      "Y": {
+       "match": false,
+       "max_abs": -1.0,
+       "shape": [
+        2,
+        20
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 2,
+     "outputs": {
+      "Y": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        2,
+        20
+       ]
+      }
+     }
+    }
+   ],
+   "nodes_by_provider": {
+    "AMDGPUExecutionProvider": 3
+   },
+   "total_node_events": 3,
+   "classification": "FAIL_CORRECTNESS",
+   "finished_utc": "2026-11-17T11:58:41Z",
+   "child_rc": 0,
+   "wall_s": 2.3
+  },
+  {
+   "schema": "r2_1_1/gpu_matrix/1",
+   "fixture": "valid_nonzero_static.onnx",
+   "model_sha256": "f1f9d770bb4dfbc0ea8916f6d8fd2f6bf7d552507c0ee40e42a8f14d77d96d8b",
+   "ep": "MIGraphXExecutionProvider",
+   "opt": "ALL",
+   "ort": "1.30.1",
+   "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.001
+   },
+   "started_utc": "2026-11-17T11:58:45Z",
+   "device_luid": "72346",
+   "device_basis": [
+    "unique candidate with Discrete=1 + active DXGI output",
+    "ep=MIGraphXExecutionProvider",
+    "description=AMD Radeon RX 7900 XTX",
+    "discrete=True",
+    "active_output=True",
+    "canary: EP in providers + profile node + CPU parity"
+   ],
+   "session_create_s": 0.27,
+   "session_providers": [
+    "MIGraphXExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "parity": [
+    {
+     "input_index": 0,
+     "outputs": {
+      "Y": {
+       "match": false,
+       "max_abs": -1.0,
+       "shape": [
+        2,
+        20
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 1,
+     "outputs": {
+      "Y": {
+       "match": false,
+       "max_abs": -1.0,
+       "shape": [
+        2,
+        20
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 2,
+     "outputs": {
+      "Y": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        2,
+        20
+       ]
+      }
+     }
+    }
+   ],
+   "nodes_by_provider": {
+    "MIGraphXExecutionProvider": 3
+   },
+   "total_node_events": 3,
+   "classification": "FAIL_CORRECTNESS",
+   "finished_utc": "2026-11-17T11:58:47Z",
+   "child_rc": 0,
+   "wall_s": 2.0
+  },
+  {
+   "schema": "r2_1_1/gpu_matrix/1",
+   "fixture": "valid_nonzero_static.onnx",
+   "model_sha256": "f1f9d770bb4dfbc0ea8916f6d8fd2f6bf7d552507c0ee40e42a8f14d77d96d8b",
+   "ep": "MIGraphXExecutionProvider",
+   "opt": "DISABLE_ALL",
+   "ort": "1.30.1",
+   "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.001
+   },
+   "started_utc": "2026-11-17T11:58:43Z",
+   "device_luid": "72346",
+   "device_basis": [
+    "unique candidate with Discrete=1 + active DXGI output",
+    "ep=MIGraphXExecutionProvider",
+    "description=AMD Radeon RX 7900 XTX",
+    "discrete=True",
+    "active_output=True",
+    "canary: EP in providers + profile node + CPU parity"
+   ],
+   "session_create_s": 0.25,
+   "session_providers": [
+    "MIGraphXExecutionProvider",
+    "CPUExecutionProvider"
+   ],
+   "parity": [
+    {
+     "input_index": 0,
+     "outputs": {
+      "Y": {
+       "match": false,
+       "max_abs": -1.0,
+       "shape": [
+        2,
+        20
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 1,
+     "outputs": {
+      "Y": {
+       "match": false,
+       "max_abs": -1.0,
+       "shape": [
+        2,
+        20
+       ]
+      }
+     }
+    },
+    {
+     "input_index": 2,
+     "outputs": {
+      "Y": {
+       "match": true,
+       "max_abs": 0.0,
+       "shape": [
+        2,
+        20
+       ]
+      }
+     }
+    }
+   ],
+   "nodes_by_provider": {
+    "MIGraphXExecutionProvider": 3
+   },
+   "total_node_events": 3,
+   "classification": "FAIL_CORRECTNESS",
+   "finished_utc": "2026-11-17T11:58:45Z",
+   "child_rc": 0,
+   "wall_s": 1.9
+  }
+ ]
+}

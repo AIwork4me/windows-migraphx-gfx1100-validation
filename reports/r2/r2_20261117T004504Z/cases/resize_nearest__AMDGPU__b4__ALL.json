@@ -1,0 +1,102 @@
+{
+ "schema_version": "r2/model_case/1",
+ "case_id": "r2_resize_nearest.onnx_AMDGPUExecutionProvider_b4_ALL",
+ "phase": "r2.2",
+ "model": "resize_nearest.onnx",
+ "model_sha256": "a00e47b8212453a795ae710b6ca3ca6caae9769f3e0351cc75944b7ce00507e7",
+ "ep": "AMDGPUExecutionProvider",
+ "batch": 4,
+ "opt_level": "ALL",
+ "tolerance": {
+  "atol": 0.0001,
+  "rtol": 0.001
+ },
+ "ort_version": "1.30.1",
+ "ep_library": "C:\\Program Files\\WindowsApps\\Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe\\ExecutionProvider\\amdgpu-ep.dll",
+ "started_utc": "2026-11-17T00:58:32Z",
+ "real_hardware": true,
+ "dxgi_validated": true,
+ "device_resolution": {
+  "luid": 72346,
+  "dxgi_adapter_number": "0",
+  "discrete": true,
+  "basis": [
+   "unique candidate with Discrete=1 + active DXGI output",
+   "ep=AMDGPUExecutionProvider",
+   "description=AMD Radeon RX 7900 XTX",
+   "discrete=True",
+   "active_output=True",
+   "canary: EP in providers + profile node + CPU parity"
+  ],
+  "canary": {
+   "passed": true,
+   "parity_max_abs": 0.0
+  }
+ },
+ "session_create_s": 0.005,
+ "session_providers": [
+  "AMDGPUExecutionProvider",
+  "CPUExecutionProvider"
+ ],
+ "input_names": [
+  "X"
+ ],
+ "input_shapes": {
+  "X": [
+   4,
+   4,
+   16,
+   16
+  ]
+ },
+ "output_names": [
+  "Y"
+ ],
+ "run_s": 1.343,
+ "parity": {
+  "outputs_expected": [
+   "Y"
+  ],
+  "outputs_actual": [
+   "Y"
+  ],
+  "names_match": true,
+  "per_output": {
+   "Y": {
+    "dtype_expected": "float32",
+    "dtype_actual": "float32",
+    "shape_expected": [
+     4,
+     4,
+     8,
+     8
+    ],
+    "shape_actual": [
+     4,
+     4,
+     8,
+     8
+    ],
+    "status": "OK",
+    "max_abs_diff": 0.0,
+    "mean_abs_diff": 0.0,
+    "allclose": true
+   }
+  },
+  "all_ok": true
+ },
+ "profile": {
+  "file": "resize_nearest__AMDGPU__b4__ALL_profile_2026-11-17_08-58-33_705.json",
+  "nodes_by_provider": {
+   "AMDGPUExecutionProvider": 1
+  },
+  "ep_node_ops": {
+   "AMDGPUExecutionProvider_17880792390712400736_0": 1
+  },
+  "total_node_events": 1
+ },
+ "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+ "gpu_node_ratio": 1.0,
+ "finished_utc": "2026-11-17T00:58:35Z",
+ "wall_s": 2.656
+}

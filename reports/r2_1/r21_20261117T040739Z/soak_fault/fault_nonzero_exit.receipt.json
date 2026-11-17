@@ -1,0 +1,48 @@
+{
+ "case": "fault_nonzero_exit",
+ "cmd": "-I C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\r2_1\\soak_rca_child.py --model C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\artifacts\\models\\yolo26n.onnx --ep ...",
+ "argv": [
+  "-I",
+  "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\runner\\r2_1\\soak_rca_child.py",
+  "--model",
+  "C:\\AIwork4me\\windows-migraphx-gfx1100-validation\\artifacts\\models\\yolo26n.onnx",
+  "--ep",
+  "MIGraphXExecutionProvider",
+  "--minutes",
+  "1",
+  "--recreate-every",
+  "0",
+  "--out",
+  "reports/r2_1/r21_20261117T040739Z/soak_fault\\fault_nonzero_exit.jsonl",
+  "--log-every",
+  "500",
+  "--fault",
+  "nonzero_exit",
+  "--teardown",
+  "none",
+  "--exit-mode",
+  "os_exit"
+ ],
+ "budget_s": 60,
+ "started_utc": "2026-11-17T04:25:13Z",
+ "samples": [
+  {
+   "t": "2026-11-17T04:25:13Z",
+   "alive": true,
+   "rss_mb": 2.1,
+   "threads": 4,
+   "handles": 57,
+   "cpu_user_s": 0.0,
+   "cpu_system_s": 0.0,
+   "status": "running",
+   "cpu_rate": null
+  }
+ ],
+ "pid": 18652,
+ "classification": "NONZERO_EXIT_rc7",
+ "exit_code": 7,
+ "wall_s": 1.0,
+ "jsonl_events": 2,
+ "last_event": "{\"t_mono\": 0.018, \"t_utc\": \"2026-11-17T04:25:13.297Z\", \"pid\": 7996, \"ppid\": 18652, \"iter\": 0, \"stage\": \"fault:nonzero_exit\"}",
+ "finished_utc": "2026-11-17T04:25:14Z"
+}

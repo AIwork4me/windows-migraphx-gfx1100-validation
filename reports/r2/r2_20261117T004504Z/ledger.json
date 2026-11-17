@@ -1,0 +1,5627 @@
+{
+ "schema": "r2/model_ledger/1",
+ "run_id": "r2_20261117T004504Z",
+ "cases": {
+  "abs__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "5b3a98a8ed3d58057caaa18121bacde3f927c079238af1c1c2723ac52768e02a",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:53:42Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.3,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\abs__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:53:45Z"
+  },
+  "abs__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "5b3a98a8ed3d58057caaa18121bacde3f927c079238af1c1c2723ac52768e02a",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:53:45Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\abs__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:53:47Z"
+  },
+  "abs__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "5b3a98a8ed3d58057caaa18121bacde3f927c079238af1c1c2723ac52768e02a",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:53:47Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.3,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\abs__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:53:49Z"
+  },
+  "abs__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "5b3a98a8ed3d58057caaa18121bacde3f927c079238af1c1c2723ac52768e02a",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:53:49Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\abs__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:53:51Z"
+  },
+  "abs__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "5b3a98a8ed3d58057caaa18121bacde3f927c079238af1c1c2723ac52768e02a",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:53:51Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.7,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\abs__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:53:53Z"
+  },
+  "abs__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "5b3a98a8ed3d58057caaa18121bacde3f927c079238af1c1c2723ac52768e02a",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:53:53Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.7,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\abs__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:53:54Z"
+  },
+  "argmax__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "29f67df3c515e3d6c8d81d272e76a27ee0fbc2d4ca75ed041f0dacc2f5c6134b",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:06:26Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.4,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\argmax__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:06:27Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: ArgMax int64 output declared float"
+  },
+  "argmax__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "29f67df3c515e3d6c8d81d272e76a27ee0fbc2d4ca75ed041f0dacc2f5c6134b",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:06:27Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.4,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\argmax__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T01:06:29Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: ArgMax int64 output declared float"
+  },
+  "argmax__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "29f67df3c515e3d6c8d81d272e76a27ee0fbc2d4ca75ed041f0dacc2f5c6134b",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:06:29Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.5,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\argmax__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T01:06:30Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: ArgMax int64 output declared float"
+  },
+  "argmax__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "29f67df3c515e3d6c8d81d272e76a27ee0fbc2d4ca75ed041f0dacc2f5c6134b",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:06:30Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.4,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\argmax__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:06:32Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: ArgMax int64 output declared float"
+  },
+  "argmax__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "29f67df3c515e3d6c8d81d272e76a27ee0fbc2d4ca75ed041f0dacc2f5c6134b",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:06:32Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.4,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\argmax__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T01:06:33Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: ArgMax int64 output declared float"
+  },
+  "argmax__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "29f67df3c515e3d6c8d81d272e76a27ee0fbc2d4ca75ed041f0dacc2f5c6134b",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:06:33Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.3,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\argmax__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T01:06:34Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: ArgMax int64 output declared float"
+  },
+  "batchnorm__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "a0c84415ef35733f40babff1a30c8f19877c5f94f8561766304a6a1304c8de1f",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:54:03Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.4,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\batchnorm__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:54:06Z"
+  },
+  "batchnorm__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "a0c84415ef35733f40babff1a30c8f19877c5f94f8561766304a6a1304c8de1f",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:54:06Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.4,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\batchnorm__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:54:08Z"
+  },
+  "batchnorm__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "a0c84415ef35733f40babff1a30c8f19877c5f94f8561766304a6a1304c8de1f",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:54:08Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.2,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\batchnorm__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:54:10Z"
+  },
+  "batchnorm__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "a0c84415ef35733f40babff1a30c8f19877c5f94f8561766304a6a1304c8de1f",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:54:10Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.7,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\batchnorm__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:54:12Z"
+  },
+  "batchnorm__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "a0c84415ef35733f40babff1a30c8f19877c5f94f8561766304a6a1304c8de1f",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:54:12Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\batchnorm__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:54:14Z"
+  },
+  "batchnorm__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "a0c84415ef35733f40babff1a30c8f19877c5f94f8561766304a6a1304c8de1f",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:54:14Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.8,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\batchnorm__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:54:16Z"
+  },
+  "cast_f32_i32__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "884439701315c1c81769592a6d5a37ee314785030687f04bab15b3bc4bc08a88",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:54:16Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.2,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\cast_f32_i32__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:54:18Z"
+  },
+  "cast_f32_i32__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "884439701315c1c81769592a6d5a37ee314785030687f04bab15b3bc4bc08a88",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:54:18Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\cast_f32_i32__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:54:20Z"
+  },
+  "cast_f32_i32__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "884439701315c1c81769592a6d5a37ee314785030687f04bab15b3bc4bc08a88",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:54:20Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.3,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\cast_f32_i32__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:54:23Z"
+  },
+  "cast_f32_i32__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "884439701315c1c81769592a6d5a37ee314785030687f04bab15b3bc4bc08a88",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:54:23Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.4,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\cast_f32_i32__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:54:25Z"
+  },
+  "cast_f32_i32__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "884439701315c1c81769592a6d5a37ee314785030687f04bab15b3bc4bc08a88",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:54:25Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\cast_f32_i32__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:54:27Z"
+  },
+  "cast_f32_i32__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "884439701315c1c81769592a6d5a37ee314785030687f04bab15b3bc4bc08a88",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:54:27Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\cast_f32_i32__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:54:29Z"
+  },
+  "conv_relu__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "980a80da23d18eb3a263ee3b75420e0ae29f790ff1a5d897d8862732b23ef151",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:54:29Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\conv_relu__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:54:32Z"
+  },
+  "conv_relu__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "980a80da23d18eb3a263ee3b75420e0ae29f790ff1a5d897d8862732b23ef151",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:54:32Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\conv_relu__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:54:35Z"
+  },
+  "conv_relu__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "980a80da23d18eb3a263ee3b75420e0ae29f790ff1a5d897d8862732b23ef151",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:54:35Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.8,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\conv_relu__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:54:38Z"
+  },
+  "conv_relu__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "980a80da23d18eb3a263ee3b75420e0ae29f790ff1a5d897d8862732b23ef151",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:54:38Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.2,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\conv_relu__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:54:40Z"
+  },
+  "conv_relu__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "980a80da23d18eb3a263ee3b75420e0ae29f790ff1a5d897d8862732b23ef151",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:54:40Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.3,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\conv_relu__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:54:42Z"
+  },
+  "conv_relu__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "980a80da23d18eb3a263ee3b75420e0ae29f790ff1a5d897d8862732b23ef151",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:54:42Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.5,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\conv_relu__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:54:45Z"
+  },
+  "cos__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "1bb1376f735d2568e1b6210637796c586b00e4cb514acdd51f502fb1d09c5d4b",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:54:45Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.5,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\cos__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:54:47Z"
+  },
+  "cos__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "1bb1376f735d2568e1b6210637796c586b00e4cb514acdd51f502fb1d09c5d4b",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:54:47Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.2,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\cos__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:54:49Z"
+  },
+  "cos__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "1bb1376f735d2568e1b6210637796c586b00e4cb514acdd51f502fb1d09c5d4b",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:54:49Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.4,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\cos__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:54:52Z"
+  },
+  "cos__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "1bb1376f735d2568e1b6210637796c586b00e4cb514acdd51f502fb1d09c5d4b",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:54:52Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\cos__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:54:54Z"
+  },
+  "cos__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "1bb1376f735d2568e1b6210637796c586b00e4cb514acdd51f502fb1d09c5d4b",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:54:54Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\cos__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:54:56Z"
+  },
+  "cos__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "1bb1376f735d2568e1b6210637796c586b00e4cb514acdd51f502fb1d09c5d4b",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:54:56Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\cos__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:54:58Z"
+  },
+  "depthwise_conv__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "a5e82560a8fb448e08c30496b03b6e99f4153bce50c8a8038f97b204ee318546",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:54:58Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 3.6,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\depthwise_conv__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:55:01Z"
+  },
+  "depthwise_conv__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "a5e82560a8fb448e08c30496b03b6e99f4153bce50c8a8038f97b204ee318546",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:55:01Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 3.7,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\depthwise_conv__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:55:05Z"
+  },
+  "depthwise_conv__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "a5e82560a8fb448e08c30496b03b6e99f4153bce50c8a8038f97b204ee318546",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:55:05Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 3.4,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\depthwise_conv__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:55:08Z"
+  },
+  "depthwise_conv__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "a5e82560a8fb448e08c30496b03b6e99f4153bce50c8a8038f97b204ee318546",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:55:08Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\depthwise_conv__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:55:10Z"
+  },
+  "depthwise_conv__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "a5e82560a8fb448e08c30496b03b6e99f4153bce50c8a8038f97b204ee318546",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:55:10Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.4,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\depthwise_conv__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:55:13Z"
+  },
+  "depthwise_conv__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "a5e82560a8fb448e08c30496b03b6e99f4153bce50c8a8038f97b204ee318546",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:55:13Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.3,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\depthwise_conv__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:55:15Z"
+  },
+  "erf__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "25cc35f5c6d1f748a4882d5fc31ec473cfa94a25c4290090c5380756538c558f",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:55:15Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\erf__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:55:17Z"
+  },
+  "erf__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "25cc35f5c6d1f748a4882d5fc31ec473cfa94a25c4290090c5380756538c558f",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:55:17Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.2,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\erf__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:55:19Z"
+  },
+  "erf__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "25cc35f5c6d1f748a4882d5fc31ec473cfa94a25c4290090c5380756538c558f",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:55:19Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.4,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\erf__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:55:22Z"
+  },
+  "erf__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "25cc35f5c6d1f748a4882d5fc31ec473cfa94a25c4290090c5380756538c558f",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:55:22Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\erf__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:55:24Z"
+  },
+  "erf__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "25cc35f5c6d1f748a4882d5fc31ec473cfa94a25c4290090c5380756538c558f",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:55:24Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.7,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\erf__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:55:25Z"
+  },
+  "erf__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "25cc35f5c6d1f748a4882d5fc31ec473cfa94a25c4290090c5380756538c558f",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:55:25Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\erf__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:55:27Z"
+  },
+  "exp__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "d0cbf40f4becf79fe856ce498b5fcc9083400098d75fc9039533a9a69b9acf7f",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:55:27Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\exp__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:55:29Z"
+  },
+  "exp__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "d0cbf40f4becf79fe856ce498b5fcc9083400098d75fc9039533a9a69b9acf7f",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:55:29Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.4,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\exp__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:55:32Z"
+  },
+  "exp__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "d0cbf40f4becf79fe856ce498b5fcc9083400098d75fc9039533a9a69b9acf7f",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:55:32Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.3,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\exp__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:55:34Z"
+  },
+  "exp__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "d0cbf40f4becf79fe856ce498b5fcc9083400098d75fc9039533a9a69b9acf7f",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:55:34Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.7,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\exp__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:55:36Z"
+  },
+  "exp__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "d0cbf40f4becf79fe856ce498b5fcc9083400098d75fc9039533a9a69b9acf7f",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:55:36Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\exp__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:55:38Z"
+  },
+  "exp__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "d0cbf40f4becf79fe856ce498b5fcc9083400098d75fc9039533a9a69b9acf7f",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:55:38Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.8,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\exp__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:55:40Z"
+  },
+  "floor__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "af325264353b2e3d386030a240556bd48fd83ca00acdbc8c7c3b4e56d4d11f85",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:55:40Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.4,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\floor__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:55:42Z"
+  },
+  "floor__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "af325264353b2e3d386030a240556bd48fd83ca00acdbc8c7c3b4e56d4d11f85",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:55:42Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\floor__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:55:44Z"
+  },
+  "floor__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "af325264353b2e3d386030a240556bd48fd83ca00acdbc8c7c3b4e56d4d11f85",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:55:44Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.2,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\floor__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:55:46Z"
+  },
+  "floor__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "af325264353b2e3d386030a240556bd48fd83ca00acdbc8c7c3b4e56d4d11f85",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:55:46Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.8,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\floor__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:55:48Z"
+  },
+  "floor__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "af325264353b2e3d386030a240556bd48fd83ca00acdbc8c7c3b4e56d4d11f85",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:55:48Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\floor__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:55:50Z"
+  },
+  "floor__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "af325264353b2e3d386030a240556bd48fd83ca00acdbc8c7c3b4e56d4d11f85",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:55:50Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.7,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\floor__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:55:52Z"
+  },
+  "gemm__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "4dff1fb6d86ef99753d65a32893f43bd000a8f18dccdf54ad00d85fd9a68a7a5",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:55:52Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.8,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\gemm__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:55:54Z"
+  },
+  "gemm__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "4dff1fb6d86ef99753d65a32893f43bd000a8f18dccdf54ad00d85fd9a68a7a5",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:55:54Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\gemm__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:55:56Z"
+  },
+  "gemm__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "4dff1fb6d86ef99753d65a32893f43bd000a8f18dccdf54ad00d85fd9a68a7a5",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:55:56Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\gemm__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:55:58Z"
+  },
+  "gemm__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "4dff1fb6d86ef99753d65a32893f43bd000a8f18dccdf54ad00d85fd9a68a7a5",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:55:58Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\gemm__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:56:00Z"
+  },
+  "gemm__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "4dff1fb6d86ef99753d65a32893f43bd000a8f18dccdf54ad00d85fd9a68a7a5",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:56:00Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.6,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\gemm__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:56:01Z"
+  },
+  "gemm__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "4dff1fb6d86ef99753d65a32893f43bd000a8f18dccdf54ad00d85fd9a68a7a5",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:56:01Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\gemm__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:56:03Z"
+  },
+  "identity_add__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "106337f2f7a47d743c29328b263eb931a2d5f9cc2c600343cfec12399698639b",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:56:03Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\identity_add__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:56:05Z"
+  },
+  "identity_add__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "106337f2f7a47d743c29328b263eb931a2d5f9cc2c600343cfec12399698639b",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:56:05Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.2,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\identity_add__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:56:08Z"
+  },
+  "identity_add__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "106337f2f7a47d743c29328b263eb931a2d5f9cc2c600343cfec12399698639b",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:56:08Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\identity_add__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:56:10Z"
+  },
+  "identity_add__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "106337f2f7a47d743c29328b263eb931a2d5f9cc2c600343cfec12399698639b",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:56:10Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\identity_add__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:56:11Z"
+  },
+  "identity_add__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "106337f2f7a47d743c29328b263eb931a2d5f9cc2c600343cfec12399698639b",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:56:11Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\identity_add__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:56:13Z"
+  },
+  "identity_add__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "106337f2f7a47d743c29328b263eb931a2d5f9cc2c600343cfec12399698639b",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:56:13Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.2,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\identity_add__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:56:16Z"
+  },
+  "layernorm__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "0e0c74edf248324a154a90b06765e29ee7197f0fa041e4846d8eddd8d5568857",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:56:16Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.3,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\layernorm__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:56:18Z"
+  },
+  "layernorm__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "0e0c74edf248324a154a90b06765e29ee7197f0fa041e4846d8eddd8d5568857",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:56:18Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.3,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\layernorm__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:56:20Z"
+  },
+  "layernorm__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "0e0c74edf248324a154a90b06765e29ee7197f0fa041e4846d8eddd8d5568857",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:56:20Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.3,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\layernorm__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:56:23Z"
+  },
+  "layernorm__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "0e0c74edf248324a154a90b06765e29ee7197f0fa041e4846d8eddd8d5568857",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:56:23Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.7,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\layernorm__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:56:24Z"
+  },
+  "layernorm__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "0e0c74edf248324a154a90b06765e29ee7197f0fa041e4846d8eddd8d5568857",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:56:24Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\layernorm__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:56:26Z"
+  },
+  "layernorm__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "0e0c74edf248324a154a90b06765e29ee7197f0fa041e4846d8eddd8d5568857",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:56:26Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\layernorm__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:56:28Z"
+  },
+  "log__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "895c143754bd97284311aacc189a23e01fda5abe10a5a94d85a378f54e4727fb",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:06:34Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\log__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:06:36Z"
+  },
+  "log__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "895c143754bd97284311aacc189a23e01fda5abe10a5a94d85a378f54e4727fb",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:06:36Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.8,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\log__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T01:06:38Z"
+  },
+  "log__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "895c143754bd97284311aacc189a23e01fda5abe10a5a94d85a378f54e4727fb",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:06:38Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.7,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\log__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T01:06:40Z"
+  },
+  "log__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "895c143754bd97284311aacc189a23e01fda5abe10a5a94d85a378f54e4727fb",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:06:40Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.8,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\log__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:06:42Z"
+  },
+  "log__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "895c143754bd97284311aacc189a23e01fda5abe10a5a94d85a378f54e4727fb",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:06:42Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\log__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T01:06:43Z"
+  },
+  "log__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "895c143754bd97284311aacc189a23e01fda5abe10a5a94d85a378f54e4727fb",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:06:43Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.7,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\log__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T01:06:45Z"
+  },
+  "matmul__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "6a3e489fd8b123e431e50237a6fc6854ba9f7364a894c8225b5e2f57ab21bcdb",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:56:40Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.8,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\matmul__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:56:42Z"
+  },
+  "matmul__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "6a3e489fd8b123e431e50237a6fc6854ba9f7364a894c8225b5e2f57ab21bcdb",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:56:42Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\matmul__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:56:44Z"
+  },
+  "matmul__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "6a3e489fd8b123e431e50237a6fc6854ba9f7364a894c8225b5e2f57ab21bcdb",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:56:44Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.7,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\matmul__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:56:46Z"
+  },
+  "matmul__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "6a3e489fd8b123e431e50237a6fc6854ba9f7364a894c8225b5e2f57ab21bcdb",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:56:46Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\matmul__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:56:48Z"
+  },
+  "matmul__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "6a3e489fd8b123e431e50237a6fc6854ba9f7364a894c8225b5e2f57ab21bcdb",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:56:48Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\matmul__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:56:50Z"
+  },
+  "matmul__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "6a3e489fd8b123e431e50237a6fc6854ba9f7364a894c8225b5e2f57ab21bcdb",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:56:50Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.7,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\matmul__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:56:52Z"
+  },
+  "neg__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "0429a600089e2b1b46f09138e0e744492baa37cf43f94ff3eb34c4b1d3717e59",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:56:52Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\neg__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:56:54Z"
+  },
+  "neg__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "0429a600089e2b1b46f09138e0e744492baa37cf43f94ff3eb34c4b1d3717e59",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:56:54Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.2,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\neg__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:56:56Z"
+  },
+  "neg__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "0429a600089e2b1b46f09138e0e744492baa37cf43f94ff3eb34c4b1d3717e59",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:56:56Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.3,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\neg__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:56:58Z"
+  },
+  "neg__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "0429a600089e2b1b46f09138e0e744492baa37cf43f94ff3eb34c4b1d3717e59",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:56:58Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\neg__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:57:00Z"
+  },
+  "neg__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "0429a600089e2b1b46f09138e0e744492baa37cf43f94ff3eb34c4b1d3717e59",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:57:00Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\neg__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:57:02Z"
+  },
+  "neg__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "0429a600089e2b1b46f09138e0e744492baa37cf43f94ff3eb34c4b1d3717e59",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:57:02Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\neg__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:57:04Z"
+  },
+  "nine_out__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "dc0cb1748a12bfecd30b0385d8e5ddd62c3a0622687d9e1d66c7c62ddd21eaa4",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:57:04Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.7,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\nine_out__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:57:07Z"
+  },
+  "nine_out__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "dc0cb1748a12bfecd30b0385d8e5ddd62c3a0622687d9e1d66c7c62ddd21eaa4",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:57:07Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.3,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\nine_out__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:57:09Z"
+  },
+  "nine_out__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "dc0cb1748a12bfecd30b0385d8e5ddd62c3a0622687d9e1d66c7c62ddd21eaa4",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:57:09Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.4,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\nine_out__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:57:11Z"
+  },
+  "nine_out__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "dc0cb1748a12bfecd30b0385d8e5ddd62c3a0622687d9e1d66c7c62ddd21eaa4",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:57:11Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\nine_out__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:57:13Z"
+  },
+  "nine_out__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "dc0cb1748a12bfecd30b0385d8e5ddd62c3a0622687d9e1d66c7c62ddd21eaa4",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:57:13Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.8,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\nine_out__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:57:15Z"
+  },
+  "nine_out__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "dc0cb1748a12bfecd30b0385d8e5ddd62c3a0622687d9e1d66c7c62ddd21eaa4",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:57:15Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.3,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\nine_out__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:57:17Z"
+  },
+  "pad__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "0b2e14bdcb5534252cb4c003df33652c1ba88b37d855e6c438766385fff01bfd",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:06:45Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.4,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\pad__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:06:47Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: Pad ShapeInferenceError"
+  },
+  "pad__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "0b2e14bdcb5534252cb4c003df33652c1ba88b37d855e6c438766385fff01bfd",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:06:47Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.4,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\pad__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T01:06:48Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: Pad ShapeInferenceError"
+  },
+  "pad__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "0b2e14bdcb5534252cb4c003df33652c1ba88b37d855e6c438766385fff01bfd",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:06:48Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.5,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\pad__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T01:06:50Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: Pad ShapeInferenceError"
+  },
+  "pad__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "0b2e14bdcb5534252cb4c003df33652c1ba88b37d855e6c438766385fff01bfd",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:06:50Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.3,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\pad__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:06:51Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: Pad ShapeInferenceError"
+  },
+  "pad__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "0b2e14bdcb5534252cb4c003df33652c1ba88b37d855e6c438766385fff01bfd",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:06:51Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.3,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\pad__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T01:06:52Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: Pad ShapeInferenceError"
+  },
+  "pad__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "0b2e14bdcb5534252cb4c003df33652c1ba88b37d855e6c438766385fff01bfd",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:06:52Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.7,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\pad__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T01:06:54Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: Pad ShapeInferenceError"
+  },
+  "reduce_max__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "f88d55016afa853792902fe14a2b8bf978219116f1cfba4f5ec052934ffd88a7",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:57:26Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.4,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\reduce_max__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:57:28Z"
+  },
+  "reduce_max__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "f88d55016afa853792902fe14a2b8bf978219116f1cfba4f5ec052934ffd88a7",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:57:28Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.5,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\reduce_max__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:57:31Z"
+  },
+  "reduce_max__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "f88d55016afa853792902fe14a2b8bf978219116f1cfba4f5ec052934ffd88a7",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:57:31Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\reduce_max__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:57:33Z"
+  },
+  "reduce_max__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "f88d55016afa853792902fe14a2b8bf978219116f1cfba4f5ec052934ffd88a7",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:57:33Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.7,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\reduce_max__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:57:35Z"
+  },
+  "reduce_max__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "f88d55016afa853792902fe14a2b8bf978219116f1cfba4f5ec052934ffd88a7",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:57:35Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\reduce_max__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:57:37Z"
+  },
+  "reduce_max__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "f88d55016afa853792902fe14a2b8bf978219116f1cfba4f5ec052934ffd88a7",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:57:37Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\reduce_max__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:57:38Z"
+  },
+  "reduce_mean__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "61a97684ca6ca2d122375009ee3a9fe6aeafa1562be5cebb480138d0f203160f",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:57:38Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\reduce_mean__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:57:41Z"
+  },
+  "reduce_mean__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "61a97684ca6ca2d122375009ee3a9fe6aeafa1562be5cebb480138d0f203160f",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:57:41Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\reduce_mean__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:57:43Z"
+  },
+  "reduce_mean__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "61a97684ca6ca2d122375009ee3a9fe6aeafa1562be5cebb480138d0f203160f",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:57:43Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.5,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\reduce_mean__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:57:45Z"
+  },
+  "reduce_mean__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "61a97684ca6ca2d122375009ee3a9fe6aeafa1562be5cebb480138d0f203160f",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:57:45Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.7,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\reduce_mean__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:57:47Z"
+  },
+  "reduce_mean__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "61a97684ca6ca2d122375009ee3a9fe6aeafa1562be5cebb480138d0f203160f",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:57:47Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\reduce_mean__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:57:49Z"
+  },
+  "reduce_mean__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "61a97684ca6ca2d122375009ee3a9fe6aeafa1562be5cebb480138d0f203160f",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:57:49Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\reduce_mean__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:57:51Z"
+  },
+  "reduce_sum__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "057f0b4e54107eeb4bae4fb6a84852109f452b06ad4162b4eaf6f7efe4597a06",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:06:54Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.4,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\reduce_sum__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:06:55Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "reduce_sum__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "057f0b4e54107eeb4bae4fb6a84852109f452b06ad4162b4eaf6f7efe4597a06",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:06:55Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.4,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\reduce_sum__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T01:06:57Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "reduce_sum__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "057f0b4e54107eeb4bae4fb6a84852109f452b06ad4162b4eaf6f7efe4597a06",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:06:57Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.8,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\reduce_sum__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T01:06:59Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "reduce_sum__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "057f0b4e54107eeb4bae4fb6a84852109f452b06ad4162b4eaf6f7efe4597a06",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:06:59Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.4,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\reduce_sum__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:07:00Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "reduce_sum__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "057f0b4e54107eeb4bae4fb6a84852109f452b06ad4162b4eaf6f7efe4597a06",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:07:00Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.4,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\reduce_sum__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T01:07:01Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "reduce_sum__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "057f0b4e54107eeb4bae4fb6a84852109f452b06ad4162b4eaf6f7efe4597a06",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:07:01Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.7,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\reduce_sum__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T01:07:03Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "relu__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "65dc8746340dd11f748cc67ce6897a2582130cfa0e98a5ff6d4b0dc99bcbdf6c",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:58:01Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.4,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\relu__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:58:03Z"
+  },
+  "relu__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "65dc8746340dd11f748cc67ce6897a2582130cfa0e98a5ff6d4b0dc99bcbdf6c",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:58:03Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\relu__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:58:05Z"
+  },
+  "relu__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "65dc8746340dd11f748cc67ce6897a2582130cfa0e98a5ff6d4b0dc99bcbdf6c",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:58:05Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\relu__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:58:07Z"
+  },
+  "relu__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "65dc8746340dd11f748cc67ce6897a2582130cfa0e98a5ff6d4b0dc99bcbdf6c",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:58:07Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 3.6,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\relu__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:58:11Z"
+  },
+  "relu__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "65dc8746340dd11f748cc67ce6897a2582130cfa0e98a5ff6d4b0dc99bcbdf6c",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:58:11Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.8,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\relu__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:58:13Z"
+  },
+  "relu__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "65dc8746340dd11f748cc67ce6897a2582130cfa0e98a5ff6d4b0dc99bcbdf6c",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:58:13Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.7,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\relu__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:58:14Z"
+  },
+  "reshape_transpose__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "688d540e6f8cc49889d75a32bf42ab110bbea3b43b08595e4e353dccd52b9c15",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:58:14Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.4,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\reshape_transpose__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:58:17Z"
+  },
+  "reshape_transpose__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "688d540e6f8cc49889d75a32bf42ab110bbea3b43b08595e4e353dccd52b9c15",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:58:17Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.4,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\reshape_transpose__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:58:19Z"
+  },
+  "reshape_transpose__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "688d540e6f8cc49889d75a32bf42ab110bbea3b43b08595e4e353dccd52b9c15",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:58:19Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.3,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\reshape_transpose__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:58:21Z"
+  },
+  "reshape_transpose__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "688d540e6f8cc49889d75a32bf42ab110bbea3b43b08595e4e353dccd52b9c15",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:58:21Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\reshape_transpose__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:58:23Z"
+  },
+  "reshape_transpose__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "688d540e6f8cc49889d75a32bf42ab110bbea3b43b08595e4e353dccd52b9c15",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:58:23Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\reshape_transpose__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:58:25Z"
+  },
+  "reshape_transpose__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "688d540e6f8cc49889d75a32bf42ab110bbea3b43b08595e4e353dccd52b9c15",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:58:25Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\reshape_transpose__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:58:27Z"
+  },
+  "resize_nearest__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "a00e47b8212453a795ae710b6ca3ca6caae9769f3e0351cc75944b7ce00507e7",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:58:27Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.2,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\resize_nearest__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:58:29Z"
+  },
+  "resize_nearest__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "a00e47b8212453a795ae710b6ca3ca6caae9769f3e0351cc75944b7ce00507e7",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:58:29Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.2,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\resize_nearest__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:58:32Z"
+  },
+  "resize_nearest__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "a00e47b8212453a795ae710b6ca3ca6caae9769f3e0351cc75944b7ce00507e7",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:58:32Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\resize_nearest__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:58:35Z"
+  },
+  "resize_nearest__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "a00e47b8212453a795ae710b6ca3ca6caae9769f3e0351cc75944b7ce00507e7",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:58:35Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.8,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\resize_nearest__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:58:38Z"
+  },
+  "resize_nearest__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "a00e47b8212453a795ae710b6ca3ca6caae9769f3e0351cc75944b7ce00507e7",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:58:38Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\resize_nearest__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:58:40Z"
+  },
+  "resize_nearest__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "a00e47b8212453a795ae710b6ca3ca6caae9769f3e0351cc75944b7ce00507e7",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:58:40Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\resize_nearest__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:58:42Z"
+  },
+  "sigmoid__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "ee76b349c16f938d0b5477ae9334c1615ce38f8dcae76a527ba206ffbd13e7aa",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:58:42Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\sigmoid__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:58:44Z"
+  },
+  "sigmoid__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "ee76b349c16f938d0b5477ae9334c1615ce38f8dcae76a527ba206ffbd13e7aa",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:58:44Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\sigmoid__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:58:46Z"
+  },
+  "sigmoid__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "ee76b349c16f938d0b5477ae9334c1615ce38f8dcae76a527ba206ffbd13e7aa",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:58:46Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.4,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\sigmoid__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:58:48Z"
+  },
+  "sigmoid__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "ee76b349c16f938d0b5477ae9334c1615ce38f8dcae76a527ba206ffbd13e7aa",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:58:48Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\sigmoid__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:58:50Z"
+  },
+  "sigmoid__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "ee76b349c16f938d0b5477ae9334c1615ce38f8dcae76a527ba206ffbd13e7aa",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:58:50Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.7,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\sigmoid__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:58:52Z"
+  },
+  "sigmoid__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "ee76b349c16f938d0b5477ae9334c1615ce38f8dcae76a527ba206ffbd13e7aa",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:58:52Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.8,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\sigmoid__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:58:54Z"
+  },
+  "sin__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "9c3041cf9a365d89c4f745450adf749ced49398eb36f6ce4a7fa567a6b53d8e1",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:58:54Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.4,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\sin__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:58:56Z"
+  },
+  "sin__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "9c3041cf9a365d89c4f745450adf749ced49398eb36f6ce4a7fa567a6b53d8e1",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:58:56Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.3,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\sin__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:58:59Z"
+  },
+  "sin__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "9c3041cf9a365d89c4f745450adf749ced49398eb36f6ce4a7fa567a6b53d8e1",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:58:59Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.2,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\sin__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:59:01Z"
+  },
+  "sin__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "9c3041cf9a365d89c4f745450adf749ced49398eb36f6ce4a7fa567a6b53d8e1",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:59:01Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\sin__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:59:03Z"
+  },
+  "sin__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "9c3041cf9a365d89c4f745450adf749ced49398eb36f6ce4a7fa567a6b53d8e1",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:59:03Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\sin__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:59:05Z"
+  },
+  "sin__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "9c3041cf9a365d89c4f745450adf749ced49398eb36f6ce4a7fa567a6b53d8e1",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:59:05Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\sin__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:59:07Z"
+  },
+  "softmax__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "51219f9f2a58371f962ca985c6edb4de95f0beb233d819c29f4f07441af0d9e2",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:59:07Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\softmax__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:59:09Z"
+  },
+  "softmax__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "51219f9f2a58371f962ca985c6edb4de95f0beb233d819c29f4f07441af0d9e2",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:59:09Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.2,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\softmax__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:59:11Z"
+  },
+  "softmax__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "51219f9f2a58371f962ca985c6edb4de95f0beb233d819c29f4f07441af0d9e2",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:59:11Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.2,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\softmax__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:59:13Z"
+  },
+  "softmax__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "51219f9f2a58371f962ca985c6edb4de95f0beb233d819c29f4f07441af0d9e2",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:59:13Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.8,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\softmax__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:59:15Z"
+  },
+  "softmax__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "51219f9f2a58371f962ca985c6edb4de95f0beb233d819c29f4f07441af0d9e2",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:59:15Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\softmax__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:59:17Z"
+  },
+  "softmax__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "51219f9f2a58371f962ca985c6edb4de95f0beb233d819c29f4f07441af0d9e2",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:59:17Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\softmax__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:59:19Z"
+  },
+  "split2__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "cf9c053bdce5e07bde62291e2b346e2ea10a8b6142ff9c22fcfa466757894981",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:07:03Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.4,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\split2__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:07:05Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "split2__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "cf9c053bdce5e07bde62291e2b346e2ea10a8b6142ff9c22fcfa466757894981",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:07:05Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.3,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\split2__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T01:07:06Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "split2__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "cf9c053bdce5e07bde62291e2b346e2ea10a8b6142ff9c22fcfa466757894981",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:07:06Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.5,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\split2__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T01:07:07Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "split2__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "cf9c053bdce5e07bde62291e2b346e2ea10a8b6142ff9c22fcfa466757894981",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:07:21Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.2,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\split2__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:07:22Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "split2__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "cf9c053bdce5e07bde62291e2b346e2ea10a8b6142ff9c22fcfa466757894981",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:07:22Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.4,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\split2__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T01:07:24Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "split2__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "cf9c053bdce5e07bde62291e2b346e2ea10a8b6142ff9c22fcfa466757894981",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:07:24Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.3,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\split2__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T01:07:25Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "sqrt__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "03af80c5c1e372dbca36aa04efd2f8f54fb678a3b669e7569f373922c902132d",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:07:39Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\sqrt__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:07:40Z"
+  },
+  "sqrt__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "03af80c5c1e372dbca36aa04efd2f8f54fb678a3b669e7569f373922c902132d",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:07:40Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.5,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\sqrt__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T01:07:42Z"
+  },
+  "sqrt__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "03af80c5c1e372dbca36aa04efd2f8f54fb678a3b669e7569f373922c902132d",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:07:42Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\sqrt__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T01:07:44Z"
+  },
+  "sqrt__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "03af80c5c1e372dbca36aa04efd2f8f54fb678a3b669e7569f373922c902132d",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:07:44Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.7,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\sqrt__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:07:46Z"
+  },
+  "sqrt__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "03af80c5c1e372dbca36aa04efd2f8f54fb678a3b669e7569f373922c902132d",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:07:46Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.8,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\sqrt__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T01:07:47Z"
+  },
+  "sqrt__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "03af80c5c1e372dbca36aa04efd2f8f54fb678a3b669e7569f373922c902132d",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:07:47Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\sqrt__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T01:07:49Z"
+  },
+  "squeeze__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "70da8b6254483ee8be50c05d9e98257acc17f181407796b71cf981e461eda82e",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:07:49Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.5,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\squeeze__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:07:51Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "squeeze__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "70da8b6254483ee8be50c05d9e98257acc17f181407796b71cf981e461eda82e",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:07:51Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.4,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\squeeze__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T01:07:52Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "squeeze__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "70da8b6254483ee8be50c05d9e98257acc17f181407796b71cf981e461eda82e",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:07:52Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.6,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\squeeze__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T01:07:54Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "squeeze__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "70da8b6254483ee8be50c05d9e98257acc17f181407796b71cf981e461eda82e",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:07:54Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.3,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\squeeze__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:07:55Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "squeeze__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "70da8b6254483ee8be50c05d9e98257acc17f181407796b71cf981e461eda82e",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:07:55Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.6,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\squeeze__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T01:07:57Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "squeeze__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "70da8b6254483ee8be50c05d9e98257acc17f181407796b71cf981e461eda82e",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:07:57Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.3,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\squeeze__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T01:07:58Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "tanh__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "901e64b8493b5764936ad281d979836e33afc9d371f52128e6e6c5fef8ab2222",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:59:50Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.2,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\tanh__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:59:52Z"
+  },
+  "tanh__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "901e64b8493b5764936ad281d979836e33afc9d371f52128e6e6c5fef8ab2222",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:59:52Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\tanh__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T00:59:54Z"
+  },
+  "tanh__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "901e64b8493b5764936ad281d979836e33afc9d371f52128e6e6c5fef8ab2222",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:59:54Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.2,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\tanh__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T00:59:56Z"
+  },
+  "tanh__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "901e64b8493b5764936ad281d979836e33afc9d371f52128e6e6c5fef8ab2222",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:59:56Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\tanh__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T00:59:58Z"
+  },
+  "tanh__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "901e64b8493b5764936ad281d979836e33afc9d371f52128e6e6c5fef8ab2222",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T00:59:58Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\tanh__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T01:00:00Z"
+  },
+  "tanh__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "901e64b8493b5764936ad281d979836e33afc9d371f52128e6e6c5fef8ab2222",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:00:00Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.7,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\tanh__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T01:00:02Z"
+  },
+  "topk_gather_concat__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "3144b62d733c1f59f3c794133a019098fd37eed6c40d526da61df0777a5795ac",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:07:58Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.6,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\topk_gather_concat__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:08:00Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: TopK ShapeInferenceError"
+  },
+  "topk_gather_concat__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "3144b62d733c1f59f3c794133a019098fd37eed6c40d526da61df0777a5795ac",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:08:00Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.4,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\topk_gather_concat__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T01:08:01Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: TopK ShapeInferenceError"
+  },
+  "topk_gather_concat__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "3144b62d733c1f59f3c794133a019098fd37eed6c40d526da61df0777a5795ac",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:08:01Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.4,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\topk_gather_concat__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T01:08:03Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: TopK ShapeInferenceError"
+  },
+  "topk_gather_concat__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "3144b62d733c1f59f3c794133a019098fd37eed6c40d526da61df0777a5795ac",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:08:03Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.7,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\topk_gather_concat__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:08:04Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: TopK ShapeInferenceError"
+  },
+  "topk_gather_concat__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "3144b62d733c1f59f3c794133a019098fd37eed6c40d526da61df0777a5795ac",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:08:04Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.4,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\topk_gather_concat__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T01:08:06Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: TopK ShapeInferenceError"
+  },
+  "topk_gather_concat__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "3144b62d733c1f59f3c794133a019098fd37eed6c40d526da61df0777a5795ac",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:08:06Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.3,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\topk_gather_concat__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T01:08:07Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: TopK ShapeInferenceError"
+  },
+  "two_out_diff_shape__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "b4cd7e90aa77209a0935f0ee16f208134034c90580a45df9473519e2cfef58ea",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:00:11Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.4,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_diff_shape__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:00:14Z"
+  },
+  "two_out_diff_shape__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "b4cd7e90aa77209a0935f0ee16f208134034c90580a45df9473519e2cfef58ea",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:00:14Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.2,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_diff_shape__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T01:00:16Z"
+  },
+  "two_out_diff_shape__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "b4cd7e90aa77209a0935f0ee16f208134034c90580a45df9473519e2cfef58ea",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:00:16Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.5,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_diff_shape__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T01:00:18Z"
+  },
+  "two_out_diff_shape__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "b4cd7e90aa77209a0935f0ee16f208134034c90580a45df9473519e2cfef58ea",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:00:18Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_diff_shape__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:00:21Z"
+  },
+  "two_out_diff_shape__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "b4cd7e90aa77209a0935f0ee16f208134034c90580a45df9473519e2cfef58ea",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:00:21Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_diff_shape__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T01:00:23Z"
+  },
+  "two_out_diff_shape__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "b4cd7e90aa77209a0935f0ee16f208134034c90580a45df9473519e2cfef58ea",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:00:23Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.3,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_diff_shape__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T01:00:25Z"
+  },
+  "two_out_same_shape__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "d089bf73ffdd7ff3cd91ec77c23acb10390f2dc6379da8bc549b42584166b2ce",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:00:25Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.2,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_same_shape__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:00:27Z"
+  },
+  "two_out_same_shape__AMDGPU__b2__ALL": {
+   "key": {
+    "model_sha": "d089bf73ffdd7ff3cd91ec77c23acb10390f2dc6379da8bc549b42584166b2ce",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:00:27Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_same_shape__AMDGPU__b2__ALL.json",
+   "finished_utc": "2026-11-17T01:00:29Z"
+  },
+  "two_out_same_shape__AMDGPU__b4__ALL": {
+   "key": {
+    "model_sha": "d089bf73ffdd7ff3cd91ec77c23acb10390f2dc6379da8bc549b42584166b2ce",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:00:29Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.2,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_same_shape__AMDGPU__b4__ALL.json",
+   "finished_utc": "2026-11-17T01:00:31Z"
+  },
+  "two_out_same_shape__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "d089bf73ffdd7ff3cd91ec77c23acb10390f2dc6379da8bc549b42584166b2ce",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:00:31Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.7,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_same_shape__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:00:33Z"
+  },
+  "two_out_same_shape__MIGraphX__b2__ALL": {
+   "key": {
+    "model_sha": "d089bf73ffdd7ff3cd91ec77c23acb10390f2dc6379da8bc549b42584166b2ce",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:00:33Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.8,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_same_shape__MIGraphX__b2__ALL.json",
+   "finished_utc": "2026-11-17T01:00:35Z"
+  },
+  "two_out_same_shape__MIGraphX__b4__ALL": {
+   "key": {
+    "model_sha": "d089bf73ffdd7ff3cd91ec77c23acb10390f2dc6379da8bc549b42584166b2ce",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:00:35Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_same_shape__MIGraphX__b4__ALL.json",
+   "finished_utc": "2026-11-17T01:00:37Z"
+  },
+  "two_out_same_shape__AMDGPU__b1__DISABLE_ALL": {
+   "key": {
+    "model_sha": "d089bf73ffdd7ff3cd91ec77c23acb10390f2dc6379da8bc549b42584166b2ce",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "DISABLE_ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:00:37Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_same_shape__AMDGPU__b1__DISABLE_ALL.json",
+   "finished_utc": "2026-11-17T01:00:39Z"
+  },
+  "two_out_same_shape__AMDGPU__b1__BASIC": {
+   "key": {
+    "model_sha": "d089bf73ffdd7ff3cd91ec77c23acb10390f2dc6379da8bc549b42584166b2ce",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "BASIC",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:00:39Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_same_shape__AMDGPU__b1__BASIC.json",
+   "finished_utc": "2026-11-17T01:00:41Z"
+  },
+  "two_out_same_shape__AMDGPU__b1__EXTENDED": {
+   "key": {
+    "model_sha": "d089bf73ffdd7ff3cd91ec77c23acb10390f2dc6379da8bc549b42584166b2ce",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "EXTENDED",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:00:41Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_same_shape__AMDGPU__b1__EXTENDED.json",
+   "finished_utc": "2026-11-17T01:00:43Z"
+  },
+  "two_out_same_shape__AMDGPU__b2__DISABLE_ALL": {
+   "key": {
+    "model_sha": "d089bf73ffdd7ff3cd91ec77c23acb10390f2dc6379da8bc549b42584166b2ce",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "DISABLE_ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:00:43Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.8,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_same_shape__AMDGPU__b2__DISABLE_ALL.json",
+   "finished_utc": "2026-11-17T01:00:45Z"
+  },
+  "two_out_same_shape__AMDGPU__b2__BASIC": {
+   "key": {
+    "model_sha": "d089bf73ffdd7ff3cd91ec77c23acb10390f2dc6379da8bc549b42584166b2ce",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "BASIC",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:00:45Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_same_shape__AMDGPU__b2__BASIC.json",
+   "finished_utc": "2026-11-17T01:00:47Z"
+  },
+  "two_out_same_shape__AMDGPU__b2__EXTENDED": {
+   "key": {
+    "model_sha": "d089bf73ffdd7ff3cd91ec77c23acb10390f2dc6379da8bc549b42584166b2ce",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "EXTENDED",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:00:47Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_same_shape__AMDGPU__b2__EXTENDED.json",
+   "finished_utc": "2026-11-17T01:00:49Z"
+  },
+  "two_out_same_shape__AMDGPU__b4__DISABLE_ALL": {
+   "key": {
+    "model_sha": "d089bf73ffdd7ff3cd91ec77c23acb10390f2dc6379da8bc549b42584166b2ce",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "DISABLE_ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:00:49Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.8,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_same_shape__AMDGPU__b4__DISABLE_ALL.json",
+   "finished_utc": "2026-11-17T01:00:50Z"
+  },
+  "two_out_same_shape__AMDGPU__b4__BASIC": {
+   "key": {
+    "model_sha": "d089bf73ffdd7ff3cd91ec77c23acb10390f2dc6379da8bc549b42584166b2ce",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "BASIC",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:00:50Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_same_shape__AMDGPU__b4__BASIC.json",
+   "finished_utc": "2026-11-17T01:00:52Z"
+  },
+  "two_out_same_shape__AMDGPU__b4__EXTENDED": {
+   "key": {
+    "model_sha": "d089bf73ffdd7ff3cd91ec77c23acb10390f2dc6379da8bc549b42584166b2ce",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "EXTENDED",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:00:52Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_same_shape__AMDGPU__b4__EXTENDED.json",
+   "finished_utc": "2026-11-17T01:00:54Z"
+  },
+  "two_out_same_shape__MIGraphX__b1__DISABLE_ALL": {
+   "key": {
+    "model_sha": "d089bf73ffdd7ff3cd91ec77c23acb10390f2dc6379da8bc549b42584166b2ce",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "DISABLE_ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:00:54Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_same_shape__MIGraphX__b1__DISABLE_ALL.json",
+   "finished_utc": "2026-11-17T01:00:56Z"
+  },
+  "two_out_same_shape__MIGraphX__b1__BASIC": {
+   "key": {
+    "model_sha": "d089bf73ffdd7ff3cd91ec77c23acb10390f2dc6379da8bc549b42584166b2ce",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "BASIC",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:00:56Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.8,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_same_shape__MIGraphX__b1__BASIC.json",
+   "finished_utc": "2026-11-17T01:00:58Z"
+  },
+  "two_out_same_shape__MIGraphX__b1__EXTENDED": {
+   "key": {
+    "model_sha": "d089bf73ffdd7ff3cd91ec77c23acb10390f2dc6379da8bc549b42584166b2ce",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "EXTENDED",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:00:58Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_same_shape__MIGraphX__b1__EXTENDED.json",
+   "finished_utc": "2026-11-17T01:01:00Z"
+  },
+  "two_out_same_shape__MIGraphX__b2__DISABLE_ALL": {
+   "key": {
+    "model_sha": "d089bf73ffdd7ff3cd91ec77c23acb10390f2dc6379da8bc549b42584166b2ce",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "DISABLE_ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:01:00Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_same_shape__MIGraphX__b2__DISABLE_ALL.json",
+   "finished_utc": "2026-11-17T01:01:02Z"
+  },
+  "two_out_same_shape__MIGraphX__b2__BASIC": {
+   "key": {
+    "model_sha": "d089bf73ffdd7ff3cd91ec77c23acb10390f2dc6379da8bc549b42584166b2ce",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "BASIC",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:01:02Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_same_shape__MIGraphX__b2__BASIC.json",
+   "finished_utc": "2026-11-17T01:01:04Z"
+  },
+  "two_out_same_shape__MIGraphX__b2__EXTENDED": {
+   "key": {
+    "model_sha": "d089bf73ffdd7ff3cd91ec77c23acb10390f2dc6379da8bc549b42584166b2ce",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "EXTENDED",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:01:04Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.2,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_same_shape__MIGraphX__b2__EXTENDED.json",
+   "finished_utc": "2026-11-17T01:01:06Z"
+  },
+  "two_out_same_shape__MIGraphX__b4__DISABLE_ALL": {
+   "key": {
+    "model_sha": "d089bf73ffdd7ff3cd91ec77c23acb10390f2dc6379da8bc549b42584166b2ce",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "DISABLE_ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:01:06Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_same_shape__MIGraphX__b4__DISABLE_ALL.json",
+   "finished_utc": "2026-11-17T01:01:08Z"
+  },
+  "two_out_same_shape__MIGraphX__b4__BASIC": {
+   "key": {
+    "model_sha": "d089bf73ffdd7ff3cd91ec77c23acb10390f2dc6379da8bc549b42584166b2ce",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "BASIC",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:01:08Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.2,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_same_shape__MIGraphX__b4__BASIC.json",
+   "finished_utc": "2026-11-17T01:01:10Z"
+  },
+  "two_out_same_shape__MIGraphX__b4__EXTENDED": {
+   "key": {
+    "model_sha": "d089bf73ffdd7ff3cd91ec77c23acb10390f2dc6379da8bc549b42584166b2ce",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "EXTENDED",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:01:11Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_same_shape__MIGraphX__b4__EXTENDED.json",
+   "finished_utc": "2026-11-17T01:01:13Z"
+  },
+  "two_out_diff_shape__AMDGPU__b1__DISABLE_ALL": {
+   "key": {
+    "model_sha": "b4cd7e90aa77209a0935f0ee16f208134034c90580a45df9473519e2cfef58ea",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "DISABLE_ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:01:13Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.8,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_diff_shape__AMDGPU__b1__DISABLE_ALL.json",
+   "finished_utc": "2026-11-17T01:01:14Z"
+  },
+  "two_out_diff_shape__AMDGPU__b1__BASIC": {
+   "key": {
+    "model_sha": "b4cd7e90aa77209a0935f0ee16f208134034c90580a45df9473519e2cfef58ea",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "BASIC",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:01:14Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.8,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_diff_shape__AMDGPU__b1__BASIC.json",
+   "finished_utc": "2026-11-17T01:01:16Z"
+  },
+  "two_out_diff_shape__AMDGPU__b1__EXTENDED": {
+   "key": {
+    "model_sha": "b4cd7e90aa77209a0935f0ee16f208134034c90580a45df9473519e2cfef58ea",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "EXTENDED",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:01:16Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_diff_shape__AMDGPU__b1__EXTENDED.json",
+   "finished_utc": "2026-11-17T01:01:18Z"
+  },
+  "two_out_diff_shape__AMDGPU__b2__DISABLE_ALL": {
+   "key": {
+    "model_sha": "b4cd7e90aa77209a0935f0ee16f208134034c90580a45df9473519e2cfef58ea",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "DISABLE_ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:01:18Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.3,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_diff_shape__AMDGPU__b2__DISABLE_ALL.json",
+   "finished_utc": "2026-11-17T01:01:21Z"
+  },
+  "two_out_diff_shape__AMDGPU__b2__BASIC": {
+   "key": {
+    "model_sha": "b4cd7e90aa77209a0935f0ee16f208134034c90580a45df9473519e2cfef58ea",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "BASIC",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:01:21Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_diff_shape__AMDGPU__b2__BASIC.json",
+   "finished_utc": "2026-11-17T01:01:23Z"
+  },
+  "two_out_diff_shape__AMDGPU__b2__EXTENDED": {
+   "key": {
+    "model_sha": "b4cd7e90aa77209a0935f0ee16f208134034c90580a45df9473519e2cfef58ea",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "EXTENDED",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:01:23Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_diff_shape__AMDGPU__b2__EXTENDED.json",
+   "finished_utc": "2026-11-17T01:01:25Z"
+  },
+  "two_out_diff_shape__AMDGPU__b4__DISABLE_ALL": {
+   "key": {
+    "model_sha": "b4cd7e90aa77209a0935f0ee16f208134034c90580a45df9473519e2cfef58ea",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "DISABLE_ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:01:25Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_diff_shape__AMDGPU__b4__DISABLE_ALL.json",
+   "finished_utc": "2026-11-17T01:01:27Z"
+  },
+  "two_out_diff_shape__AMDGPU__b4__BASIC": {
+   "key": {
+    "model_sha": "b4cd7e90aa77209a0935f0ee16f208134034c90580a45df9473519e2cfef58ea",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "BASIC",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:01:27Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_diff_shape__AMDGPU__b4__BASIC.json",
+   "finished_utc": "2026-11-17T01:01:29Z"
+  },
+  "two_out_diff_shape__AMDGPU__b4__EXTENDED": {
+   "key": {
+    "model_sha": "b4cd7e90aa77209a0935f0ee16f208134034c90580a45df9473519e2cfef58ea",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "EXTENDED",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:01:29Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.2,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_diff_shape__AMDGPU__b4__EXTENDED.json",
+   "finished_utc": "2026-11-17T01:01:31Z"
+  },
+  "two_out_diff_shape__MIGraphX__b1__DISABLE_ALL": {
+   "key": {
+    "model_sha": "b4cd7e90aa77209a0935f0ee16f208134034c90580a45df9473519e2cfef58ea",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "DISABLE_ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:01:31Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_diff_shape__MIGraphX__b1__DISABLE_ALL.json",
+   "finished_utc": "2026-11-17T01:01:33Z"
+  },
+  "two_out_diff_shape__MIGraphX__b1__BASIC": {
+   "key": {
+    "model_sha": "b4cd7e90aa77209a0935f0ee16f208134034c90580a45df9473519e2cfef58ea",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "BASIC",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:01:33Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.2,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_diff_shape__MIGraphX__b1__BASIC.json",
+   "finished_utc": "2026-11-17T01:01:35Z"
+  },
+  "two_out_diff_shape__MIGraphX__b1__EXTENDED": {
+   "key": {
+    "model_sha": "b4cd7e90aa77209a0935f0ee16f208134034c90580a45df9473519e2cfef58ea",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "EXTENDED",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:01:35Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_diff_shape__MIGraphX__b1__EXTENDED.json",
+   "finished_utc": "2026-11-17T01:01:37Z"
+  },
+  "two_out_diff_shape__MIGraphX__b2__DISABLE_ALL": {
+   "key": {
+    "model_sha": "b4cd7e90aa77209a0935f0ee16f208134034c90580a45df9473519e2cfef58ea",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "DISABLE_ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:01:37Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.2,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_diff_shape__MIGraphX__b2__DISABLE_ALL.json",
+   "finished_utc": "2026-11-17T01:01:39Z"
+  },
+  "two_out_diff_shape__MIGraphX__b2__BASIC": {
+   "key": {
+    "model_sha": "b4cd7e90aa77209a0935f0ee16f208134034c90580a45df9473519e2cfef58ea",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "BASIC",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:01:39Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.2,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_diff_shape__MIGraphX__b2__BASIC.json",
+   "finished_utc": "2026-11-17T01:01:42Z"
+  },
+  "two_out_diff_shape__MIGraphX__b2__EXTENDED": {
+   "key": {
+    "model_sha": "b4cd7e90aa77209a0935f0ee16f208134034c90580a45df9473519e2cfef58ea",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "EXTENDED",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:01:42Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_diff_shape__MIGraphX__b2__EXTENDED.json",
+   "finished_utc": "2026-11-17T01:01:44Z"
+  },
+  "two_out_diff_shape__MIGraphX__b4__DISABLE_ALL": {
+   "key": {
+    "model_sha": "b4cd7e90aa77209a0935f0ee16f208134034c90580a45df9473519e2cfef58ea",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "DISABLE_ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:01:44Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_diff_shape__MIGraphX__b4__DISABLE_ALL.json",
+   "finished_utc": "2026-11-17T01:01:46Z"
+  },
+  "two_out_diff_shape__MIGraphX__b4__BASIC": {
+   "key": {
+    "model_sha": "b4cd7e90aa77209a0935f0ee16f208134034c90580a45df9473519e2cfef58ea",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "BASIC",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:01:46Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_diff_shape__MIGraphX__b4__BASIC.json",
+   "finished_utc": "2026-11-17T01:01:48Z"
+  },
+  "two_out_diff_shape__MIGraphX__b4__EXTENDED": {
+   "key": {
+    "model_sha": "b4cd7e90aa77209a0935f0ee16f208134034c90580a45df9473519e2cfef58ea",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "EXTENDED",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:01:48Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\two_out_diff_shape__MIGraphX__b4__EXTENDED.json",
+   "finished_utc": "2026-11-17T01:01:50Z"
+  },
+  "nine_out__AMDGPU__b1__DISABLE_ALL": {
+   "key": {
+    "model_sha": "dc0cb1748a12bfecd30b0385d8e5ddd62c3a0622687d9e1d66c7c62ddd21eaa4",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "DISABLE_ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:01:50Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.2,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\nine_out__AMDGPU__b1__DISABLE_ALL.json",
+   "finished_utc": "2026-11-17T01:01:52Z"
+  },
+  "nine_out__AMDGPU__b1__BASIC": {
+   "key": {
+    "model_sha": "dc0cb1748a12bfecd30b0385d8e5ddd62c3a0622687d9e1d66c7c62ddd21eaa4",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "BASIC",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:01:52Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\nine_out__AMDGPU__b1__BASIC.json",
+   "finished_utc": "2026-11-17T01:01:54Z"
+  },
+  "nine_out__AMDGPU__b1__EXTENDED": {
+   "key": {
+    "model_sha": "dc0cb1748a12bfecd30b0385d8e5ddd62c3a0622687d9e1d66c7c62ddd21eaa4",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "EXTENDED",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:01:54Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\nine_out__AMDGPU__b1__EXTENDED.json",
+   "finished_utc": "2026-11-17T01:01:56Z"
+  },
+  "nine_out__AMDGPU__b2__DISABLE_ALL": {
+   "key": {
+    "model_sha": "dc0cb1748a12bfecd30b0385d8e5ddd62c3a0622687d9e1d66c7c62ddd21eaa4",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "DISABLE_ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:01:56Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.2,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\nine_out__AMDGPU__b2__DISABLE_ALL.json",
+   "finished_utc": "2026-11-17T01:01:58Z"
+  },
+  "nine_out__AMDGPU__b2__BASIC": {
+   "key": {
+    "model_sha": "dc0cb1748a12bfecd30b0385d8e5ddd62c3a0622687d9e1d66c7c62ddd21eaa4",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "BASIC",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:01:58Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\nine_out__AMDGPU__b2__BASIC.json",
+   "finished_utc": "2026-11-17T01:02:00Z"
+  },
+  "nine_out__AMDGPU__b2__EXTENDED": {
+   "key": {
+    "model_sha": "dc0cb1748a12bfecd30b0385d8e5ddd62c3a0622687d9e1d66c7c62ddd21eaa4",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "EXTENDED",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:02:00Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.3,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\nine_out__AMDGPU__b2__EXTENDED.json",
+   "finished_utc": "2026-11-17T01:02:02Z"
+  },
+  "nine_out__AMDGPU__b4__DISABLE_ALL": {
+   "key": {
+    "model_sha": "dc0cb1748a12bfecd30b0385d8e5ddd62c3a0622687d9e1d66c7c62ddd21eaa4",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "DISABLE_ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:02:02Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.2,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\nine_out__AMDGPU__b4__DISABLE_ALL.json",
+   "finished_utc": "2026-11-17T01:02:05Z"
+  },
+  "nine_out__AMDGPU__b4__BASIC": {
+   "key": {
+    "model_sha": "dc0cb1748a12bfecd30b0385d8e5ddd62c3a0622687d9e1d66c7c62ddd21eaa4",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "BASIC",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:02:05Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.4,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\nine_out__AMDGPU__b4__BASIC.json",
+   "finished_utc": "2026-11-17T01:02:07Z"
+  },
+  "nine_out__AMDGPU__b4__EXTENDED": {
+   "key": {
+    "model_sha": "dc0cb1748a12bfecd30b0385d8e5ddd62c3a0622687d9e1d66c7c62ddd21eaa4",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "EXTENDED",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:02:07Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.2,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\nine_out__AMDGPU__b4__EXTENDED.json",
+   "finished_utc": "2026-11-17T01:02:09Z"
+  },
+  "nine_out__MIGraphX__b1__DISABLE_ALL": {
+   "key": {
+    "model_sha": "dc0cb1748a12bfecd30b0385d8e5ddd62c3a0622687d9e1d66c7c62ddd21eaa4",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "DISABLE_ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:02:09Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.3,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\nine_out__MIGraphX__b1__DISABLE_ALL.json",
+   "finished_utc": "2026-11-17T01:02:12Z"
+  },
+  "nine_out__MIGraphX__b1__BASIC": {
+   "key": {
+    "model_sha": "dc0cb1748a12bfecd30b0385d8e5ddd62c3a0622687d9e1d66c7c62ddd21eaa4",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "BASIC",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:02:12Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\nine_out__MIGraphX__b1__BASIC.json",
+   "finished_utc": "2026-11-17T01:02:14Z"
+  },
+  "nine_out__MIGraphX__b1__EXTENDED": {
+   "key": {
+    "model_sha": "dc0cb1748a12bfecd30b0385d8e5ddd62c3a0622687d9e1d66c7c62ddd21eaa4",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "EXTENDED",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:02:14Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\nine_out__MIGraphX__b1__EXTENDED.json",
+   "finished_utc": "2026-11-17T01:02:16Z"
+  },
+  "nine_out__MIGraphX__b2__DISABLE_ALL": {
+   "key": {
+    "model_sha": "dc0cb1748a12bfecd30b0385d8e5ddd62c3a0622687d9e1d66c7c62ddd21eaa4",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "DISABLE_ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:02:16Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.2,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\nine_out__MIGraphX__b2__DISABLE_ALL.json",
+   "finished_utc": "2026-11-17T01:02:18Z"
+  },
+  "nine_out__MIGraphX__b2__BASIC": {
+   "key": {
+    "model_sha": "dc0cb1748a12bfecd30b0385d8e5ddd62c3a0622687d9e1d66c7c62ddd21eaa4",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "BASIC",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:02:18Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.0,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\nine_out__MIGraphX__b2__BASIC.json",
+   "finished_utc": "2026-11-17T01:02:20Z"
+  },
+  "nine_out__MIGraphX__b2__EXTENDED": {
+   "key": {
+    "model_sha": "dc0cb1748a12bfecd30b0385d8e5ddd62c3a0622687d9e1d66c7c62ddd21eaa4",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "EXTENDED",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:02:20Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 1.8,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\nine_out__MIGraphX__b2__EXTENDED.json",
+   "finished_utc": "2026-11-17T01:02:22Z"
+  },
+  "nine_out__MIGraphX__b4__DISABLE_ALL": {
+   "key": {
+    "model_sha": "dc0cb1748a12bfecd30b0385d8e5ddd62c3a0622687d9e1d66c7c62ddd21eaa4",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "DISABLE_ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:02:22Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\nine_out__MIGraphX__b4__DISABLE_ALL.json",
+   "finished_utc": "2026-11-17T01:02:24Z"
+  },
+  "nine_out__MIGraphX__b4__BASIC": {
+   "key": {
+    "model_sha": "dc0cb1748a12bfecd30b0385d8e5ddd62c3a0622687d9e1d66c7c62ddd21eaa4",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "BASIC",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:02:24Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\nine_out__MIGraphX__b4__BASIC.json",
+   "finished_utc": "2026-11-17T01:02:26Z"
+  },
+  "nine_out__MIGraphX__b4__EXTENDED": {
+   "key": {
+    "model_sha": "dc0cb1748a12bfecd30b0385d8e5ddd62c3a0622687d9e1d66c7c62ddd21eaa4",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "EXTENDED",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:02:26Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 2.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\nine_out__MIGraphX__b4__EXTENDED.json",
+   "finished_utc": "2026-11-17T01:02:28Z"
+  },
+  "split2__AMDGPU__b1__DISABLE_ALL": {
+   "key": {
+    "model_sha": "cf9c053bdce5e07bde62291e2b346e2ea10a8b6142ff9c22fcfa466757894981",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "DISABLE_ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:07:07Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.5,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\split2__AMDGPU__b1__DISABLE_ALL.json",
+   "finished_utc": "2026-11-17T01:07:09Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "split2__AMDGPU__b1__BASIC": {
+   "key": {
+    "model_sha": "cf9c053bdce5e07bde62291e2b346e2ea10a8b6142ff9c22fcfa466757894981",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "BASIC",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:07:09Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.4,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\split2__AMDGPU__b1__BASIC.json",
+   "finished_utc": "2026-11-17T01:07:10Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "split2__AMDGPU__b1__EXTENDED": {
+   "key": {
+    "model_sha": "cf9c053bdce5e07bde62291e2b346e2ea10a8b6142ff9c22fcfa466757894981",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "EXTENDED",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:07:10Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.4,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\split2__AMDGPU__b1__EXTENDED.json",
+   "finished_utc": "2026-11-17T01:07:12Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "split2__AMDGPU__b2__DISABLE_ALL": {
+   "key": {
+    "model_sha": "cf9c053bdce5e07bde62291e2b346e2ea10a8b6142ff9c22fcfa466757894981",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "DISABLE_ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:07:12Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.7,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\split2__AMDGPU__b2__DISABLE_ALL.json",
+   "finished_utc": "2026-11-17T01:07:13Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "split2__AMDGPU__b2__BASIC": {
+   "key": {
+    "model_sha": "cf9c053bdce5e07bde62291e2b346e2ea10a8b6142ff9c22fcfa466757894981",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "BASIC",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:07:13Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.7,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\split2__AMDGPU__b2__BASIC.json",
+   "finished_utc": "2026-11-17T01:07:15Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "split2__AMDGPU__b2__EXTENDED": {
+   "key": {
+    "model_sha": "cf9c053bdce5e07bde62291e2b346e2ea10a8b6142ff9c22fcfa466757894981",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 2,
+    "opt": "EXTENDED",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:07:15Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.4,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\split2__AMDGPU__b2__EXTENDED.json",
+   "finished_utc": "2026-11-17T01:07:17Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "split2__AMDGPU__b4__DISABLE_ALL": {
+   "key": {
+    "model_sha": "cf9c053bdce5e07bde62291e2b346e2ea10a8b6142ff9c22fcfa466757894981",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "DISABLE_ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:07:17Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.3,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\split2__AMDGPU__b4__DISABLE_ALL.json",
+   "finished_utc": "2026-11-17T01:07:18Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "split2__AMDGPU__b4__BASIC": {
+   "key": {
+    "model_sha": "cf9c053bdce5e07bde62291e2b346e2ea10a8b6142ff9c22fcfa466757894981",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "BASIC",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:07:18Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.6,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\split2__AMDGPU__b4__BASIC.json",
+   "finished_utc": "2026-11-17T01:07:19Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "split2__AMDGPU__b4__EXTENDED": {
+   "key": {
+    "model_sha": "cf9c053bdce5e07bde62291e2b346e2ea10a8b6142ff9c22fcfa466757894981",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 4,
+    "opt": "EXTENDED",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:07:19Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.4,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\split2__AMDGPU__b4__EXTENDED.json",
+   "finished_utc": "2026-11-17T01:07:21Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "split2__MIGraphX__b1__DISABLE_ALL": {
+   "key": {
+    "model_sha": "cf9c053bdce5e07bde62291e2b346e2ea10a8b6142ff9c22fcfa466757894981",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "DISABLE_ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:07:25Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.5,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\split2__MIGraphX__b1__DISABLE_ALL.json",
+   "finished_utc": "2026-11-17T01:07:26Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "split2__MIGraphX__b1__BASIC": {
+   "key": {
+    "model_sha": "cf9c053bdce5e07bde62291e2b346e2ea10a8b6142ff9c22fcfa466757894981",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "BASIC",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:07:26Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.5,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\split2__MIGraphX__b1__BASIC.json",
+   "finished_utc": "2026-11-17T01:07:28Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "split2__MIGraphX__b1__EXTENDED": {
+   "key": {
+    "model_sha": "cf9c053bdce5e07bde62291e2b346e2ea10a8b6142ff9c22fcfa466757894981",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "EXTENDED",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:07:28Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.2,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\split2__MIGraphX__b1__EXTENDED.json",
+   "finished_utc": "2026-11-17T01:07:29Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "split2__MIGraphX__b2__DISABLE_ALL": {
+   "key": {
+    "model_sha": "cf9c053bdce5e07bde62291e2b346e2ea10a8b6142ff9c22fcfa466757894981",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "DISABLE_ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:07:29Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.7,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\split2__MIGraphX__b2__DISABLE_ALL.json",
+   "finished_utc": "2026-11-17T01:07:31Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "split2__MIGraphX__b2__BASIC": {
+   "key": {
+    "model_sha": "cf9c053bdce5e07bde62291e2b346e2ea10a8b6142ff9c22fcfa466757894981",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "BASIC",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:07:31Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.5,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\split2__MIGraphX__b2__BASIC.json",
+   "finished_utc": "2026-11-17T01:07:32Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "split2__MIGraphX__b2__EXTENDED": {
+   "key": {
+    "model_sha": "cf9c053bdce5e07bde62291e2b346e2ea10a8b6142ff9c22fcfa466757894981",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 2,
+    "opt": "EXTENDED",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:07:32Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.3,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\split2__MIGraphX__b2__EXTENDED.json",
+   "finished_utc": "2026-11-17T01:07:34Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "split2__MIGraphX__b4__DISABLE_ALL": {
+   "key": {
+    "model_sha": "cf9c053bdce5e07bde62291e2b346e2ea10a8b6142ff9c22fcfa466757894981",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "DISABLE_ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:07:34Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.7,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\split2__MIGraphX__b4__DISABLE_ALL.json",
+   "finished_utc": "2026-11-17T01:07:35Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "split2__MIGraphX__b4__BASIC": {
+   "key": {
+    "model_sha": "cf9c053bdce5e07bde62291e2b346e2ea10a8b6142ff9c22fcfa466757894981",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "BASIC",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:07:35Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.5,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\split2__MIGraphX__b4__BASIC.json",
+   "finished_utc": "2026-11-17T01:07:37Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "split2__MIGraphX__b4__EXTENDED": {
+   "key": {
+    "model_sha": "cf9c053bdce5e07bde62291e2b346e2ea10a8b6142ff9c22fcfa466757894981",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 4,
+    "opt": "EXTENDED",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:07:37Z",
+   "classification": "SKIPPED_FIXTURE_DEFECT",
+   "rc": 1,
+   "elapsed_s": 1.6,
+   "gpu_node_ratio": null,
+   "parity_all_ok": null,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\split2__MIGraphX__b4__EXTENDED.json",
+   "finished_utc": "2026-11-17T01:07:39Z",
+   "classification_raw": "FAIL_RUNTIME",
+   "fixture_defect_reason": "CPU load fails: INVALID_GRAPH"
+  },
+  "emotion-ferplus-8__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "a2a2ba6a335a3b29c21acb6272f962bd3d47f84952aaffa03b60986e04efa61c",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:02:56Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 8.5,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\emotion-ferplus-8__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:03:04Z"
+  },
+  "emotion-ferplus-8__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "a2a2ba6a335a3b29c21acb6272f962bd3d47f84952aaffa03b60986e04efa61c",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:03:04Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 8.9,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\emotion-ferplus-8__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:03:13Z"
+  },
+  "mnist-8__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "2f06e72de813a8635c9bc0397ac447a601bdbfa7df4bebc278723b958831c9bf",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:03:13Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 4.2,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\mnist-8__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:03:17Z"
+  },
+  "mnist-8__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "2f06e72de813a8635c9bc0397ac447a601bdbfa7df4bebc278723b958831c9bf",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:03:18Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 4.2,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\mnist-8__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:03:22Z"
+  },
+  "mobilenetv2-12__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "c0c3f76d93fa3fd6580652a45618618a220fced18babf65774ed169de0432ad5",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:03:22Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 30.4,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\mobilenetv2-12__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:03:52Z"
+  },
+  "mobilenetv2-12__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "c0c3f76d93fa3fd6580652a45618618a220fced18babf65774ed169de0432ad5",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:03:52Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 18.8,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\mobilenetv2-12__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:04:11Z"
+  },
+  "squeezenet1.0-12__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "dec81a8684617770b3cf13fadc1d92565d1d453d23935fc6388b792d99c992bd",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:04:11Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 13.1,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\squeezenet1.0-12__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:04:24Z"
+  },
+  "squeezenet1.0-12__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "dec81a8684617770b3cf13fadc1d92565d1d453d23935fc6388b792d99c992bd",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:04:24Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 12.5,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\squeezenet1.0-12__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:04:37Z"
+  },
+  "ssd_mobilenet_v1_10__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "1fbcf47654165f2e0b5f1bdf3f123b9e9e1128cd6463717767b76ab4b5246f9a",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:12:21Z",
+   "classification": "FAIL_NO_GPU_COMPUTE",
+   "rc": 1,
+   "elapsed_s": 11.6,
+   "gpu_node_ratio": 0.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\ssd_mobilenet_v1_10__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:12:33Z"
+  },
+  "ssd_mobilenet_v1_10__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "1fbcf47654165f2e0b5f1bdf3f123b9e9e1128cd6463717767b76ab4b5246f9a",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "FAILED",
+   "started_utc": "2026-11-17T01:12:33Z",
+   "classification": "FAIL_NO_GPU_COMPUTE",
+   "rc": 1,
+   "elapsed_s": 11.9,
+   "gpu_node_ratio": 0.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\ssd_mobilenet_v1_10__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:12:45Z"
+  },
+  "scrfd_det_10g__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "5838f7fe053675b1c7a08b633df49e7af5495cee0493c7dcf6697200b85b5b91",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:11:20Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 30.2,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\scrfd_det_10g__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:11:50Z"
+  },
+  "scrfd_det_10g__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "5838f7fe053675b1c7a08b633df49e7af5495cee0493c7dcf6697200b85b5b91",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:11:50Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 25.3,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\scrfd_det_10g__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:12:16Z"
+  },
+  "yolo26n__AMDGPU__b1__ALL": {
+   "key": {
+    "model_sha": "4fc60f7e7973aae4e6cbb7ea281c860de048b62ab5fa12ed06f467e1151b8f7b",
+    "ep": "AMDGPUExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:08:34Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 62.4,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\yolo26n__AMDGPU__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:09:36Z"
+  },
+  "yolo26n__MIGraphX__b1__ALL": {
+   "key": {
+    "model_sha": "4fc60f7e7973aae4e6cbb7ea281c860de048b62ab5fa12ed06f467e1151b8f7b",
+    "ep": "MIGraphXExecutionProvider",
+    "batch": 1,
+    "opt": "ALL",
+    "ort": "1.30.1",
+    "device": "LUID72346_gfx1100"
+   },
+   "status": "DONE",
+   "started_utc": "2026-11-17T01:09:36Z",
+   "classification": "PASS_GPU_CORRECT_FULL_COVERAGE",
+   "rc": 0,
+   "elapsed_s": 43.6,
+   "gpu_node_ratio": 1.0,
+   "parity_all_ok": true,
+   "receipt": "reports\\r2\\r2_20261117T004504Z\\cases\\yolo26n__MIGraphX__b1__ALL.json",
+   "finished_utc": "2026-11-17T01:10:20Z"
+  }
+ },
+ "updated_utc": "2026-11-17T01:12:45Z",
+ "reclassifications": 0,
+ "finalized_utc": "2026-11-17T02:28:39Z"
+}

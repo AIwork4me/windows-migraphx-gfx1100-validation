@@ -1,0 +1,9 @@
+model,sha256,source,license,acquired,note,pushed_to_github
+mnist-8,2f06e72de813a8635c9bc0397ac447a601bdbfa7df4bebc278723b958831c9bf,onnx/models (ONNX Model Zoo),Apache-2.0,2026-11-16,"round-1 asset, rehashed for R2",NO (gitignored weights; hash only)
+squeezenet1.0-12,dec81a8684617770b3cf13fadc1d92565d1d453d23935fc6388b792d99c992bd,onnx/models (ONNX Model Zoo),Apache-2.0,2026-11-16,round-1 asset,NO (gitignored weights; hash only)
+mobilenetv2-12,c0c3f76d93fa3fd6580652a45618618a220fced18babf65774ed169de0432ad5,onnx/models (ONNX Model Zoo),Apache-2.0,2026-11-16,round-1 asset,NO (gitignored weights; hash only)
+emotion-ferplus-8,a2a2ba6a335a3b29c21acb6272f962bd3d47f84952aaffa03b60986e04efa61c,onnx/models (ONNX Model Zoo),MIT,2026-11-16,round-1 asset,NO (gitignored weights; hash only)
+ssd_mobilenet_v1_10,1fbcf47654165f2e0b5f1bdf3f123b9e9e1128cd6463717767b76ab4b5246f9a,onnx/models (ONNX Model Zoo),Apache-2.0,2026-11-16,round-1 asset; 4-output real detector (multi-output coverage),NO (gitignored weights; hash only)
+yolo26n,4fc60f7e7973aae4e6cbb7ea281c860de048b62ab5fa12ed06f467e1151b8f7b,"ultralytics yolo26n.pt via official exporter (ultralytics 8.4.215, torch 2.15.0+cpu, format=onnx opset=17 imgsz=640 dynamic=False simplify=True)",AGPL-3.0 (Ultralytics),2026-11-17,export command recorded; first-choice per mission,NO (gitignored weights; hash only)
+scrfd_det_10g,5838f7fe053675b1c7a08b633df49e7af5495cee0493c7dcf6697200b85b5b91,deepinsight/insightface release v0.7 buffalo_l.zip (det_10g.onnx),non-commercial research (insightface model zoo),2026-11-17,9-output detector (#150-sensitive),NO (gitignored weights; hash only)
+bus.jpg,c02019c4979c191eb739ddd944445ef408dad5679acab6fd520ef9d434bfbc63,ultralytics/ultralytics official asset,AGPL-3.0,2026-11-17,"public sample image, no private data",NO (gitignored weights; hash only)

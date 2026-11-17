@@ -1,0 +1,635 @@
+{
+ "schema": "r2_1_1/cpu_oracle/1",
+ "ort": "1.32.0",
+ "provider": [
+  "CPUExecutionProvider"
+ ],
+ "atol": 1e-05,
+ "cases": [
+  {
+   "fixture": "valid_conv_then_loop.onnx",
+   "input_index": 0,
+   "input_sha256": "5585804b2a2ce12c",
+   "input_shape": [
+    1,
+    1,
+    8,
+    8
+   ],
+   "outputs": {
+    "Y": {
+     "shape": [
+      1,
+      1,
+      8,
+      8
+     ],
+     "want_shape": [
+      1,
+      1,
+      8,
+      8
+     ],
+     "exact": false,
+     "match": true,
+     "max_abs": 1.4901161193847656e-08
+    }
+   },
+   "verdict": "CPU_ORACLE_PASS"
+  },
+  {
+   "fixture": "valid_conv_then_loop.onnx",
+   "input_index": 1,
+   "input_sha256": "c3b78c45f9db0bfa",
+   "input_shape": [
+    1,
+    1,
+    8,
+    8
+   ],
+   "outputs": {
+    "Y": {
+     "shape": [
+      1,
+      1,
+      8,
+      8
+     ],
+     "want_shape": [
+      1,
+      1,
+      8,
+      8
+     ],
+     "exact": false,
+     "match": true,
+     "max_abs": 1.4901161193847656e-08
+    }
+   },
+   "verdict": "CPU_ORACLE_PASS"
+  },
+  {
+   "fixture": "valid_conv_then_loop.onnx",
+   "input_index": 2,
+   "input_sha256": "8b0190a97edc124c",
+   "input_shape": [
+    1,
+    1,
+    8,
+    8
+   ],
+   "outputs": {
+    "Y": {
+     "shape": [
+      1,
+      1,
+      8,
+      8
+     ],
+     "want_shape": [
+      1,
+      1,
+      8,
+      8
+     ],
+     "exact": false,
+     "match": true,
+     "max_abs": 2.9802322387695312e-08
+    }
+   },
+   "verdict": "CPU_ORACLE_PASS"
+  },
+  {
+   "fixture": "valid_loop_carried.onnx",
+   "input_index": 0,
+   "input_sha256": "6e31851025dc7e1b",
+   "input_shape": [
+    1,
+    1,
+    4,
+    4
+   ],
+   "outputs": {
+    "Y": {
+     "shape": [
+      1,
+      1,
+      4,
+      4
+     ],
+     "want_shape": [
+      1,
+      1,
+      4,
+      4
+     ],
+     "exact": false,
+     "match": true,
+     "max_abs": 2.9802322387695312e-08
+    }
+   },
+   "verdict": "CPU_ORACLE_PASS"
+  },
+  {
+   "fixture": "valid_loop_carried.onnx",
+   "input_index": 1,
+   "input_sha256": "5b3529d10215d79f",
+   "input_shape": [
+    1,
+    1,
+    4,
+    4
+   ],
+   "outputs": {
+    "Y": {
+     "shape": [
+      1,
+      1,
+      4,
+      4
+     ],
+     "want_shape": [
+      1,
+      1,
+      4,
+      4
+     ],
+     "exact": false,
+     "match": true,
+     "max_abs": 2.9802322387695312e-08
+    }
+   },
+   "verdict": "CPU_ORACLE_PASS"
+  },
+  {
+   "fixture": "valid_loop_carried.onnx",
+   "input_index": 2,
+   "input_sha256": "6b108da0993e027a",
+   "input_shape": [
+    1,
+    1,
+    4,
+    4
+   ],
+   "outputs": {
+    "Y": {
+     "shape": [
+      1,
+      1,
+      4,
+      4
+     ],
+     "want_shape": [
+      1,
+      1,
+      4,
+      4
+     ],
+     "exact": false,
+     "match": true,
+     "max_abs": 2.9802322387695312e-08
+    }
+   },
+   "verdict": "CPU_ORACLE_PASS"
+  },
+  {
+   "fixture": "valid_loop_plus_nonzero.onnx",
+   "input_index": 0,
+   "input_sha256": "042ff2b71f6a2f59",
+   "input_shape": [
+    1,
+    1,
+    4,
+    4
+   ],
+   "outputs": {
+    "Z": {
+     "shape": [
+      4,
+      16
+     ],
+     "want_shape": [
+      4,
+      16
+     ],
+     "exact": true,
+     "match": true,
+     "max_abs": 0.0
+    }
+   },
+   "verdict": "CPU_ORACLE_PASS"
+  },
+  {
+   "fixture": "valid_loop_plus_nonzero.onnx",
+   "input_index": 1,
+   "input_sha256": "1fa3d96b0ec32cee",
+   "input_shape": [
+    1,
+    1,
+    4,
+    4
+   ],
+   "outputs": {
+    "Z": {
+     "shape": [
+      4,
+      0
+     ],
+     "want_shape": [
+      4,
+      0
+     ],
+     "exact": true,
+     "match": true,
+     "max_abs": 0.0
+    }
+   },
+   "verdict": "CPU_ORACLE_PASS"
+  },
+  {
+   "fixture": "valid_loop_scan.onnx",
+   "input_index": 0,
+   "input_sha256": "6e31851025dc7e1b",
+   "input_shape": [
+    1,
+    1,
+    4,
+    4
+   ],
+   "outputs": {
+    "Z": {
+     "shape": [
+      1,
+      1,
+      4,
+      4
+     ],
+     "want_shape": [
+      1,
+      1,
+      4,
+      4
+     ],
+     "exact": false,
+     "match": true,
+     "max_abs": 2.9802322387695312e-08
+    },
+    "Y": {
+     "shape": [
+      3,
+      1,
+      1,
+      4,
+      4
+     ],
+     "want_shape": [
+      3,
+      1,
+      1,
+      4,
+      4
+     ],
+     "exact": false,
+     "match": true,
+     "max_abs": 2.9802322387695312e-08
+    }
+   },
+   "verdict": "CPU_ORACLE_PASS"
+  },
+  {
+   "fixture": "valid_loop_scan.onnx",
+   "input_index": 1,
+   "input_sha256": "5b3529d10215d79f",
+   "input_shape": [
+    1,
+    1,
+    4,
+    4
+   ],
+   "outputs": {
+    "Z": {
+     "shape": [
+      1,
+      1,
+      4,
+      4
+     ],
+     "want_shape": [
+      1,
+      1,
+      4,
+      4
+     ],
+     "exact": false,
+     "match": true,
+     "max_abs": 2.9802322387695312e-08
+    },
+    "Y": {
+     "shape": [
+      3,
+      1,
+      1,
+      4,
+      4
+     ],
+     "want_shape": [
+      3,
+      1,
+      1,
+      4,
+      4
+     ],
+     "exact": false,
+     "match": true,
+     "max_abs": 2.9802322387695312e-08
+    }
+   },
+   "verdict": "CPU_ORACLE_PASS"
+  },
+  {
+   "fixture": "valid_loop_scan.onnx",
+   "input_index": 2,
+   "input_sha256": "6b108da0993e027a",
+   "input_shape": [
+    1,
+    1,
+    4,
+    4
+   ],
+   "outputs": {
+    "Z": {
+     "shape": [
+      1,
+      1,
+      4,
+      4
+     ],
+     "want_shape": [
+      1,
+      1,
+      4,
+      4
+     ],
+     "exact": false,
+     "match": true,
+     "max_abs": 2.9802322387695312e-08
+    },
+    "Y": {
+     "shape": [
+      3,
+      1,
+      1,
+      4,
+      4
+     ],
+     "want_shape": [
+      3,
+      1,
+      1,
+      4,
+      4
+     ],
+     "exact": false,
+     "match": true,
+     "max_abs": 2.9802322387695312e-08
+    }
+   },
+   "verdict": "CPU_ORACLE_PASS"
+  },
+  {
+   "fixture": "valid_nonzero_dynamic.onnx",
+   "input_index": 0,
+   "input_sha256": "f617f88a0839b81c",
+   "input_shape": [
+    6,
+    7
+   ],
+   "outputs": {
+    "Y": {
+     "shape": [
+      2,
+      35
+     ],
+     "want_shape": [
+      2,
+      35
+     ],
+     "exact": true,
+     "match": true,
+     "max_abs": 0.0
+    }
+   },
+   "verdict": "CPU_ORACLE_PASS"
+  },
+  {
+   "fixture": "valid_nonzero_dynamic.onnx",
+   "input_index": 1,
+   "input_sha256": "17b0761f87b081d5",
+   "input_shape": [
+    3,
+    4
+   ],
+   "outputs": {
+    "Y": {
+     "shape": [
+      2,
+      0
+     ],
+     "want_shape": [
+      2,
+      0
+     ],
+     "exact": true,
+     "match": true,
+     "max_abs": 0.0
+    }
+   },
+   "verdict": "CPU_ORACLE_PASS"
+  },
+  {
+   "fixture": "valid_nonzero_dynamic.onnx",
+   "input_index": 2,
+   "input_sha256": "cb20f90237d216af",
+   "input_shape": [
+    2,
+    9
+   ],
+   "outputs": {
+    "Y": {
+     "shape": [
+      2,
+      18
+     ],
+     "want_shape": [
+      2,
+      18
+     ],
+     "exact": true,
+     "match": true,
+     "max_abs": 0.0
+    }
+   },
+   "verdict": "CPU_ORACLE_PASS"
+  },
+  {
+   "fixture": "valid_nonzero_in_loop.onnx",
+   "input_index": 0,
+   "input_sha256": "042ff2b71f6a2f59",
+   "input_shape": [
+    1,
+    1,
+    4,
+    4
+   ],
+   "outputs": {
+    "Z": {
+     "shape": [
+      1,
+      1,
+      4,
+      4
+     ],
+     "want_shape": [
+      1,
+      1,
+      4,
+      4
+     ],
+     "exact": false,
+     "match": true,
+     "max_abs": 2.9802322387695312e-08
+    },
+    "S": {
+     "shape": [
+      3
+     ],
+     "want_shape": [
+      3
+     ],
+     "exact": true,
+     "match": true,
+     "max_abs": 0.0
+    }
+   },
+   "verdict": "CPU_ORACLE_PASS"
+  },
+  {
+   "fixture": "valid_nonzero_in_loop.onnx",
+   "input_index": 1,
+   "input_sha256": "bc976089fb98fe4b",
+   "input_shape": [
+    1,
+    1,
+    4,
+    4
+   ],
+   "outputs": {
+    "Z": {
+     "shape": [
+      1,
+      1,
+      4,
+      4
+     ],
+     "want_shape": [
+      1,
+      1,
+      4,
+      4
+     ],
+     "exact": false,
+     "match": true,
+     "max_abs": 2.9802322387695312e-08
+    },
+    "S": {
+     "shape": [
+      3
+     ],
+     "want_shape": [
+      3
+     ],
+     "exact": true,
+     "match": true,
+     "max_abs": 0.0
+    }
+   },
+   "verdict": "CPU_ORACLE_PASS"
+  },
+  {
+   "fixture": "valid_nonzero_static.onnx",
+   "input_index": 0,
+   "input_sha256": "37032dde58b1e585",
+   "input_shape": [
+    4,
+    5
+   ],
+   "outputs": {
+    "Y": {
+     "shape": [
+      2,
+      15
+     ],
+     "want_shape": [
+      2,
+      15
+     ],
+     "exact": true,
+     "match": true,
+     "max_abs": 0.0
+    }
+   },
+   "verdict": "CPU_ORACLE_PASS"
+  },
+  {
+   "fixture": "valid_nonzero_static.onnx",
+   "input_index": 1,
+   "input_sha256": "5b6fb58e61fa4759",
+   "input_shape": [
+    4,
+    5
+   ],
+   "outputs": {
+    "Y": {
+     "shape": [
+      2,
+      0
+     ],
+     "want_shape": [
+      2,
+      0
+     ],
+     "exact": true,
+     "match": true,
+     "max_abs": 0.0
+    }
+   },
+   "verdict": "CPU_ORACLE_PASS"
+  },
+  {
+   "fixture": "valid_nonzero_static.onnx",
+   "input_index": 2,
+   "input_sha256": "8864ad8cbaabed69",
+   "input_shape": [
+    4,
+    5
+   ],
+   "outputs": {
+    "Y": {
+     "shape": [
+      2,
+      20
+     ],
+     "want_shape": [
+      2,
+      20
+     ],
+     "exact": true,
+     "match": true,
+     "max_abs": 0.0
+    }
+   },
+   "verdict": "CPU_ORACLE_PASS"
+  }
+ ],
+ "all_ok": true
+}

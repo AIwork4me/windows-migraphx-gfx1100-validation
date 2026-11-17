@@ -1,0 +1,81 @@
+{
+ "schema": "r21/ledger/1",
+ "run_id": "r21_20261117T040739Z",
+ "mission": "R2.1 Final Evidence Freeze, Guard Validation & Soak RCA",
+ "source_r2_run": "reports/r2/r2_20261117T004504Z (frozen, unmodified)",
+ "base_head_at_start": "f32f4aa1ffce4872608e5e94874a5ee15f08a634",
+ "phases": {
+  "R2.1-0_baseline": {
+   "status": "DONE",
+   "receipt": "BASELINE.json",
+   "facts": "local==remote==PR2 head at start; no compilers locally; MSIX 1.8.65.0; driver 32.0.21030.2001; 4 adapters"
+  },
+  "A1_legacy_byte_restore": {
+   "status": "DONE",
+   "receipt": [
+    "A1_BLOB_AUDIT.json",
+    "A1_RESTORE_LIST.txt"
+   ],
+   "facts": "466 M vs merge-base: 464 EOL-only restored (blob==merge-base 464/464), 2 intentional kept (.gitignore, README.md); PR diff 1821->1362 files; m0 blob eb8a084 verified"
+  },
+  "A3_recount": {
+   "status": "DONE",
+   "receipt": [
+    "R2_RECOUNT.json",
+    "R2_OPERATOR_DERIVED.csv",
+    "R2_REAL_MODEL_DERIVED.csv",
+    "MANIFEST_RECON.json"
+   ],
+   "facts": "290=234+54+2; 276=222+54 synthetic; 14=12+2 real; per-EP 117 PASS=111+6; manifest 1319 entries 0 mismatch; 1314=stale snapshot; bus.jpg tracked sha verified"
+  },
+  "A4_adversarial_gate": {
+   "status": "DONE",
+   "receipt": [
+    "CI_NEGATIVE_TESTS.md",
+    "runner/r2_1/r21_validate.py",
+    "tests/test_r21_validator.py"
+   ],
+   "facts": "19 unittest cases; CPU-only-receipt false-positive closed; wired into r2-cpu-tests; CI green on ff178e2 (runs 44019060449 push, 44019068997 PR)"
+  },
+  "A5_errata": {
+   "status": "DONE",
+   "receipt": "R21_ERRATA.md",
+   "facts": "8 corrections; pointers in R2_FINAL_CN/EN; LATEST.md corrected"
+  },
+  "B_guard": {
+   "status": "DONE",
+   "receipt": "R21_GUARD_VALIDATION.md",
+   "facts": "fork commit 0baccb2; INT_MAX assertion fixed; CI run 44016624979: g++/clang++21.1.8 (-Wall -Wextra -Werror) + MSVC cl (/W4 /WX) all compile+run exit 0 'all checks passed'; native build still BLOCKED_TOOLCHAIN; no upstream posting"
+  },
+  "C_soak_rca": {
+   "status": "DONE",
+   "receipt": [
+    "SOAK_RCA.md",
+    "soak_fault/",
+    "soak_matrix/"
+   ],
+   "facts": "watchdog fault-validated (4/4); c1 AMD 18514it PASS; c2 MGX persistent 39684it PASS; c3 MGX recre@2000 24000it/12recreates PASS; c4 recre@4000 PASS; c5 teardown+interpreter-exit clean; c6 R2-exact inputs 25849it/12recreates PASS @1615it/min; verdict RCA_NOT_REPRODUCED; historical R2 FAIL unchanged"
+  },
+  "D_ssd_partition": {
+   "status": "DONE",
+   "receipt": [
+    "SSD_PARTITION_RCA.md",
+    "ssd_partition/"
+   ],
+   "facts": "SSD x 2EP x 4 opt levels reproduced (5579-6169 CPU events, 0 EP nodes); mechanism = compile-accept->EP_FAIL->session CPU fallback (stdout evidence, also present in R2 logs); minimal fixtures: conv static/dynamic GPU PASS both EPs; Loop fixtures reproduce EP_FAIL+fallback (7/9 events); LOOP_BARRIER_ISOLATED, kernel-cause NOT_ISOLATED; DML control ERROR(UnicodeDecodeError) recorded"
+  }
+ },
+ "commits_so_far": [
+  "0331c55",
+  "b56d890",
+  "2fb962c",
+  "e2d3698",
+  "61ace45",
+  "ff178e2"
+ ],
+ "fork_commits": [
+  "154fd56",
+  "e3dd9af",
+  "0baccb2"
+ ]
+}

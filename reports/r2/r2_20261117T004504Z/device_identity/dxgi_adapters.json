@@ -1,0 +1,282 @@
+{
+ "validated": true,
+ "checks": {
+  "S2_struct_sizes": {
+   "DXGI_ADAPTER_DESC": 304,
+   "DXGI_ADAPTER_DESC1": 312,
+   "DXGI_OUTPUT_DESC": 96,
+   "DISPLAY_DEVICEW": 840,
+   "expected_x64": [
+    304,
+    312,
+    96,
+    840
+   ]
+  },
+  "S1_CreateDXGIFactory1_hr": "0x0",
+  "S4_name_cross_check": {
+   "expected": [
+    "GameViewer Virtual Display Adapter",
+    "AMD Radeon RX 7900 XTX",
+    "Intel(R) UHD Graphics 770",
+    "Microsoft Remote Display Adapter"
+   ],
+   "hits": [
+    "AMD Radeon RX 7900 XTX",
+    "Intel(R) UHD Graphics 770",
+    "Microsoft Remote Display Adapter"
+   ],
+   "ok": true
+  },
+  "S6_output_in_gdi": {
+   "bad": [],
+   "ok": true
+  }
+ },
+ "adapters": [
+  {
+   "dxgi_index": 0,
+   "description": "AMD Radeon RX 7900 XTX",
+   "vendor_id": "1002",
+   "device_id": "744c",
+   "subsys_id": "0e3b1002",
+   "revision": 200,
+   "dedicated_video_memory_bytes": 25753026560,
+   "dedicated_system_memory_bytes": 0,
+   "shared_system_memory_bytes": 17057857536,
+   "luid_low": 72346,
+   "luid_high": 0,
+   "luid_key": 72346,
+   "flags": 0,
+   "flag_is_remote": false,
+   "flag_is_software": false,
+   "num_outputs_reported": 1,
+   "outputs": [
+    {
+     "output_index": 0,
+     "device_name": "\\\\.\\DISPLAY1",
+     "attached_to_desktop": true,
+     "desktop_rect": [
+      0,
+      0,
+      2048,
+      1152
+     ],
+     "rotation": 1
+    }
+   ]
+  },
+  {
+   "dxgi_index": 1,
+   "description": "AMD Radeon RX 7900 XTX",
+   "vendor_id": "1002",
+   "device_id": "744c",
+   "subsys_id": "0e3b1002",
+   "revision": 200,
+   "dedicated_video_memory_bytes": 25753026560,
+   "dedicated_system_memory_bytes": 0,
+   "shared_system_memory_bytes": 17057857536,
+   "luid_low": 118045,
+   "luid_high": 0,
+   "luid_key": 118045,
+   "flags": 0,
+   "flag_is_remote": false,
+   "flag_is_software": false,
+   "num_outputs_reported": 0,
+   "outputs": []
+  },
+  {
+   "dxgi_index": 2,
+   "description": "Intel(R) UHD Graphics 770",
+   "vendor_id": "8086",
+   "device_id": "a780",
+   "subsys_id": "d0001458",
+   "revision": 4,
+   "dedicated_video_memory_bytes": 134217728,
+   "dedicated_system_memory_bytes": 0,
+   "shared_system_memory_bytes": 17057857536,
+   "luid_low": 80099,
+   "luid_high": 0,
+   "luid_key": 80099,
+   "flags": 0,
+   "flag_is_remote": false,
+   "flag_is_software": false,
+   "num_outputs_reported": 0,
+   "outputs": []
+  },
+  {
+   "dxgi_index": 3,
+   "description": "AMD Radeon RX 7900 XTX",
+   "vendor_id": "1002",
+   "device_id": "744c",
+   "subsys_id": "0e3b1002",
+   "revision": 200,
+   "dedicated_video_memory_bytes": 25753026560,
+   "dedicated_system_memory_bytes": 0,
+   "shared_system_memory_bytes": 17057857536,
+   "luid_low": 617528,
+   "luid_high": 0,
+   "luid_key": 617528,
+   "flags": 0,
+   "flag_is_remote": false,
+   "flag_is_software": false,
+   "num_outputs_reported": 0,
+   "outputs": []
+  },
+  {
+   "dxgi_index": 4,
+   "description": "Microsoft Basic Render Driver",
+   "vendor_id": "1414",
+   "device_id": "008c",
+   "subsys_id": "00000000",
+   "revision": 0,
+   "dedicated_video_memory_bytes": 0,
+   "dedicated_system_memory_bytes": 0,
+   "shared_system_memory_bytes": 17057857536,
+   "luid_low": 79992,
+   "luid_high": 0,
+   "luid_key": 79992,
+   "flags": 2,
+   "flag_is_remote": false,
+   "flag_is_software": true,
+   "num_outputs_reported": 0,
+   "outputs": []
+  }
+ ],
+ "gdi_display_devices": [
+  {
+   "gdi_index": 0,
+   "device_name": "\\\\.\\DISPLAY1",
+   "device_string": "Microsoft Remote Display Adapter",
+   "state_flags": 67108869,
+   "device_id": "RdpIdd_IndirectDisplay",
+   "device_key": ""
+  },
+  {
+   "gdi_index": 1,
+   "device_name": "\\\\.\\DISPLAY2",
+   "device_string": "Microsoft Remote Display Adapter",
+   "state_flags": 67108864,
+   "device_id": "RdpIdd_IndirectDisplay",
+   "device_key": ""
+  },
+  {
+   "gdi_index": 2,
+   "device_name": "\\\\.\\DISPLAY3",
+   "device_string": "Microsoft Remote Display Adapter",
+   "state_flags": 67108864,
+   "device_id": "RdpIdd_IndirectDisplay",
+   "device_key": ""
+  },
+  {
+   "gdi_index": 3,
+   "device_name": "\\\\.\\DISPLAY4",
+   "device_string": "Microsoft Remote Display Adapter",
+   "state_flags": 67108864,
+   "device_id": "RdpIdd_IndirectDisplay",
+   "device_key": ""
+  },
+  {
+   "gdi_index": 4,
+   "device_name": "\\\\.\\DISPLAY5",
+   "device_string": "Microsoft Remote Display Adapter",
+   "state_flags": 67108864,
+   "device_id": "RdpIdd_IndirectDisplay",
+   "device_key": ""
+  },
+  {
+   "gdi_index": 5,
+   "device_name": "\\\\.\\DISPLAY6",
+   "device_string": "Microsoft Remote Display Adapter",
+   "state_flags": 67108864,
+   "device_id": "RdpIdd_IndirectDisplay",
+   "device_key": ""
+  },
+  {
+   "gdi_index": 6,
+   "device_name": "\\\\.\\DISPLAY7",
+   "device_string": "Microsoft Remote Display Adapter",
+   "state_flags": 67108864,
+   "device_id": "RdpIdd_IndirectDisplay",
+   "device_key": ""
+  },
+  {
+   "gdi_index": 7,
+   "device_name": "\\\\.\\DISPLAY8",
+   "device_string": "Microsoft Remote Display Adapter",
+   "state_flags": 67108864,
+   "device_id": "RdpIdd_IndirectDisplay",
+   "device_key": ""
+  },
+  {
+   "gdi_index": 8,
+   "device_name": "\\\\.\\DISPLAY9",
+   "device_string": "Microsoft Remote Display Adapter",
+   "state_flags": 67108864,
+   "device_id": "RdpIdd_IndirectDisplay",
+   "device_key": ""
+  },
+  {
+   "gdi_index": 9,
+   "device_name": "\\\\.\\DISPLAY10",
+   "device_string": "Microsoft Remote Display Adapter",
+   "state_flags": 67108864,
+   "device_id": "RdpIdd_IndirectDisplay",
+   "device_key": ""
+  },
+  {
+   "gdi_index": 10,
+   "device_name": "\\\\.\\DISPLAY11",
+   "device_string": "Microsoft Remote Display Adapter",
+   "state_flags": 67108864,
+   "device_id": "RdpIdd_IndirectDisplay",
+   "device_key": ""
+  },
+  {
+   "gdi_index": 11,
+   "device_name": "\\\\.\\DISPLAY12",
+   "device_string": "Microsoft Remote Display Adapter",
+   "state_flags": 67108864,
+   "device_id": "RdpIdd_IndirectDisplay",
+   "device_key": ""
+  },
+  {
+   "gdi_index": 12,
+   "device_name": "\\\\.\\DISPLAY13",
+   "device_string": "Microsoft Remote Display Adapter",
+   "state_flags": 67108864,
+   "device_id": "RdpIdd_IndirectDisplay",
+   "device_key": ""
+  },
+  {
+   "gdi_index": 13,
+   "device_name": "\\\\.\\DISPLAY14",
+   "device_string": "Microsoft Remote Display Adapter",
+   "state_flags": 67108864,
+   "device_id": "RdpIdd_IndirectDisplay",
+   "device_key": ""
+  },
+  {
+   "gdi_index": 14,
+   "device_name": "\\\\.\\DISPLAY15",
+   "device_string": "Microsoft Remote Display Adapter",
+   "state_flags": 67108864,
+   "device_id": "RdpIdd_IndirectDisplay",
+   "device_key": ""
+  },
+  {
+   "gdi_index": 15,
+   "device_name": "\\\\.\\DISPLAY16",
+   "device_string": "Microsoft Remote Display Adapter",
+   "state_flags": 67108864,
+   "device_id": "RdpIdd_IndirectDisplay",
+   "device_key": ""
+  }
+ ],
+ "names_from_win32_videocontroller": [
+  "GameViewer Virtual Display Adapter",
+  "AMD Radeon RX 7900 XTX",
+  "Intel(R) UHD Graphics 770",
+  "Microsoft Remote Display Adapter"
+ ]
+}

@@ -1,0 +1,72 @@
+{
+    "PnP":  [
+                {
+                    "Name":  "GameViewer Virtual Display Adapter",
+                    "InstanceId":  "ROOT\\DISPLAY\\0000",
+                    "Status":  "OK",
+                    "Location":  null,
+                    "HardwareIds":  [
+                                        "Root\\GameViewerIddDriver"
+                                    ]
+                },
+                {
+                    "Name":  "Microsoft Remote Display Adapter",
+                    "InstanceId":  "SWD\\REMOTEDISPLAYENUM\\RDPIDD_INDIRECTDISPLAY\u0026SESSIONID_0002",
+                    "Status":  "OK",
+                    "Location":  null,
+                    "HardwareIds":  [
+                                        "RdpIdd_IndirectDisplay"
+                                    ]
+                },
+                {
+                    "Name":  "AMD Radeon RX 7900 XTX",
+                    "InstanceId":  "PCI\\VEN_1002\u0026DEV_744C\u0026SUBSYS_0E3B1002\u0026REV_C8\\6\u002613FD3BF3\u00260\u002600000008",
+                    "Status":  "OK",
+                    "Location":  "PCI bus 3, device 0, function 0",
+                    "HardwareIds":  [
+                                        "PCI\\VEN_1002\u0026DEV_744C\u0026SUBSYS_0E3B1002\u0026REV_C8",
+                                        "PCI\\VEN_1002\u0026DEV_744C\u0026SUBSYS_0E3B1002",
+                                        "PCI\\VEN_1002\u0026DEV_744C\u0026CC_030000",
+                                        "PCI\\VEN_1002\u0026DEV_744C\u0026CC_0300"
+                                    ]
+                },
+                {
+                    "Name":  "Intel(R) UHD Graphics 770",
+                    "InstanceId":  "PCI\\VEN_8086\u0026DEV_A780\u0026SUBSYS_D0001458\u0026REV_04\\3\u002611583659\u00260\u002610",
+                    "Status":  "OK",
+                    "Location":  "PCI bus 0, device 2, function 0",
+                    "HardwareIds":  [
+                                        "PCI\\VEN_8086\u0026DEV_A780\u0026SUBSYS_D0001458\u0026REV_04",
+                                        "PCI\\VEN_8086\u0026DEV_A780\u0026SUBSYS_D0001458",
+                                        "PCI\\VEN_8086\u0026DEV_A780\u0026CC_030000",
+                                        "PCI\\VEN_8086\u0026DEV_A780\u0026CC_0300"
+                                    ]
+                }
+            ],
+    "VideoControllers":  [
+                             {
+                                 "Name":  "GameViewer Virtual Display Adapter",
+                                 "PNPDeviceID":  "ROOT\\DISPLAY\\0000",
+                                 "DriverVersion":  "15.6.5.199",
+                                 "AdapterCompatibility":  "GameViewer"
+                             },
+                             {
+                                 "Name":  "AMD Radeon RX 7900 XTX",
+                                 "PNPDeviceID":  "PCI\\VEN_1002\u0026DEV_744C\u0026SUBSYS_0E3B1002\u0026REV_C8\\6\u002613FD3BF3\u00260\u002600000008",
+                                 "DriverVersion":  "32.0.21030.2001",
+                                 "AdapterCompatibility":  "Advanced Micro Devices, Inc."
+                             },
+                             {
+                                 "Name":  "Intel(R) UHD Graphics 770",
+                                 "PNPDeviceID":  "PCI\\VEN_8086\u0026DEV_A780\u0026SUBSYS_D0001458\u0026REV_04\\3\u002611583659\u00260\u002610",
+                                 "DriverVersion":  "32.0.101.6129",
+                                 "AdapterCompatibility":  "Intel Corporation"
+                             },
+                             {
+                                 "Name":  "Microsoft Remote Display Adapter",
+                                 "PNPDeviceID":  "SWD\\REMOTEDISPLAYENUM\\RDPIDD_INDIRECTDISPLAY\u0026SESSIONID_0002",
+                                 "DriverVersion":  "10.0.26100.9818",
+                                 "AdapterCompatibility":  "Microsoft"
+                             }
+                         ]
+}

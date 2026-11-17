@@ -1,0 +1,3 @@
+EP Error: [ONNXRuntimeError] : 11 : EP_FAIL : Non-zero status code returned while running MIGraphXExecutionProvider_2033424792886208047_0 node. Name:'MIGraphXExecutionProvider_MIGraphXExecutionProvider_2033424792886208047_0_0' Status Message: Failed to call function using ['MIGraphXExecutionProvider', 'CPUExecutionProvider']
+Falling back to ['CPUExecutionProvider'] and retrying.
+MIGraphXExecutionProvider ALL -> FAIL_NO_GPU_COMPUTE {'CPUExecutionProvider': 5587}
