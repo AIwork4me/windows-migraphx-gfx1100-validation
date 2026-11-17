@@ -5,19 +5,23 @@
 - Verdict board: `docs/R2_GO_NO_GO.md`; device identity: `docs/R2_DEVICE_IDENTITY.md`
 - Reproduce: `docs/R2_MODEL_REPRODUCE.md`; entry scripts `scripts/run_r2.ps1` / `resume_r2.ps1`
 - Failure catalog: `reports/r2/FAILURE_CATALOG.md`
-- R1 (merged): PR #1 merge commit `7156b9b` on `main`
-- R2 branch: `mission/r2-device-identity-real-models` — Draft PR URL is filled
-  in below after remote verification
 
-## Remote verification block (filled after push)
+## Remote verification (2026-11-17, post-publish)
 
-- main HEAD: `7156b9b3…` (R1 merge; verified 2026-11-17 via ls-remote)
-- R2 branch HEAD: see `git ls-remote origin refs/heads/mission/r2-device-identity-real-models`
-- R2 Draft PR: pending network recovery (see note)
-- Fork PR: https://github.com/AIwork4me/onnxruntime-ep-amdgpu/pull/1
-  head `e3dd9afc27ae47bb343240137b7c22f301dcce81` (verified via gh before outage)
+| ref | SHA | verified via |
+|---|---|---|
+| main HEAD | `7156b9b504c4c31065eb47c0191f3e2f55f316ed` (R1 merge) | git ls-remote (SSH) |
+| R2 branch `mission/r2-device-identity-real-models` | `a4688c9` (full: see ls-remote at publication) | git ls-remote (SSH) |
+| PR #2 head | = branch HEAD | gh api |
+| Fork PR head | `e3dd9afc27ae47bb343240137b7c22f301dcce81` | gh api |
 
-> NOTE: host egress failed (all direct + proxied HTTPS dead, proxy port
-> listening) while publishing; commits are local on the R2 branch and push
-> as soon as connectivity returns. This file is updated with the verified
-> SHAs/URLs at that moment.
+- R2 Draft PR: https://github.com/AIwork4me/windows-migraphx-gfx1100-validation/pull/2
+  (Draft, NOT merged; CI: 3/3 cpu-tests green — r1-cpu-tests ×2 + r2-cpu-tests)
+- Fork Draft PR: https://github.com/AIwork4me/onnxruntime-ep-amdgpu/pull/1
+- R1 PR: https://github.com/AIwork4me/windows-migraphx-gfx1100-validation/pull/1 (merged, `7156b9b`)
+
+> Publication note: host egress to github.com:443 failed for a period
+> (proxy node outage; api.github.com and SSH-22 stayed reachable). The
+> branch was pushed over SSH using a write deploy key added via the API
+> (key `r2-deploy-key`, removable in repo settings when normal HTTPS
+> push works again).
